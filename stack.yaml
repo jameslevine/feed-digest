@@ -41,3 +41,5 @@ stack:
   - name: Snowflake
   - name: Entra ID
     keywords: [entra, azure ad, oidc, jwt]
+  - name: Security (AI and cloud)
+    keywords: [prompt injection, jailbreak, cve, vulnerability, supply chain, secrets, iam, guardrails, owasp, data exfiltration, mcp security, tool poisoning]

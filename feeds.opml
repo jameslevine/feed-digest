@@ -73,8 +73,6 @@
       <outline text="AWS Architecture Blog" type="rss" xmlUrl="https://aws.amazon.com/blogs/architecture/feed/" htmlUrl="https://aws.amazon.com/blogs/architecture/"/>
       <outline text="AWS Database Blog (DynamoDB)" type="rss" xmlUrl="https://aws.amazon.com/blogs/database/feed/" htmlUrl="https://aws.amazon.com/blogs/database/"/>
       <outline text="AWS Cloud Operations Blog (Organizations, Control Tower)" type="rss" xmlUrl="https://aws.amazon.com/blogs/mt/feed/" htmlUrl="https://aws.amazon.com/blogs/mt/"/>
-      <outline text="AWS Security Blog" type="rss" xmlUrl="https://aws.amazon.com/blogs/security/feed/" htmlUrl="https://aws.amazon.com/blogs/security/"/>
-      <outline text="AWS Security Bulletins" type="rss" xmlUrl="https://aws.amazon.com/security/security-bulletins/rss/feed/" htmlUrl="https://aws.amazon.com/security/security-bulletins/"/>
       <outline text="AWS Machine Learning Blog (Bedrock)" type="rss" xmlUrl="https://aws.amazon.com/blogs/machine-learning/feed/" htmlUrl="https://aws.amazon.com/blogs/machine-learning/"/>
       <outline text="AWS Open Source Blog" type="rss" xmlUrl="https://aws.amazon.com/blogs/opensource/feed/" htmlUrl="https://aws.amazon.com/blogs/opensource/"/>
       <outline text="Last Week in AWS" type="rss" xmlUrl="https://www.lastweekinaws.com/feed/" htmlUrl="https://www.lastweekinaws.com/"/>
@@ -94,6 +92,36 @@
       <outline text="Claude Agent SDK (Python) (PyPI)" type="rss" xmlUrl="https://pypi.org/rss/project/claude-agent-sdk/releases.xml" htmlUrl="https://pypi.org/project/claude-agent-sdk/"/>
       <outline text="MCP Python SDK (PyPI)" type="rss" xmlUrl="https://pypi.org/rss/project/mcp/releases.xml" htmlUrl="https://pypi.org/project/mcp/"/>
       <outline text="Strands Agents (PyPI)" type="rss" xmlUrl="https://pypi.org/rss/project/strands-agents/releases.xml" htmlUrl="https://pypi.org/project/strands-agents/"/>
+    </outline>
+    <outline text="Security">
+      <outline text="AWS Security Blog" type="rss" xmlUrl="https://aws.amazon.com/blogs/security/feed/" htmlUrl="https://aws.amazon.com/blogs/security/"/>
+      <outline text="AWS Security Bulletins" type="rss" xmlUrl="https://aws.amazon.com/security/security-bulletins/rss/feed/" htmlUrl="https://aws.amazon.com/security/security-bulletins/"/>
+      <outline text="GitHub Blog: security" type="rss" xmlUrl="https://github.blog/security/feed/" htmlUrl="https://github.blog/security/"/>
+      <outline text="tl;dr sec (weekly appsec roundup)" type="rss" xmlUrl="https://tldrsec.com/feed" htmlUrl="https://tldrsec.com/"/>
+      <outline text="Trail of Bits blog" type="rss" xmlUrl="https://blog.trailofbits.com/feed/" htmlUrl="https://blog.trailofbits.com/"/>
+      <outline text="Google Project Zero" type="rss" xmlUrl="https://googleprojectzero.blogspot.com/feeds/posts/default" htmlUrl="https://googleprojectzero.blogspot.com/"/>
+      <outline text="Schneier on Security" type="rss" xmlUrl="https://www.schneier.com/feed/atom/" htmlUrl="https://www.schneier.com/"/>
+      <outline text="Krebs on Security" type="rss" xmlUrl="https://krebsonsecurity.com/feed/" htmlUrl="https://krebsonsecurity.com/"/>
+      <outline text="The Hacker News" type="rss" xmlUrl="https://feeds.feedburner.com/TheHackersNews" htmlUrl="https://thehackernews.com/"/>
+      <outline text="Datadog Security Labs (cloud)" type="rss" xmlUrl="https://securitylabs.datadoghq.com/rss/feed.xml" htmlUrl="https://securitylabs.datadoghq.com/"/>
+      <outline text="Wiz blog (cloud security)" type="rss" xmlUrl="https://www.wiz.io/feed/rss.xml" htmlUrl="https://www.wiz.io/blog"/>
+      <outline text="Snyk blog (supply chain)" type="rss" xmlUrl="https://snyk.io/blog/feed/" htmlUrl="https://snyk.io/blog/"/>
+      <outline text="NCSC UK" type="rss" xmlUrl="https://www.ncsc.gov.uk/api/1/services/v1/all-rss-feed.xml" htmlUrl="https://www.ncsc.gov.uk/"/>
+      <outline text="CISA advisories" type="rss" xmlUrl="https://www.cisa.gov/cybersecurity-advisories/all.xml" htmlUrl="https://www.cisa.gov/news-events/cybersecurity-advisories"/>
+      <outline text="Microsoft Security Response Center" type="rss" xmlUrl="https://msrc.microsoft.com/blog/feed" htmlUrl="https://msrc.microsoft.com/blog/"/>
+    </outline>
+    <outline text="AI security">
+      <outline text="Embrace The Red (Johann Rehberger, prompt injection)" type="rss" xmlUrl="https://embracethered.com/blog/index.xml" htmlUrl="https://embracethered.com/blog/"/>
+      <outline text="OWASP GenAI Security Project" type="rss" xmlUrl="https://genai.owasp.org/feed/" htmlUrl="https://genai.owasp.org/"/>
+      <outline text="Unsupervised Learning (Daniel Miessler)" type="rss" xmlUrl="https://danielmiessler.com/feed" htmlUrl="https://danielmiessler.com/"/>
+      <outline text="Anthropic research" type="rss" xmlUrl="https://www.anthropic.com/research/rss.xml" htmlUrl="https://www.anthropic.com/research"/>
+      <outline text="Lakera blog" type="rss" xmlUrl="https://www.lakera.ai/blog/rss.xml" htmlUrl="https://www.lakera.ai/blog"/>
+      <outline text="Protect AI blog" type="rss" xmlUrl="https://protectai.com/blog/rss.xml" htmlUrl="https://protectai.com/blog"/>
+      <outline text="HiddenLayer research" type="rss" xmlUrl="https://hiddenlayer.com/feed/" htmlUrl="https://hiddenlayer.com/innovation-hub/"/>
+      <outline text="Invariant Labs" type="rss" xmlUrl="https://invariantlabs.ai/blog/rss.xml" htmlUrl="https://invariantlabs.ai/blog"/>
+      <outline text="Simon Willison: prompt injection tag" type="rss" xmlUrl="https://simonwillison.net/tags/prompt-injection.atom" htmlUrl="https://simonwillison.net/tags/prompt-injection/"/>
+      <outline text="garak (LLM vulnerability scanner) (PyPI)" type="rss" xmlUrl="https://pypi.org/rss/project/garak/releases.xml" htmlUrl="https://pypi.org/project/garak/"/>
+      <outline text="PyRIT (Microsoft red-teaming) (PyPI)" type="rss" xmlUrl="https://pypi.org/rss/project/pyrit/releases.xml" htmlUrl="https://pypi.org/project/pyrit/"/>
     </outline>
     <outline text="Engineering practice">
       <outline text="The Pragmatic Engineer" type="rss" xmlUrl="https://newsletter.pragmaticengineer.com/feed" htmlUrl="https://newsletter.pragmaticengineer.com/"/>

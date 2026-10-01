@@ -1,0 +1,43 @@
+# My current stack. The digest leads with anything that matches these.
+# Edit freely and push; the next run picks it up. Each entry: name, plus optional keywords (aliases, product names,
+# version strings) to match case-insensitively against item titles and summaries. No code change needed.
+stack:
+  - name: Python 3.14
+    keywords: [python 3.14, cpython 3.14, python 3.15]
+  - name: uv
+    keywords: [astral, uv ]
+  - name: ruff
+  - name: pydantic
+    keywords: [pydantic, pydantic-settings, pydantic-core]
+  - name: FastAPI
+    keywords: [fastapi, starlette, uvicorn, mangum]
+  - name: httpx
+  - name: pytest
+    keywords: [pytest, moto, respx, hypothesis]
+  - name: Powertools for AWS Lambda
+    keywords: [powertools, aws-lambda-powertools]
+  - name: boto3
+    keywords: [boto3, botocore]
+  - name: AWS Lambda
+    keywords: [lambda, python3.14 runtime, graviton]
+  - name: API Gateway
+    keywords: [api gateway, http api]
+  - name: Step Functions
+    keywords: [step functions, states language, asl]
+  - name: DynamoDB
+  - name: EventBridge
+  - name: Amazon Bedrock
+    keywords: [bedrock, agentcore, knowledge bases, guardrails, converse api]
+  - name: Terraform
+    keywords: [terraform, opentofu, hcl, terraform-provider-aws, aws provider]
+  - name: GitHub Actions
+    keywords: [github actions, workflows, oidc, dependabot, actions runner]
+  - name: AWS Organizations and Control Tower
+    keywords: [organizations, control tower, scp, service control policy, landing zone, identity center]
+  - name: MCP
+    keywords: [model context protocol, mcp]
+  - name: Claude
+    keywords: [claude, anthropic, claude code, agent sdk, strands]
+  - name: Snowflake
+  - name: Entra ID
+    keywords: [entra, azure ad, oidc, jwt]

@@ -1,27 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <opml version="2.0">
-  <head>
-    <title>Superhighway ramp-up feeds</title>
-  </head>
+  <head><title>feed-digest sources</title></head>
   <body>
     <outline text="Python">
       <outline text="PEPs (new and updated)" type="rss" xmlUrl="https://peps.python.org/peps.rss" htmlUrl="https://peps.python.org/"/>
-      <outline text="Discourse: PEPs category" type="rss" xmlUrl="https://discuss.python.org/c/peps/19.rss" htmlUrl="https://discuss.python.org/c/peps/19"/>
+      <outline text="Discourse: PEPs" type="rss" xmlUrl="https://discuss.python.org/c/peps/19.rss" htmlUrl="https://discuss.python.org/c/peps/19"/>
       <outline text="Python Insider (releases)" type="rss" xmlUrl="https://blog.python.org/feeds/posts/default" htmlUrl="https://blog.python.org/"/>
       <outline text="Real Python" type="rss" xmlUrl="https://realpython.com/atom.xml" htmlUrl="https://realpython.com/"/>
+      <outline text="uv (PyPI)" type="rss" xmlUrl="https://pypi.org/rss/project/uv/releases.xml" htmlUrl="https://pypi.org/project/uv/"/>
+      <outline text="ruff (PyPI)" type="rss" xmlUrl="https://pypi.org/rss/project/ruff/releases.xml" htmlUrl="https://pypi.org/project/ruff/"/>
+      <outline text="pydantic (PyPI)" type="rss" xmlUrl="https://pypi.org/rss/project/pydantic/releases.xml" htmlUrl="https://pypi.org/project/pydantic/"/>
+      <outline text="FastAPI (PyPI)" type="rss" xmlUrl="https://pypi.org/rss/project/fastapi/releases.xml" htmlUrl="https://pypi.org/project/fastapi/"/>
+      <outline text="httpx (PyPI)" type="rss" xmlUrl="https://pypi.org/rss/project/httpx/releases.xml" htmlUrl="https://pypi.org/project/httpx/"/>
+      <outline text="pytest (PyPI)" type="rss" xmlUrl="https://pypi.org/rss/project/pytest/releases.xml" htmlUrl="https://pypi.org/project/pytest/"/>
     </outline>
-    <outline text="Project dependencies (GitHub releases)">
-      <outline text="uv releases (PyPI)" type="rss" xmlUrl="https://pypi.org/rss/project/uv/releases.xml" htmlUrl="https://pypi.org/project/uv/"/>
-      <outline text="ruff releases (PyPI)" type="rss" xmlUrl="https://pypi.org/rss/project/ruff/releases.xml" htmlUrl="https://pypi.org/project/ruff/"/>
-      <outline text="pydantic releases (PyPI)" type="rss" xmlUrl="https://pypi.org/rss/project/pydantic/releases.xml" htmlUrl="https://pypi.org/project/pydantic/"/>
-      <outline text="FastAPI releases (PyPI)" type="rss" xmlUrl="https://pypi.org/rss/project/fastapi/releases.xml" htmlUrl="https://pypi.org/project/fastapi/"/>
-      <outline text="httpx releases (PyPI)" type="rss" xmlUrl="https://pypi.org/rss/project/httpx/releases.xml" htmlUrl="https://pypi.org/project/httpx/"/>
-      <outline text="Powertools for AWS Lambda (Python) releases (PyPI)" type="rss" xmlUrl="https://pypi.org/rss/project/aws-lambda-powertools/releases.xml" htmlUrl="https://pypi.org/project/aws-lambda-powertools/"/>
-      <outline text="boto3 releases (PyPI)" type="rss" xmlUrl="https://pypi.org/rss/project/boto3/releases.xml" htmlUrl="https://pypi.org/project/boto3/"/>
-      <outline text="moto releases (PyPI)" type="rss" xmlUrl="https://pypi.org/rss/project/moto/releases.xml" htmlUrl="https://pypi.org/project/moto/"/>
-      <outline text="Strands Agents releases (PyPI)" type="rss" xmlUrl="https://pypi.org/rss/project/strands-agents/releases.xml" htmlUrl="https://pypi.org/project/strands-agents/"/>
-      <outline text="MCP Python SDK releases (PyPI)" type="rss" xmlUrl="https://pypi.org/rss/project/mcp/releases.xml" htmlUrl="https://pypi.org/project/mcp/"/>
-      <outline text="Anthropic Python SDK releases (PyPI)" type="rss" xmlUrl="https://pypi.org/rss/project/anthropic/releases.xml" htmlUrl="https://pypi.org/project/anthropic/"/>
+    <outline text="JavaScript and TypeScript">
+      <outline text="Node.js blog" type="rss" xmlUrl="https://nodejs.org/en/feed/blog.xml" htmlUrl="https://nodejs.org/en/blog"/>
+      <outline text="TypeScript blog" type="rss" xmlUrl="https://devblogs.microsoft.com/typescript/feed/" htmlUrl="https://devblogs.microsoft.com/typescript/"/>
+      <outline text="React blog" type="rss" xmlUrl="https://react.dev/rss.xml" htmlUrl="https://react.dev/blog"/>
+      <outline text="JavaScript Weekly" type="rss" xmlUrl="https://javascriptweekly.com/rss/" htmlUrl="https://javascriptweekly.com/"/>
+    </outline>
+    <outline text="IaC and DevOps">
+      <outline text="HashiCorp blog" type="rss" xmlUrl="https://www.hashicorp.com/blog/feed.xml" htmlUrl="https://www.hashicorp.com/blog"/>
+      <outline text="GitHub Changelog" type="rss" xmlUrl="https://github.blog/changelog/feed/" htmlUrl="https://github.blog/changelog/"/>
+      <outline text="GitHub Blog" type="rss" xmlUrl="https://github.blog/feed/" htmlUrl="https://github.blog/"/>
     </outline>
     <outline text="AWS">
       <outline text="AWS What's New" type="rss" xmlUrl="https://aws.amazon.com/about-aws/whats-new/recent/feed/" htmlUrl="https://aws.amazon.com/new/"/>
@@ -30,14 +32,16 @@
       <outline text="AWS Security Blog" type="rss" xmlUrl="https://aws.amazon.com/blogs/security/feed/" htmlUrl="https://aws.amazon.com/blogs/security/"/>
       <outline text="Last Week in AWS" type="rss" xmlUrl="https://www.lastweekinaws.com/feed/" htmlUrl="https://www.lastweekinaws.com/"/>
       <outline text="Yan Cui (theburningmonk)" type="rss" xmlUrl="https://theburningmonk.com/feed/" htmlUrl="https://theburningmonk.com/"/>
-    </outline>
-    <outline text="Terraform and GitHub">
-      <outline text="HashiCorp blog" type="rss" xmlUrl="https://www.hashicorp.com/blog/feed.xml" htmlUrl="https://www.hashicorp.com/blog"/>
-      <outline text="GitHub Changelog" type="rss" xmlUrl="https://github.blog/changelog/feed/" htmlUrl="https://github.blog/changelog/"/>
-      <outline text="GitHub Blog" type="rss" xmlUrl="https://github.blog/feed/" htmlUrl="https://github.blog/"/>
+      <outline text="Powertools for AWS Lambda (Python) (PyPI)" type="rss" xmlUrl="https://pypi.org/rss/project/aws-lambda-powertools/releases.xml" htmlUrl="https://pypi.org/project/aws-lambda-powertools/"/>
+      <outline text="boto3 (PyPI)" type="rss" xmlUrl="https://pypi.org/rss/project/boto3/releases.xml" htmlUrl="https://pypi.org/project/boto3/"/>
+      <outline text="moto (PyPI)" type="rss" xmlUrl="https://pypi.org/rss/project/moto/releases.xml" htmlUrl="https://pypi.org/project/moto/"/>
     </outline>
     <outline text="AI and agents">
       <outline text="Simon Willison" type="rss" xmlUrl="https://simonwillison.net/atom/everything/" htmlUrl="https://simonwillison.net/"/>
+      <outline text="Anthropic Python SDK (PyPI)" type="rss" xmlUrl="https://pypi.org/rss/project/anthropic/releases.xml" htmlUrl="https://pypi.org/project/anthropic/"/>
+      <outline text="MCP Python SDK (PyPI)" type="rss" xmlUrl="https://pypi.org/rss/project/mcp/releases.xml" htmlUrl="https://pypi.org/project/mcp/"/>
+      <outline text="Strands Agents (PyPI)" type="rss" xmlUrl="https://pypi.org/rss/project/strands-agents/releases.xml" htmlUrl="https://pypi.org/project/strands-agents/"/>
+      <outline text="Claude Agent SDK (Python) (PyPI)" type="rss" xmlUrl="https://pypi.org/rss/project/claude-agent-sdk/releases.xml" htmlUrl="https://pypi.org/project/claude-agent-sdk/"/>
     </outline>
   </body>
 </opml>

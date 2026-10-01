@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>James's feed digest</title>
+    <link>https://github.com/jameslevine/feed-digest</link>
+    <description>Daily AI summary of my RSS subscriptions</description>
+    <lastBuildDate>Thu, 01 Oct 2026 13:20:24 +0000</lastBuildDate>
+    <item>
+      <title>Digest for 2026-10-01</title>
+      <link>https://github.com/jameslevine/feed-digest/blob/main/digests/2026-10-01.html</link>
+      <guid isPermaLink="false">Digest for 2026-10-01</guid>
+      <pubDate>Thu, 01 Oct 2026 13:20:24 +0000</pubDate>
+      <description><![CDATA[
+<p><strong>Worth your attention:</strong> Python 3.14.8 ships today with security fixes across every supported branch &mdash; 3.10 is now end-of-life and 3.13 gets its final maintenance release, so update pinned versions and base images. Bedrock keeps moving fast: Claude Opus/Sonnet 5.5 land in-region in the UK (London), GPT-6 Astra gets an UltraFast inference tier, and new AgentCore Runtime Instances add GPU-backed, multi-day persistent sessions for multi-agent workloads. Simon Willison also flags a sobering point on agent security &mdash; sandboxing alone may not stop a "worm" that hijacks one agent and spreads to the next, worth a read before scaling any autonomous agent fleet.</p>
+
+<h3>Project dependencies</h3>
+<p>No new releases to report &mdash; all of this group's feeds failed to fetch this run (see failed feeds below).</p>
+
+<h3>Python</h3>
+<ul>
+<li><a href="https://blog.python.org/2026/10/python-31022-31117/">Python 3.10.22, 3.11.17, 3.12.15, 3.13.16 and 3.14.8 are now available</a> &mdash; security patches land across every supported branch; 3.10 is now EOL and this is the last maintenance release for 3.13.</li>
+<li><a href="https://realpython.com/python315-new-features/">Python 3.15: Cool New Features for You to Try</a> &mdash; an early look at lazy imports, frozendict, sentinels, a built-in sampling profiler, and friendlier error messages coming next release.</li>
+</ul>
+
+<h3>AWS</h3>
+<ul>
+<li><a href="https://aws.amazon.com/blogs/machine-learning/build-a-multi-agent-music-production-pipeline-on-amazon-bedrock-agentcore-runtime-instances/">Build a multi-agent music production pipeline on Amazon Bedrock AgentCore Runtime Instances</a> &mdash; AgentCore Runtime Instances now give multi-agent workflows managed GPU EC2 infrastructure with persistent volumes and multi-day sessions.</li>
+<li><a href="https://aws.amazon.com/about-aws/whats-new/2026/09/claude-region-expansion-lhr/">Amazon Bedrock expands Claude models in-region support in the UK (London)</a> &mdash; Claude Opus 5.5 and Sonnet 5.5 are now in-region on Bedrock in London, useful if data residency matters for your workloads.</li>
+<li><a href="https://aws.amazon.com/about-aws/whats-new/2026/09/openai-gpt-6-astra-ultrafast-on-amazon-bedrock/">OpenAI GPT-6 Astra now supports UltraFast mode on Amazon Bedrock</a> &mdash; a new premium speed tier claims up to 6x faster inference for latency-sensitive agent workloads.</li>
+<li><a href="https://aws.amazon.com/blogs/machine-learning/query-claims-in-natural-language-with-amazon-bedrock-knowledge-bases/">Query claims in natural language with Amazon Bedrock Knowledge Bases</a> &mdash; walkthrough for a cited, multi-turn Q&amp;A assistant over S3 documents using the AgenticRetrieveStream API.</li>
+<li><a href="https://aws.amazon.com/about-aws/whats-new/2026/09/s3-vectors-introduces-metadata-pre-filtering/">Amazon S3 Vectors introduces metadata pre-filtering</a> &mdash; filtering by metadata before the similarity search (plus a new $startsWith operator) can return up to 5x more matching vectors.</li>
+</ul>
+
+<h3>Terraform and GitHub</h3>
+<ul>
+<li><a href="https://github.blog/changelog/2026-09-30-x25519-only-tls-ends-for-ghe-com-on-september-15">X25519-only TLS ends for GHE.com on October 7</a> &mdash; GitHub Enterprise Cloud with data residency stops accepting clients offering only X25519 for TLS key agreement; check client compatibility before the cutover.</li>
+<li><a href="https://github.blog/changelog/2026-09-30-opt-in-dist-tag-permissions-for-npm-trusted-publishing">Opt-in dist-tag permissions for npm trusted publishing</a> &mdash; npm trusted-publishing OIDC configs can now also manage dist-tags like promoting a release to latest, shrinking the credentials a publish workflow needs.</li>
+<li><a href="https://github.blog/changelog/2026-09-30-github-advanced-security-trials-for-github-team">GitHub Advanced Security trials for GitHub Team</a> &mdash; GitHub Team orgs can now self-serve trial Code Security and Secret Protection without a sales call.</li>
+</ul>
+
+<h3>AI and agents</h3>
+<ul>
+<li><a href="https://simonwillison.net/2026/Oct/1/matthew-green/">Quoting Matthew Green</a> &mdash; a sharp warning that sandboxing alone may not contain a "worm" that hijacks one AI agent and uses it to compromise the next, worth considering before scaling autonomous agent fleets.</li>
+</ul>
+
+<h3>Feeds that failed</h3>
+<p>uv, ruff, pydantic, FastAPI, httpx, Powertools, boto3, moto, Terraform, Terraform AWS provider, Strands Agents, MCP Python SDK, Anthropic Python SDK, Claude Code, and MCP specification releases (GitHub releases.atom, blocked this run); Anthropic news (rss.xml returned 404).</p>
+
+]]></description>
+    </item>
+  </channel>
+</rss>

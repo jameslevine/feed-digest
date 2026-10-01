@@ -11,19 +11,17 @@
       <outline text="Real Python" type="rss" xmlUrl="https://realpython.com/atom.xml" htmlUrl="https://realpython.com/"/>
     </outline>
     <outline text="Project dependencies (GitHub releases)">
-      <outline text="uv releases" type="rss" xmlUrl="https://github.com/astral-sh/uv/releases.atom" htmlUrl="https://github.com/astral-sh/uv/releases"/>
-      <outline text="ruff releases" type="rss" xmlUrl="https://github.com/astral-sh/ruff/releases.atom" htmlUrl="https://github.com/astral-sh/ruff/releases"/>
-      <outline text="pydantic releases" type="rss" xmlUrl="https://github.com/pydantic/pydantic/releases.atom" htmlUrl="https://github.com/pydantic/pydantic/releases"/>
-      <outline text="FastAPI releases" type="rss" xmlUrl="https://github.com/fastapi/fastapi/releases.atom" htmlUrl="https://github.com/fastapi/fastapi/releases"/>
-      <outline text="httpx releases" type="rss" xmlUrl="https://github.com/encode/httpx/releases.atom" htmlUrl="https://github.com/encode/httpx/releases"/>
-      <outline text="Powertools for AWS Lambda (Python) releases" type="rss" xmlUrl="https://github.com/aws-powertools/powertools-lambda-python/releases.atom" htmlUrl="https://github.com/aws-powertools/powertools-lambda-python/releases"/>
-      <outline text="boto3 releases" type="rss" xmlUrl="https://github.com/boto/boto3/releases.atom" htmlUrl="https://github.com/boto/boto3/releases"/>
-      <outline text="moto releases" type="rss" xmlUrl="https://github.com/getmoto/moto/releases.atom" htmlUrl="https://github.com/getmoto/moto/releases"/>
-      <outline text="Terraform releases" type="rss" xmlUrl="https://github.com/hashicorp/terraform/releases.atom" htmlUrl="https://github.com/hashicorp/terraform/releases"/>
-      <outline text="Terraform AWS provider releases" type="rss" xmlUrl="https://github.com/hashicorp/terraform-provider-aws/releases.atom" htmlUrl="https://github.com/hashicorp/terraform-provider-aws/releases"/>
-      <outline text="Strands Agents releases" type="rss" xmlUrl="https://github.com/strands-agents/sdk-python/releases.atom" htmlUrl="https://github.com/strands-agents/sdk-python/releases"/>
-      <outline text="MCP Python SDK releases" type="rss" xmlUrl="https://github.com/modelcontextprotocol/python-sdk/releases.atom" htmlUrl="https://github.com/modelcontextprotocol/python-sdk/releases"/>
-      <outline text="Anthropic Python SDK releases" type="rss" xmlUrl="https://github.com/anthropics/anthropic-sdk-python/releases.atom" htmlUrl="https://github.com/anthropics/anthropic-sdk-python/releases"/>
+      <outline text="uv releases (PyPI)" type="rss" xmlUrl="https://pypi.org/rss/project/uv/releases.xml" htmlUrl="https://pypi.org/project/uv/"/>
+      <outline text="ruff releases (PyPI)" type="rss" xmlUrl="https://pypi.org/rss/project/ruff/releases.xml" htmlUrl="https://pypi.org/project/ruff/"/>
+      <outline text="pydantic releases (PyPI)" type="rss" xmlUrl="https://pypi.org/rss/project/pydantic/releases.xml" htmlUrl="https://pypi.org/project/pydantic/"/>
+      <outline text="FastAPI releases (PyPI)" type="rss" xmlUrl="https://pypi.org/rss/project/fastapi/releases.xml" htmlUrl="https://pypi.org/project/fastapi/"/>
+      <outline text="httpx releases (PyPI)" type="rss" xmlUrl="https://pypi.org/rss/project/httpx/releases.xml" htmlUrl="https://pypi.org/project/httpx/"/>
+      <outline text="Powertools for AWS Lambda (Python) releases (PyPI)" type="rss" xmlUrl="https://pypi.org/rss/project/aws-lambda-powertools/releases.xml" htmlUrl="https://pypi.org/project/aws-lambda-powertools/"/>
+      <outline text="boto3 releases (PyPI)" type="rss" xmlUrl="https://pypi.org/rss/project/boto3/releases.xml" htmlUrl="https://pypi.org/project/boto3/"/>
+      <outline text="moto releases (PyPI)" type="rss" xmlUrl="https://pypi.org/rss/project/moto/releases.xml" htmlUrl="https://pypi.org/project/moto/"/>
+      <outline text="Strands Agents releases (PyPI)" type="rss" xmlUrl="https://pypi.org/rss/project/strands-agents/releases.xml" htmlUrl="https://pypi.org/project/strands-agents/"/>
+      <outline text="MCP Python SDK releases (PyPI)" type="rss" xmlUrl="https://pypi.org/rss/project/mcp/releases.xml" htmlUrl="https://pypi.org/project/mcp/"/>
+      <outline text="Anthropic Python SDK releases (PyPI)" type="rss" xmlUrl="https://pypi.org/rss/project/anthropic/releases.xml" htmlUrl="https://pypi.org/project/anthropic/"/>
     </outline>
     <outline text="AWS">
       <outline text="AWS What's New" type="rss" xmlUrl="https://aws.amazon.com/about-aws/whats-new/recent/feed/" htmlUrl="https://aws.amazon.com/new/"/>
@@ -40,9 +38,6 @@
     </outline>
     <outline text="AI and agents">
       <outline text="Simon Willison" type="rss" xmlUrl="https://simonwillison.net/atom/everything/" htmlUrl="https://simonwillison.net/"/>
-      <outline text="Anthropic news" type="rss" xmlUrl="https://www.anthropic.com/rss.xml" htmlUrl="https://www.anthropic.com/news"/>
-      <outline text="Claude Code releases" type="rss" xmlUrl="https://github.com/anthropics/claude-code/releases.atom" htmlUrl="https://github.com/anthropics/claude-code/releases"/>
-      <outline text="MCP specification changes" type="rss" xmlUrl="https://github.com/modelcontextprotocol/modelcontextprotocol/releases.atom" htmlUrl="https://github.com/modelcontextprotocol/modelcontextprotocol/releases"/>
     </outline>
   </body>
 </opml>

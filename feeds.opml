@@ -7,6 +7,7 @@
       <outline text="Discourse: PEPs" type="rss" xmlUrl="https://discuss.python.org/c/peps/19.rss" htmlUrl="https://discuss.python.org/c/peps/19"/>
       <outline text="Python Insider (releases)" type="rss" xmlUrl="https://blog.python.org/feeds/posts/default" htmlUrl="https://blog.python.org/"/>
       <outline text="Real Python" type="rss" xmlUrl="https://realpython.com/atom.xml" htmlUrl="https://realpython.com/"/>
+      <outline text="Astral blog (uv, ruff)" type="rss" xmlUrl="https://astral.sh/blog/rss.xml" htmlUrl="https://astral.sh/blog"/>
       <outline text="uv (PyPI)" type="rss" xmlUrl="https://pypi.org/rss/project/uv/releases.xml" htmlUrl="https://pypi.org/project/uv/"/>
       <outline text="ruff (PyPI)" type="rss" xmlUrl="https://pypi.org/rss/project/ruff/releases.xml" htmlUrl="https://pypi.org/project/ruff/"/>
       <outline text="pydantic (PyPI)" type="rss" xmlUrl="https://pypi.org/rss/project/pydantic/releases.xml" htmlUrl="https://pypi.org/project/pydantic/"/>
@@ -17,31 +18,88 @@
     <outline text="JavaScript and TypeScript">
       <outline text="Node.js blog" type="rss" xmlUrl="https://nodejs.org/en/feed/blog.xml" htmlUrl="https://nodejs.org/en/blog"/>
       <outline text="TypeScript blog" type="rss" xmlUrl="https://devblogs.microsoft.com/typescript/feed/" htmlUrl="https://devblogs.microsoft.com/typescript/"/>
-      <outline text="React blog" type="rss" xmlUrl="https://react.dev/rss.xml" htmlUrl="https://react.dev/blog"/>
       <outline text="JavaScript Weekly" type="rss" xmlUrl="https://javascriptweekly.com/rss/" htmlUrl="https://javascriptweekly.com/"/>
+      <outline text="Node Weekly" type="rss" xmlUrl="https://nodeweekly.com/rss/" htmlUrl="https://nodeweekly.com/"/>
+      <outline text="2ality (Axel Rauschmayer)" type="rss" xmlUrl="https://2ality.com/feeds/posts.atom" htmlUrl="https://2ality.com/"/>
+      <outline text="web.dev" type="rss" xmlUrl="https://web.dev/feed.xml" htmlUrl="https://web.dev/"/>
+      <outline text="Deno blog" type="rss" xmlUrl="https://deno.com/feed" htmlUrl="https://deno.com/blog"/>
+      <outline text="Bun blog" type="rss" xmlUrl="https://bun.sh/rss.xml" htmlUrl="https://bun.sh/blog"/>
+    </outline>
+    <outline text="React">
+      <outline text="React blog" type="rss" xmlUrl="https://react.dev/rss.xml" htmlUrl="https://react.dev/blog"/>
+      <outline text="React Status (weekly)" type="rss" xmlUrl="https://react.statuscode.com/rss" htmlUrl="https://react.statuscode.com/"/>
+      <outline text="Next.js blog" type="rss" xmlUrl="https://nextjs.org/feed.xml" htmlUrl="https://nextjs.org/blog"/>
+      <outline text="Overreacted (Dan Abramov)" type="rss" xmlUrl="https://overreacted.io/rss.xml" htmlUrl="https://overreacted.io/"/>
+      <outline text="Josh Comeau" type="rss" xmlUrl="https://www.joshwcomeau.com/rss.xml" htmlUrl="https://www.joshwcomeau.com/"/>
+      <outline text="Kent C. Dodds" type="rss" xmlUrl="https://kentcdodds.com/blog/rss.xml" htmlUrl="https://kentcdodds.com/blog"/>
+      <outline text="TanStack blog" type="rss" xmlUrl="https://tanstack.com/blog/rss.xml" htmlUrl="https://tanstack.com/blog"/>
+    </outline>
+    <outline text="Rust">
+      <outline text="Rust blog (releases, announcements)" type="rss" xmlUrl="https://blog.rust-lang.org/feed.xml" htmlUrl="https://blog.rust-lang.org/"/>
+      <outline text="Inside Rust (project internals)" type="rss" xmlUrl="https://blog.rust-lang.org/inside-rust/feed.xml" htmlUrl="https://blog.rust-lang.org/inside-rust/"/>
+      <outline text="This Week in Rust" type="rss" xmlUrl="https://this-week-in-rust.org/rss.xml" htmlUrl="https://this-week-in-rust.org/"/>
+      <outline text="Rust users forum: announcements" type="rss" xmlUrl="https://users.rust-lang.org/c/announcements/6.rss" htmlUrl="https://users.rust-lang.org/c/announcements"/>
+      <outline text="Tokio blog" type="rss" xmlUrl="https://tokio.rs/blog/feed.xml" htmlUrl="https://tokio.rs/blog"/>
+      <outline text="fasterthanlime" type="rss" xmlUrl="https://fasterthanli.me/index.xml" htmlUrl="https://fasterthanli.me/"/>
+    </outline>
+    <outline text="Go">
+      <outline text="Go blog" type="rss" xmlUrl="https://go.dev/blog/feed.atom" htmlUrl="https://go.dev/blog"/>
+      <outline text="Golang Weekly" type="rss" xmlUrl="https://golangweekly.com/rss/" htmlUrl="https://golangweekly.com/"/>
+      <outline text="Dave Cheney" type="rss" xmlUrl="https://dave.cheney.net/feed" htmlUrl="https://dave.cheney.net/"/>
+      <outline text="Three Dots Labs" type="rss" xmlUrl="https://threedots.tech/index.xml" htmlUrl="https://threedots.tech/"/>
+      <outline text="Go Time podcast" type="rss" xmlUrl="https://changelog.com/gotime/feed" htmlUrl="https://changelog.com/gotime"/>
+    </outline>
+    <outline text="Java">
+      <outline text="Inside Java (OpenJDK team)" type="rss" xmlUrl="https://inside.java/feed.xml" htmlUrl="https://inside.java/"/>
+      <outline text="Spring blog" type="rss" xmlUrl="https://spring.io/blog.atom" htmlUrl="https://spring.io/blog"/>
+      <outline text="Baeldung (incl. Java Weekly)" type="rss" xmlUrl="https://feeds.feedblitz.com/baeldung" htmlUrl="https://www.baeldung.com/"/>
+      <outline text="InfoQ Java" type="rss" xmlUrl="https://feed.infoq.com/java/" htmlUrl="https://www.infoq.com/java/"/>
+      <outline text="JetBrains Java annotated monthly" type="rss" xmlUrl="https://blog.jetbrains.com/idea/feed/" htmlUrl="https://blog.jetbrains.com/idea/"/>
+      <outline text="Oracle Java Magazine" type="rss" xmlUrl="https://blogs.oracle.com/javamagazine/rss" htmlUrl="https://blogs.oracle.com/javamagazine/"/>
     </outline>
     <outline text="IaC and DevOps">
       <outline text="HashiCorp blog" type="rss" xmlUrl="https://www.hashicorp.com/blog/feed.xml" htmlUrl="https://www.hashicorp.com/blog"/>
+      <outline text="OpenTofu blog" type="rss" xmlUrl="https://opentofu.org/blog/rss.xml" htmlUrl="https://opentofu.org/blog"/>
       <outline text="GitHub Changelog" type="rss" xmlUrl="https://github.blog/changelog/feed/" htmlUrl="https://github.blog/changelog/"/>
       <outline text="GitHub Blog" type="rss" xmlUrl="https://github.blog/feed/" htmlUrl="https://github.blog/"/>
+      <outline text="AWS DevOps and Developer Productivity Blog" type="rss" xmlUrl="https://aws.amazon.com/blogs/devops/feed/" htmlUrl="https://aws.amazon.com/blogs/devops/"/>
+      <outline text="AWS Infrastructure and Automation Blog" type="rss" xmlUrl="https://aws.amazon.com/blogs/infrastructure-and-automation/feed/" htmlUrl="https://aws.amazon.com/blogs/infrastructure-and-automation/"/>
+      <outline text="Platform Engineering" type="rss" xmlUrl="https://platformengineering.org/blog/rss" htmlUrl="https://platformengineering.org/blog"/>
     </outline>
     <outline text="AWS">
       <outline text="AWS What's New" type="rss" xmlUrl="https://aws.amazon.com/about-aws/whats-new/recent/feed/" htmlUrl="https://aws.amazon.com/new/"/>
+      <outline text="AWS News Blog (Jeff Barr)" type="rss" xmlUrl="https://aws.amazon.com/blogs/aws/feed/" htmlUrl="https://aws.amazon.com/blogs/aws/"/>
       <outline text="AWS Compute Blog" type="rss" xmlUrl="https://aws.amazon.com/blogs/compute/feed/" htmlUrl="https://aws.amazon.com/blogs/compute/"/>
-      <outline text="AWS Machine Learning Blog" type="rss" xmlUrl="https://aws.amazon.com/blogs/machine-learning/feed/" htmlUrl="https://aws.amazon.com/blogs/machine-learning/"/>
+      <outline text="AWS Architecture Blog" type="rss" xmlUrl="https://aws.amazon.com/blogs/architecture/feed/" htmlUrl="https://aws.amazon.com/blogs/architecture/"/>
+      <outline text="AWS Database Blog (DynamoDB)" type="rss" xmlUrl="https://aws.amazon.com/blogs/database/feed/" htmlUrl="https://aws.amazon.com/blogs/database/"/>
+      <outline text="AWS Cloud Operations Blog (Organizations, Control Tower)" type="rss" xmlUrl="https://aws.amazon.com/blogs/mt/feed/" htmlUrl="https://aws.amazon.com/blogs/mt/"/>
       <outline text="AWS Security Blog" type="rss" xmlUrl="https://aws.amazon.com/blogs/security/feed/" htmlUrl="https://aws.amazon.com/blogs/security/"/>
+      <outline text="AWS Security Bulletins" type="rss" xmlUrl="https://aws.amazon.com/security/security-bulletins/rss/feed/" htmlUrl="https://aws.amazon.com/security/security-bulletins/"/>
+      <outline text="AWS Machine Learning Blog (Bedrock)" type="rss" xmlUrl="https://aws.amazon.com/blogs/machine-learning/feed/" htmlUrl="https://aws.amazon.com/blogs/machine-learning/"/>
+      <outline text="AWS Open Source Blog" type="rss" xmlUrl="https://aws.amazon.com/blogs/opensource/feed/" htmlUrl="https://aws.amazon.com/blogs/opensource/"/>
       <outline text="Last Week in AWS" type="rss" xmlUrl="https://www.lastweekinaws.com/feed/" htmlUrl="https://www.lastweekinaws.com/"/>
       <outline text="Yan Cui (theburningmonk)" type="rss" xmlUrl="https://theburningmonk.com/feed/" htmlUrl="https://theburningmonk.com/"/>
+      <outline text="Ran the Builder (Python serverless)" type="rss" xmlUrl="https://www.ranthebuilder.cloud/blog-feed.xml" htmlUrl="https://www.ranthebuilder.cloud/"/>
+      <outline text="All Things Distributed (Werner Vogels)" type="rss" xmlUrl="https://www.allthingsdistributed.com/atom.xml" htmlUrl="https://www.allthingsdistributed.com/"/>
       <outline text="Powertools for AWS Lambda (Python) (PyPI)" type="rss" xmlUrl="https://pypi.org/rss/project/aws-lambda-powertools/releases.xml" htmlUrl="https://pypi.org/project/aws-lambda-powertools/"/>
       <outline text="boto3 (PyPI)" type="rss" xmlUrl="https://pypi.org/rss/project/boto3/releases.xml" htmlUrl="https://pypi.org/project/boto3/"/>
       <outline text="moto (PyPI)" type="rss" xmlUrl="https://pypi.org/rss/project/moto/releases.xml" htmlUrl="https://pypi.org/project/moto/"/>
     </outline>
     <outline text="AI and agents">
       <outline text="Simon Willison" type="rss" xmlUrl="https://simonwillison.net/atom/everything/" htmlUrl="https://simonwillison.net/"/>
+      <outline text="Anthropic engineering blog" type="rss" xmlUrl="https://www.anthropic.com/engineering/rss.xml" htmlUrl="https://www.anthropic.com/engineering"/>
+      <outline text="Latent Space" type="rss" xmlUrl="https://www.latent.space/feed" htmlUrl="https://www.latent.space/"/>
+      <outline text="Hamel Husain" type="rss" xmlUrl="https://hamel.dev/index.xml" htmlUrl="https://hamel.dev/"/>
       <outline text="Anthropic Python SDK (PyPI)" type="rss" xmlUrl="https://pypi.org/rss/project/anthropic/releases.xml" htmlUrl="https://pypi.org/project/anthropic/"/>
+      <outline text="Claude Agent SDK (Python) (PyPI)" type="rss" xmlUrl="https://pypi.org/rss/project/claude-agent-sdk/releases.xml" htmlUrl="https://pypi.org/project/claude-agent-sdk/"/>
       <outline text="MCP Python SDK (PyPI)" type="rss" xmlUrl="https://pypi.org/rss/project/mcp/releases.xml" htmlUrl="https://pypi.org/project/mcp/"/>
       <outline text="Strands Agents (PyPI)" type="rss" xmlUrl="https://pypi.org/rss/project/strands-agents/releases.xml" htmlUrl="https://pypi.org/project/strands-agents/"/>
-      <outline text="Claude Agent SDK (Python) (PyPI)" type="rss" xmlUrl="https://pypi.org/rss/project/claude-agent-sdk/releases.xml" htmlUrl="https://pypi.org/project/claude-agent-sdk/"/>
+    </outline>
+    <outline text="Engineering practice">
+      <outline text="The Pragmatic Engineer" type="rss" xmlUrl="https://newsletter.pragmaticengineer.com/feed" htmlUrl="https://newsletter.pragmaticengineer.com/"/>
+      <outline text="Martin Fowler" type="rss" xmlUrl="https://martinfowler.com/feed.atom" htmlUrl="https://martinfowler.com/"/>
+      <outline text="Increment / Stripe engineering" type="rss" xmlUrl="https://stripe.com/blog/feed.rss" htmlUrl="https://stripe.com/blog/engineering"/>
+      <outline text="Google Testing Blog" type="rss" xmlUrl="https://testing.googleblog.com/feeds/posts/default" htmlUrl="https://testing.googleblog.com/"/>
     </outline>
   </body>
 </opml>

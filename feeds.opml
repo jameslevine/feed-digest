@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<opml version="2.0">
+  <head>
+    <title>Superhighway ramp-up feeds</title>
+  </head>
+  <body>
+    <outline text="Python">
+      <outline text="PEPs (new and updated)" type="rss" xmlUrl="https://peps.python.org/peps.rss" htmlUrl="https://peps.python.org/"/>
+      <outline text="Discourse: PEPs category" type="rss" xmlUrl="https://discuss.python.org/c/peps/19.rss" htmlUrl="https://discuss.python.org/c/peps/19"/>
+      <outline text="Python Insider (releases)" type="rss" xmlUrl="https://blog.python.org/feeds/posts/default" htmlUrl="https://blog.python.org/"/>
+      <outline text="Real Python" type="rss" xmlUrl="https://realpython.com/atom.xml" htmlUrl="https://realpython.com/"/>
+    </outline>
+    <outline text="Project dependencies (GitHub releases)">
+      <outline text="uv releases" type="rss" xmlUrl="https://github.com/astral-sh/uv/releases.atom" htmlUrl="https://github.com/astral-sh/uv/releases"/>
+      <outline text="ruff releases" type="rss" xmlUrl="https://github.com/astral-sh/ruff/releases.atom" htmlUrl="https://github.com/astral-sh/ruff/releases"/>
+      <outline text="pydantic releases" type="rss" xmlUrl="https://github.com/pydantic/pydantic/releases.atom" htmlUrl="https://github.com/pydantic/pydantic/releases"/>
+      <outline text="FastAPI releases" type="rss" xmlUrl="https://github.com/fastapi/fastapi/releases.atom" htmlUrl="https://github.com/fastapi/fastapi/releases"/>
+      <outline text="httpx releases" type="rss" xmlUrl="https://github.com/encode/httpx/releases.atom" htmlUrl="https://github.com/encode/httpx/releases"/>
+      <outline text="Powertools for AWS Lambda (Python) releases" type="rss" xmlUrl="https://github.com/aws-powertools/powertools-lambda-python/releases.atom" htmlUrl="https://github.com/aws-powertools/powertools-lambda-python/releases"/>
+      <outline text="boto3 releases" type="rss" xmlUrl="https://github.com/boto/boto3/releases.atom" htmlUrl="https://github.com/boto/boto3/releases"/>
+      <outline text="moto releases" type="rss" xmlUrl="https://github.com/getmoto/moto/releases.atom" htmlUrl="https://github.com/getmoto/moto/releases"/>
+      <outline text="Terraform releases" type="rss" xmlUrl="https://github.com/hashicorp/terraform/releases.atom" htmlUrl="https://github.com/hashicorp/terraform/releases"/>
+      <outline text="Terraform AWS provider releases" type="rss" xmlUrl="https://github.com/hashicorp/terraform-provider-aws/releases.atom" htmlUrl="https://github.com/hashicorp/terraform-provider-aws/releases"/>
+      <outline text="Strands Agents releases" type="rss" xmlUrl="https://github.com/strands-agents/sdk-python/releases.atom" htmlUrl="https://github.com/strands-agents/sdk-python/releases"/>
+      <outline text="MCP Python SDK releases" type="rss" xmlUrl="https://github.com/modelcontextprotocol/python-sdk/releases.atom" htmlUrl="https://github.com/modelcontextprotocol/python-sdk/releases"/>
+      <outline text="Anthropic Python SDK releases" type="rss" xmlUrl="https://github.com/anthropics/anthropic-sdk-python/releases.atom" htmlUrl="https://github.com/anthropics/anthropic-sdk-python/releases"/>
+    </outline>
+    <outline text="AWS">
+      <outline text="AWS What's New" type="rss" xmlUrl="https://aws.amazon.com/about-aws/whats-new/recent/feed/" htmlUrl="https://aws.amazon.com/new/"/>
+      <outline text="AWS Compute Blog" type="rss" xmlUrl="https://aws.amazon.com/blogs/compute/feed/" htmlUrl="https://aws.amazon.com/blogs/compute/"/>
+      <outline text="AWS Machine Learning Blog" type="rss" xmlUrl="https://aws.amazon.com/blogs/machine-learning/feed/" htmlUrl="https://aws.amazon.com/blogs/machine-learning/"/>
+      <outline text="AWS Security Blog" type="rss" xmlUrl="https://aws.amazon.com/blogs/security/feed/" htmlUrl="https://aws.amazon.com/blogs/security/"/>
+      <outline text="Last Week in AWS" type="rss" xmlUrl="https://www.lastweekinaws.com/feed/" htmlUrl="https://www.lastweekinaws.com/"/>
+      <outline text="Yan Cui (theburningmonk)" type="rss" xmlUrl="https://theburningmonk.com/feed/" htmlUrl="https://theburningmonk.com/"/>
+    </outline>
+    <outline text="Terraform and GitHub">
+      <outline text="HashiCorp blog" type="rss" xmlUrl="https://www.hashicorp.com/blog/feed.xml" htmlUrl="https://www.hashicorp.com/blog"/>
+      <outline text="GitHub Changelog" type="rss" xmlUrl="https://github.blog/changelog/feed/" htmlUrl="https://github.blog/changelog/"/>
+      <outline text="GitHub Blog" type="rss" xmlUrl="https://github.blog/feed/" htmlUrl="https://github.blog/"/>
+    </outline>
+    <outline text="AI and agents">
+      <outline text="Simon Willison" type="rss" xmlUrl="https://simonwillison.net/atom/everything/" htmlUrl="https://simonwillison.net/"/>
+      <outline text="Anthropic news" type="rss" xmlUrl="https://www.anthropic.com/rss.xml" htmlUrl="https://www.anthropic.com/news"/>
+      <outline text="Claude Code releases" type="rss" xmlUrl="https://github.com/anthropics/claude-code/releases.atom" htmlUrl="https://github.com/anthropics/claude-code/releases"/>
+      <outline text="MCP specification changes" type="rss" xmlUrl="https://github.com/modelcontextprotocol/modelcontextprotocol/releases.atom" htmlUrl="https://github.com/modelcontextprotocol/modelcontextprotocol/releases"/>
+    </outline>
+  </body>
+</opml>

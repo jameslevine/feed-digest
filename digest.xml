@@ -4,7 +4,111 @@
     <title>James's feed digest</title>
     <link>https://github.com/jameslevine/feed-digest</link>
     <description>Daily AI summary of my RSS subscriptions</description>
-    <lastBuildDate>Thu, 01 Oct 2026 14:07:45 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 02 Oct 2026 06:14:38 +0000</lastBuildDate>
+    <item>
+      <title>Digest for 2026-10-02</title>
+      <link>https://github.com/jameslevine/feed-digest/blob/main/digests/2026-10-02.html</link>
+      <guid isPermaLink="false">Digest for 2026-10-02</guid>
+      <pubDate>Fri, 02 Oct 2026 06:14:38 +0000</pubDate>
+      <description><![CDATA[
+<h2>Your stack</h2>
+
+<h4>Amazon Bedrock</h4>
+<ul>
+<li><a href="https://aws.amazon.com/blogs/machine-learning/building-ambient-agents-with-amazon-bedrock-agentcore-from-event-driven-signals-to-human-in-the-loop-workflows/">Building ambient agents with Bedrock AgentCore</a> shows a framework-agnostic pattern for event-driven agents (SQS, Lambda, DynamoDB) with a human-in-the-loop <code>ask_human</code> tool &mdash; a solid reference if you're wiring agents to react to events instead of chat prompts.</li>
+<li><a href="https://aws.amazon.com/blogs/machine-learning/scaling-cloud-migrations-with-agentic-ai-on-amazon-bedrock-agentcore/">AWS Professional Services used AgentCore</a> to automate enterprise cloud migrations end to end, including IaC generation &mdash; a bigger data point for agentic IaC workflows.</li>
+</ul>
+
+<h4>Claude</h4>
+<ul>
+<li><a href="https://aws.amazon.com/blogs/machine-learning/implementing-multi-environment-access-for-claude-platform-on-aws/">Implementing multi-environment access for Claude Platform on AWS</a> covers cross-account SigV4, workspace-scoped API keys and OIDC federation for external environments &mdash; directly useful if you run Claude from more than one AWS account.</li>
+</ul>
+
+<h4>MCP</h4>
+<ul>
+<li><a href="https://aws.amazon.com/security/security-bulletins/rss/2026-121-aws/">CVE-2026-97662</a>: argument injection in AWS's own security-agent-mcp-server diff scan &mdash; worth checking if you run that tool, and a reminder to treat MCP server inputs as untrusted.</li>
+</ul>
+
+<h4>Powertools for AWS Lambda</h4>
+<ul>
+<li><a href="https://aws.amazon.com/security/security-bulletins/rss/2026-123-aws/">CVE-2026-104002</a>: the data masking utility in Powertools for AWS Lambda (Python) fails open on errors instead of masking &mdash; update if you rely on it for PII redaction in logs.</li>
+</ul>
+
+<h4>DynamoDB</h4>
+<ul>
+<li>DynamoDB <a href="https://aws.amazon.com/blogs/database/introducing-filtered-export-from-amazon-dynamodb-to-amazon-s3/">now supports filtered export to S3</a>, so you can export a subset of a table instead of the whole thing.</li>
+<li><a href="https://aws.amazon.com/about-aws/whats-new/2026/09/amazon-dynamodb-accelerator/">DAX is now available in 17 more Regions</a>.</li>
+</ul>
+
+<h4>GitHub Actions</h4>
+<ul>
+<li><a href="https://github.blog/changelog/2026-10-01-github-actions-macos-14-runner-image-retirement">macOS 14 runner images are being retired</a> &mdash; move pinned workflows to macOS 15 before the cutoff.</li>
+<li><a href="https://github.blog/changelog/2026-10-01-actions-retention-now-covers-checks-runs-and-statuses">Actions retention settings now cover checks, runs and statuses</a>, not just logs and artifacts.</li>
+</ul>
+
+<h4>AWS Organizations and Control Tower</h4>
+<ul>
+<li><a href="https://aws.amazon.com/about-aws/whats-new/2026/10/aws-iam-identity-center-extends-multi-region-support-to-more-aws-regions">IAM Identity Center now replicates to more opt-in Regions</a>, including GovCloud and China.</li>
+<li><a href="https://aws.amazon.com/about-aws/whats-new/2026/10/guardduty-org-enablement-policies/">GuardDuty now supports AWS Organizations declarative policies</a> for centrally enabling threat detection org-wide.</li>
+</ul>
+
+<h4>boto3</h4>
+<ul>
+<li><a href="https://pypi.org/project/boto3/1.43.107/">boto3 1.43.107</a> is out &mdash; routine SDK bump.</li>
+</ul>
+
+<h4>Security (AI and cloud)</h4>
+<ul>
+<li>GitHub shipped <a href="https://github.blog/changelog/2026-10-01-rate-limits-for-private-vulnerability-reports">rate limits</a> and <a href="https://github.blog/changelog/2026-10-01-structured-forms-for-private-vulnerability-reports">structured forms</a> for private vulnerability reports, tightening up the coordinated-disclosure flow on repos.</li>
+<li>AWS Secrets Manager's console now gives <a href="https://aws.amazon.com/about-aws/whats-new/2026/10/aws-secrets-manager-security-posture-recommendations">actionable security posture recommendations</a> per secret.</li>
+<li><a href="https://aws.amazon.com/about-aws/whats-new/2026/10/aws-security-hub-remediation-plans/">AWS Security Hub now groups related exposures into remediation plans</a> by root cause instead of one finding at a time.</li>
+<li><a href="https://aws.amazon.com/about-aws/whats-new/2026/09/aws-continuum-penetration/">AWS Continuum for Penetration Testing</a> expanded to 6 more Regions.</li>
+<li>A <a href="https://thehackernews.com/2026/10/critical-fortimail-zero-day-flaw.html">critical FortiMail zero-day</a> is under active exploitation and allows unauthenticated arbitrary file writes &mdash; patch if you run FortiMail.</li>
+</ul>
+
+<h3>Python</h3>
+<ul>
+<li><a href="https://discuss.python.org/t/pep-818-adding-the-core-of-the-pyodide-foreign-function-interface-to-python-2/109311">PEP 818</a> (Pyodide FFI core for Python) is back up for discussion after a round of trims and renames.</li>
+</ul>
+
+<h3>IaC and DevOps</h3>
+<ul>
+<li><a href="https://github.blog/changelog/2026-10-01-github-copilot-can-now-interact-with-desktop-apps">GitHub Copilot can now interact with desktop apps via computer use</a>, in public preview on macOS and Windows.</li>
+<li>VS Code's <a href="https://github.blog/changelog/2026-10-01-github-copilot-in-vs-code-september-2026-releases">September Copilot releases</a> add automations for repeatable tasks and agent-assisted PR merges.</li>
+<li><a href="https://github.blog/changelog/2026-10-01-code-coverage-uploads-no-longer-fail-ci-for-new-branches">Code coverage uploads no longer fail CI</a> on branches without an open PR yet.</li>
+<li><a href="https://github.blog/changelog/2026-10-01-scheduled-code-scanning-skips-inactive-repositories">Scheduled code scanning now skips inactive repos</a>, only running after real pushes or PRs.</li>
+</ul>
+
+<h3>AWS</h3>
+<ul>
+<li><a href="https://aws.amazon.com/blogs/aws/announcing-aws-well-architected-agent-an-ai-powered-intelligence-to-optimize-your-cloud-environment-preview/">AWS Well-Architected Agent</a> is in preview &mdash; an AI service that reviews your environment and proposes ready-to-apply fixes across cost, security, performance and resilience.</li>
+<li><a href="https://aws.amazon.com/about-aws/whats-new/2026/10/aws-security-hub-runtime-monitoring/">GuardDuty Runtime Monitoring</a> is now bundled into the Security Hub Threat Analytics plan.</li>
+<li><a href="https://aws.amazon.com/about-aws/whats-new/2026/10/route-53-dns-analytics-insights/">Route 53 Global Resolver and DNS Firewall</a> gained native CloudWatch DNS analytics.</li>
+<li><a href="https://aws.amazon.com/blogs/mt/share-systems-manager-documents-across-your-aws-organization-with-aws-ram/">Systems Manager documents can now be shared org-wide via AWS RAM</a> instead of per-account.</li>
+</ul>
+
+<h3>Security</h3>
+<ul>
+<li>A <a href="https://thehackernews.com/2026/10/wordpress-backdoor-rebuilds-itself.html">self-healing WordPress backdoor</a> persists across files, the database and shared memory, re-infecting the site after cleanup.</li>
+<li>This week's <a href="https://tldrsec.com/p/tldr-sec-348">tl;dr sec roundup</a> covers Google's PageBreak web app scanner and Perplexity's agent-security tooling.</li>
+</ul>
+
+<h3>AI security</h3>
+<ul>
+<li>Daniel Miessler argues <a href="https://danielmiessler.com/blog/agents-should-pay-creators?utm_source=rss&amp;utm_medium=feed&amp;utm_campaign=website">AI agents should pay the people whose work they draw on</a>, a provocation worth a read as agentic workflows scale up.</li>
+</ul>
+
+<h3>Engineering practice</h3>
+<ul>
+<li>The Pragmatic Engineer <a href="https://newsletter.pragmaticengineer.com/p/the-pulse-firebases-global-outage">on Firebase's global outage and weak incident response</a>, plus notes on OpenAI's AWS-like platform ambitions.</li>
+<li>Stripe explains <a href="https://stripe.com/blog/where-pricing-is-headed">why it tried to kill token-based billing and kept it anyway</a> &mdash; a useful read if you price an API or agent product by usage.</li>
+</ul>
+
+<h3>Feeds that failed</h3>
+<p>CISA advisories (malformed XML).</p>
+
+]]></description>
+    </item>
     <item>
       <title>Digest for 2026-10-01</title>
       <link>https://github.com/jameslevine/feed-digest/blob/main/digests/2026-10-01.html</link>

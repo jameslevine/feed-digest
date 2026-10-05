@@ -4,7 +4,132 @@
     <title>James's feed digest</title>
     <link>https://github.com/jameslevine/feed-digest</link>
     <description>Daily AI summary of my RSS subscriptions</description>
-    <lastBuildDate>Fri, 02 Oct 2026 06:14:38 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 05 Oct 2026 06:12:53 +0000</lastBuildDate>
+    <item>
+      <title>Digest for 2026-10-05</title>
+      <link>https://github.com/jameslevine/feed-digest/blob/main/digests/2026-10-05.html</link>
+      <guid isPermaLink="false">Digest for 2026-10-05</guid>
+      <pubDate>Mon, 05 Oct 2026 06:12:53 +0000</pubDate>
+      <description><![CDATA[
+<!DOCTYPE html>
+<html><head><meta charset="utf-8"><title>Digest for 2026-10-05</title></head><body>
+<h2>Your stack</h2>
+
+<h4>Python 3.14</h4>
+<ul>
+<li><a href="https://blog.python.org/2026/10/python-3150-rc3/">Python 3.15.0 release candidate 3</a> is out &mdash; a late "surprise" rc3; <a href="https://realpython.com/podcasts/rpp/313/">Real Python's podcast walks through what's new</a> if you want the highlights before upgrading.</li>
+</ul>
+
+<h4>uv</h4>
+<ul>
+<li><a href="https://pypi.org/project/uv/0.12.23/">uv 0.12.23</a> is out &mdash; routine point release.</li>
+</ul>
+
+<h4>boto3</h4>
+<ul>
+<li><a href="https://pypi.org/project/boto3/1.43.108/">boto3 1.43.108</a> is out &mdash; routine SDK bump.</li>
+</ul>
+
+<h4>EventBridge</h4>
+<ul>
+<li><a href="https://aws.amazon.com/blogs/devops/integrate-aws-devops-agent-with-third-party-tools-using-amazon-eventbridge/">AWS DevOps Agent can now push investigation events to Jira, ServiceNow or PagerDuty</a> via EventBridge and Lambda, with a ready-to-deploy CDK solution.</li>
+</ul>
+
+<h4>Amazon Bedrock</h4>
+<ul>
+<li><a href="https://aws.amazon.com/blogs/devops/closed-loop-incident-response-connect-aws-devops-agent-to-opensearch/">AWS DevOps Agent can now connect to OpenSearch via MCP</a> for closed-loop incident response, with Bedrock AgentCore as one of three MCP hosting options.</li>
+<li><a href="https://aws.amazon.com/about-aws/whats-new/2026/10/agentcore-gateway-private-tls-vpc/">AgentCore Gateway now supports private-CA TLS certificates</a> on MCP, OpenAPI and HTTP proxy targets &mdash; useful if your gateway targets sit behind internal certs.</li>
+</ul>
+
+<h4>MCP</h4>
+<ul>
+<li><a href="https://aws.amazon.com/about-aws/whats-new/2026/10/aws-mcp-server-six-additional-regions/">The AWS MCP Server is now available in six more Regions</a> (Singapore, Sydney, Tokyo, Ireland, London, Oregon).</li>
+<li><a href="https://aws.amazon.com/blogs/machine-learning/sweep-thousands-of-leases-for-compliance-using-amazon-quick-and-the-adjudicated-query-pattern/">The "Adjudicated Query" pattern pairs a chat agent with a bounded MCP server</a> over a rules engine for defensible compliance answers &mdash; worth a look if you need provably-correct agent output.</li>
+<li><a href="https://pypi.org/project/mcp/2.3.0/">MCP Python SDK 2.3.0</a> is out.</li>
+<li><a href="https://aws.amazon.com/security/security-bulletins/rss/2026-124-aws/">Loom for AWS, an open-source agent orchestration platform, patched three CVEs</a>: an auth bypass giving full admin over the agent control plane, plus two SSRF-style flaws letting an <code>mcp:write</code>-scoped user steal OAuth2 tokens or reach internal endpoints. Upgrade to 1.7.0 if you run it.</li>
+<li><a href="https://snyk.io/blog/evo-ads-govern-agent-behavior-ga/">Snyk's "Govern Agent Behavior" is now GA</a>, letting you discover, approve and block MCP server usage across coding agents.</li>
+</ul>
+
+<h4>Claude</h4>
+<ul>
+<li><a href="https://aws.amazon.com/blogs/machine-learning/add-secure-web-search-to-claude-desktop-with-amazon-bedrock-agentcore/">Claude Desktop on Bedrock can now get live web search</a> via a Bedrock AgentCore Gateway with JWT-based auth, working around its usual knowledge-cutoff limit.</li>
+</ul>
+
+<h4>Security (AI and cloud)</h4>
+<ul>
+<li><a href="https://aws.amazon.com/security/security-bulletins/rss/2026-120-aws/">CVE-2026-103505</a>: mount-option injection in the Amazon EFS CSI Driver &mdash; check your EKS/K8s clusters if you mount EFS volumes.</li>
+<li><a href="https://aws.amazon.com/security/security-bulletins/rss/2026-125-aws/">CVE-2026-104019</a>: OS command injection in the SageMaker Unified Studio Space startup script.</li>
+<li><a href="https://www.wiz.io/blog/blue-agent-data-exfiltration-investigation">Wiz's "Blue Agent" traced a multi-platform data-exfiltration attack</a> across AWS and GitHub in minutes, from compromised credentials to stolen source and exfil tooling.</li>
+<li><a href="https://snyk.io/blog/ai-coding-agents-broken-access-control/">Why AI coding agents keep writing broken access control</a> &mdash; authorization bugs that compile and pass review while leaking one tenant's data to another.</li>
+<li><a href="https://embracethered.com/blog/posts/2026/from-select-to-sysadmin-sql-copilot-bluehat-asia/">CVE-2026-65669</a>: a prompt-injection chain in Microsoft's Copilot for SQL Server Management Studio escalated from SELECT to SYSADMIN.</li>
+</ul>
+
+<h3>Rust</h3>
+<ul>
+<li><a href="https://blog.rust-lang.org/2026/10/02/demoting-i686-windows-targets-to-std-only/">Rust 1.100 demotes 32-bit Windows targets to std-only</a> &mdash; host tools (the compiler) will no longer ship for i686-pc-windows-msvc/gnu, only the standard library.</li>
+<li><a href="https://blog.rust-lang.org/inside-rust/2026/10/02/generic-const-args-and-you/">Generic Const Args and You</a> digs into the project's plan for more flexible const generics.</li>
+<li><a href="https://users.rust-lang.org/t/ruxen-0-1-0-an-experimental-nginx-compatible-http-server-in-rust/142797">Ruxen 0.1.0</a>, an experimental nginx-compatible HTTP server and reverse proxy written from scratch in Rust.</li>
+</ul>
+
+<h3>Go</h3>
+<ul>
+<li><a href="https://go.dev/blog/archsimd">Go 1.27 introduces experimental architecture-specific SIMD vector APIs</a>.</li>
+</ul>
+
+<h3>Java</h3>
+<ul>
+<li><a href="https://inside.java/2026/10/02/jep549-target-jdk28/">JEP 540 (Simple JSON API, Incubator)</a> is targeted for JDK 28.</li>
+<li><a href="https://spring.io/blog/2026/10/02/spring-ai-modular-rag-typesafe-jev">Spring AI's "Jev" model plugs into its Modular RAG pipeline</a> to judge and filter retrieved chunks before they reach the prompt.</li>
+<li><a href="https://blog.jetbrains.com/ai/2026/10/air-in-ides-eap/">JetBrains Air, its new agentic development system, has an EAP open for IDEs</a>.</li>
+</ul>
+
+<h3>IaC and DevOps</h3>
+<ul>
+<li><a href="https://github.blog/changelog/2026-10-02-stateless-github-app-installation-tokens-rolled-out">Stateless GitHub App installation tokens have fully rolled out</a> after a staged rollout since April.</li>
+<li><a href="https://github.blog/changelog/2026-10-02-copilot-code-review-api-support-and-new-default-effort-level">Copilot code review is now available via the REST/GraphQL APIs</a>, with a configurable effort level (Balanced is now default).</li>
+<li><a href="https://github.blog/changelog/2026-10-02-selected-models-in-github-copilot-deprecated">Several models in GitHub Copilot were deprecated today</a> across Chat, inline edits, agent mode and completions &mdash; check if you've pinned one.</li>
+<li><a href="https://github.blog/changelog/2026-10-02-confidential-comments-on-repository-security-advisories">Repository security advisories now support confidential comments</a> and a public-preview comments API, visible only to people with write access.</li>
+</ul>
+
+<h3>AWS</h3>
+<ul>
+<li><a href="https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-eks-distro-kubernetes-version-1-37">EKS and EKS Distro now support Kubernetes 1.37</a>.</li>
+<li><a href="https://aws.amazon.com/about-aws/whats-new/2026/10/aurora-dsql-partial-indexes/">Aurora DSQL now supports partial indexes</a>, indexing only qualifying rows to cut storage and improve query performance.</li>
+<li><a href="https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-ecs-vpc-lattice-blue-green-deployments">ECS now supports built-in blue/green, linear and canary deployments</a> for services using VPC Lattice.</li>
+<li><a href="https://aws.amazon.com/about-aws/whats-new/2026/10/aws-health-introduces-version-catalog-software-lifecycle-management">AWS Health's new version catalog centralizes software lifecycle info</a> across AWS services, for Business/Enterprise Support customers.</li>
+<li><a href="https://aws.amazon.com/blogs/machine-learning/fine-tune-a-search-agent-with-multi-turn-rl-on-amazon-sagemaker-ai/">Fine-tuning a search agent with multi-turn RL on SageMaker AI</a> gets a small model closer to frontier-model reliability at lower latency and cost.</li>
+<li><a href="https://aws.amazon.com/blogs/architecture/deploy-open-source-regional-availability-tools-in-your-vpc/">Two new open-source tools track AWS Regional availability</a> as self-hosted dashboards inside your own VPC.</li>
+</ul>
+
+<h3>AI and agents</h3>
+<ul>
+<li><a href="https://simonwillison.net/2026/Oct/3/default-hard-budget-caps/">Simon Willison argues every pay-by-usage AI product needs a default hard budget cap</a>, not just a soft alert.</li>
+<li><a href="https://www.latent.space/p/airbnb">Ex-Meta Llama lead Ahmad Al-Dahle on rebuilding Airbnb's product development and guest experience around AI</a>.</li>
+<li><a href="https://www.latent.space/p/ainews-pi-10-pi-durable-and-aie-nyc">Pi, a minimalist agent harness, hits a stable 1.0 (and a TypeScript port)</a>.</li>
+</ul>
+
+<h3>Security</h3>
+<ul>
+<li><a href="https://thehackernews.com/2026/10/gitlab-patches-critical-self-hosted-ai.html">GitLab patched a critical (9.9) AI Gateway flaw</a> that let a logged-in Duo Agent Platform user run commands on the gateway.</li>
+<li><a href="https://thehackernews.com/2026/10/dell-csm-flaws-enable-unauthenticated.html">Dell patched critical flaws in its Container Storage Modules</a> that allowed unauthenticated admin access and root on Kubernetes nodes.</li>
+<li><a href="https://blog.trailofbits.com/2026/10/02/sequencehash-multihashing-for-the-rest-of-us/">SequenceHash</a>: Trail of Bits on a simpler, safer approach to multihashing.</li>
+<li><a href="https://thehackernews.com/2026/10/shinyhunters-suspect-rey-reportedly.html">A suspected ShinyHunters member ("Rey") was reportedly detained in Jordan</a>, helping the FBI identify other group members.</li>
+<li><a href="https://www.schneier.com/blog/archives/2026/10/how-american-political-campaigns-are-using-ai-and-what-theyre-spending-on-the-tools.html">New campaign-finance data shows how much US political campaigns are spending on AI tools</a>, and on what.</li>
+<li><a href="https://www.schneier.com/blog/archives/2026/10/unidentified-flock-cameras-in-florida.html">A Florida county found a dozen unidentified Flock surveillance cameras</a> nobody there could account for.</li>
+</ul>
+
+<h3>Engineering practice</h3>
+<ul>
+<li><a href="https://martinfowler.com/fragments/2026-10-04.html">Martin Fowler's latest Fragments</a> riffs on LLM "conscience" vs consciousness, prompted by a reader comment.</li>
+</ul>
+
+<h3>Feeds that failed</h3>
+<p>CISA advisories (HTTP 403 Forbidden).</p>
+
+</body></html>
+
+]]></description>
+    </item>
     <item>
       <title>Digest for 2026-10-02</title>
       <link>https://github.com/jameslevine/feed-digest/blob/main/digests/2026-10-02.html</link>

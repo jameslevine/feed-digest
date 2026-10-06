@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8"><title>Digest for 2026-10-06</title></head><body>
+<h2>Your stack</h2>
+
+<h4>Python 3.14</h4>
+<ul>
+<li>Real Python's <a href="https://realpython.com/python-news-october-2026/">October roundup flags a surprise third release candidate for Python 3.15</a>, pushing the final release date later than planned &mdash; worth tracking if you're timing an upgrade past 3.14.</li>
+</ul>
+
+<h4>Amazon Bedrock</h4>
+<ul>
+<li><a href="https://aws.amazon.com/blogs/machine-learning/introducing-glm-5-3-on-amazon-bedrock/">GLM 5.3 by Z.ai is now GA on Bedrock</a>, giving you a strong open-weights coding/reasoning model alongside Claude for workloads that want a cheaper alternative.</li>
+<li><a href="https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-nova-2.5-sonic/">Amazon Nova 2.5 Sonic ships improved reasoning, instruction-following and tool-calling</a> with lower latency for real-time voice agents.</li>
+<li>This week's <a href="https://aws.amazon.com/blogs/aws/aws-weekly-roundup-amazon-bedrock-managed-agents-powered-by-openai-q3-service-availability-updates-kiro-workflows-and-more-october-5-2026/">AWS roundup confirms Bedrock Managed Agents now run on OpenAI models too</a>, not just Anthropic's &mdash; a notable shift in Bedrock's positioning as a multi-model agent platform.</li>
+<li>AWS published a <a href="https://aws.amazon.com/blogs/machine-learning/agentic-retrieval-with-langchain-and-amazon-bedrock-knowledge-bases/">walkthrough pairing LangChain with Bedrock Knowledge Bases for agentic retrieval</a>, handy if you're building RAG beyond the native Bedrock agent tooling.</li>
+</ul>
+
+<h4>AWS Organizations and Control Tower</h4>
+<ul>
+<li><a href="https://aws.amazon.com/about-aws/whats-new/2026/10/aws-identity-store-network-controls/">IAM Identity Center now supports network access controls on the Identity Store and SCIM APIs</a>, letting you restrict directory lookups by source network &mdash; solid defense-in-depth for multi-account setups.</li>
+</ul>
+
+<h4>MCP</h4>
+<ul>
+<li>AWS shows how to <a href="https://aws.amazon.com/blogs/machine-learning/making-amazon-quick-enterprise-ready-automated-auditable-cross-account-resource-promotion/">automate cross-account promotion of Amazon Quick agents and knowledge bases with an auditable MCP server</a> running on Bedrock AgentCore &mdash; a concrete pattern for safe dev-to-prod promotion of MCP tooling.</li>
+</ul>
+
+<h4>Claude</h4>
+<ul>
+<li>Simon Willison <a href="https://simonwillison.net/2026/Oct/5/felix-rieseberg/">quotes Anthropic's Felix Rieseberg on why Cowork is moving from a local VM to cloud-hosted inference</a>: lower local resource cost, but work no longer pauses when you close your laptop.</li>
+<li>Willison set <a href="https://simonwillison.net/2026/Oct/1/pwasm/">Claude Opus 5.5 loose on his old pwasm project</a> (a pure-Python WASM engine) and reports real progress getting MicroPython and micro-JS experiments running under it.</li>
+<li>AWS published a <a href="https://aws.amazon.com/blogs/machine-learning/supercharge-regulated-workloads-with-claude-code-and-amazon-bedrock/">guide to running Claude Code on Bedrock for regulated workloads</a>, covering the compliance controls needed to use it in regulated environments.</li>
+</ul>
+
+<h3>React</h3>
+<ul>
+<li><a href="https://tanstack.com/blog/tanstack-charts-1-0">TanStack Charts hit 1.0</a>, a new headless charting library meant to pair with the team's existing table and query tooling.</li>
+</ul>
+
+<h3>Java</h3>
+<ul>
+<li>Inside Java details how <a href="https://inside.java/2026/10/05/confined-pools/">JDK 28 makes Arena.ofConfined() allocation even cheaper</a>, continuing the FFM API's push toward low-overhead memory management.</li>
+</ul>
+
+<h3>IaC and DevOps</h3>
+<ul>
+<li>GitHub <a href="https://github.blog/changelog/2026-10-05-secret-scanning-adds-detectors-for-lovable-supabase-and-more">secret scanning now detects leaked keys for Lovable, Supabase and Pydantic Services accounts</a> &mdash; worth enabling if you use any of those providers.</li>
+<li>GitHub will <a href="https://github.blog/changelog/2026-10-02-unvalidated-npm-trusted-publishing-configurations-now-expire">start expiring npm trusted publishing configurations that were never validated</a>, closing a supply-chain gap where a misconfigured OIDC trust relationship could sit unused and exploitable.</li>
+<li>AWS CodeDeploy added a <a href="https://aws.amazon.com/blogs/devops/restart-ec2-and-on-premises-fleets-faster-with-aws-codedeploy-restart-deployment-mode/">RESTART deployment mode that restarts EC2 and on-prem fleets faster</a> than a full redeploy, useful for config-only changes.</li>
+</ul>
+
+<h3>AWS</h3>
+<ul>
+<li><a href="https://aws.amazon.com/about-aws/whats-new/2026/10/aws-continuum-penetration-testing/">AWS Continuum for Penetration Testing now runs continuously inside your CI/CD pipeline</a> instead of as a periodic scan.</li>
+<li>AWS announced a <a href="https://aws.amazon.com/blogs/architecture/announcing-the-aws-digital-sovereignty-well-architected-lens/">Digital Sovereignty Lens for the Well-Architected Framework</a>, a structured way to assess data-residency and sovereignty requirements.</li>
+<li><a href="https://aws.amazon.com/about-aws/whats-new/2026/10/aws-private-ca-certificate-issuance-logs/">AWS Private CA now logs full certificate issuance details to CloudTrail</a>, useful for compliance auditing and spotting failed-issuance patterns.</li>
+<li>A new <a href="https://aws.amazon.com/blogs/machine-learning/new-agent-skill-amazon-sagemaker-optimized-generative-ai-inference-for-your-coding-agent/">SageMaker "agent skill" optimizes generative AI inference specifically for coding agents</a>, aimed at speeding up agentic coding workloads.</li>
+</ul>
+
+<h3>AI and agents</h3>
+<ul>
+<li>AWS's <a href="https://pypi.org/project/strands-agents/1.58.0/">Strands Agents framework shipped 1.58.0</a>, its model-driven approach to building AI agents in a few lines of code.</li>
+</ul>
+
+<h3>Security</h3>
+<ul>
+<li>A <a href="https://thehackernews.com/2026/10/new-netscaler-zero-day-exploited-in.html">new NetScaler zero-day is being actively exploited in targeted attacks</a> and can knock SAML deployments offline entirely.</li>
+<li>A <a href="https://thehackernews.com/2026/10/microsoft-exchange-flaw-lets.html">Microsoft Exchange flaw lets authenticated attackers read other users' mailboxes</a> &mdash; patch if you run on-prem Exchange.</li>
+<li><a href="https://aws.amazon.com/security/security-bulletins/rss/2026-024-aws/">CVE-2026-7461 is an OS command injection in the Amazon ECS Agent</a>, triggered via FSx Windows File Server volume credentials.</li>
+<li>Apple is <a href="https://thehackernews.com/2026/10/apple-plans-tighter-macos-full-disk.html">tightening macOS Full Disk Access controls specifically to limit what AI agents can read from disk</a> &mdash; a sign OS vendors are starting to treat agent access as its own permission tier.</li>
+</ul>
+
+<h3>Engineering practice</h3>
+<ul>
+<li>Google's Testing Blog <a href="http://testing.googleblog.com/2026/10/two-way-doors-dont-code-yourself-into.html">argues for treating more decisions as reversible "two-way doors"</a> so teams don't over-invest in choices that are cheap to undo.</li>
+</ul>
+
+<h3>Feeds that failed</h3>
+<p>CISA advisories (HTTP 403 Forbidden).</p>
+</body></html>

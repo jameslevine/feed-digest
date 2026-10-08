@@ -6,7 +6,98 @@
     <description><![CDATA[
 Daily AI summary of my RSS subscriptions
 ]]></description>
-    <lastBuildDate>Wed, 07 Oct 2026 06:14:35 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 08 Oct 2026 06:14:46 GMT</lastBuildDate>
+    <item>
+      <title>Digest for 2026-10-08</title>
+      <link>https://github.com/jameslevine/feed-digest/blob/main/digests/2026-10-08.html</link>
+      <guid isPermaLink="false">Digest for 2026-10-08</guid>
+      <pubDate>Thu, 08 Oct 2026 06:14:46 GMT</pubDate>
+      <description><![CDATA[
+<!DOCTYPE html>
+<html><head><meta charset="utf-8"><title>Digest for 2026-10-08</title></head><body>
+<h2>Your stack</h2>
+
+<h4>Claude</h4>
+<ul>
+<li><a href="https://aws.amazon.com/blogs/machine-learning/introducing-claude-haiku-5-5-on-aws/">Claude Haiku 5.5</a>: launched today on Bedrock, AWS GovCloud, and GitHub Copilot &mdash; Anthropic's fastest, cheapest Haiku yet (~75% less than 4.5), built for subagent and high-volume work.</li>
+<li><a href="https://pypi.org/project/anthropic/1.12.1/">Anthropic Python SDK 1.12.1</a>: routine point release (from 1.12.0).</li>
+<li><a href="https://aws.amazon.com/blogs/opensource/introducing-strands-box-ai-agent-sandboxes-powered-by-dogwood/">Strands Box</a>: sandboxed execution environments for Strands Agents, for when an agent needs to run shell commands or generated code without full host access.</li>
+<li><a href="https://thehackernews.com/2026/10/anthropic-expands-claude-access-for.html">Project Glasswing expanded</a>: Anthropic's vetted-researcher red-team program now reports 129,000 verified flaws found with reduced safeguards.</li>
+</ul>
+
+<h4>Amazon Bedrock</h4>
+<ul>
+<li><a href="https://aws.amazon.com/blogs/machine-learning/automate-remediation-post-aws-devops-agent-investigation/">Auto-remediation after AWS DevOps Agent investigations</a>: pipes Bedrock-driven incident diagnosis through Lambda Durable Functions and EventBridge into pre-validated, on-call-approved fixes.</li>
+<li><a href="https://aws.amazon.com/blogs/machine-learning/rethinking-access-control-for-rag-with-amazon-quick-and-amazon-bedrock/">Document-level access control for RAG</a>: a pattern for Bedrock Knowledge Bases that checks permissions against the source system in real time instead of flattening them at index time.</li>
+<li>Case studies from <a href="https://aws.amazon.com/blogs/machine-learning/how-qlik-built-grounded-enterprise-scale-ai-with-amazon-bedrock/">Qlik</a> and <a href="https://aws.amazon.com/blogs/machine-learning/how-cornerstone-ondemand-cut-database-diagnosis-by-78-with-amazon-bedrock/">Cornerstone OnDemand</a>: multi-agent systems on Bedrock (the latter with Strands Agents) grounding answers and cutting database-diagnosis time by 78%.</li>
+</ul>
+
+<h4>FastAPI</h4>
+<ul>
+<li><a href="https://pypi.org/project/fastapi/0.142.4/">0.142.4</a> and <a href="https://pypi.org/project/fastapi/0.142.3/">0.142.3</a>: two small patch releases, no notable changes.</li>
+</ul>
+
+<h4>boto3</h4>
+<ul>
+<li><a href="https://pypi.org/project/boto3/1.43.109/">1.43.109</a>: routine AWS SDK for Python maintenance release.</li>
+</ul>
+
+<h4>Security (AI and cloud)</h4>
+<ul>
+<li>Two new AWS bulletins: an <a href="https://aws.amazon.com/security/security-bulletins/rss/2026-126-aws/">authorization bypass</a> in the Lambda-hook sample bundled with QnABot, and a <a href="https://aws.amazon.com/security/security-bulletins/rss/2026-128-aws/">missing-authorization flaw</a> in Athena engine v3 &mdash; patch if you run either.</li>
+<li><a href="https://thehackernews.com/2026/10/unpatched-critical-lmcache-flaw-lets.html">Unpatched critical RCE in LMCache</a>: the caching layer many vLLM-based LLM servers use lets an unauthenticated attacker run code in multiprocess mode, with no fix available yet &mdash; worth checking if anything in your stack sits on vLLM/LMCache.</li>
+<li><a href="https://thehackernews.com/2026/10/eight-malicious-npm-packages-downloaded.html">npm supply-chain campaign</a>: 8 malicious packages downloaded 40,767+ times delivered an infostealer/RAT, codenamed MALFEX.</li>
+<li><a href="https://snyk.io/blog/frontier-models-vulnerabilities-attacker-chains/">Frontier models vs. live-attack chaining</a>: Snyk compares how far static analysis (Claude Security) vs. live attack testing (Claude Code Security) gets you in proving exploitable chains.</li>
+</ul>
+
+<h3>Python</h3>
+<ul>
+<li><a href="https://realpython.com/python-ides-code-editors-guide/">Best IDEs and code editors for Python</a>: a current comparison, from beginner picks to AI-assisted editors and cloud workspaces.</li>
+</ul>
+
+<h3>Java</h3>
+<ul>
+<li><a href="https://blog.jetbrains.com/idea/2026/10/your-next-action-is-two-dots-away/">Command completion in IntelliJ IDEA</a>: makes less-used actions easier to trigger without memorizing shortcuts.</li>
+</ul>
+
+<h3>IaC and DevOps</h3>
+<ul>
+<li><a href="https://github.blog/changelog/2026-10-07-local-sandboxing-for-github-copilot-now-generally-available/">Local sandboxing for GitHub Copilot</a>: now generally available in the CLI, the desktop app, and VS Code Agent Host sessions.</li>
+<li><a href="https://github.blog/changelog/2026-10-07-discover-local-models-in-github-copilot-cli/">Local models in GitHub Copilot CLI</a>: use <code>/model</code> to discover and switch to a locally running model.</li>
+<li><a href="https://github.blog/changelog/2026-10-07-purpose-built-model-for-leaked-secret-detection/">Purpose-built model for leaked-secret detection</a>: context-aware secret scanning meant to keep pace with AI-assisted coding.</li>
+</ul>
+
+<h3>AWS</h3>
+<ul>
+<li><a href="https://aws.amazon.com/about-aws/whats-new/2026/10/awscapabilities-enhancements/">Feature-level availability notifications</a> for AWS Capabilities by Region, with advanced filters in AWS Builder Center.</li>
+<li><a href="https://aws.amazon.com/blogs/machine-learning/building-ai-builders-playbook-for-closing-the-ai-knowledge-capability-gap/">Playbook for closing the AI knowledge-capability gap</a>: AWS's approach to turning non-technical, customer-facing staff into people who build with AI.</li>
+</ul>
+
+<h3>AI and agents</h3>
+<ul>
+<li><a href="https://www.latent.space/p/stacklok">A cloud-native harness for reliable agents</a>: Kubernetes co-creators Craig McLuckie and Joe Beda on bringing agent harnesses fully into the cloud, beyond the desktop.</li>
+</ul>
+
+<h3>Security</h3>
+<ul>
+<li><a href="https://thehackernews.com/2026/10/sonicwall-patches-cvss-100-pre.html">SonicWall patches CVSS 10.0 pre-auth SSRF</a> in SMA1000 remote-access appliances &mdash; four flaws fixed, patch now.</li>
+<li><a href="https://thehackernews.com/2026/10/fbi-warns-fortibleed-remains-active.html">FBI: FortiBleed credential harvesting still active</a>, with 86,644 Fortinet device credentials taken so far.</li>
+<li><a href="https://thehackernews.com/2026/10/poellm-malware-infects-3400-servers-to.html">PoeLLM malware</a> has infected 3,400+ servers running exposed AI/LLM infrastructure to expand a crypto-mining botnet.</li>
+<li><a href="https://thehackernews.com/2026/10/attackers-hijack-gh-sl-and-as.html">ccTLD registries hijacked</a>: attackers compromised .gh, .sl, and .as registries to obtain unauthorized HTTPS certificates for Google domains.</li>
+<li><a href="https://krebsonsecurity.com/2026/10/shinyhunters-extorted-boeing-spin-off-prior-to-arrests/">ShinyHunters leader arrested</a>: the teenager accused of extorting a Boeing spin-off is cooperating with the FBI.</li>
+<li><a href="https://www.wiz.io/blog/red-agent-financial-services-data-exposure">Wiz's Red Agent</a> found a Fortune 500 firm's public data exposure that traditional inside-out scanners had missed.</li>
+</ul>
+
+<h3>Engineering practice</h3>
+<ul>
+<li><a href="https://newsletter.pragmaticengineer.com/p/building-resilient-systems-with-sam">Building resilient systems, with Sam Newman</a>: when to reach for microservices and how AI is changing how distributed systems get built.</li>
+</ul>
+
+<h3>Feeds that failed</h3>
+<p>CISA advisories (HTTP 403 Forbidden).</p>
+</body></html>
+]]></description>
+    </item>
     <item>
       <title>Digest for 2026-10-07</title>
       <link>https://github.com/jameslevine/feed-digest/blob/main/digests/2026-10-07.html</link>

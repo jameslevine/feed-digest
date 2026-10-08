@@ -187,7 +187,11 @@
     "378eb1d1b12e04e4c37dcda76f6d4d123b7c7807",
     "d3538378aa78879db5ecbc1eabd56bdc402faf71",
     "b9133b51c8ad5d29667a33eee8af1f7dc610cf11",
-    "2bc1064312a16a716dd5bbb87280355d7c01e429"
+    "2bc1064312a16a716dd5bbb87280355d7c01e429",
+    "8096ab0a49f811a1026a7d2459c45ad3e3201a1b",
+    "895cf9cbd6bf12c10cab2b1517a6e47f76c535fd",
+    "5a50599c4c217241c21e7c6d72c35ac8787ec30c",
+    "bac979a82da366b4b6231d70a1e7bb4b1e28d7c9"
   ],
   "https://aws.amazon.com/blogs/architecture/feed/": [
     "aebc24bf9a1d048ba16980d4b7fa9ef45aa8d896",
@@ -292,7 +296,9 @@
     "5ee89c5179b3e76677e8b1363b52f28e7a4fc8fc",
     "c6028cb67a1a26d2c6bcf1f454406f2d8721e29a",
     "ccf623ce7a03c41950f6be6b3f35744c69526e3a",
-    "a2d02cd9d85d5dab5e93e8acde57f5774813029b"
+    "a2d02cd9d85d5dab5e93e8acde57f5774813029b",
+    "70e5e515023bcc413c4ab653f8beae3c9fa463e7",
+    "3041e1750f5f2e95ffa3b27eeec13981d3d6af87"
   ],
   "https://aws.amazon.com/blogs/devops/feed/": [
     "4c45cef7f04088de736518e08d370c9fac861985",
@@ -385,7 +391,14 @@
     "aec2d25cc981395a6fa5ae4a221b4e0ba14ccbf2",
     "bdc7bf8bef5192bd88791786ee0bc0b4bd1a1bdd",
     "cfc2607374dece7ff26f26b3922adbbb2e24f173",
-    "b119ac0e22c146d6b8a4049102737ff963987138"
+    "b119ac0e22c146d6b8a4049102737ff963987138",
+    "0ff2b32f3802714df60aafa631f537ec3996dfd3",
+    "39fc0b914168afce8435f252ea53c5d476f40b5d",
+    "93bdbf76581c7169c13af9e7eca9f14e1f921f75",
+    "fa0afddf27418d623ced214e96ba970d813f2f4c",
+    "c4faaee6740a8b2bfe0bba8a988399d299da211b",
+    "557ef20339b4ca724a00b2bc1be9a67b2c82c106",
+    "15fb4f1a6de54cf66fb9eb96e6a07de1ebd20734"
   ],
   "https://aws.amazon.com/blogs/mt/feed/": [
     "11f6de571ae64ae1618d806a16444141a0a70305",
@@ -431,7 +444,8 @@
     "5884801dfdc3fa124a128df39c58e7d381840718",
     "63021ec75b7a37fb97ebbcad4f0791133c964f43",
     "63dd987a8d933e5b84e0bf4cb8bc8c46b4d9e48e",
-    "164a08988773b48d384f87d69bdb727d7b401038"
+    "164a08988773b48d384f87d69bdb727d7b401038",
+    "c4f1cb9c8d0c3fb9d9f6caa69e41b2588b2af3e6"
   ],
   "https://aws.amazon.com/blogs/security/feed/": [
     "157d78c117872b19a1e10de4e751cdb7be776e12",
@@ -456,7 +470,10 @@
     "26566fb7869224434cf12e6cedf7e13e55d50894",
     "65aeef666458e81cc19324033248c0656f46b400",
     "d02e1c6234899538c646396ebc946cf49538b992",
-    "2bee8b86e920504fc40e0330fb5da918c2e5cada"
+    "2bee8b86e920504fc40e0330fb5da918c2e5cada",
+    "5cacd46ce6c6d68c3e566a0ec1e5d978167c9c89",
+    "bcc6006896f32d5af6a52e18d1b439c08bdea97f",
+    "b9bf034ace4aac199accda049a6666d088523470"
   ],
   "https://aws.amazon.com/security/security-bulletins/rss/feed/": [
     "f4124d5ef763ac66641d7a85dd28007cd8759e86",
@@ -570,7 +587,9 @@
     "de232c0690c48585a713a5e249342638401801af",
     "25fb7e5c3c2827b7e4e50acfcfe32b2d29fdcc26",
     "3635024096b3b73d8fc9429563016dc326ab107f",
-    "fadcc3341eacca5f455397d86b4021f634a98a87"
+    "fadcc3341eacca5f455397d86b4021f634a98a87",
+    "57d63a0eb89cd8fd6b3998fe1df038a4bd6a0141",
+    "3fe0a88cff07c5c613cb809e24cc4ef2599ea901"
   ],
   "https://blog.jetbrains.com/idea/feed/": [
     "https://blog.jetbrains.com/?post_type=idea&p=744673",
@@ -588,7 +607,8 @@
     "https://blog.jetbrains.com/?post_type=idea&p=733843",
     "https://blog.jetbrains.com/?post_type=idea&p=730538",
     "https://blog.jetbrains.com/?post_type=idea&p=727710",
-    "https://blog.jetbrains.com/?post_type=idea&p=730793"
+    "https://blog.jetbrains.com/?post_type=idea&p=730793",
+    "https://blog.jetbrains.com/?post_type=idea&p=744602"
   ],
   "https://blog.python.org/feeds/posts/default": [
     "https://blog.python.org/2026/10/python-3150-rc3/",
@@ -1803,7 +1823,18 @@
     "https://thehackernews.com/2026/09/bitget-says-suspected-north-korean.html",
     "https://thehackernews.com/2026/09/cisa-says-attackers-are-exploiting-two.html",
     "https://thehackernews.com/2026/09/lunex-stealer-abuses-amd-driver-to.html",
-    "https://thehackernews.com/2026/09/jadepuffer-linked-attackers-used.html"
+    "https://thehackernews.com/2026/09/jadepuffer-linked-attackers-used.html",
+    "https://thehackernews.com/2026/10/attackers-hijack-gh-sl-and-as.html",
+    "https://thehackernews.com/2026/10/eight-malicious-npm-packages-downloaded.html",
+    "https://thehackernews.com/2026/10/sonicwall-patches-cvss-100-pre.html",
+    "https://thehackernews.com/2026/10/unpatched-critical-lmcache-flaw-lets.html",
+    "https://thehackernews.com/2026/10/poellm-malware-infects-3400-servers-to.html",
+    "https://thehackernews.com/2026/10/the-sixth-voice-of-ciso-data-shows.html",
+    "https://thehackernews.com/2026/10/fbi-warns-fortibleed-remains-active.html",
+    "https://thehackernews.com/2026/10/atlassian-data-center-flaw-draws.html",
+    "https://thehackernews.com/2026/10/what-is-agentic-pentesting-what-it.html",
+    "https://thehackernews.com/2026/10/anthropic-expands-claude-access-for.html",
+    "https://thehackernews.com/2026/10/100-compromised-websites-use-fake.html"
   ],
   "https://genai.owasp.org/feed/": [
     "https://genai.owasp.org/?p=57480",
@@ -1851,7 +1882,11 @@
     "https://github.blog/changelog/2026-10-01-code-coverage-uploads-no-longer-fail-ci-for-new-branches",
     "https://github.blog/changelog/2026-09-30-actions-runner-controller-release-0-15-0",
     "https://github.blog/changelog/2026-10-01-actions-retention-now-covers-checks-runs-and-statuses",
-    "https://github.blog/changelog/2026-09-30-opt-in-dist-tag-permissions-for-npm-trusted-publishing"
+    "https://github.blog/changelog/2026-09-30-opt-in-dist-tag-permissions-for-npm-trusted-publishing",
+    "https://github.blog/changelog/2026-10-07-claude-haiku-5-5-in-github-copilot",
+    "https://github.blog/changelog/2026-10-07-purpose-built-model-for-leaked-secret-detection",
+    "https://github.blog/changelog/2026-10-07-local-sandboxing-for-github-copilot-now-generally-available",
+    "https://github.blog/changelog/2026-10-07-discover-local-models-in-github-copilot-cli"
   ],
   "https://github.blog/feed/": [
     "https://github.blog/?p=99275",
@@ -1867,7 +1902,8 @@
     "https://github.blog/?p=98465",
     "https://github.blog/?p=99002",
     "https://github.blog/?p=98893",
-    "https://github.blog/?p=98976"
+    "https://github.blog/?p=98976",
+    "https://github.blog/?p=99310"
   ],
   "https://github.blog/security/feed/": [
     "https://github.blog/?p=98105",
@@ -2161,7 +2197,8 @@
     "https://krebsonsecurity.com/?p=74105",
     "https://krebsonsecurity.com/?p=74106",
     "https://krebsonsecurity.com/?p=74093",
-    "https://krebsonsecurity.com/?p=74047"
+    "https://krebsonsecurity.com/?p=74047",
+    "https://krebsonsecurity.com/?p=74398"
   ],
   "https://martinfowler.com/feed.atom": [
     "https://martinfowler.com/fragments/2026-10-04.html",
@@ -2218,7 +2255,8 @@
     "https://newsletter.pragmaticengineer.com/p/from-chrome-devtools-to-ai-engineering",
     "https://newsletter.pragmaticengineer.com/p/the-great-engineering-leader-career-break",
     "https://newsletter.pragmaticengineer.com/p/the-pulse-metas-self-inflicted-resignation",
-    "https://newsletter.pragmaticengineer.com/p/stop-being-skeptical-about-ai-for"
+    "https://newsletter.pragmaticengineer.com/p/stop-being-skeptical-about-ai-for",
+    "https://newsletter.pragmaticengineer.com/p/building-resilient-systems-with-sam"
   ],
   "https://nextjs.org/feed.xml": [
     "/blog/next-16-4",
@@ -2305,8 +2343,6 @@
     "/blog/next-5"
   ],
   "https://nodejs.org/en/feed/blog.xml": [
-    "/blog/release/v22.23.3?1790187760940",
-    "/blog/release/v26.10.0?1790067829095",
     "/blog/release/v26.9.0?1789582662027",
     "/blog/release/v26.8.2?1788970157773",
     "/blog/release/v24.21.0?1788954920945",
@@ -2504,7 +2540,9 @@
     "/blog/vulnerability/openssl-fixes-in-regular-releases-oct2023",
     "/blog/release/v20.9.0",
     "/blog/release/v21.1.0",
-    "/blog/release/v21.0.0"
+    "/blog/release/v21.0.0",
+    "/blog/release/v26.11.1?1791417386441",
+    "/blog/release/v26.11.0?1791384309757"
   ],
   "https://nodeweekly.com/rss/": [
     "https://nodeweekly.com/issues/642",
@@ -2749,7 +2787,9 @@
     "https://pypi.org/project/anthropic/0.107.1/",
     "https://pypi.org/project/anthropic/0.107.0/",
     "https://pypi.org/project/anthropic/0.106.0/",
-    "https://pypi.org/project/anthropic/0.105.2/"
+    "https://pypi.org/project/anthropic/0.105.2/",
+    "https://pypi.org/project/anthropic/1.12.1/",
+    "https://pypi.org/project/anthropic/1.12.0/"
   ],
   "https://pypi.org/rss/project/aws-lambda-powertools/releases.xml": [
     "https://pypi.org/project/aws-lambda-powertools/3.35.0/",
@@ -2835,7 +2875,8 @@
     "https://pypi.org/project/boto3/1.43.70/",
     "https://pypi.org/project/boto3/1.43.69/",
     "https://pypi.org/project/boto3/1.43.68/",
-    "https://pypi.org/project/boto3/1.43.67/"
+    "https://pypi.org/project/boto3/1.43.67/",
+    "https://pypi.org/project/boto3/1.43.109/"
   ],
   "https://pypi.org/rss/project/claude-agent-sdk/releases.xml": [
     "https://pypi.org/project/claude-agent-sdk/0.2.164/",
@@ -2920,7 +2961,9 @@
     "https://pypi.org/project/fastapi/0.134.0/",
     "https://pypi.org/project/fastapi/0.133.1/",
     "https://pypi.org/project/fastapi/0.133.0/",
-    "https://pypi.org/project/fastapi/0.132.1/"
+    "https://pypi.org/project/fastapi/0.132.1/",
+    "https://pypi.org/project/fastapi/0.142.4/",
+    "https://pypi.org/project/fastapi/0.142.3/"
   ],
   "https://pypi.org/rss/project/garak/releases.xml": [
     "https://pypi.org/project/garak/0.17.0/",
@@ -3430,7 +3473,9 @@
     "https://realpython.com/quizzes/python-ellipsis/",
     "https://realpython.com/podcasts/rpp/303/",
     "https://realpython.com/python-statistics/",
-    "https://realpython.com/quizzes/build-python-turtle-game-space-invaders-clone/"
+    "https://realpython.com/quizzes/build-python-turtle-game-space-invaders-clone/",
+    "https://realpython.com/python-ides-code-editors-guide/",
+    "https://realpython.com/quizzes/python-ides-code-editors-guide/"
   ],
   "https://securitylabs.datadoghq.com/rss/feed.xml": [
     "https://securitylabs.datadoghq.com/articles/beyond-valid-credentials-how-exposed-aws-keys-are-tested-for-amazon-bedrock-access/",
@@ -3514,7 +3559,10 @@
     "https://simonwillison.net/2026/Sep/22/llm-typesafe/",
     "https://simonwillison.net/2026/Sep/20/voxium/",
     "https://simonwillison.net/2026/Sep/21/jev/",
-    "https://simonwillison.net/2026/Sep/21/cloudflare-python-worker/"
+    "https://simonwillison.net/2026/Sep/21/cloudflare-python-worker/",
+    "https://simonwillison.net/2026/Oct/7/ben-affleck/",
+    "https://simonwillison.net/2026/Oct/7/claude-haiku-5-5/",
+    "https://simonwillison.net/2026/Oct/7/anti-patterns-in-software-blogging/"
   ],
   "https://simonwillison.net/tags/prompt-injection.atom": [
     "https://simonwillison.net/2026/Sep/17/compaction-summaries/",
@@ -3549,8 +3597,6 @@
     "https://simonwillison.net/2025/Nov/4/mcp-colors/"
   ],
   "https://snyk.io/blog/feed/": [
-    "https://snyk.io/blog/ai-coding-agents-broken-access-control/",
-    "https://snyk.io/blog/what-is-agentic-appsec/",
     "https://snyk.io/blog/evo-ads-govern-agent-behavior-ga/",
     "https://snyk.io/blog/vulnerability-backlog-attack-surface/",
     "https://snyk.io/blog/so-i-asked-my-agent-instead/",
@@ -3748,7 +3794,9 @@
     "https://snyk.io/blog/unburdening-developers-from-vulnerability-fatigue-with-snyk-delta-findings/",
     "https://snyk.io/blog/reconstructing-tj-actions-changed-files-github-actions-compromise/",
     "https://snyk.io/blog/ai-risk-management-benefits-challenges-and-best-practices/",
-    "https://snyk.io/blog/responding-and-remediating-best-practices-for-handling-security-alerts/"
+    "https://snyk.io/blog/responding-and-remediating-best-practices-for-handling-security-alerts/",
+    "https://snyk.io/blog/frontier-models-vulnerabilities-attacker-chains/",
+    "https://snyk.io/blog/autonomous-attacks-already-here-defense-match-their-speed/"
   ],
   "https://spring.io/blog.atom": [
     "https://spring.io/blog/2026/10/06/this-week-in-spring-october-6th-2026",
@@ -4216,7 +4264,8 @@
     "https://www.latent.space/p/aiuc",
     "https://www.latent.space/p/ainews-not-much-happened-today-612",
     "https://www.latent.space/p/ainews-here-are-6-clones-of-jev-in",
-    "https://www.latent.space/p/ainews-reality-checks-on-ai-news"
+    "https://www.latent.space/p/ainews-reality-checks-on-ai-news",
+    "https://www.latent.space/p/stacklok"
   ],
   "https://www.ncsc.gov.uk/api/1/services/v1/all-rss-feed.xml": [
     "https://www.ncsc.gov.uk/news/incident-affecting-asos-customers",
@@ -4308,10 +4357,10 @@
     "https://www.schneier.com/?p=72668",
     "https://www.schneier.com/?p=72666",
     "https://www.schneier.com/?p=72660",
-    "https://www.schneier.com/?p=72663"
+    "https://www.schneier.com/?p=72663",
+    "https://www.schneier.com/?p=72741"
   ],
   "https://www.wiz.io/feed/rss.xml": [
-    "https://www.wiz.io/blog/introducing-wiz-ai-sast",
     "https://www.wiz.io/blog/wiz-service-catalog-updates",
     "https://www.wiz.io/blog/wizos-helm-charts",
     "https://www.wiz.io/blog/blue-agent-data-exfiltration-investigation",
@@ -4510,6 +4559,7 @@
     "https://www.wiz.io/blog/introducing-wiz-service-catalog",
     "https://www.wiz.io/blog/wizos-secured-image-adoption-with-ai",
     "https://www.wiz.io/blog/recent-oauth-attacks-detection-strategies",
-    "https://www.wiz.io/blog/hosted-technologies-inventory"
+    "https://www.wiz.io/blog/hosted-technologies-inventory",
+    "https://www.wiz.io/blog/red-agent-financial-services-data-exposure"
   ]
 }

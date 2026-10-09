@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8"><title>Digest for 2026-10-09</title></head><body>
+<h2>Your stack</h2>
+
+<h4>uv</h4>
+<ul>
+<li><a href="https://pypi.org/project/uv/0.12.24/">0.12.24</a>: routine point release, no breaking changes noted.</li>
+</ul>
+
+<h4>pydantic</h4>
+<ul>
+<li><a href="https://pypi.org/project/pydantic/2.14.0/">2.14.0</a>: routine minor release.</li>
+</ul>
+
+<h4>FastAPI</h4>
+<ul>
+<li><a href="https://pypi.org/project/fastapi/0.143.0/">0.143.0</a>: routine minor release.</li>
+</ul>
+
+<h4>boto3</h4>
+<ul>
+<li><a href="https://pypi.org/project/boto3/1.43.110/">1.43.110</a>: routine AWS SDK for Python maintenance release.</li>
+<li><a href="https://realpython.com/quizzes/python-boto3-aws-s3/">Quiz: Python, Boto3, and AWS S3</a>: a self-test on core boto3/S3 concepts, not new API surface.</li>
+</ul>
+
+<h4>Amazon Bedrock</h4>
+<ul>
+<li><a href="https://aws.amazon.com/about-aws/whats-new/2026/10/openai-gpt-sol-ultrafast-amazon/">GPT-6.1 Sol gets an "Ultrafast" mode on Bedrock</a>: a low-latency inference mode aimed at coding assistants and interactive agents.</li>
+<li><a href="https://aws.amazon.com/about-aws/whats-new/2026/10/aws-bedrock-attributes-in-cost-explorer/">Cost Explorer/Budgets now break down Bedrock spend by model and provider</a>: handy for tracking per-model (Claude vs. others) inference cost.</li>
+<li><a href="https://aws.amazon.com/blogs/database/how-mufg-bank-aims-to-cut-flowchart-work-by-up-to-90-with-ontology-grounded-ai-on-amazon-neptune-and-amazon-bedrock/">MUFG Bank's Neptune + Bedrock pattern</a>: an ontology-grounded-AI reference architecture that cut flowchart documentation work by up to 90%.</li>
+<li><a href="https://aws.amazon.com/blogs/machine-learning/pay-per-inference-for-ai-agents-how-blockrun-and-incarna-use-amazon-bedrock-agentcore-payments/">Pay-per-inference agents via AgentCore</a>: BlockRun and Incarna use Bedrock AgentCore's payment primitives to meter and bill per-inference usage.</li>
+</ul>
+
+<h4>Claude</h4>
+<ul>
+<li>Same Cost Explorer update above now lets you filter AWS bills by exact Claude model (Sonnet 5, Haiku 4.5, etc.) and by Anthropic as provider.</li>
+<li><a href="https://www.latent.space/p/ainews-claude-haiku-55-better-than">Claude Haiku 5.5 vs. GPT-6 Luna</a>: Latent Space's AINews roundup argues Haiku 5.5 beats Luna at the same price &mdash; worth a look if latency/cost tradeoffs matter for your agent calls.</li>
+<li><a href="https://pypi.org/project/claude-agent-sdk/0.2.165/">Claude Agent SDK 0.2.165</a>: routine point release.</li>
+<li><a href="https://pypi.org/project/strands-agents/1.59.0/">Strands Agents 1.59.0</a>: routine point release.</li>
+</ul>
+
+<h4>Security (AI and cloud)</h4>
+<ul>
+<li><a href="https://aws.amazon.com/security/security-bulletins/rss/2026-129-aws/">CVE-2026-107332</a>: AWS Toolkit for VS Code caches credentials with insecure default file permissions &mdash; check your dev machine if you use the extension.</li>
+<li><a href="https://aws.amazon.com/security/security-bulletins/rss/2026-130-aws/">CVE-2026-107322</a>: OS command injection in the databases-on-aws plugin for Amazon Agent Plugins &mdash; patch if you use AI coding agents with it.</li>
+<li><a href="https://aws.amazon.com/security/security-bulletins/rss/2026-131-aws/">CVE-2026-107608</a>: improper link resolution in aws-cdk-lib's asset-bundling output handling &mdash; update if you deploy via CDK.</li>
+<li><a href="https://thehackernews.com/2026/10/artex-ai-pentesting-tool-used-in-data.html">ARTEX AI pentesting tool</a>: used by attackers to breach South Korean financial firms, a reminder that offensive AI tooling is now part of real intrusions.</li>
+<li><a href="https://thehackernews.com/2026/10/16-malicious-firefox-extensions-pose-as.html">16 malicious Firefox extensions</a>: fake Rabby/OKX wallet extensions exfiltrate crypto recovery phrases.</li>
+<li><a href="https://thehackernews.com/2026/10/tensorlake-npm-package-compromised-to.html">Tensorlake npm package compromised</a>: a Shai-Hulud-style supply-chain worm harvests credentials and secrets &mdash; worth checking your npm dependency tree.</li>
+<li><a href="https://genai.owasp.org/2026/10/08/genai-and-agentic-ai-exploit-roundup-q3-2026/">OWASP GenAI Exploit Roundup Q3 2026</a>: a quarterly roundup of GenAI/agentic exploits mapped to the LLM Top 10, with CVE references.</li>
+</ul>
+
+<h3>Python</h3>
+<ul>
+<li><a href="https://realpython.com/junior-developers-ahead-on-ai/">Why junior developers might know more about AI than seniors</a>: on the generational gap in AI-tool fluency.</li>
+<li><a href="https://realpython.com/what-is-meta-muse/">What is Meta Muse?</a>: a plain-English explainer of Meta's new AI product.</li>
+</ul>
+
+<h3>JavaScript and TypeScript</h3>
+<ul>
+<li><a href="https://nodeweekly.com/issues/643">When worker threads beat processes for Node efficiency</a>: a practical look at when Node's worker_threads win over child processes.</li>
+</ul>
+
+<h3>React</h3>
+<ul>
+<li><a href="https://nextjs.org/blog/upcoming-nextjs-security-update-october-2026">Upcoming Next.js security update</a>: a heads-up that a patch for upstream vulnerabilities is coming &mdash; watch for the release.</li>
+</ul>
+
+<h3>Rust</h3>
+<ul>
+<li><a href="https://users.rust-lang.org/t/rfig-rust-terminal-autocomplete-for-zsh-bash-and-fish/142905">Rfig</a>: a new Rust-based terminal autocomplete tool for zsh, Bash and Fish.</li>
+</ul>
+
+<h3>Java</h3>
+<ul>
+<li><a href="https://spring.io/blog/2026/10/08/a-bootiful-podcast-kohsuke-kawaguchi">A Bootiful Podcast with Kohsuke Kawaguchi</a>: the Jenkins creator talks shop on the Spring team's podcast.</li>
+</ul>
+
+<h3>IaC and DevOps</h3>
+<ul>
+<li><a href="https://github.blog/changelog/2026-10-08-triage-role-users-or-higher-can-now-archive-pull-requests">Triage role can now archive pull requests</a> on GitHub.</li>
+<li><a href="https://github.blog/changelog/2026-10-08-screen-readers-can-navigate-timelines-as-lists">Screen readers can navigate GitHub timelines as lists</a>: an accessibility improvement.</li>
+<li><a href="https://github.blog/changelog/2026-10-08-draft-pull-requests-count-toward-pull-request-limits">Draft pull requests now count toward PR limits</a> on GitHub &mdash; worth knowing if you keep long-lived drafts open.</li>
+</ul>
+
+<h3>AWS</h3>
+<ul>
+<li><a href="https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-rds-oracle-minor-version-upgrade-precheck-new-patching-rds-event/">RDS for Oracle gets upgrade prechecks</a>: run a precheck before a minor-version upgrade, plus a new event signaling when the instance is back online post-patch.</li>
+<li><a href="https://aws.amazon.com/about-aws/whats-new/2026/10/aws-network-firewall-container-attributes-wildcard">Network Firewall adds wildcard container filters</a>: match multiple EKS/ECS workloads with one rule instead of per-workload associations.</li>
+<li><a href="https://aws.amazon.com/blogs/machine-learning/share-gpu-clusters-across-teams-with-isolation-and-fairness-using-amazon-sagemaker-hyperpod/">Sharing a SageMaker HyperPod cluster across teams</a>: a reference architecture using IAM Identity Center, per-team namespaces, Task Governance and cost allocation for multi-tenant GPU sharing.</li>
+<li><a href="https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-gamelift-servers-cpu-burstability">GameLift Servers adds CPU burstability</a> for container fleets, replacing the old fixed-CPU tradeoff with bursting.</li>
+</ul>
+
+<h3>AI and agents</h3>
+<ul>
+<li><a href="https://simonwillison.net/2026/Oct/9/ttok/">ttok 1.0</a>: Simon Willison's CLI token-counter now defaults to the GPT-5/6 tokenizer instead of GPT-4's.</li>
+<li><a href="https://simonwillison.net/2026/Oct/8/carson-gross/">Quoting Carson Gross</a>: a short, quotable take on programming as problem-solving plus complexity control.</li>
+<li><a href="https://www.latent.space/p/periodic">Periodic Labs on semiconductors to superconductors</a>: a Latent Space interview on AI for materials science research.</li>
+</ul>
+
+<h3>Security</h3>
+<ul>
+<li><a href="https://www.wiz.io/blog/introducing-wiz-ai-sast">Wiz AI SAST</a>: a new static-analysis product that reasons about code together with its infrastructure context.</li>
+<li><a href="https://www.ncsc.gov.uk/news/china-linked-actors-called-out-by-uk-and-international-partners-for-targeting-sensitive-data">UK and allies call out China-linked actors</a> for targeting sensitive data globally.</li>
+<li><a href="https://thehackernews.com/2026/10/fbi-says-china-linked-hackers-ran.html">FBI: China-linked hackers ran an access-as-a-service portal</a> for stolen government and healthcare emails.</li>
+<li><a href="https://thehackernews.com/2026/10/monstercloud-owner-accused-of-billing.html">MonsterCloud's owner accused of billing $19M</a> while secretly paying the ransoms it claimed to avoid.</li>
+<li><a href="https://www.schneier.com/blog/archives/2026/10/how-technology-empowers-and-imperils-dictators.html">How technology empowers &mdash; and imperils &mdash; dictators</a>: Schneier on the double edge of surveillance tech for authoritarian regimes.</li>
+<li><a href="https://thehackernews.com/2026/10/japan-sees-sharp-rise-in-web-data-leaks.html">Japan sees a sharp rise in web data leaks</a> via mobile API abuse and Metabase attacks.</li>
+</ul>
+
+<h3>AI security</h3>
+<ul>
+<li><a href="https://danielmiessler.com/blog/harness-gardens">Harness Gardens</a>: Daniel Miessler on cultivating rather than controlling AI systems.</li>
+</ul>
+
+<h3>Engineering practice</h3>
+<ul>
+<li><a href="https://newsletter.pragmaticengineer.com/p/the-pulse-new-trend-of-building-internal">The rise of internal "vibe-coding" apps</a> at tech companies, per The Pragmatic Engineer.</li>
+</ul>
+
+<h3>Feeds that failed</h3>
+<ul>
+<li>CISA advisories (malformed XML on the source feed)</li>
+</ul>
+</body></html>

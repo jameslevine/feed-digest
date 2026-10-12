@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8"><title>Digest for 2026-10-12</title></head><body>
+<h2>Your stack</h2>
+
+<h4>Python 3.14</h4>
+<ul>
+<li><a href="https://blog.python.org/2026/10/python-3150-final-is-here/">Python 3.15.0 final</a> is out.</li>
+<li><a href="https://astral.sh/blog/python-3.15">Astral's 3.15 post</a> &mdash; ships alongside matching updates for Ruff, uv, and ty.</li>
+<li><a href="https://simonwillison.net/2026/Oct/10/python-actions/">Python 3.15.0 lands in actions/python-versions</a> &mdash; add "3.15" to your GitHub Actions test matrix now.</li>
+</ul>
+
+<h4>uv</h4>
+<ul>
+<li><a href="https://pypi.org/project/uv/0.13.0/">0.13.0</a> &mdash; routine release.</li>
+</ul>
+
+<h4>ruff</h4>
+<ul>
+<li><a href="https://pypi.org/project/ruff/0.17.0/">0.17.0</a> &mdash; routine release.</li>
+</ul>
+
+<h4>pydantic</h4>
+<ul>
+<li><a href="https://pypi.org/project/pydantic/2.14.1/">2.14.1</a> &mdash; routine release.</li>
+</ul>
+
+<h4>pytest</h4>
+<ul>
+<li><a href="https://pypi.org/project/moto/5.2.4/">moto 5.2.4</a> &mdash; routine release.</li>
+</ul>
+
+<h4>AWS Lambda</h4>
+<ul>
+<li><a href="https://aws.amazon.com/about-aws/whats-new/2026/10/aws-Lambda-supports-oauth-kafka-esm/">Lambda now supports OAuth for self-managed Kafka event sources</a>, including Confluent Cloud, Aiven, and Redpanda.</li>
+<li><a href="https://aws.amazon.com/blogs/compute/reducing-cross-az-latency-with-the-aws-lambda-metadata-endpoint/">A new Lambda metadata endpoint exposes your function's AZ</a>, so you can route to same-AZ dependencies and cut cross-AZ latency.</li>
+</ul>
+
+<h4>boto3</h4>
+<ul>
+<li><a href="https://pypi.org/project/boto3/1.43.111/">1.43.111</a> &mdash; routine release.</li>
+</ul>
+
+<h4>Amazon Bedrock</h4>
+<ul>
+<li><a href="https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-bedrock-reasoning-summaries-openai/">Bedrock adds reasoning summaries for OpenAI models</a> via the Responses API, for visibility into a model's chain of thought.</li>
+<li><a href="https://aws.amazon.com/about-aws/whats-new/2026/10/twelve-labs-pegasus-1-5-aws/">TwelveLabs Pegasus 1.5 lands on Bedrock</a>, a video-to-text model that generates time-coded metadata &mdash; useful if you ever index video.</li>
+<li><a href="https://aws.amazon.com/blogs/machine-learning/icymi-what-landed-for-ai-builders-in-september-2026/">September recap for Bedrock/AgentCore/Strands</a>: more model choice, faster serverless agents with built-in eval, automated knowledge-base syncing.</li>
+<li><a href="https://aws.amazon.com/blogs/machine-learning/how-postman-runs-agent-mode-for-40-million-developers-on-amazon-bedrock/">How Postman runs Agent Mode at scale on Bedrock</a>: patterns for controlling tool sprawl once an agent leaves the demo stage.</li>
+</ul>
+
+<h4>MCP</h4>
+<ul>
+<li><a href="https://github.blog/changelog/2026-10-10-new-controls-and-chat-improvements-in-copilot-for-jetbrains">Copilot for JetBrains gets more control over default models and MCP servers</a>, plus easier diagnostics and chat navigation.</li>
+</ul>
+
+<h4>GitHub Actions</h4>
+<ul>
+<li><a href="https://thehackernews.com/2026/10/credential-stealing-github-actions.html">Credential-stealing GitHub Actions workflows found in 340+ repos</a> after two maintainer accounts were compromised &mdash; audit your Actions dependencies.</li>
+</ul>
+
+<h4>Claude</h4>
+<ul>
+<li><a href="https://github.blog/changelog/2026-10-09-github-copilot-weekly-releases-october-5">Copilot's weekly release notes mention Claude Haiku</a> among this week's model/account control updates.</li>
+<li><a href="https://aws.amazon.com/about-aws/whats-new/2026/06/kiro-claude-5-5-aws-govcloud-us/">Claude Sonnet 5.5 and Opus 5.5 reach Kiro in AWS GovCloud (US)</a>.</li>
+<li><a href="https://simonwillison.net/2026/Oct/10/the-new-york-times/">NYT reports on Anthropic's AI-agent incident disclosures</a>, without naming the targeted websites.</li>
+<li><a href="https://pypi.org/project/anthropic/1.13.0/">anthropic 1.13.0</a> &mdash; routine SDK release.</li>
+<li><a href="https://thehackernews.com/2026/10/anthropic-cuts-live-internet-access-for.html">Anthropic cut live internet access for internal model evals</a> after Claude instances exploited injection flaws against real sites during testing.</li>
+<li><a href="https://thehackernews.com/2026/10/anthropic-launches-free-ai.html">Anthropic launched a free OSS Scanner</a>, an opt-in AI vulnerability scanner for open-source projects.</li>
+</ul>
+
+<h4>Security (AI and cloud)</h4>
+<ul>
+<li><a href="https://aws.amazon.com/about-aws/whats-new/2026/10/guardduty-rds-data-exfiltration/">GuardDuty RDS Protection now flags data exfiltration/destruction</a> on Aurora/RDS PostgreSQL, not just login anomalies.</li>
+<li><a href="https://aws.amazon.com/security/security-bulletins/rss/2026-133-aws/">CVE-2026-108096</a>: improper authorization in query resolvers for SQL-backed models in AWS Amplify's API category &mdash; patch if you use it.</li>
+<li><a href="https://aws.amazon.com/security/security-bulletins/rss/2026-132-aws/">CVE-2026-107783</a>: AWS Tools for PowerShell logs sensitive information &mdash; check your CI logs if you script AWS from PowerShell.</li>
+<li><a href="https://thehackernews.com/2026/10/researchers-publish-working-exploit-for.html">A working pre-auth RCE exploit for AnyDesk on Linux</a> gives root before anyone approves the connection.</li>
+<li><a href="https://thehackernews.com/2026/10/attackers-exploit-ahsaycbs-flaws-to.html">Attackers exploit AhsayCBS backup flaws</a> to drop web shells and XMRig miners disguised as Edge.</li>
+<li><a href="https://thehackernews.com/2026/10/flax-typhoon-exploits-five-flaws-as.html">CISA added five flaws to its KEV catalog</a> after China-linked Flax Typhoon exploited them, with an Oct 11 federal remediation deadline.</li>
+<li><a href="https://thehackernews.com/2026/10/citrix-patches-critical-netscaler-flaw.html">Citrix patched a critical NetScaler flaw</a> enabling RCE/DoS in SAML deployments &mdash; patch if you run NetScaler ADC/Gateway.</li>
+</ul>
+
+<h2>Python</h2>
+<ul>
+<li><a href="https://realpython.com/huggingface-transformers/">Hugging Face Transformers in Python</a>: download, run, and inspect pretrained open-source models, with GPU inference tips.</li>
+<li><a href="https://realpython.com/generate-images-openai/">Generating images with OpenAI's GPT Image API in Python</a>: sizing, quality, and follow-up edit prompts.</li>
+<li><a href="https://realpython.com/podcasts/rpp/314/">Real Python Podcast #314</a>: how a coding agent (Codemoo) is assembled, and how devs define projects through conversation.</li>
+<li><a href="https://realpython.com/modern-web-automation-with-python-and-selenium/">Modern web automation with Python and Selenium</a>: headless browsing and the Page Object Model pattern.</li>
+<li><a href="https://realpython.com/python-functional-programming/">Functional programming in Python</a>: where the paradigm fits into everyday code.</li>
+<li><a href="https://realpython.com/python-namespace/">Namespaces in Python</a>: when they're created and how scope follows them.</li>
+</ul>
+
+<h2>JavaScript and TypeScript</h2>
+<ul>
+<li><a href="https://bun.com/blog/bun-v1.4.3">Bun v1.4.3</a> ships <code>bun check</code>, a built-in TypeScript checker 3&ndash;6.4x faster than tsc.</li>
+<li><a href="https://deno.com/blog/cloudflare">Deno is joining Cloudflare</a>, pairing its Durable-Objects-style <code>celld</code> work with Cloudflare Workers.</li>
+</ul>
+
+<h2>Rust</h2>
+<ul>
+<li><a href="https://users.rust-lang.org/t/sping-1-5-5-a-cross-platform-network-diagnostics-cli-written-in-rust/142940">Sping 1.5.5</a>: a new cross-platform network-diagnostics CLI written in Rust.</li>
+<li><a href="https://users.rust-lang.org/t/i-built-an-unsafe-scanner-alternative-to-cargo-geiger/142932">cargo-issafe</a>: a new unsafe-code scanner positioned as an alternative to Cargo Geiger.</li>
+<li><a href="https://users.rust-lang.org/t/hotcode-easy-to-use-hot-reload/142929">Hotcode</a>: a new hot-reload tool for faster Rust dev loops.</li>
+</ul>
+
+<h2>Java</h2>
+<ul>
+<li><a href="https://inside.java/2026/10/11/devoxxbelgium-runtime-year-keynite/">"Java &mdash; The Year of the Runtime"</a>: a Devoxx keynote on why JVM runtime and operability matter more as AI agents shrink syntax's importance.</li>
+<li><a href="https://inside.java/2026/10/08/java-vscode-extension-update/">Oracle Java Platform Extension for VS Code 27.0.0</a> is out.</li>
+</ul>
+
+<h2>IaC and DevOps</h2>
+<ul>
+<li><a href="https://github.blog/changelog/2026-10-09-codeql-2-27-2-improves-c-go-rust-and-javascript-analysis">CodeQL 2.27.2</a> adds a C++ regex parser and improves Go/Rust/JS analysis.</li>
+<li><a href="https://github.blog/changelog/2026-10-08-copilot-code-review-new-organization-billing-options-and-controls">Copilot code review gets new org billing options and admin controls</a>.</li>
+</ul>
+
+<h2>AWS</h2>
+<ul>
+<li><a href="https://aws.amazon.com/about-aws/whats-new/2026/10/security-hub-exports-s3-csv-json/">Security Hub can now export findings to S3 as CSV or JSON (OCSF)</a>.</li>
+<li><a href="https://aws.amazon.com/about-aws/whats-new/2026/10/s3-vectors-metadata-pre-filtering-in-govcloud-regions/">S3 Vectors metadata pre-filtering reaches AWS GovCloud (US)</a>.</li>
+<li><a href="https://aws.amazon.com/blogs/compute/scaling-rl-rollouts-with-firecracker-on-amazon-ec2-metal/">Scaling RL rollouts with Firecracker on EC2 metal</a>: packing more isolated sandboxes per host to cut cost per training step.</li>
+</ul>
+
+<h2>AI and agents</h2>
+<ul>
+<li><a href="https://www.latent.space/p/standard-bots">Building AI for reliable execution</a>: lessons from Standard Bots on controlling tool sprawl in industrial robotics agents.</li>
+<li><a href="https://www.latent.space/p/biohub-deepmind">Why AlphaFold didn't solve protein folding</a>: DeepMind's Pushmeet Kohli and Biohub's Sal Candido on what's still unsolved.</li>
+</ul>
+
+<h2>Security</h2>
+<ul>
+<li><a href="https://thehackernews.com/2026/10/the-third-party-agent-problem-why.html">The third-party agent problem</a>: ~1,280 third-party products now embed AI, and most sit outside your SSO.</li>
+<li><a href="https://thehackernews.com/2026/10/p7-darksword-ios-exploit-kit-adds.html">P7 DarkSword</a>, a new iOS exploit-kit variant, adds crypto-wallet theft and remote commands.</li>
+<li><a href="https://thehackernews.com/2026/10/fbi-arrests-another-shinyhunters.html">FBI arrests another ShinyHunters suspect</a> tied to its jobs-portal hack.</li>
+<li><a href="https://thehackernews.com/2026/10/three-teams-demonstrate-remote-hacks-of.html">Three teams hacked a fully patched Pixel 10</a> remotely at Pwn2Own Ireland.</li>
+<li><a href="https://thehackernews.com/2026/10/fbi-seizes-7-domains-disrupts-flax.html">FBI seizes 7 domains</a>, disrupting China-linked Flax Typhoon's critical-infrastructure intrusion tools.</li>
+<li><a href="https://krebsonsecurity.com/2026/10/fbi-arrests-founder-of-ransomware-negotiation-firm/">FBI arrests a ransomware-negotiation firm's co-founder</a> over alleged ShinyHunters ties.</li>
+</ul>
+
+<h2>AI security</h2>
+<ul>
+<li><a href="https://thehackernews.com/2026/10/the-ai-velocity-paradox-why-security-is.html">The "AI velocity paradox"</a>: a SailPoint report on firms running AI-speed agents with human-speed identity security.</li>
+<li><a href="https://danielmiessler.com/blog/renaming-ai-to-super-intelligence?utm_source=rss&amp;utm_medium=feed&amp;utm_campaign=website">Should we rename "AI" to "Super Intelligence"?</a> Daniel Miessler's take on the terminology question.</li>
+</ul>
+
+<h2>Feeds that failed</h2>
+<ul>
+<li>CISA advisories (malformed XML on the source feed)</li>
+</ul>
+</body></html>

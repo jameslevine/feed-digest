@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8"><title>Digest for 2026-10-13</title></head><body>
+<h2>Your stack</h2>
+
+<h4>Python 3.14</h4>
+<ul>
+<li><a href="https://simonwillison.net/2026/Oct/12/python-3-15/">Python 3.15.0 final is out</a>, bringing explicit lazy imports (PEP 810), comprehension unpacking (PEP 798), and a new stdlib sampling profiler &mdash; and Python 3.10 is now officially unsupported.</li>
+</ul>
+
+<h4>uv</h4>
+<ul>
+<li>Simon Willison's <a href="https://simonwillison.net/2026/Oct/12/python-3-15/">same 3.15 write-up</a> walks through the upgrade with uv (<code>uv self update</code>, <code>uv python install 3.15</code>, <code>uv python pin --global 3.15</code>) &mdash; a handy script for your own upgrade.</li>
+</ul>
+
+<h4>boto3</h4>
+<ul>
+<li><a href="https://pypi.org/project/boto3/1.43.112/">1.43.112</a> &mdash; routine release.</li>
+</ul>
+
+<h4>AWS Lambda</h4>
+<ul>
+<li>AWS <a href="https://aws.amazon.com/blogs/aws/announcing-aws-lambda-web-functions-for-fast-consistent-web-app-performance-anywhere/">launched Lambda Web Functions</a>, a serverless primitive that runs HTTP frameworks like Express or Hono directly with no adapters; CloudFront can now <a href="https://aws.amazon.com/about-aws/whats-new/2026/10/cloudfront-lambda-web-functions-origin/">use it as an origin</a> for edge TLS termination and caching.</li>
+</ul>
+
+<h4>Amazon Bedrock</h4>
+<ul>
+<li>Bedrock AgentCore <a href="https://aws.amazon.com/about-aws/whats-new/2026/10/agentcore-memory-consumption-based-pricing">short-term memory now bills by data ingested/stored</a> instead of a flat per-event rate &mdash; cheaper if your agents write frequent small events.</li>
+<li><a href="https://aws.amazon.com/blogs/machine-learning/accessing-openai-gpt-models-on-amazon-bedrock-with-global-cross-region-inference-in-thailand-malaysia-singapore-indonesia-and-taiwan/">Bedrock's cross-Region inference for OpenAI GPT models expands</a> to Thailand, Malaysia, Singapore, Indonesia, and Taiwan via the Converse and OpenAI-compatible APIs.</li>
+</ul>
+
+<h4>GitHub Actions</h4>
+<ul>
+<li><a href="https://github.blog/changelog/2026-10-12-anonymous-organization-level-registries-for-dependabot">Dependabot now supports anonymous auth for org-level private registries</a>, useful for internal package mirrors that need no credentials.</li>
+</ul>
+
+<h4>AWS Organizations and Control Tower</h4>
+<ul>
+<li>AWS's quantum-resistant signing series, <a href="https://aws.amazon.com/blogs/security/quantum-resistant-signing-on-aws-part-2-enforce-your-ml-dsa-algorithm-policy-with-scps-and-iam/">Part 2</a>, shows enforcing an ML-DSA signing-algorithm policy org-wide with SCPs and IAM so non-compliant choices get blocked before they happen.</li>
+</ul>
+
+<h4>MCP</h4>
+<ul>
+<li>GitHub's <a href="https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-how-to-teach-copilot-about-your-codebase/">Copilot app beginner's guide</a> covers connecting MCP servers like Playwright so Copilot can act on your codebase.</li>
+</ul>
+
+<h4>Claude</h4>
+<ul>
+<li><a href="https://thehackernews.com/2026/10/cyberxero-uses-claude-code-in-campaign.html">CyberXero used Claude Code as an AI orchestration layer</a> alongside Cobalt Strike in a campaign that stole 628,000+ Ukrainian records &mdash; a reminder agentic coding tools get weaponized too.</li>
+<li>Snyk's <a href="https://snyk.io/blog/frontier-models-vulnerabilities-attacker-chains/">comparison of Claude Security, Claude Code Security, and Evo COS</a> finds live attack-chain testing catches exploitable chains that static analysis alone misses.</li>
+<li>Anthropic's <a href="https://www.latent.space/p/claude-dynamic-workflows">"Dynamic Workflows" talk</a> explains how Claude agents coordinate larger projects, drawing on Unix/Linux design lessons.</li>
+<li>Strands Agents <a href="https://pypi.org/project/strands-agents/1.60.0/">shipped v1.60.0</a>.</li>
+</ul>
+
+<h4>Security (AI and cloud)</h4>
+<ul>
+<li><a href="https://aws.amazon.com/blogs/security/guardduty-extended-threat-detection-has-added-five-new-indicators-to-surface-attack-sequences/">GuardDuty Extended Threat Detection added five indicator types</a> (malicious package, misconfiguration, reachability, sensitive data, vulnerability) for correlating attack sequences.</li>
+<li>AWS's quantum-resistant signing series, <a href="https://aws.amazon.com/blogs/security/quantum-resistant-signing-on-aws-part-1-build-a-software-supply-chain-with-ml-dsa/">Part 1</a>, builds a software-supply-chain signing flow with ML-DSA to resist future quantum attacks on RSA/ECDSA.</li>
+<li><a href="https://thehackernews.com/2026/10/critical-sonicwall-sma-1000-flaw.html">A critical SonicWall SMA 1000 SSRF flaw</a> (CVE-2026-102255, CVSS 10.0) is under active exploitation, 135+ attempts within days of patching.</li>
+<li><a href="https://thehackernews.com/2026/10/attackers-exploit-cvss-100-bricksforge.html">A max-severity Bricksforge WordPress flaw</a> (CVE-2026-85097, CVSS 10.0) is being exploited for unauthenticated RCE.</li>
+</ul>
+
+<h2>Python</h2>
+<ul>
+<li><a href="https://realpython.com/extract-table-from-pdf-python/">Docling vs LlamaParse for PDF table extraction</a>: comparing local parsing against a cloud API on speed and cost.</li>
+</ul>
+
+<h2>Java</h2>
+<ul>
+<li><a href="https://inside.java/2026/10/12/devoxxbelgium-structured-concurrency/">Structured Concurrency Looms</a>: a Devoxx session on Project Loom's next major feature and the lower-level API beneath it.</li>
+<li><a href="https://inside.java/2026/10/11/devoxxbelgium-runtime-year-keynote/">"Java &mdash; The Year of the Runtime"</a>: why JVM performance and operability matter more as AI coding agents make syntax less central.</li>
+<li><a href="https://www.infoq.com/news/2026/10/java-news-roundup-oct05-2026/?utm_campaign=infoq_content&amp;utm_source=infoq&amp;utm_medium=feed&amp;utm_term=Java">Java News Roundup</a>: Grails 8.0 and Open Liberty 20.0.0.10 reach GA, plus point releases of Infinispan, LangChain4j, and Spock.</li>
+</ul>
+
+<h2>IaC and DevOps</h2>
+<ul>
+<li><a href="https://github.blog/changelog/2026-10-12-client-telemetry-user-attribution-and-configurable-capture">GitHub Copilot telemetry can now attribute activity to a user</a> without collecting prompts, responses, or tool content.</li>
+<li><a href="https://github.blog/changelog/2026-10-12-push-attribution-public-preview">Push attribution for commits</a> is in limited public preview, recording who actually pushed each commit alongside author/committer.</li>
+</ul>
+
+<h2>AWS</h2>
+<ul>
+<li><a href="https://aws.amazon.com/blogs/database/understanding-the-differences-between-pgbouncer-and-amazon-rds-proxy-for-postgresql-connection-pooling/">PgBouncer vs Amazon RDS Proxy</a>: a framework for choosing between a managed and self-managed Postgres connection pooler.</li>
+<li><a href="https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-elasticache-valkey-elasticache-insights/">ElastiCache for Valkey gets ElastiCache Insights</a>, a prebuilt CloudWatch dashboard for cluster health, latency, and errors.</li>
+<li><a href="https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-emr-data-quality-spark/">Amazon EMR adds native data-quality checks in Spark jobs</a>, powered by AWS Glue, at no extra cost.</li>
+<li><a href="https://aws.amazon.com/about-aws/whats-new/2026/10/s3-express-one-zone-4-additional-regions/">S3 Express One Zone expands to 4 more Regions</a>: London, Jakarta, Hong Kong, and Cape Town.</li>
+<li><a href="https://aws.amazon.com/about-aws/whats-new/2026/10/opensearch-index-level-encryption/">OpenSearch Service adds index-level encryption</a>, letting each index use its own KMS key on a shared domain.</li>
+<li><a href="https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-g7-european-regions/">EC2 G7 GPU instances reach Frankfurt and Stockholm</a>, with up to 4.6x the AI inference performance of G6.</li>
+</ul>
+
+<h2>Security</h2>
+<ul>
+<li><a href="https://www.schneier.com/blog/archives/2026/10/fbi-arrests-suspect-in-fbi-hacking-case.html">FBI arrests a suspect</a> tied to ShinyHunters' theft of FBI agent data.</li>
+<li><a href="https://thehackernews.com/2026/10/bring-your-own-agent-your-employees.html">"Bring Your Own Agent"</a>: employees are already running personal AI agents at work, often invisibly to security teams.</li>
+<li><a href="https://thehackernews.com/2026/10/ledger-finds-unauthorized-hardware.html">Ledger paused sales through reseller CryptoBilis</a> after a hardware implant led to $86k+ in stolen funds.</li>
+<li><a href="https://www.wiz.io/blog/red-agent-financial-services-data-exposure">Wiz's Red Agent found a Fortune 500 data exposure</a> that inside-out DSPM tools missed, by scanning like an attacker.</li>
+<li><a href="https://www.wiz.io/blog/introducing-wiz-ai-sast">Wiz launched AI SAST</a>, a code scanner aimed at business-logic flaws that connects findings to your infrastructure context.</li>
+<li><a href="https://snyk.io/blog/autonomous-attacks-already-here-defense-match-their-speed/">Autonomous attacks are shrinking the defense window</a>: Snyk on matching their speed with continuous discovery and remediation.</li>
+</ul>
+
+<h2>Feeds that failed</h2>
+<ul>
+<li>CISA advisories (malformed XML on the source feed)</li>
+</ul>
+</body></html>

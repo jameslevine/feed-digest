@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8"><title>Digest for 2026-10-14</title></head><body>
+<h2>Your stack</h2>
+
+<h4>Python 3.14</h4>
+<ul>
+<li>Simon Willison <a href="https://simonwillison.net/2026/Oct/12/python-3-15-web-edit-profiling/">put Python 3.15's new profiler through its paces</a>, generating flame graphs and source heatmaps for a real app.</li>
+</ul>
+
+<h4>uv</h4>
+<ul>
+<li><a href="https://pypi.org/project/uv/0.13.1/">uv 0.13.1</a> is out &mdash; routine point release.</li>
+</ul>
+
+<h4>boto3</h4>
+<ul>
+<li><a href="https://pypi.org/project/boto3/1.43.113/">boto3 1.43.113</a> is out &mdash; routine SDK bump.</li>
+</ul>
+
+<h4>AWS Lambda</h4>
+<ul>
+<li>A new AWS Compute Blog post <a href="https://aws.amazon.com/blogs/compute/exploring-aws-lambda-web-functions-for-building-web-applications/">walks through Lambda Web Functions</a> in depth: a plain Node.js web server on Lambda, no adapter layer, one-command deploy.</li>
+</ul>
+
+<h4>DynamoDB</h4>
+<ul>
+<li><a href="https://aws.amazon.com/blogs/architecture/bulk-executor-for-amazon-dynamodb-part-2-lessons-we-learned-the-hard-way/">Bulk Executor for DynamoDB, Part 2</a> shares tradeoffs from building a bulk-write tool on DynamoDB and AWS Glue.</li>
+<li>A migration guide covers <a href="https://aws.amazon.com/blogs/database/modernizing-document-storage-for-search-scale-and-agility/">when to move document data off relational JSON/BLOB</a> and how to pick between DocumentDB and DynamoDB.</li>
+</ul>
+
+<h4>Amazon Bedrock</h4>
+<ul>
+<li><a href="https://aws.amazon.com/blogs/mt/ai-powered-anomaly-detection-for-aws-systems-manager-session-manager-logs-using-amazon-bedrock/">Session Manager logs now get AI-powered anomaly detection via Bedrock</a>, useful for flagging suspicious SSM commands at scale.</li>
+<li><a href="https://aws.amazon.com/blogs/machine-learning/building-agents-that-transact-with-anchor-browser-and-agentcore-payments/">AgentCore payments lets agents autonomously pay for x402-protected resources</a>, checking budgets and signing transactions without exposing wallet credentials.</li>
+<li>A new pattern <a href="https://aws.amazon.com/blogs/machine-learning/manage-private-pricing-offers-for-amazon-bedrock-with-managed-entitlements/">automates accepting Marketplace private-pricing offers for Bedrock models</a> across many accounts.</li>
+<li>Orca Security's <a href="https://aws.amazon.com/blogs/machine-learning/natural-language-security-queries-at-orca-security-using-amazon-bedrock/">natural-language-to-query agent on Bedrock</a> cut query cost 90% and latency 75% after a multi-stage rework.</li>
+<li><a href="https://aws.amazon.com/blogs/machine-learning/how-shipstation-global-built-an-ai-it-help-desk-on-amazon-bedrock-agentcore/">ShipStation Global's AgentCore IT help desk</a> now resolves 97.5% of Slack support queries, including reading error screenshots.</li>
+<li><a href="https://aws.amazon.com/blogs/machine-learning/build-long-horizon-agents-with-grok-4-7-on-amazon-bedrock/">Grok 4.7 is now available on Bedrock</a>, with a worked example tuning reasoning effort against cost.</li>
+</ul>
+
+<h4>GitHub Actions</h4>
+<ul>
+<li>GitHub shipped <a href="https://github.blog/changelog/2026-10-13-improved-detection-for-withdrawn-dependabot-alerts">improved detection for withdrawn Dependabot alerts</a> tied to retracted advisories.</li>
+</ul>
+
+<h4>MCP</h4>
+<ul>
+<li>AWS's <a href="https://aws.amazon.com/about-aws/whats-new/2026/10/aws-agent-registry-custom-metadata-registry-records">Agent Registry now supports custom metadata</a> on its catalog of agents, MCP servers, skills and gateways.</li>
+</ul>
+
+<h4>Claude</h4>
+<ul>
+<li><a href="https://pypi.org/project/claude-agent-sdk/0.2.166/">claude-agent-sdk 0.2.166</a> is out &mdash; routine bump.</li>
+<li>AWS's weekly roundup flags <a href="https://aws.amazon.com/blogs/aws/aws-weekly-roundup-prime-day-2026-by-the-numbers-claude-haiku-5-5-amazon-nova-2-5-sonic-and-more-october-13-2026/">Claude Haiku 5.5's arrival</a> alongside Amazon Nova 2.5 Sonic.</li>
+<li>Simon Willison on <a href="https://simonwillison.net/2026/Oct/13/redesigning-source-control-at-anthropic/">why Anthropic built its own alternative to Git</a>: code-change volume roughly doubled in six months and Git stopped scaling for them.</li>
+<li><a href="https://thehackernews.com/2026/10/anthropic-warns-small-ai-models-could.html">Anthropic warns small AI models may soon self-replicate across IoT devices</a> into autonomous worm botnets.</li>
+</ul>
+
+<h4>Security (AI and cloud)</h4>
+<ul>
+<li>Microsoft's October Patch Tuesday <a href="https://thehackernews.com/2026/10/microsoft-patches-record-1413-flaws.html">set a record with 1,413 flaws fixed</a>, one under active exploitation.</li>
+<li>An attacker <a href="https://thehackernews.com/2026/10/attacker-chains-three-ivanti-connect.html">chained three Ivanti Connect Secure zero-days for unauthenticated root access</a>; only two are patched, and CISA has added the auth-bypass CVE to its Known Exploited Vulnerabilities catalog.</li>
+<li>SAP disclosed a <a href="https://thehackernews.com/2026/10/sap-discloses-critical-cvss-10-flaw-in.html">critical CVSS 10 flaw in its Cloud SDK for Python</a> that can leak an app's OAuth2 client credentials to an attacker.</li>
+<li>GitHub is <a href="https://thehackernews.com/2026/10/github-tightens-npm-publishing-after.html">tightening npm trusted-publishing</a> after a flaw let attackers hijack unclaimed configs and push versions of someone else's package.</li>
+<li>Docker fixed a <a href="https://thehackernews.com/2026/10/docker-fixes-critical-two-year-old-hub.html">two-year-old Docker Hub flaw</a> that let one user push, pull or delete images as another.</li>
+<li>GitLab patched a <a href="https://thehackernews.com/2026/10/gitlab-patches-cvss-100-flaw-that-could.html">CVSS 10.0 flaw letting unauthenticated users run server code</a> on CE and EE &mdash; patch now if you self-host.</li>
+<li>GitHub <a href="https://github.blog/ai-and-ml/githubs-model-for-secret-detection-finding-more-secrets-with-less-noise/">overhauled its secret-detection classifier</a> and now <a href="https://github.blog/changelog/2026-10-13-secret-scanning-blocks-anthropic-keys-by-default-adds-salesforce">blocks leaked Anthropic API keys by default</a>.</li>
+<li>Wiz's <a href="https://www.wiz.io/blog/red-agent-financial-services-data-exposure">attacker-emulating "Red Agent"</a> found a public page exposing a Fortune 500 firm's data in minutes, where inside-out DSPM scanning had missed it.</li>
+<li>Johann Rehberger disclosed <a href="https://embracethered.com/blog/posts/2026/visual-studio-copilot-remote-code-execution/">an RCE bug in Visual Studio Copilot and SSMS (CVE-2026-103572)</a>, now patched &mdash; another exploitable AI coding-assistant tool-use path.</li>
+</ul>
+
+<h3>Python</h3>
+<ul>
+<li><a href="https://blog.python.org/2026/10/python-3160-alpha-1-is-now-available/">Python 3.16.0 alpha 1</a> is out, the first preview of the release after 3.15.</li>
+</ul>
+
+<h3>JavaScript and TypeScript</h3>
+<ul>
+<li><a href="https://javascriptweekly.com/issues/806">This week's JavaScript Weekly</a> notes Deno is folding its deploy engine into Cloudflare's workerd so Durable Objects can be self-hosted, rather than Deno itself joining Cloudflare.</li>
+</ul>
+
+<h3>React</h3>
+<ul>
+<li><a href="https://tanstack.com/blog/tanstack-start-1-0">TanStack Start 1.0 is stable</a> and ready for production.</li>
+</ul>
+
+<h3>Rust</h3>
+<ul>
+<li>Rust <a href="https://blog.rust-lang.org/inside-rust/2026/10/13/1.99.1-prerelease/">1.99.1's pre-release is ready for testing</a> ahead of an October 15 release.</li>
+<li><a href="https://users.rust-lang.org/t/creusot-0-14-0-contracts-for-rust-formally-proved/143003">Creusot 0.14.0</a>, a tool for formally verifying Rust code via SMT solvers, is out.</li>
+</ul>
+
+<h3>IaC and DevOps</h3>
+<ul>
+<li>GitHub shipped <a href="https://github.blog/changelog/2026-10-13-github-app-improvements-for-least-privilege-and-management">GitHub App improvements for least privilege</a>, easing the move off classic PATs.</li>
+<li><a href="https://github.blog/changelog/2026-10-13-gemini-4-argon-in-github-copilot">Gemini 4 Argon is now GA in GitHub Copilot</a>, aimed at complex coding and agentic tasks.</li>
+</ul>
+
+<h3>AWS</h3>
+<ul>
+<li><a href="https://aws.amazon.com/about-aws/whats-new/2026/10/security-hub-resource-criticality/">AWS Security Hub now supports resource criticality</a>, letting security teams prioritize exposures on business-critical resources.</li>
+<li>The next-gen <a href="https://aws.amazon.com/blogs/architecture/scope-workloads-and-share-resilience-policies-with-aws-resilience-hub/">AWS Resilience Hub adds EKS label support, GenAI dependency insights, and cross-account policy sharing</a>.</li>
+<li>Your coding agent can now <a href="https://aws.amazon.com/about-aws/whats-new/2026/10/bring-sagemaker-ai-expertise-to-your-coding-agent/">drive SageMaker AI model training and deployment</a> via a new skill in the Agent Toolkit for AWS.</li>
+</ul>
+
+<h3>AI and agents</h3>
+<ul>
+<li>Martin Fowler's Naresh Jain <a href="https://martinfowler.com/articles/are-harnesses-worth-the-cost.html">compares coding agents with and without a behavioral harness</a>: a frontier model did fine either way, but a cost-optimized model only succeeded 3/10 runs unharnessed versus 10/10 harnessed.</li>
+<li>Simon Willison quotes Geoffrey Huntley on <a href="https://simonwillison.net/2026/Oct/13/geoffrey-huntley/">a pre-commit hook that fails the build when an agent bypasses your diagnostics module</a>.</li>
+</ul>
+
+<h3>Security</h3>
+<ul>
+<li><a href="https://thehackernews.com/2026/10/lg-smart-tvs-vulnerable-to-pre-auth.html">Three chained LG webOS flaws</a> give a local-network attacker root on certain smart TVs with no PIN; LG has a fix.</li>
+<li>CISA detailed how <a href="https://www.cisa.gov/news-events/cybersecurity-advisories/aa26-281a">Chinese government-linked actors combine automated and hands-on tooling</a> to steal sensitive data.</li>
+<li><a href="https://thehackernews.com/2026/10/low-cost-android-phones-ship-with.html">Low-cost MediaTek-based Android phones are shipping with firmware malware baked in</a>, turning them into residential proxies.</li>
+</ul>
+
+<h3>Engineering practice</h3>
+<ul>
+<li>The Pragmatic Engineer excerpts <em>Building Resilient Distributed Systems</em> on <a href="https://newsletter.pragmaticengineer.com/p/building-resilient-systems">handling AI-vendor uncertainty and disaster recovery</a>.</li>
+<li>Stripe's Monetize 2026 writeup covers <a href="https://stripe.com/blog/economics-of-ai-monetization">how AI companies blend subscriptions with usage-based billing</a> as costs shift.</li>
+</ul>
+
+<h3>Feeds that failed</h3>
+<p>Josh Comeau (timed out).</p>
+</body></html>

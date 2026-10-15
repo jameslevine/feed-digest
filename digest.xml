@@ -6,7 +6,135 @@
     <description><![CDATA[
 Daily AI summary of my RSS subscriptions
 ]]></description>
-    <lastBuildDate>Wed, 14 Oct 2026 06:12:37 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 15 Oct 2026 06:14:26 GMT</lastBuildDate>
+    <item><title>Digest for 2026-10-15</title><link>https://github.com/jameslevine/feed-digest/blob/main/digests/2026-10-15.html</link><guid isPermaLink="false">Digest for 2026-10-15</guid><pubDate>Thu, 15 Oct 2026 06:14:26 GMT</pubDate><description><![CDATA[
+<h2>Your stack</h2>
+
+<h4>uv</h4>
+<ul>
+<li>Trail of Bits <a href="https://blog.trailofbits.com/2026/10/14/package-managers-have-an-integrity-problem/">audited 25 package managers for supply-chain integrity</a> and found uv verifies lockfile tampering by default, but like most tools it needs extra configuration to check cryptographic signatures &mdash; worth knowing if you're trusting the lockfile alone.</li>
+</ul>
+
+<h4>FastAPI</h4>
+<ul>
+<li><a href="https://pypi.org/project/fastapi/0.143.1/">FastAPI 0.143.1</a> is out &mdash; routine point release.</li>
+</ul>
+
+<h4>boto3</h4>
+<ul>
+<li><a href="https://pypi.org/project/boto3/1.43.114/">boto3 1.43.114</a> is out &mdash; routine SDK bump.</li>
+</ul>
+
+<h4>AWS Lambda</h4>
+<ul>
+<li><a href="https://aws.amazon.com/about-aws/whats-new/2026/10/aws-lambda-durable-gen-limit-increase/">AWS Lambda durable functions</a> raised the per-execution operation limit tenfold (3,000 &rarr; 30,000) and the checkpoint payload cap to 1 MB, giving long multi-step or agentic workflows more room to run.</li>
+<li>AWS published a <a href="https://aws.amazon.com/blogs/compute/your-serverless-attendees-guide-to-aws-reinvent-2026/">serverless attendee's guide for re:Invent 2026</a>, previewing new Lambda execution models and AI agents as a new kind of serverless consumer.</li>
+</ul>
+
+<h4>API Gateway</h4>
+<ul>
+<li>A new architecture post covers <a href="https://aws.amazon.com/blogs/architecture/multi-region-disaster-recovery-for-amazon-api-gateway-websocket-apis/">multi-region disaster recovery for API Gateway WebSocket APIs</a>, combining Route 53 DNS failover, DynamoDB Global Tables, and a canary health probe to reconnect clients after a regional failover.</li>
+</ul>
+
+<h4>Amazon Bedrock</h4>
+<ul>
+<li>A walkthrough builds a <a href="https://aws.amazon.com/blogs/machine-learning/build-self-improving-document-processing-using-amazon-bedrock-agentcore/">self-improving document-processing pipeline on Bedrock AgentCore</a> that classifies, extracts, and learns from new document formats with minimal human review.</li>
+<li>Another post uses Bedrock AgentCore to <a href="https://aws.amazon.com/blogs/machine-learning/generate-presentations-with-amazon-bedrock-agentcore/">generate PowerPoint decks</a>: a supervisor agent plus RAG and Bedrock Guardrails producing grounded presentations from enterprise documents.</li>
+<li>Tamnoon describes <a href="https://aws.amazon.com/blogs/machine-learning/how-tamnoon-built-ai-powered-cloud-security-remediation-with-amazon-bedrock/">"Tami," an agentic cloud-security remediation orchestrator on Bedrock</a> that autonomously investigates and remediates CNAPP findings, citing a 90%+ cut in critical findings.</li>
+</ul>
+
+<h4>GitHub Actions</h4>
+<ul>
+<li>GitHub Actions <a href="https://github.blog/changelog/2026-10-14-github-actions-workflow-lockfiles-in-public-preview">workflow dependency lockfiles are now in public preview</a>, pinning the commits your workflows depend on so a moved tag can't silently change what runs.</li>
+</ul>
+
+<h4>Claude</h4>
+<ul>
+<li>The <a href="https://pypi.org/project/anthropic/1.14.0/">Anthropic Python SDK hit 1.14.0</a>, the <a href="https://pypi.org/project/claude-agent-sdk/0.2.167/">Claude Agent SDK (Python) hit 0.2.167</a>, and <a href="https://pypi.org/project/strands-agents/1.61.0/">Strands Agents hit 1.61.0</a> &mdash; routine point releases.</li>
+<li>Simon Willison built <a href="https://simonwillison.net/2026/Oct/14/tree-appreciator/">a three.js game entirely from the Claude iPhone chat app</a> using Opus 5.5 Max.</li>
+<li>At AI Engineer New York, Latent Space covered <a href="https://www.latent.space/p/crossing-the-threshold">how OpenAI and Anthropic are approaching autonomy and safety for financial agents</a>.</li>
+</ul>
+
+<h4>Security (AI and cloud)</h4>
+<ul>
+<li>AWS Transfer Family can now <a href="https://aws.amazon.com/about-aws/whats-new/2026/10/transfer-family-secrets-host-keys/">store SFTP host keys in your own Secrets Manager</a>, giving you direct control over server identity instead of relying on AWS-managed keys.</li>
+<li>RDS Proxy <a href="https://aws.amazon.com/about-aws/whats-new/2026/10/rds-proxy-supports-sqlserver-2022">added SQL Server 2022 support</a>, pulling credentials from Secrets Manager with standard IAM authentication.</li>
+<li>AWS disclosed <a href="https://aws.amazon.com/security/security-bulletins/rss/2026-135-aws/">CVE-2026-110310</a>, a padding-oracle issue in the S3 Encryption Client for .NET triggered by a legacy envelope key format downgrade &mdash; worth checking if you use that client.</li>
+</ul>
+
+<h3>Python</h3>
+<ul>
+<li>Real Python <a href="https://realpython.com/ai-benchmark-gemini-4-argon/">benchmarked Gemini 4 Argon's Python output</a> &mdash; turtle drawing, modern syntax, and made-up functions.</li>
+</ul>
+
+<h3>JavaScript and TypeScript</h3>
+<ul>
+<li>Node.js shipped <a href="https://nodejs.org/en/blog/release/v24.22.0">24.22.0 (LTS)</a> and <a href="https://nodejs.org/en/blog/release/v26.12.0">26.12.0 (Current)</a>.</li>
+<li>Node.js flagged <a href="https://nodejs.org/en/blog/vulnerability/october-2026-security-releases">security releases for October 21, 2026</a> &mdash; patch when they land.</li>
+</ul>
+
+<h3>React</h3>
+<ul>
+<li>Next.js issued an <a href="https://nextjs.org/blog/nextjs-security-update-october-14-2026">out-of-band security update</a> on October 14 for upstream vulnerabilities.</li>
+</ul>
+
+<h3>Go</h3>
+<ul>
+<li>Go 1.27 reworks <a href="https://go.dev/blog/http-connection-reuse">HTTP/1 connection reuse</a> in net/http, meaningfully speeding up programs that fire many sequential HTTP/1 requests.</li>
+</ul>
+
+<h3>Java</h3>
+<ul>
+<li>A new JEP proposal, previewed at Devoxx Belgium, would add a <a href="https://inside.java/2026/10/14/devoxxbelgium-everyday-json/">small incubating JSON API to the JDK</a> for everyday parsing and navigation without an external dependency.</li>
+</ul>
+
+<h3>IaC and DevOps</h3>
+<ul>
+<li>GitHub <a href="https://github.blog/engineering/architecture-optimization/from-2500-requests-to-24-rebuilding-star-history-without-the-stargazers/">rebuilt its repo star-history API</a> to show trends without exposing individual stargazer identities or doing unbounded database work &mdash; down from 2,500 requests to 24.</li>
+<li>GitHub's <a href="https://github.blog/news-insights/company-news/github-availability-report-september-2026/">September availability report</a> noted two incidents with degraded performance.</li>
+</ul>
+
+<h3>AWS</h3>
+<ul>
+<li>Amazon S3, including S3 Tables and S3 Vectors, is <a href="https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-s3-vercel-marketplace-v0">now available on the Vercel Marketplace and in v0 by Vercel</a>, so you can provision S3 resources without leaving that workflow.</li>
+<li>ARC Region switch <a href="https://aws.amazon.com/about-aws/whats-new/2026/10/region-switch-target-health-ssm-lambda/">added four capabilities</a>, including SSM and Lambda action blocks, for orchestrating multi-region failover.</li>
+<li>AWS is publishing pre-synced Ethereum and Solana node data to S3 under <a href="https://aws.amazon.com/about-aws/whats-new/2026/10/blockchain-snapshots-node-bootstrapping/">"Blockchain Snapshots on AWS"</a> to speed up node bootstrapping.</li>
+<li>CloudWatch now supports <a href="https://aws.amazon.com/about-aws/whats-new/2026/10/cloudwatch-pipelines-log-routing/">conditional log routing and chained parsers</a> via pipelines.</li>
+<li>A database-blog post covers <a href="https://aws.amazon.com/blogs/database/reducing-storage-initialization-impact-in-amazon-rds-for-postgresql-after-snapshot-restore/">PostgreSQL-native techniques to avoid the 10&ndash;15x slowdown</a> RDS for PostgreSQL sees right after a snapshot restore, while EBS lazily hydrates.</li>
+</ul>
+
+<h3>AI and agents</h3>
+<ul>
+<li>Simon Willison on <a href="https://simonwillison.net/2026/Oct/14/ai-is-mass-decompiling-games/">AI "mass decompiling" games</a> &mdash; enabling odd mashups of old titles and a wave of indie-dev experimentation.</li>
+<li>Latent Space profiled <a href="https://www.latent.space/p/lab-in-the-loop-at-compute-speed">Leash Bio's "lab-in-the-loop" approach</a>: using drug-discovery assay data to catch cheating models and teach agents to reason like chemists.</li>
+</ul>
+
+<h3>Security</h3>
+<ul>
+<li>CISA is urging <a href="https://thehackernews.com/2026/10/cisa-urges-immediate-ivanti-connect.html">immediate patching of Ivanti Connect Secure</a> after honeypots logged 105 exploit attempts against an actively-exploited flaw.</li>
+<li>Researchers disclosed an <a href="https://thehackernews.com/2026/10/ai-found-linux-kernel-flaw-gives-local.html">AI-found Linux vhost kernel flaw</a> that lets a local user get root and, in one virtualization setup, break a guest VM out to the host.</li>
+<li>In an authorized assessment, <a href="https://thehackernews.com/2026/10/an-ai-agent-found-critical-otp-bypass.html">an AI pentesting agent found a critical OTP-redirection bypass</a> in a major insurer's production login flow.</li>
+<li>A security team <a href="https://thehackernews.com/2026/10/researchers-used-public-openai-model-to.html">used a public OpenAI model to chain three unknown Chrome bugs</a> into a six-day, $250,000 full-chain exploit.</li>
+<li>curl <a href="https://thehackernews.com/2026/10/curl-patches-http2-upload-flaw-after.html">patched an HTTP/2 upload flaw</a> where a malicious server could corrupt the uploading client's memory and run code on it.</li>
+<li>AWS Security Blog introduced <a href="https://aws.amazon.com/blogs/security/penetration-testing-every-deployment-with-aws-continuum/">"AWS Continuum,"</a> running penetration testing against every deployment rather than relying solely on pattern-based scanning.</li>
+</ul>
+
+<h3>AI security</h3>
+<ul>
+<li>Daniel Miessler introduced <a href="https://danielmiessler.com/blog/introducing-ul-gauntlet?utm_source=rss&amp;utm_medium=feed&amp;utm_campaign=website">"UL Gauntlet,"</a> a benchmark that scores AI models on how well they explain their answers, not just whether they're correct.</li>
+</ul>
+
+<h3>Engineering practice</h3>
+<ul>
+<li>Martin Fowler's site has a piece on <a href="https://martinfowler.com/articles/never-send-slides/build-your-slide-template.html">building a reusable slide template</a> &mdash; colors, fonts, and layout choices &mdash; before building any individual deck.</li>
+</ul>
+
+<h3>Feeds that failed</h3>
+<ul>
+<li>CISA advisories (https://www.cisa.gov/cybersecurity-advisories/all.xml) &mdash; HTTP 403 Forbidden.</li>
+</ul>
+
+]]></description></item>
     <item><title>Digest for 2026-10-14</title><link>https://github.com/jameslevine/feed-digest/blob/main/digests/2026-10-14.html</link><guid isPermaLink="false">Digest for 2026-10-14</guid><pubDate>Wed, 14 Oct 2026 06:12:37 GMT</pubDate><description><![CDATA[
 <h2>Your stack</h2>
 

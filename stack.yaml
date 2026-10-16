@@ -3,10 +3,14 @@
 # version strings) to match case-insensitively against item titles and summaries. No code change needed.
 stack:
   - name: Python 3.14
-    keywords: [python 3.14, cpython 3.14, python 3.15]
+    keywords: [python 3.14, cpython 3.14, python 3.15, cpython]
   - name: uv
     keywords: [astral, uv ]
   - name: ruff
+  - name: Linters and type checkers
+    keywords: [mypy, pyright, basedpyright, " ty ", ty-lsp, bandit, semgrep, pylint, flake8, tflint, checkov, linter, linting, type checker]
+  - name: pre-commit
+    keywords: [pre-commit, pre-commit hooks, prek, git hooks, commit hooks]
   - name: pydantic
     keywords: [pydantic, pydantic-settings, pydantic-core]
   - name: FastAPI
@@ -26,18 +30,37 @@ stack:
     keywords: [step functions, states language, asl]
   - name: DynamoDB
   - name: EventBridge
+    keywords: [eventbridge, event bridge, eventbridge pipes, eventbridge scheduler, schema registry, event bus, event-driven]
   - name: Amazon Bedrock
     keywords: [bedrock, agentcore, knowledge bases, guardrails, converse api]
   - name: Terraform
     keywords: [terraform, opentofu, hcl, terraform-provider-aws, aws provider]
   - name: GitHub Actions
-    keywords: [github actions, workflows, oidc, dependabot, actions runner]
+    keywords: [github actions, workflows, oidc, actions runner, claude-code-action]
+  - name: GitHub Enterprise
+    keywords: [github enterprise, ghes, ghec, enterprise cloud, enterprise server, enterprise managed users, code owners, rulesets, merge queue]
+  - name: Dependabot and supply chain
+    keywords: [dependabot, dependency review, dependency graph, renovate, sbom, lockfile, pip-audit]
+  - name: Checkmarx
+    keywords: [checkmarx, cxone, kics, sast, dast, software composition analysis, secret scanning, code scanning]
+  - name: Azure DevOps
+    keywords: [azure devops, azure pipelines, azure repos, azure boards, azure artifacts, azure-pipelines]
+  - name: Microsoft Teams
+    keywords: [microsoft teams, teams app, teams toolkit, adaptive cards, graph api, incoming webhook, teams workflows]
+  - name: WSL
+    keywords: [wsl, wsl2, windows subsystem for linux, windows terminal, powertoys]
+  - name: Source control practices
+    keywords: [git 2., git-scm, gitops, trunk-based, branching strategy, monorepo, conventional commits, code review, pull request, signed commits]
   - name: AWS Organizations and Control Tower
     keywords: [organizations, control tower, scp, service control policy, landing zone, identity center]
   - name: MCP
-    keywords: [model context protocol, mcp]
+    keywords: [model context protocol, mcp, mcp server, mcp registry, mcp apps]
   - name: Claude
-    keywords: [claude, anthropic, claude code, agent sdk, strands]
+    keywords: [claude, anthropic, agent sdk, strands, sonnet, opus, haiku, bedrock claude]
+  - name: Claude Code
+    keywords: [claude code, claude cli, claude skills, agent skills, skill.md, claude.md, agents.md, subagents, claude code hooks, claude code plugins, cowork, claude code action]
+  - name: AI-DLC and AI-assisted development practices
+    keywords: [ai-dlc, aidlc, ai-driven development, spec-driven, agentic coding, coding agent, vibe coding, kiro, amazon q developer, github copilot, codex cli]
   - name: Snowflake
   - name: Entra ID
     keywords: [entra, azure ad, oidc, jwt]

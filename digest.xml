@@ -6,7 +6,118 @@
     <description><![CDATA[
 Daily AI summary of my RSS subscriptions
 ]]></description>
-    <lastBuildDate>Thu, 15 Oct 2026 06:14:26 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 16 Oct 2026 06:22:54 GMT</lastBuildDate>
+    <item><title>Digest for 2026-10-16</title><link>https://github.com/jameslevine/feed-digest/blob/main/digests/2026-10-16.html</link><guid isPermaLink="false">Digest for 2026-10-16</guid><pubDate>Fri, 16 Oct 2026 06:22:54 GMT</pubDate><description><![CDATA[
+<h2>Your stack</h2>
+
+<p><strong>Claude</strong></p>
+<ul>
+<li>Anthropic <a href="https://simonwillison.net/2026/Oct/15/anthropic-tells-investors/">told investors quarterly revenue is up nearly 50% to $16.8bn</a> ahead of its reported IPO.</li>
+<li>The Pragmatic Engineer reports <a href="https://newsletter.pragmaticengineer.com/p/the-pulse-openai-software-engineer">Anthropic quietly moved off Git internally</a>, among other industry notes this week.</li>
+<li>Netflix and JetBrains <a href="https://blog.jetbrains.com/ai/2026/10/how-netflix-made-ai-coding-agents-more-efficient/">plugged IntelliJ's headless code-intelligence engine into Claude Code and Codex</a> and benchmarked the efficiency gains.</li>
+<li>Simon Willison built <a href="https://simonwillison.net/2026/Oct/15/chirp-pong/">Chirp Pong</a>, an audio-driven Pong twist, using Claude Opus 5.5 in Claude Code.</li>
+<li>Schneier on Security's <a href="https://www.schneier.com/blog/archives/2026/10/measuring-human-cryptanalysis-effort.html">cryptanalysis-effort study</a> was itself built end-to-end by Claude Fable 5.1 and Claude Opus 5.5.</li>
+<li>Anthropic shipped <a href="https://pypi.org/project/anthropic/1.15.0/">Python SDK 1.15.0</a> and <a href="https://pypi.org/project/claude-agent-sdk/0.2.168/">Claude Agent SDK 0.2.168</a>; AWS's <a href="https://pypi.org/project/strands-agents/1.61.1/">Strands Agents 1.61.1</a> also landed.</li>
+</ul>
+
+<p><strong>AWS Lambda</strong></p>
+<ul>
+<li>The <a href="https://aws.amazon.com/about-aws/whats-new/2026/10/aws-lambda-durable-go-sdk-support/">Lambda Durable Execution SDK for Go is now GA</a>, letting long-running Go functions checkpoint and resume reliably.</li>
+<li>Lambda's <a href="https://aws.amazon.com/about-aws/whats-new/2026/10/lambda-recursive-loops-eventbridge-custom">recursive loop detection now covers EventBridge custom event buses</a>, worth enabling if you chain Lambda and EventBridge.</li>
+</ul>
+
+<p><strong>Amazon Bedrock</strong></p>
+<ul>
+<li><a href="https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-bedrock-agentcore/">Web Search on Bedrock AgentCore expanded to GovCloud and three more Regions</a>, widening where agentic search tools can run.</li>
+</ul>
+
+<p><strong>MCP</strong></p>
+<ul>
+<li>AWS launched the <a href="https://aws.amazon.com/about-aws/whats-new/2026/10/aws-agent-registry-custom-metadata-registry-records">Agent Registry's custom metadata feature</a>, a governed catalog for agents, MCP servers, and skills that now supports org-defined fields.</li>
+</ul>
+
+<p><strong>DynamoDB</strong></p>
+<ul>
+<li><a href="https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-dynamodb-streams-timestamp-processing">DynamoDB Streams now supports timestamp-based stream processing</a>, useful for replaying or resuming consumers from a point in time.</li>
+</ul>
+
+<p><strong>FastAPI / ruff / Powertools for AWS Lambda</strong></p>
+<ul>
+<li>Routine releases: <a href="https://pypi.org/project/fastapi/0.143.2/">FastAPI 0.143.2</a>, <a href="https://pypi.org/project/ruff/0.17.1/">ruff 0.17.1</a>, and <a href="https://pypi.org/project/aws-lambda-powertools/3.36.0/">Powertools for AWS Lambda (Python) 3.36.0</a>.</li>
+</ul>
+
+<p><strong>Security (AI and cloud)</strong></p>
+<ul>
+<li>AWS says its new <a href="https://aws.amazon.com/blogs/security/aws-security-agent-now-part-of-aws-continuum-exploited-33-of-37-new-real-world-cves/">Security Agent (part of AWS Continuum) exploited 33 of 37 new real-world CVEs</a> it was tested against.</li>
+<li>Three new AWS Security Bulletins worth a scan: <a href="https://aws.amazon.com/security/security-bulletins/rss/2026-136-aws/">Neptune Gremlin deserialization (CVE-2026-110812)</a>, <a href="https://aws.amazon.com/security/security-bulletins/rss/2026-012-aws/">Kiro IDE webview XSS (CVE-2026-5429)</a>, and <a href="https://aws.amazon.com/security/security-bulletins/rss/2026-025-aws/">WorkSpaces Skylight Agent privilege escalation (CVE-2026-7791)</a>; a <a href="https://aws.amazon.com/security/security-bulletins/rss/2026-137-aws/">Linux kernel virtio-net/TAP bulletin</a> confirms Lambda is unaffected.</li>
+<li>Actively exploited in the wild: <a href="https://thehackernews.com/2026/10/palo-alto-networks-patches-pan-os.html">Palo Alto PAN-OS RCE</a>, a <a href="https://thehackernews.com/2026/10/critical-pwnescape-linux-kernel.html">critical Linux kernel bug letting guest VMs read host memory</a>, and <a href="https://thehackernews.com/2026/10/langflows-critical-authenticated-rce.html">Langflow's authenticated RCE</a>, already hit 1,423 times in honeypots.</li>
+<li><a href="https://thehackernews.com/2026/10/ghostaction-compromises-about-1900.html">GhostAction compromised about 1,900 GitHub accounts</a>, targeting over 30,000 repositories in a supply-chain attack.</li>
+<li>On the AI-security side: Snyk asks <a href="https://snyk.io/blog/vulnbump/">whether AI agents can fix vulnerable dependencies without breaking the build</a>, and Embrace The Red flags an <a href="https://embracethered.com/blog/posts/2026/visual-studio-copilot-remote-code-execution/">RCE in Visual Studio Copilot and SSMS (CVE-2026-103572)</a>.</li>
+</ul>
+
+<h2>Python</h2>
+<ul>
+<li><a href="https://realpython.com/python-application-layouts/">Python Project Structure: How to Choose the Right Layout</a> — a practical guide to organizing a growing codebase.</li>
+</ul>
+
+<h2>JavaScript and TypeScript</h2>
+<ul>
+<li><a href="https://deno.com/blog/cloudflare">Deno is joining Cloudflare</a>, a notable consolidation in the JS runtime space.</li>
+<li>Node.js shipped <a href="https://nodejs.org/en/blog/release/v26.12.0">26.12.0 (Current)</a> and <a href="https://nodejs.org/en/blog/release/v24.22.0">24.22.0 (LTS)</a>, and has <a href="https://nodejs.org/en/blog/vulnerability/october-2026-security-releases">security releases scheduled for October 21</a>.</li>
+</ul>
+
+<h2>Rust</h2>
+<ul>
+<li><a href="https://blog.rust-lang.org/2026/10/15/Rust-1.99.1/">Rust 1.99.1</a> is out.</li>
+</ul>
+
+<h2>Java</h2>
+<ul>
+<li><a href="https://inside.java/2026/10/15/java-fit-ai-world/">How Does Java Fit Into the World of AI</a> — the OpenJDK team's take on where the language needs to improve for AI workloads.</li>
+<li><a href="https://www.infoq.com/articles/spring-security-7-server-side-dpop-token-exchange/?utm_campaign=infoq_content&amp;utm_source=infoq&amp;utm_medium=feed&amp;utm_term=Java">Server-Side DPoP and Token Exchange land in Spring Security 7</a>, strengthening token-binding defenses.</li>
+<li><a href="https://blog.jetbrains.com/idea/2026/10/intellij-idea-s-java-and-kotlin-for-cursor-and-vs-code-hits-1-0/">IntelliJ's Java/Kotlin support for Cursor and VS Code hit 1.0</a>.</li>
+</ul>
+
+<h2>IaC and DevOps</h2>
+<ul>
+<li>GitHub shipped <a href="https://github.blog/changelog/2026-10-15-ai-scan-for-pull-requests-generally-available">AI Scan for pull requests (GA)</a> and <a href="https://github.blog/changelog/2026-10-15-agentic-autofix-for-code-scanning-alerts-general-availability">agentic autofix for code scanning alerts (GA)</a>.</li>
+<li>Copilot in Slack and Teams <a href="https://github.blog/changelog/2026-10-15-copilot-in-slack-and-teams-adds-model-and-repository-updates">gains multi-repo support</a>, but <a href="https://github.blog/changelog/2026-10-15-upcoming-deprecation-of-selected-github-copilot-models-in-mid-november">several Copilot models are being deprecated in mid-November</a>.</li>
+<li>GitHub's engineering team describes <a href="https://github.blog/engineering/platform-security/staying-evergreen-how-we-automated-secure-access-and-repo-hygiene-in-a-shared-org/">how they automated secure access and repo hygiene</a> across a large shared org.</li>
+</ul>
+
+<h2>AWS</h2>
+<ul>
+<li><a href="https://aws.amazon.com/about-aws/whats-new/2026/10/postgresql-19-rc1-amazon-rds-database-preview-environment/">PostgreSQL 19 RC1 is now previewable on Amazon RDS</a>.</li>
+<li>AWS launched a <a href="https://aws.amazon.com/about-aws/whats-new/2026/10/aws-devops-agent-test-results-aws-resilience-hub/">DevOps Agent that reviews findings and test results from AWS Resilience Hub</a>.</li>
+<li>AWS Architecture Blog covers <a href="https://aws.amazon.com/blogs/architecture/how-dynata-scaled-ai-across-the-development-lifecycle-with-ai-dlc-and-kiro-ide/">how Dynata scaled AI across its dev lifecycle with AI-DLC and Kiro IDE</a>.</li>
+<li>Meta's <a href="https://aws.amazon.com/blogs/machine-learning/metas-muse-spark-open-now-available-in-amazon-sagemaker-jumpstart/">Muse Spark Open model landed in SageMaker JumpStart</a>.</li>
+<li>A new AWS ML post makes the case for <a href="https://aws.amazon.com/blogs/machine-learning/trust-in-depth-giving-agents-more-autonomy-without-losing-control/">giving agents more autonomy without losing control</a>.</li>
+<li><a href="https://aws.amazon.com/about-aws/whats-new/2026/10/security-hub-resource-criticality/">Security Hub now supports resource criticality for prioritizing findings</a>.</li>
+</ul>
+
+<h2>AI and agents</h2>
+<ul>
+<li>Latent Space rounds up news that <a href="https://www.latent.space/p/ainews-agents-disprove-polysemanticity">agents are disproving polysemanticity and improving interpretability research</a>.</li>
+<li>Also from Latent Space: <a href="https://www.latent.space/p/ainews-modals-1b-arr-16b-series-d">Modal hit $1B ARR and a $16B Series D</a>, up 3x in valuation and usage in under a year.</li>
+</ul>
+
+<h2>AI security</h2>
+<ul>
+<li>Daniel Miessler shares an <a href="https://danielmiessler.com/blog/agi-prediction-update?utm_source=rss&amp;utm_medium=feed&amp;utm_campaign=website">updated AGI timeline prediction for 2025-2028</a>.</li>
+</ul>
+
+<h2>Engineering practice</h2>
+<ul>
+<li>Martin Fowler on <a href="https://martinfowler.com/articles/software-meets-hardware.html">what changes when software meets hardware</a>.</li>
+<li>Stripe describes <a href="https://stripe.com/blog/real-time-stripe-data-postgres">syncing real-time Stripe data to Postgres</a> with their new Data Pipeline.</li>
+</ul>
+
+<h2>Feeds that failed</h2>
+<ul>
+<li>TanStack blog (malformed XML)</li>
+<li>CISA advisories (malformed XML)</li>
+</ul>
+]]></description></item>
     <item><title>Digest for 2026-10-15</title><link>https://github.com/jameslevine/feed-digest/blob/main/digests/2026-10-15.html</link><guid isPermaLink="false">Digest for 2026-10-15</guid><pubDate>Thu, 15 Oct 2026 06:14:26 GMT</pubDate><description><![CDATA[
 <h2>Your stack</h2>
 

@@ -7,7 +7,10 @@
       <outline text="Discourse: PEPs" type="rss" xmlUrl="https://discuss.python.org/c/peps/19.rss" htmlUrl="https://discuss.python.org/c/peps/19"/>
       <outline text="Python Insider (releases)" type="rss" xmlUrl="https://blog.python.org/feeds/posts/default" htmlUrl="https://blog.python.org/"/>
       <outline text="Real Python" type="rss" xmlUrl="https://realpython.com/atom.xml" htmlUrl="https://realpython.com/"/>
-      <outline text="Astral blog (uv, ruff)" type="rss" xmlUrl="https://astral.sh/blog/rss.xml" htmlUrl="https://astral.sh/blog"/>
+      <outline text="Astral blog (uv, ruff, ty)" type="rss" xmlUrl="https://astral.sh/blog/rss.xml" htmlUrl="https://astral.sh/blog"/>
+      <outline text="PyCoder's Weekly" type="rss" xmlUrl="https://pycoders.com/feed" htmlUrl="https://pycoders.com/"/>
+      <outline text="PSF blog" type="rss" xmlUrl="https://pyfound.blogspot.com/feeds/posts/default" htmlUrl="https://pyfound.blogspot.com/"/>
+      <outline text="Microsoft for Python Developers" type="rss" xmlUrl="https://devblogs.microsoft.com/python/feed/" htmlUrl="https://devblogs.microsoft.com/python/"/>
       <outline text="uv (PyPI)" type="rss" xmlUrl="https://pypi.org/rss/project/uv/releases.xml" htmlUrl="https://pypi.org/project/uv/"/>
       <outline text="ruff (PyPI)" type="rss" xmlUrl="https://pypi.org/rss/project/ruff/releases.xml" htmlUrl="https://pypi.org/project/ruff/"/>
       <outline text="pydantic (PyPI)" type="rss" xmlUrl="https://pypi.org/rss/project/pydantic/releases.xml" htmlUrl="https://pypi.org/project/pydantic/"/>
@@ -58,11 +61,38 @@
     <outline text="IaC and DevOps">
       <outline text="HashiCorp blog" type="rss" xmlUrl="https://www.hashicorp.com/blog/feed.xml" htmlUrl="https://www.hashicorp.com/blog"/>
       <outline text="OpenTofu blog" type="rss" xmlUrl="https://opentofu.org/blog/rss.xml" htmlUrl="https://opentofu.org/blog"/>
-      <outline text="GitHub Changelog" type="rss" xmlUrl="https://github.blog/changelog/feed/" htmlUrl="https://github.blog/changelog/"/>
-      <outline text="GitHub Blog" type="rss" xmlUrl="https://github.blog/feed/" htmlUrl="https://github.blog/"/>
-      <outline text="AWS DevOps and Developer Productivity Blog" type="rss" xmlUrl="https://aws.amazon.com/blogs/devops/feed/" htmlUrl="https://aws.amazon.com/blogs/devops/"/>
+      <outline text="HashiCorp Discuss: Terraform core" type="rss" xmlUrl="https://discuss.hashicorp.com/c/terraform-core/27.rss" htmlUrl="https://discuss.hashicorp.com/c/terraform-core/27"/>
+      <outline text="AWS DevOps and Developer Productivity Blog (incl. AI-DLC)" type="rss" xmlUrl="https://aws.amazon.com/blogs/devops/feed/" htmlUrl="https://aws.amazon.com/blogs/devops/"/>
       <outline text="AWS Infrastructure and Automation Blog" type="rss" xmlUrl="https://aws.amazon.com/blogs/infrastructure-and-automation/feed/" htmlUrl="https://aws.amazon.com/blogs/infrastructure-and-automation/"/>
       <outline text="Platform Engineering" type="rss" xmlUrl="https://platformengineering.org/blog/rss.xml" htmlUrl="https://platformengineering.org/blog"/>
+      <outline text="checkov (PyPI)" type="rss" xmlUrl="https://pypi.org/rss/project/checkov/releases.xml" htmlUrl="https://pypi.org/project/checkov/"/>
+    </outline>
+    <outline text="Source control and GitHub">
+      <outline text="GitHub Changelog" type="rss" xmlUrl="https://github.blog/changelog/feed/" htmlUrl="https://github.blog/changelog/"/>
+      <outline text="GitHub Changelog: Enterprise (GHEC, GHES, EMU)" type="rss" xmlUrl="https://github.blog/changelog/label/enterprise/feed/" htmlUrl="https://github.blog/changelog/label/enterprise/"/>
+      <outline text="GitHub Changelog: Actions" type="rss" xmlUrl="https://github.blog/changelog/label/actions/feed/" htmlUrl="https://github.blog/changelog/label/actions/"/>
+      <outline text="GitHub Changelog: Dependabot" type="rss" xmlUrl="https://github.blog/changelog/label/dependabot/feed/" htmlUrl="https://github.blog/changelog/label/dependabot/"/>
+      <outline text="GitHub Changelog: Security and compliance" type="rss" xmlUrl="https://github.blog/changelog/label/security-and-compliance/feed/" htmlUrl="https://github.blog/changelog/label/security-and-compliance/"/>
+      <outline text="GitHub Blog" type="rss" xmlUrl="https://github.blog/feed/" htmlUrl="https://github.blog/"/>
+      <outline text="Git Rev News (monthly)" type="rss" xmlUrl="https://git.github.io/feed.xml" htmlUrl="https://git.github.io/rev_news/"/>
+    </outline>
+    <outline text="Microsoft (Azure DevOps, Teams, WSL)">
+      <outline text="Azure DevOps Blog (sprint release notes)" type="rss" xmlUrl="https://devblogs.microsoft.com/devops/feed/" htmlUrl="https://devblogs.microsoft.com/devops/"/>
+      <outline text="Microsoft Teams Blog (what's new)" type="rss" xmlUrl="https://techcommunity.microsoft.com/t5/s/gxcuf89792/rss/board?board.id=MicrosoftTeamsBlog" htmlUrl="https://techcommunity.microsoft.com/category/microsoftteams/blog/microsoftteamsblog"/>
+      <outline text="Microsoft 365 Developer Blog (Teams apps, Graph)" type="rss" xmlUrl="https://devblogs.microsoft.com/microsoft365dev/feed/" htmlUrl="https://devblogs.microsoft.com/microsoft365dev/"/>
+      <outline text="Windows Command Line (WSL, Terminal, PowerToys)" type="rss" xmlUrl="https://devblogs.microsoft.com/commandline/feed/" htmlUrl="https://devblogs.microsoft.com/commandline/"/>
+    </outline>
+    <outline text="Code quality (linters, pre-commit, SAST)">
+      <outline text="pre-commit (PyPI)" type="rss" xmlUrl="https://pypi.org/rss/project/pre-commit/releases.xml" htmlUrl="https://pypi.org/project/pre-commit/"/>
+      <outline text="pre-commit-hooks (PyPI)" type="rss" xmlUrl="https://pypi.org/rss/project/pre-commit-hooks/releases.xml" htmlUrl="https://pypi.org/project/pre-commit-hooks/"/>
+      <outline text="mypy blog" type="rss" xmlUrl="https://mypy-lang.blogspot.com/feeds/posts/default" htmlUrl="https://mypy-lang.blogspot.com/"/>
+      <outline text="mypy (PyPI)" type="rss" xmlUrl="https://pypi.org/rss/project/mypy/releases.xml" htmlUrl="https://pypi.org/project/mypy/"/>
+      <outline text="pyright (PyPI)" type="rss" xmlUrl="https://pypi.org/rss/project/pyright/releases.xml" htmlUrl="https://pypi.org/project/pyright/"/>
+      <outline text="ty (Astral type checker) (PyPI)" type="rss" xmlUrl="https://pypi.org/rss/project/ty/releases.xml" htmlUrl="https://pypi.org/project/ty/"/>
+      <outline text="bandit (PyPI)" type="rss" xmlUrl="https://pypi.org/rss/project/bandit/releases.xml" htmlUrl="https://pypi.org/project/bandit/"/>
+      <outline text="semgrep (PyPI)" type="rss" xmlUrl="https://pypi.org/rss/project/semgrep/releases.xml" htmlUrl="https://pypi.org/project/semgrep/"/>
+      <outline text="pip-audit (PyPI)" type="rss" xmlUrl="https://pypi.org/rss/project/pip-audit/releases.xml" htmlUrl="https://pypi.org/project/pip-audit/"/>
+      <outline text="Checkmarx blog" type="rss" xmlUrl="https://checkmarx.com/feed/" htmlUrl="https://checkmarx.com/blog/"/>
     </outline>
     <outline text="AWS">
       <outline text="AWS What's New" type="rss" xmlUrl="https://aws.amazon.com/about-aws/whats-new/recent/feed/" htmlUrl="https://aws.amazon.com/new/"/>
@@ -85,6 +115,9 @@
       <outline text="Simon Willison" type="rss" xmlUrl="https://simonwillison.net/atom/everything/" htmlUrl="https://simonwillison.net/"/>
       <outline text="Latent Space" type="rss" xmlUrl="https://www.latent.space/feed" htmlUrl="https://www.latent.space/"/>
       <outline text="Hamel Husain" type="rss" xmlUrl="https://hamel.dev/index.xml" htmlUrl="https://hamel.dev/"/>
+      <outline text="Claude Code changelog (CLI releases)" type="rss" xmlUrl="https://code.claude.com/docs/en/changelog/rss.xml" htmlUrl="https://code.claude.com/docs/en/changelog"/>
+      <outline text="Claude Platform release notes (API, models, SDKs)" type="rss" xmlUrl="https://platform.claude.com/docs/en/release-notes/feed.xml" htmlUrl="https://platform.claude.com/docs/en/release-notes/overview"/>
+      <outline text="MCP blog (modelcontextprotocol.io)" type="rss" xmlUrl="https://blog.modelcontextprotocol.io/index.xml" htmlUrl="https://blog.modelcontextprotocol.io/"/>
       <outline text="Anthropic Python SDK (PyPI)" type="rss" xmlUrl="https://pypi.org/rss/project/anthropic/releases.xml" htmlUrl="https://pypi.org/project/anthropic/"/>
       <outline text="Claude Agent SDK (Python) (PyPI)" type="rss" xmlUrl="https://pypi.org/rss/project/claude-agent-sdk/releases.xml" htmlUrl="https://pypi.org/project/claude-agent-sdk/"/>
       <outline text="MCP Python SDK (PyPI)" type="rss" xmlUrl="https://pypi.org/rss/project/mcp/releases.xml" htmlUrl="https://pypi.org/project/mcp/"/>

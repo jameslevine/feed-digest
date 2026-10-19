@@ -1,0 +1,107 @@
+<h2>Your stack</h2>
+
+<p><strong>FastAPI</strong></p>
+<ul>
+<li><a href="https://pypi.org/project/fastapi/0.146.0/">FastAPI 0.146.0</a> is out, the latest of six point releases this week back to 0.143.3 &mdash; worth a changelog check if you're pinned to an older patch.</li>
+</ul>
+
+<p><strong>AWS Lambda</strong></p>
+<ul>
+<li><a href="https://aws.amazon.com/about-aws/whats-new/2026/10/durablefunctions-govcloud/">AWS Lambda durable functions</a> are now available in AWS GovCloud (US) Regions, extending reliable multi-step/AI workflows to government-cloud deployments.</li>
+<li><a href="https://aws.amazon.com/about-aws/whats-new/2026/10/aws-transform-azure-to-aws-code-conversion/">AWS Transform</a> can now auto-convert Azure-native code (e.g. Cosmos DB usage) into AWS equivalents such as a Lambda function backed by DynamoDB &mdash; relevant if any migration work touches your Lambda/DynamoDB stack.</li>
+</ul>
+
+<p><strong>Amazon Bedrock</strong></p>
+<ul>
+<li>AWS published a <a href="https://aws.amazon.com/blogs/machine-learning/building-trust-in-ai-agents-a-production-ready-evaluation-framework-with-amazon-bedrock-agentcore/">production-ready evaluation framework for autonomous agents on Bedrock AgentCore</a>, aimed at catching agents that "fail softly" before users notice.</li>
+</ul>
+
+<p><strong>GitHub Actions</strong></p>
+<ul>
+<li>The <a href="https://github.blog/changelog/2026-10-15-xcode-27-runner-image-generally-available">Xcode 27 runner image</a> is now generally available for building and testing Apple apps in GitHub Actions, out of public preview.</li>
+</ul>
+
+<p><strong>GitHub Enterprise</strong></p>
+<ul>
+<li>GitHub's <a href="https://github.blog/changelog/2026-10-16-open-source-license-compliance-generally-available">open source license compliance</a> feature is now GA for GitHub Enterprise Cloud, surfacing license risk in your dependency graph.</li>
+</ul>
+
+<p><strong>Source control practices</strong></p>
+<ul>
+<li>Simon Willison shares how the Anthropic Claude Code team <a href="https://simonwillison.net/2026/Oct/16/code-review/">runs code review</a> internally &mdash; a useful comparison point for your own review process.</li>
+</ul>
+
+<p><strong>Claude</strong></p>
+<ul>
+<li>Simon Willison shares how the <a href="https://simonwillison.net/2026/Oct/16/code-review/">Claude Code team runs code review</a> internally.</li>
+<li>Simon Willison built a <a href="https://simonwillison.net/2026/Oct/15/latex/">LaTeX renderer</a> with Claude Code (Opus 5.5), storing documents entirely in the URL fragment so they're bookmarkable and shareable &mdash; the same trick used by Paul Ford's Tiny Little Office.</li>
+</ul>
+
+<p><strong>Claude Code</strong></p>
+<ul>
+<li>Simon Willison built a <a href="https://simonwillison.net/2026/Oct/15/latex/">LaTeX renderer tool</a> using Claude Code (Opus 5.5), inspired by Tiny Little Office's trick of storing document data in the URL fragment.</li>
+</ul>
+
+<p><strong>AI-DLC and AI-assisted development practices</strong></p>
+<ul>
+<li>Next.js explains how it combined <a href="https://nextjs.org/blog/improving-navigation-experience-in-v0-with-nextjs-16-4">partial prefetching with a coding agent</a> to speed up navigation in v0, Vercel's AI app builder.</li>
+<li>AWS introduced <a href="https://aws.amazon.com/blogs/machine-learning/introducing-reflection-beam-an-open-weight-model-for-agentic-coding-on-aws/">Reflection Beam</a>, a new open-weight model from Reflection AI tuned for agentic coding, now available on Bedrock/SageMaker.</li>
+</ul>
+
+<p><strong>Security (AI and cloud)</strong></p>
+<ul>
+<li>AWS disclosed <a href="https://aws.amazon.com/security/security-bulletins/rss/2026-139-aws/">CVE-2026-102551 &amp; -102552</a> in FreeRTOS-Plus-TCP and <a href="https://aws.amazon.com/security/security-bulletins/rss/2026-138-aws/">CVE-2026-109587 &amp; -109588</a> in FreeRTOS-Kernel &mdash; patch if you ship FreeRTOS on any embedded device.</li>
+<li>An npm package called <a href="https://thehackernews.com/2026/10/malfex-npm-package-imgdecode-hides.html">'imgdecode' was found hiding a Windows shellcode loader</a> as part of the MALFEX supply-chain campaign &mdash; worth a quick audit of transitive npm dependencies.</li>
+<li><a href="https://thehackernews.com/2026/10/china-linked-hackers-exploited.html">China-linked attackers exploited a BeyondTrust zero-day</a> to take over remote support servers; it was patched as of late August 2026.</li>
+</ul>
+
+<h2>Python</h2>
+<ul>
+<li>Real Python covers <a href="https://realpython.com/python-mutable-vs-immutable-types/">mutable vs. immutable types</a>, a core language distinction worth revisiting.</li>
+<li>A two-part series walks through <a href="https://realpython.com/django-migrations-a-primer/">Django migrations</a> from the basics to <a href="https://realpython.com/digging-deeper-into-migrations/">trickier edge cases</a>.</li>
+<li>Real Python also published a guide to <a href="https://realpython.com/asynchronous-tasks-with-django-and-celery/">async tasks with Django and Celery</a>.</li>
+</ul>
+
+<h2>Rust</h2>
+<ul>
+<li><a href="https://users.rust-lang.org/t/rstsr-v0-10-a-native-rust-n-dimensional-tensor-library-for-scientific-computing-fully-compatible-with-the-python-array-api-standard/143094">RSTSR v0.10</a> is a native Rust n-dimensional tensor library that's fully compatible with the Python Array API standard.</li>
+<li><a href="https://users.rust-lang.org/t/ferroprove-c-to-rust-lifter-emitting-forbid-unsafe-code-crates-with-a-differential-oracle/143107">FerroProve</a> is a new C-to-Rust lifter that emits forbid-unsafe-code crates verified with a differential oracle.</li>
+</ul>
+<h2>Go</h2>
+<ul>
+<li>The Go blog covers <a href="https://go.dev/blog/interactive-refactoring">interactive refactoring in gopls</a>.</li>
+</ul>
+<h2>Java</h2>
+<ul>
+<li><a href="https://inside.java/2026/10/16/jep545-target-jdk28/">JEP 545</a>, targeting faster startup and warmup with ZGC, is now slated for JDK 28.</li>
+<li><a href="https://www.infoq.com/news/2026/10/helidon-27-released/">Helidon 27</a> ships restructured programming models plus new messaging and data modules.</li>
+<li>Baeldung published a piece on <a href="https://feeds.feedblitz.com/~/971759387/0/baeldung">safeguarding LLM output in Spring AI</a>.</li>
+</ul>
+<h2>IaC and DevOps</h2>
+<ul>
+<li>Platform Engineering looks at how <a href="https://platformengineering.org/blog/agent-first-idp-how-big-tech-and-the-clouds-are-preparing-platforms-for-agents">Block, Uber, AWS, Azure and Google are preparing IDPs for agents</a>, with nine practices for evolving one into an "agent experience platform."</li>
+</ul>
+<h2>AWS</h2>
+<ul>
+<li><a href="https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-cloudwatch-centralization-region-expansion">Amazon CloudWatch log centralization</a> across AWS Organizations accounts is now available in GovCloud and additional commercial Regions.</li>
+</ul>
+<h2>AI and agents</h2>
+<ul>
+<li>A neat trick for <a href="https://simonwillison.net/2026/Oct/17/document-currentscript/">inline rendering with document.currentScript</a>: a tiny inline script that replaces itself on page load, enough to build a mini template language.</li>
+</ul>
+<h2>Security</h2>
+<ul>
+<li>Attackers used a <a href="https://thehackernews.com/2026/10/hackers-use-compromised-connectwise.html">compromised ConnectWise credential to sign into 173 Microsoft 365 tenants</a>, prompting ConnectWise to <a href="https://thehackernews.com/2026/10/connectwise-suspends-cloud-backup-after.html">suspend its cloud backup service</a> while it investigates.</li>
+<li>Researchers demonstrated an <a href="https://thehackernews.com/2026/10/researchers-demonstrate-openbsd-root.html">OpenBSD root exploit</a> chaining a 37-year-old shared-memory bug.</li>
+<li>Attackers briefly <a href="https://thehackernews.com/2026/10/attackers-tampered-with-aomei.html">tampered with AOMEI Backupper's update servers</a> to deliver a backdoor.</li>
+<li>Schneier writes on <a href="https://www.schneier.com/blog/archives/2026/10/backdooring-open-weight-ai-models.html">backdooring open-weight AI models</a>.</li>
+</ul>
+<h2>Engineering practice</h2>
+<ul>
+<li>Stripe announced <a href="https://stripe.com/blog/new-ways-for-fintechs-to-move-money-and-expand-globally">three updates for fintechs</a>: simpler global payouts, stablecoin card support in more countries, and unified APIs for global financial products.</li>
+</ul>
+<h2>Feeds that failed</h2>
+<ul>
+<li>CISA advisories (403 Forbidden)</li>
+<li>Microsoft Teams Blog (what's new) (malformed XML)</li>
+</ul>

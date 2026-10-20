@@ -6,8 +6,131 @@
     <description><![CDATA[
 Daily AI summary of my RSS subscriptions
 ]]></description>
-    <lastBuildDate>Mon, 19 Oct 2026 06:20:43 GMT</lastBuildDate>
-    <item><title>Digest for 2026-10-19</title><link>https://github.com/jameslevine/feed-digest/blob/main/digests/2026-10-19.html</link><guid isPermaLink="false">Digest for 2026-10-19</guid><pubDate>Mon, 19 Oct 2026 06:20:43 GMT</pubDate><description><![CDATA[
+    <lastBuildDate>Tue, 20 Oct 2026 06:19:20 GMT</lastBuildDate>
+    <item><title>Digest for 2026-10-20</title><link>https://github.com/jameslevine/feed-digest/blob/main/digests/2026-10-20.html</link><guid isPermaLink="false">Digest for 2026-10-20</guid><pubDate>Tue, 20 Oct 2026 06:19:20 GMT</pubDate><description><![CDATA[
+<h2>Your stack</h2>
+
+<p><strong>uv</strong></p>
+<ul>
+<li><a href="https://pypi.org/project/uv/0.13.3/">uv 0.13.2 and 0.13.3</a> shipped back to back this week &mdash; worth a bump if you're pinned to an older point release.</li>
+</ul>
+
+<p><strong>FastAPI</strong></p>
+<ul>
+<li>FastAPI cut four point releases, <a href="https://pypi.org/project/fastapi/0.150.0/">0.147.0 through 0.150.0</a>, in quick succession.</li>
+</ul>
+
+<p><strong>boto3</strong></p>
+<ul>
+<li><a href="https://pypi.org/project/boto3/1.43.115/">boto3 1.43.115</a> is out with the usual service-model updates.</li>
+</ul>
+
+<p><strong>AWS Lambda</strong></p>
+<ul>
+<li>Jeff Barr's <a href="https://aws.amazon.com/blogs/aws/aws-weekly-roundup-aws-lambda-web-functions-amazon-s3-on-the-vercel-marketplace-and-more-october-19-2026/">weekly roundup</a> highlights Lambda Web Functions, which now runs a plain HTTP server with no adapter in front of it.</li>
+<li>Ran the Builder lays out <a href="https://ranthebuilder.cloud/blog/what-is-aws-lambda-in-2026-5-flavors-explained/">Lambda's five compute flavors</a> in 2026, from classic event-driven functions to durable workflows and Web Functions, and when to reach for each.</li>
+</ul>
+
+<p><strong>Amazon Bedrock</strong></p>
+<ul>
+<li>Bedrock now supports <a href="https://aws.amazon.com/blogs/machine-learning/structured-outputs-for-anthropic-claude-models-on-amazon-bedrock/">structured outputs for all Anthropic Claude models</a> on both bedrock-runtime and bedrock-mantle &mdash; schema-compliant JSON with no custom parsing or retry logic.</li>
+<li><a href="https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-bedrock-grok-4-7-govcloud/">Grok 4.7</a> landed on Bedrock in AWS GovCloud (US), tuned for coding and agentic tasks.</li>
+<li><a href="https://aws.amazon.com/blogs/machine-learning/pegasus-1-5-from-twelvelabs-is-now-available-in-amazon-bedrock/">TwelveLabs' Pegasus 1.5</a> video-language model is now in Bedrock, turning long-form video into timestamped, queryable metadata.</li>
+</ul>
+
+<p><strong>AWS Organizations and Control Tower</strong></p>
+<ul>
+<li><a href="https://aws.amazon.com/about-aws/whats-new/2026/10/iam-identity-store-optimistic-locking/">IAM Identity Center</a> now supports optimistic locking on users and groups, so concurrent admin or automated updates no longer silently overwrite each other.</li>
+</ul>
+
+<p><strong>MCP</strong></p>
+<ul>
+<li>A hobbyist shipped <a href="https://users.rust-lang.org/t/termos-an-ssh-manager-for-linux-with-a-terminal-ui-and-local-mcp-server/143156">Termos</a>, a Rust SSH manager with a local MCP server over stdio for running saved commands.</li>
+<li>AWS shows how to pair <a href="https://aws.amazon.com/blogs/database/analyzing-aurora-mysql-issues-with-kiro-ide-and-aurora-mysql-mcp-server/">Kiro IDE with the Aurora MySQL MCP server</a> to diagnose deadlocks and high-IOPS events via natural-language prompts instead of manual investigation.</li>
+</ul>
+
+<p><strong>GitHub Actions</strong></p>
+<ul>
+<li>The GhostAction campaign has expanded: attackers are now <a href="https://thehackernews.com/2026/10/ghostaction-attackers-plant-credential.html">phishing maintainers with a stealer disguised as a font file</a>, beyond its original malicious-workflow injection into 94+ GitHub repos.</li>
+</ul>
+
+<p><strong>Claude</strong></p>
+<ul>
+<li>Datadog <a href="https://securitylabs.datadoghq.com/articles/putting-models-to-the-secure-coding-test-security-rules/">tested Sonnet 5 against security rules</a> to see whether it measurably improves the security of generated code.</li>
+<li>A breach of the OpenCode console <a href="https://thehackernews.com/2026/10/opencode-console-breach-may-have.html">may have exposed Anthropic, OpenAI, and Google API keys</a> &mdash; worth rotating any Anthropic keys that touched that service.</li>
+<li>A fake Web3 "AI credits" campaign is <a href="https://thehackernews.com/2026/10/fake-web3-accelerator-uses-npm-packages.html">using Anthropic Claude and Gemini branding as bait</a> to push stealer malware via npm packages.</li>
+</ul>
+
+<p><strong>Claude Code</strong></p>
+<ul>
+<li>Real Python explains how to <a href="https://realpython.com/claude-code-hooks/">automate your workflow with Claude Code hooks</a> &mdash; auto-formatting, tool enforcement, and completion pings.</li>
+<li>Claude Code <a href="https://code.claude.com/docs/en/changelog#2-1-304">2.1.304</a> adds configurable Code Review levels (Quick/Standard/Deep) per org or repo, plus auto-mode setup support on Bedrock, Vertex, and Foundry gateways.</li>
+</ul>
+
+<p><strong>Security (AI and cloud)</strong></p>
+<ul>
+<li>A patched <a href="https://embracethered.com/blog/posts/2026/visual-studio-copilot-remote-code-execution/">CVE-2026-103572</a> in Visual Studio Copilot and SSMS allowed remote code execution.</li>
+<li>Wiz on <a href="https://www.wiz.io/blog/detect-supply-chain-zero-days-at-publication/">closing the gap between a supply-chain vulnerability's publication and its detection</a> in your environment.</li>
+<li>Snyk asks whether <a href="https://snyk.io/blog/vulnbump/">AI agents can bump vulnerable dependencies without breaking the build</a>.</li>
+</ul>
+
+<h2>Python</h2>
+<ul>
+<li><a href="https://peps.python.org/pep-0850/">PEP 850 (Wheel Variants: Providers)</a> is new, defining how wheel variant providers are specified.</li>
+<li>The PSF <a href="https://pyfound.blogspot.com/2026/10/announcing-python-software-foundation.html">announced its Q3 2026 Fellow Members</a>.</li>
+</ul>
+
+<h2>JavaScript and TypeScript</h2>
+<ul>
+<li>Node.js shipped <a href="https://nodejs.org/en/blog/release/v24.22.0">24.22.0 (LTS)</a> and <a href="https://nodejs.org/en/blog/release/v26.12.0">26.12.0 (Current)</a>.</li>
+<li>Node.js flagged <a href="https://nodejs.org/en/blog/vulnerability/october-2026-security-releases">security releases landing Wednesday, October 21</a> &mdash; plan to patch once details land.</li>
+</ul>
+
+<h2>Java</h2>
+<ul>
+<li><a href="https://inside.java/2026/10/19/jep546-target-jdk28/">JEP 546 (Adaptive Heap Sizing for ZGC)</a> is now targeted for JDK 28.</li>
+<li><a href="https://www.infoq.com/news/2026/10/jep-543-jdk-28/">JEP 543 (Structured Concurrency)</a> is finalized for JDK 28 after seven preview rounds.</li>
+</ul>
+
+<h2>IaC and DevOps</h2>
+<ul>
+<li>AWS shows how to <a href="https://aws.amazon.com/blogs/devops/automate-active-directory-joins-for-elastic-beanstalk-windows-applications/">automate Active Directory domain joins for Elastic Beanstalk Windows apps</a>.</li>
+</ul>
+
+<h2>Source control and GitHub</h2>
+<ul>
+<li>GitHub warns that <a href="https://github.blog/changelog/2026-10-19-some-git-over-https-may-temporarily-require-authentication">Git over HTTPS may temporarily require authentication</a> for some operations.</li>
+<li><a href="https://github.blog/changelog/2026-10-19-codeql-changes-for-macos-27-xcode-27-and-swift-6-4">CodeQL</a> updated support for macOS 27, Xcode 27, and Swift 6.4.</li>
+</ul>
+
+<h2>AWS</h2>
+<ul>
+<li><a href="https://aws.amazon.com/about-aws/whats-new/2026/10/guardduty-runtime-optional-detection-rules/">GuardDuty</a> adds optional threat-detection rules for Runtime Monitoring.</li>
+<li>SageMaker Studio is now <a href="https://aws.amazon.com/blogs/machine-learning/developers-can-now-access-sagemaker-studio-through-the-new-aws-experience/">reachable through the new unified AWS console experience</a>.</li>
+<li>AWS detailed two vLLM inference optimizations &mdash; <a href="https://aws.amazon.com/blogs/machine-learning/push-based-kv-transfer-to-improve-ttft-and-tpot-for-disaggregated-inference-in-vllm/">push-based KV transfer</a> for disaggregated inference and <a href="https://aws.amazon.com/blogs/machine-learning/improve-ttft-for-multi-turn-agentic-workloads-with-bi-directional-kv-transfer-in-vllm/">bi-directional KV transfer</a> for multi-turn agentic workloads &mdash; both cutting time-to-first-token.</li>
+<li><a href="https://aws.amazon.com/about-aws/whats-new/2026/10/ec2-image-builder-asg-faster-builds/">EC2 Image Builder</a> now integrates with Auto Scaling Groups for faster image builds.</li>
+</ul>
+
+<h2>Security</h2>
+<ul>
+<li>Wiz breaks down the <a href="https://www.wiz.io/blog/anatomy-of-ai-driven-cloud-attacks/">anatomy of a real AI-driven cloud attack</a>, end to end.</li>
+<li>A new <a href="https://thehackernews.com/2026/10/romulus-clickfix-platform-tricks-users.html">ROMULUS ClickFix platform</a> tricks users into delivering LegionLoader and other malware themselves.</li>
+<li>Attackers are <a href="https://thehackernews.com/2026/10/hackers-exploit-plex2shell-flaws-to.html">exploiting Plex2Shell flaws</a> to install crypto miners and a Linux proxy backdoor.</li>
+<li>The popular <a href="https://thehackernews.com/2026/10/popular-wordpress-seo-plugin-rank-math.html">Rank Math PRO SEO plugin was hijacked</a> to deliver a self-restoring backdoor.</li>
+<li>An <a href="https://thehackernews.com/2026/10/unpatched-broadcom-wi-fi-flaw-lets.html">unpatched Broadcom Wi-Fi flaw</a> lets in-range attackers run code as root on affected routers.</li>
+<li>A piece on <a href="https://thehackernews.com/2026/10/from-email-to-case-to-boardroom-how.html">how inherited AI agents break governance built for ordinary software</a>, as agents move from email triage into higher-stakes decisions.</li>
+</ul>
+
+<h2>Engineering practice</h2>
+<ul>
+<li>Stripe's survey on <a href="https://stripe.com/blog/saas-platform-trends-in-AI-era">four trends reshaping how SaaS platforms compete in the AI era</a>.</li>
+</ul>
+
+<h2>Feeds that failed</h2>
+<ul>
+<li>CISA advisories (malformed XML: mismatched tag)</li>
+</ul>
+]]></description></item><item><title>Digest for 2026-10-19</title><link>https://github.com/jameslevine/feed-digest/blob/main/digests/2026-10-19.html</link><guid isPermaLink="false">Digest for 2026-10-19</guid><pubDate>Mon, 19 Oct 2026 06:20:43 GMT</pubDate><description><![CDATA[
 <h2>Your stack</h2>
 
 <p><strong>FastAPI</strong></p>
@@ -115,8 +238,7 @@ Daily AI summary of my RSS subscriptions
 <li>CISA advisories (403 Forbidden)</li>
 <li>Microsoft Teams Blog (what's new) (malformed XML)</li>
 </ul>
-]]></description></item>
-    <item><title>Digest for 2026-10-16</title><link>https://github.com/jameslevine/feed-digest/blob/main/digests/2026-10-16.html</link><guid isPermaLink="false">Digest for 2026-10-16</guid><pubDate>Fri, 16 Oct 2026 06:22:54 GMT</pubDate><description><![CDATA[
+]]></description></item><item><title>Digest for 2026-10-16</title><link>https://github.com/jameslevine/feed-digest/blob/main/digests/2026-10-16.html</link><guid isPermaLink="false">Digest for 2026-10-16</guid><pubDate>Fri, 16 Oct 2026 06:22:54 GMT</pubDate><description><![CDATA[
 <h2>Your stack</h2>
 
 <p><strong>Claude</strong></p>
@@ -226,8 +348,7 @@ Daily AI summary of my RSS subscriptions
 <li>TanStack blog (malformed XML)</li>
 <li>CISA advisories (malformed XML)</li>
 </ul>
-]]></description></item>
-    <item><title>Digest for 2026-10-15</title><link>https://github.com/jameslevine/feed-digest/blob/main/digests/2026-10-15.html</link><guid isPermaLink="false">Digest for 2026-10-15</guid><pubDate>Thu, 15 Oct 2026 06:14:26 GMT</pubDate><description><![CDATA[
+]]></description></item><item><title>Digest for 2026-10-15</title><link>https://github.com/jameslevine/feed-digest/blob/main/digests/2026-10-15.html</link><guid isPermaLink="false">Digest for 2026-10-15</guid><pubDate>Thu, 15 Oct 2026 06:14:26 GMT</pubDate><description><![CDATA[
 <h2>Your stack</h2>
 
 <h4>uv</h4>
@@ -354,8 +475,7 @@ Daily AI summary of my RSS subscriptions
 <li>CISA advisories (https://www.cisa.gov/cybersecurity-advisories/all.xml) &mdash; HTTP 403 Forbidden.</li>
 </ul>
 
-]]></description></item>
-    <item><title>Digest for 2026-10-14</title><link>https://github.com/jameslevine/feed-digest/blob/main/digests/2026-10-14.html</link><guid isPermaLink="false">Digest for 2026-10-14</guid><pubDate>Wed, 14 Oct 2026 06:12:37 GMT</pubDate><description><![CDATA[
+]]></description></item><item><title>Digest for 2026-10-14</title><link>https://github.com/jameslevine/feed-digest/blob/main/digests/2026-10-14.html</link><guid isPermaLink="false">Digest for 2026-10-14</guid><pubDate>Wed, 14 Oct 2026 06:12:37 GMT</pubDate><description><![CDATA[
 <h2>Your stack</h2>
 
 <h4>Python 3.14</h4>
@@ -481,8 +601,7 @@ Daily AI summary of my RSS subscriptions
 <h3>Feeds that failed</h3>
 <p>Josh Comeau (timed out).</p>
 
-]]></description></item>
-    <item><title>Digest for 2026-10-13</title><link>https://github.com/jameslevine/feed-digest/blob/main/digests/2026-10-13.html</link><guid isPermaLink="false">Digest for 2026-10-13</guid><pubDate>Tue, 13 Oct 2026 06:17:18 GMT</pubDate><description><![CDATA[
+]]></description></item><item><title>Digest for 2026-10-13</title><link>https://github.com/jameslevine/feed-digest/blob/main/digests/2026-10-13.html</link><guid isPermaLink="false">Digest for 2026-10-13</guid><pubDate>Tue, 13 Oct 2026 06:17:18 GMT</pubDate><description><![CDATA[
 <!DOCTYPE html>
 <html><head><meta charset="utf-8"><title>Digest for 2026-10-13</title></head><body>
 <h2>Your stack</h2>
@@ -587,8 +706,7 @@ Daily AI summary of my RSS subscriptions
 <li>CISA advisories (malformed XML on the source feed)</li>
 </ul>
 </body></html>
-]]></description></item>
-    <item><title>Digest for 2026-10-12</title><link>https://github.com/jameslevine/feed-digest/blob/main/digests/2026-10-12.html</link><guid isPermaLink="false">Digest for 2026-10-12</guid><pubDate>Mon, 12 Oct 2026 06:16:35 GMT</pubDate><description><![CDATA[
+]]></description></item><item><title>Digest for 2026-10-12</title><link>https://github.com/jameslevine/feed-digest/blob/main/digests/2026-10-12.html</link><guid isPermaLink="false">Digest for 2026-10-12</guid><pubDate>Mon, 12 Oct 2026 06:16:35 GMT</pubDate><description><![CDATA[
 <!DOCTYPE html>
 <html><head><meta charset="utf-8"><title>Digest for 2026-10-12</title></head><body>
 <h2>Your stack</h2>
@@ -740,8 +858,7 @@ Daily AI summary of my RSS subscriptions
 </ul>
 </body></html>
 
-]]></description></item>
-    <item>
+]]></description></item><item>
       <title>Digest for 2026-10-09</title>
       <link>https://github.com/jameslevine/feed-digest/blob/main/digests/2026-10-09.html</link>
       <guid isPermaLink="false">Digest for 2026-10-09</guid>
@@ -874,8 +991,7 @@ Daily AI summary of my RSS subscriptions
 </body></html>
 
 ]]></description>
-    </item>
-    <item>
+    </item><item>
       <title>Digest for 2026-10-08</title>
       <link>https://github.com/jameslevine/feed-digest/blob/main/digests/2026-10-08.html</link>
       <guid isPermaLink="false">Digest for 2026-10-08</guid>
@@ -965,8 +1081,7 @@ Daily AI summary of my RSS subscriptions
 <p>CISA advisories (HTTP 403 Forbidden).</p>
 </body></html>
 ]]></description>
-    </item>
-    <item>
+    </item><item>
       <title>Digest for 2026-10-07</title>
       <link>https://github.com/jameslevine/feed-digest/blob/main/digests/2026-10-07.html</link>
       <guid isPermaLink="false">Digest for 2026-10-07</guid>
@@ -1066,8 +1181,7 @@ Daily AI summary of my RSS subscriptions
 </body></html>
 
 ]]></description>
-    </item>
-    <item>
+    </item><item>
       <title>Digest for 2026-10-06</title>
       <link>https://github.com/jameslevine/feed-digest/blob/main/digests/2026-10-06.html</link>
       <guid isPermaLink="false">Digest for 2026-10-06</guid>
@@ -1155,8 +1269,7 @@ Daily AI summary of my RSS subscriptions
 </body></html>
 
 ]]></description>
-    </item>
-    <item>
+    </item><item>
       <title>Digest for 2026-10-05</title>
       <link>https://github.com/jameslevine/feed-digest/blob/main/digests/2026-10-05.html</link>
       <guid isPermaLink="false">Digest for 2026-10-05</guid>
@@ -1282,8 +1395,7 @@ Daily AI summary of my RSS subscriptions
 
 
 ]]></description>
-    </item>
-    <item>
+    </item><item>
       <title>Digest for 2026-10-02</title>
       <link>https://github.com/jameslevine/feed-digest/blob/main/digests/2026-10-02.html</link>
       <guid isPermaLink="false">Digest for 2026-10-02</guid>
@@ -1388,8 +1500,7 @@ Daily AI summary of my RSS subscriptions
 
 
 ]]></description>
-    </item>
-    <item>
+    </item><item>
       <title>Digest for 2026-10-01</title>
       <link>https://github.com/jameslevine/feed-digest/blob/main/digests/2026-10-01.html</link>
       <guid isPermaLink="false">Digest for 2026-10-01</guid>

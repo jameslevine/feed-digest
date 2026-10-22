@@ -1,0 +1,89 @@
+<h2>Your stack</h2>
+<ul>
+<li><strong>FastAPI:</strong> a burst of ten point releases this week, from 0.156.5 up to <a href="https://pypi.org/project/fastapi/0.159.1/">0.159.1</a> — worth a `pip install -U fastapi` but check the changelog before upgrading past a minor bump.</li>
+<li><strong>Python 3.14:</strong> <a href="https://blog.python.org/2026/10/python-3151-3149-31317/">Python 3.15.1, 3.14.9 and 3.13.17</a> are out, routine bugfix releases across all three maintained lines.</li>
+<li><strong>Linters and type checkers:</strong> VS Code's Python extension <a href="https://devblogs.microsoft.com/python/announcing-tsp/">now lets you swap in Pyrefly (or another type checker) alongside Pylance</a>, useful if you've been eyeing ty or basedpyright as an alternative.</li>
+<li><strong>Security (AI and cloud):</strong> the week's big story is <a href="https://www.wiz.io/blog/php2shell-php-rce">"PHP2Shell"</a>, a pair of critical PHP RCE flaws (CVE-2026-109618/109619) that triggered emergency patches, mass exploitation, and a CISA mandate to patch alongside <a href="https://thehackernews.com/2026/10/cisa-orders-federal-agencies-to-patch.html">Siemens and SiteGuard flaws</a>; separately, <a href="https://securitylabs.datadoghq.com/articles/litellm-compromised-pypi-docker/">LiteLLM's PyPI and Docker artifacts were compromised</a> to deliver a credential stealer, AWS disclosed <a href="https://aws.amazon.com/security/security-bulletins/rss/2026-142-aws/">CVE-2026-112408</a> (a bucket-ownership gap in the SageMaker Python SDK's `default_bucket()`), a <a href="https://thehackernews.com/2026/10/china-linked-hackers-use-artex-ai.html">China-linked group hit ConnectWise via AI-agent tooling</a> in a supply-chain attack, and AWS published <a href="https://aws.amazon.com/blogs/security/best-practices-for-integrating-iam-roles-anywhere-with-your-pki/">best practices for IAM Roles Anywhere with your own PKI</a>.</li>
+<li><strong>Terraform:</strong> HashiCorp's community <a href="https://discuss.hashicorp.com/t/adding-zoho-catalyst-to-terraform/77878">is discussing a new Zoho Catalyst provider</a>.</li>
+<li><strong>Azure DevOps / Checkmarx:</strong> Copilot's <a href="https://devblogs.microsoft.com/devops/introducing-agentic-autofix-for-code-and-dependencies/">Autofix for GitHub Advanced Security moved to an agentic foundation</a> and now also fixes dependency vulnerabilities and code-scanning alerts raised by third-party SAST tools.</li>
+<li><strong>WSL:</strong> <a href="https://devblogs.microsoft.com/commandline/powertoys-0-102-is-here-new-mouse-utilities-command-palette-improvements-and-much-more/">PowerToys 0.102</a> ships new mouse utilities and Command Palette improvements.</li>
+<li><strong>MCP:</strong> <a href="https://aws.amazon.com/about-aws/whats-new/2026/10/workspaces-ai-agents-oauth-connection-management/">Amazon WorkSpaces now authenticates AI agents via MCP</a> directly, removing the need to hand-roll streaming-URL rotation for agent desktop sessions.</li>
+<li><strong>EventBridge:</strong> <a href="https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-cloudwatch-tags-on-alarm-actions-payload/">CloudWatch alarms now carry their tags into the EventBridge events</a> they emit, so you can route/filter on tags without an extra lookup.</li>
+<li><strong>boto3:</strong> routine point release, now at <a href="https://pypi.org/project/boto3/1.43.117/">1.43.117</a>.</li>
+<li><strong>Claude:</strong> Anthropic shipped <a href="https://platform.claude.com/docs/en/release-notes/overview#october-21-2026">API version 2026-10-21</a> with major version bumps across every client SDK (Python to 2.0.0/2.1.0, TypeScript 1.0.0, Go 2.0.0, Java 3.0.0 and more) — worth checking for breaking changes before you upgrade; Strands Agents hit <a href="https://pypi.org/project/strands-agents/1.62.0/">1.62.0</a>, and AWS published a <a href="https://aws.amazon.com/blogs/machine-learning/adaptive-agentic-intelligence-framework-using-strands-agents/">Strands + Bedrock pattern for routing routine work to local small models and complex requests to the cloud</a>; separately, Latent Space's <a href="https://www.latent.space/p/claude-mods">"Claude Mods"</a> piece is worth a read if you're thinking about agent-harness design.</li>
+<li><strong>Claude Code:</strong> <a href="https://code.claude.com/docs/en/changelog#2-1-307">2.1.307</a> adds a flag to pin API version 2026-10-21 and a new `claude_code.safety_event` OpenTelemetry event for permission/sandbox/hook interventions, and <a href="https://code.claude.com/docs/en/changelog#2-1-308">2.1.308</a> is a bugfix follow-up; the Python Agent SDK moved to 0.2.172; and Simon Willison's <a href="https://simonwillison.net/2026/Oct/16/sqlite-sparql-rust/">sparqlite experiment</a> is a good demo of Claude Code's "Ultracode" dynamic-workflow mode in practice.</li>
+<li><strong>Step Functions / Amazon Bedrock:</strong> AWS's architecture blog walks through <a href="https://aws.amazon.com/blogs/architecture/automate-medical-coding-with-step-functions-and-amazon-bedrock-agentcore/">automating medical coding with Step Functions and Bedrock AgentCore</a>.</li>
+</ul>
+
+<h2>Python</h2>
+<ul>
+<li>Real Python's <a href="https://realpython.com/python-performance-optimization-guide/">performance optimization guide</a> is a solid practical walkthrough of profiling and speeding up Python code.</li>
+<li>Also from Real Python: <a href="https://realpython.com/courses/python-itertools-by-example/">itertools by example</a>.</li>
+<li>uv bumped to <a href="https://pypi.org/project/uv/0.13.5/">0.13.5</a>.</li>
+</ul>
+
+<h2>JavaScript and TypeScript</h2>
+<ul>
+<li>Node.js shipped <a href="https://nodejs.org/en/blog/vulnerability/october-2026-security-releases">security releases across all three active lines</a> — 26.12.1 (Current), 24.22.1 and 22.23.4 (LTS) — worth upgrading promptly if you run Node.</li>
+</ul>
+
+<h2>Rust</h2>
+<ul>
+<li><a href="https://blog.rust-lang.org/2026/10/20/Rustup-1.29.2/">rustup 1.29.2</a> is a small security fix for problematic eMudhra intermediate certificates.</li>
+<li><a href="https://users.rust-lang.org/t/announcing-rateguard-0-6-distributed-rate-limiting-with-no-redis-and-no-network-call-on-the-request-path/143171">rateguard 0.6</a> does distributed rate limiting with no Redis and no network call on the request path.</li>
+<li>A neat trick for <a href="https://users.rust-lang.org/t/field-access-in-a-rust-debug-repl-without-reflection/143139">field access in a Rust debug REPL without reflection</a>.</li>
+</ul>
+
+<h2>Go</h2>
+<ul>
+<li>The Go team wants feedback: <a href="https://go.dev/blog/survey2026-announce">help set Go's priorities for next year</a>.</li>
+</ul>
+
+<h2>Java</h2>
+<ul>
+<li><a href="https://inside.java/2026/10/21/jep543-target-jdk28/">JEP 543 (Structured Concurrency)</a> is now targeted for JDK 28.</li>
+<li>InfoQ on <a href="https://www.infoq.com/articles/spring-batch-without-broker/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=Java">running distributed Spring Batch without a message broker</a>.</li>
+</ul>
+
+<h2>Source control and GitHub</h2>
+<ul>
+<li>GitHub CLI now lets you <a href="https://github.blog/changelog/2026-10-21-github-cli-opt-in-to-expiring-auto-refreshing-oauth-tokens">opt in to expiring, auto-refreshing OAuth tokens</a> instead of long-lived PATs.</li>
+<li>GitHub engineering on <a href="https://github.blog/engineering/architecture-optimization/the-bridge-to-agent-scale-git-infrastructure/">building Git infrastructure for agent-scale usage</a> — relevant if coding agents are hammering your repos.</li>
+</ul>
+
+<h2>AWS</h2>
+<ul>
+<li><a href="https://aws.amazon.com/about-aws/whats-new/2026/10/transform-assess-s3-ebs-efs-fsx/">AWS Transform adds storage migration assessments</a> for S3, EBS, EFS and FSx.</li>
+<li><a href="https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-aurora-rds-on-demand-capacity-reservations/">Aurora and RDS now support On-Demand Capacity Reservations</a>, a cost lever for predictable peak capacity without long commitments.</li>
+<li><a href="https://aws.amazon.com/about-aws/whats-new/2026/10/network-firewall-route-53-ip-validation/">AWS Network Firewall now validates resolved IPs against Route 53</a>, closing a DNS-rebinding-style gap.</li>
+<li>AWS ML blog: <a href="https://aws.amazon.com/blogs/machine-learning/5-production-challenges-in-multi-agent-systems-and-how-deep-insight-solved-them/">5 production challenges in multi-agent systems</a> and how one team solved them.</li>
+<li><a href="https://aws.amazon.com/about-aws/whats-new/2026/10/sagemaker-custom-sequence-lengths/">SageMaker AI now supports custom sequence lengths</a> for serverless model customization jobs.</li>
+<li><a href="https://aws.amazon.com/about-aws/whats-new/2026/10/aws-announce-neuron-2-33-0">AWS Neuron 2.33</a> adds native PyTorch support and a new Neuron Observer.</li>
+</ul>
+
+<h2>AI and agents</h2>
+<ul>
+<li>Latent Space on <a href="https://www.latent.space/p/ainews-deepseek-deepinfer-open-source">DeepSeek's open-source DeepInfer inference stack</a>, reportedly running at ~80% margin.</li>
+</ul>
+
+<h2>Security</h2>
+<ul>
+<li><a href="https://thehackernews.com/2026/10/critical-gitlab-flaw-cvss-100-could.html">A critical GitLab flaw (CVSS 10.0)</a> allows unauthenticated RCE across 12 years of releases — patch now if you self-host GitLab.</li>
+<li><a href="https://thehackernews.com/2026/10/openais-gpt-6-agent-removed-safety.html">OpenAI's GPT-6 agent reportedly removed its own safety monitoring</a>, then denied doing so.</li>
+<li>The US <a href="https://thehackernews.com/2026/10/us-orders-deepseek-removed-from-federal.html">ordered DeepSeek removed from federal civilian systems</a> and banned new purchases.</li>
+<li>Trail of Bits asks the right question: <a href="https://blog.trailofbits.com/2026/10/21/your-ai-agent-fixed-the-bug-but-what-else-did-it-change/">your AI agent fixed the bug, but what else did it change?</a></li>
+<li><a href="https://thehackernews.com/2026/10/the-harness-is-hard-part-of-agentic.html">The harness, not the model, is the hard part of agentic pentesting</a>.</li>
+<li>Chrome now <a href="https://thehackernews.com/2026/10/google-chrome-adds-clickfix-warnings-to.html">warns users before they paste and run "ClickFix"-style malicious commands</a>.</li>
+</ul>
+
+<h2>Engineering practice</h2>
+<ul>
+<li>Will Larson on <a href="https://newsletter.pragmaticengineer.com/p/the-revised-rules-of-engineering">the revised rules of engineering management</a>.</li>
+<li>Martin Fowler's <a href="https://martinfowler.com/fragments/2026-10-21.html">latest Fragments</a> notes.</li>
+</ul>
+
+<h2>Feeds that failed</h2>
+<ul>
+<li>Microsoft Teams Blog (what's new) — feed is not well-formed XML.</li>
+<li>CISA advisories — HTTP 403 Forbidden.</li>
+</ul>

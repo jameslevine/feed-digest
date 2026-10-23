@@ -1,0 +1,84 @@
+<h2>Your stack</h2>
+<ul>
+<li><b>Claude Code</b>: <a href="https://simonwillison.net/2026/Oct/22/donating-agent-skills/">Anthropic donated the Agent Skills standard</a> to the new Agentic AI Foundation (AAIF), the same vendor-neutral home it gave MCP &mdash; worth watching if you write skills for Claude Code. Separately, <a href="https://code.claude.com/docs/en/changelog#2-1-309">CLI 2.1.309</a> fixes a VS&nbsp;Code certificate-verification warning and tweaks the bundled dataviz skill's contrast handling, and the <a href="https://pypi.org/project/claude-agent-sdk/0.2.173/">Claude Agent SDK ticked to 0.2.173</a>.</li>
+<li><b>Claude</b>: <a href="https://platform.claude.com/docs/en/release-notes/overview#october-22-2026">Claude Platform release notes</a> add Claude Models on Google Cloud (IAM-governed, Marketplace billing) and Fast mode for Opus&nbsp;5.5. A security bulletin, <a href="https://aws.amazon.com/security/security-bulletins/rss/2026-146-aws/">CVE-2026-115419</a>, flags a since-fixed bug that could disclose a data element to the wrong session in Strands Agents &mdash; check your pinned version.</li>
+<li><b>AWS Lambda</b>: <a href="https://aws.amazon.com/about-aws/whats-new/2026/10/lambda-microvms-4-additional-regions">Lambda MicroVMs expanded to 4 more regions</a>, and <b>Powertools for AWS Lambda</b> (Python) shipped <a href="https://pypi.org/project/aws-lambda-powertools/3.37.0/">3.37.0</a>.</li>
+<li><b>Amazon Bedrock</b>: <a href="https://aws.amazon.com/about-aws/whats-new/2026/10/agentcore-gateway-invokemodel-fallback/">AgentCore Gateway now proxies InvokeModel/InvokeModelWithResponseStream</a> with automatic model-fallback routing, so one governed endpoint can fail over across providers. A case study shows <a href="https://aws.amazon.com/blogs/machine-learning/how-iskaypet-unified-corporate-knowledge-with-amazon-bedrock-managed-knowledge-bases/">IskayPet running a multilingual knowledge assistant on Bedrock Managed Knowledge Bases</a> with no RAG infrastructure of its own.</li>
+<li><b>AI-DLC and AI-assisted development</b>: AWS published a <a href="https://aws.amazon.com/blogs/machine-learning/how-rescale-built-an-ai-triage-agent-with-strands-agents-and-ai-dlc/">case study of Rescale using the AI-DLC framework with Strands Agents and Bedrock</a> to build a test-triage agent in weeks. <a href="https://github.blog/changelog/2026-10-22-github-copilot-in-visual-studio-september-update-2">GitHub Copilot in Visual Studio's September update</a> adds in-chat PR review and auto-fixes for flagged vulnerable packages, and <a href="https://github.blog/changelog/2026-10-22-global-default-for-copilot-features-generally-available">Copilot features are now on by default</a> for eligible orgs.</li>
+<li><b>Dependabot and supply chain</b>: Snyk's <a href="https://snyk.io/blog/evo-remediation-agent-open-preview/">Evo Remediation Agent entered open preview</a>, turning a dependency-vulnerability backlog into ready-to-merge pull requests automatically.</li>
+<li><b>GitHub Actions</b>: a minor <a href="https://github.blog/changelog/2026-10-22-meta-api-endpoints-updated-for-actions-blob-storage">Meta API change for how Actions blob storage is addressed</a> &mdash; only matters if you call that endpoint directly.</li>
+<li><b>GitHub Enterprise</b>: <a href="https://github.blog/changelog/2026-10-22-public-monitoring-now-available-with-data-residency">Public monitoring for GHEC with data residency</a> is in public preview, extending secret scanning beyond internal repos.</li>
+<li><b>MCP</b>: the Agentic AI Foundation <a href="https://aws.amazon.com/blogs/opensource/open-responses-joins-aaif-with-aws-support/">welcomed Open Responses as a project alongside MCP and A2A</a>. Separately, a flaw in OpenCode let a <a href="https://thehackernews.com/2026/10/opencode-flaw-lets-malicious-mcp.html">malicious MCP server execute code at sign-in on Windows and WSL</a> (patched in 1.18.33) &mdash; a reminder to vet MCP servers before connecting.</li>
+<li><b>Terraform</b>: <a href="https://aws.amazon.com/security/security-bulletins/rss/2026-145-aws/">CVE-2026-115414</a> is an OS command-injection bug in AWS SAM CLI's Terraform hook (<code>sam build --hook-name terraform</code>), from unsanitized shell metacharacters in a resource address &mdash; update SAM CLI if you use it.</li>
+<li><b>Entra ID</b>: Wiz is tracking <a href="https://www.wiz.io/blog/artex-in-the-wild-storm-0940-expands-targeting-of-it-and-software-vendors">an ARTEX-using actor (overlapping with Storm-0940)</a> that targets Okta, Entra ID, and Cognito tenants at IT and software vendors.</li>
+<li><b>Security (AI and cloud)</b>: <a href="https://aws.amazon.com/blogs/aws/aws-continuum-for-code-vulnerabilities-is-now-generally-available/">AWS Continuum for code vulnerabilities went GA</a>, auto-triaging findings and opening PR fixes. tl;dr sec flags <a href="https://tldrsec.com/p/tldr-sec-351">a new tool that automates exploiting AWS IAM privilege-escalation paths</a>. Real Python has a <a href="https://realpython.com/python-supply-chain-security/">primer on supply-chain security lessons from the LiteLLM backdoor</a>. And Railway disclosed a <a href="https://thehackernews.com/2026/10/railway-says-intruder-may-have-accessed.html">possible breach exposing customer environment variables</a>, urging credential rotation.</li>
+<li><b>Linters and type checkers</b>: routine point releases &mdash; <a href="https://pypi.org/project/ruff/0.17.2/">ruff 0.17.2</a> and <a href="https://pypi.org/project/ty/0.0.91/">ty 0.0.91</a>.</li>
+<li><b>FastAPI</b>: three point releases this week, <a href="https://pypi.org/project/fastapi/0.161.1/">0.160.0 through 0.161.1</a> &mdash; nothing breaking called out.</li>
+<li><b>boto3</b>: <a href="https://pypi.org/project/boto3/1.43.118/">1.43.118</a> released.</li>
+</ul>
+
+<h2>Python</h2>
+<ul>
+<li><a href="https://realpython.com/python-concurrency/">Speed Up Your Python Program With Concurrency</a> &mdash; threads vs. processes vs. asyncio, when to reach for each.</li>
+<li><a href="https://realpython.com/api-integration-in-python/">Python and REST APIs: Interacting With Web Services</a> &mdash; a practical requests-library walkthrough.</li>
+<li><a href="https://realpython.com/python-matplotlib-guide/">Python Plotting With Matplotlib (Guide)</a> &mdash; a long-form reference for building charts.</li>
+<li><a href="https://realpython.com/python-csv/">Reading and Writing CSV Files in Python</a> &mdash; stdlib csv module patterns and gotchas.</li>
+<li><a href="https://realpython.com/python-itertools/">Python itertools By Example</a> &mdash; combinators worth knowing beyond the basics.</li>
+<li><a href="https://realpython.com/python-operators-expressions/">Operators and Expressions in Python</a> &mdash; a language-fundamentals refresher.</li>
+</ul>
+
+<h2>React</h2>
+<ul>
+<li><a href="https://tanstack.com/blog/tanstack-ai-1-0">TanStack AI 1.0</a> &mdash; the TanStack team's take on an AI toolkit that stays framework-agnostic.</li>
+</ul>
+
+<h2>Java</h2>
+<ul>
+<li><a href="https://inside.java/2026/10/22/jvm-diagnosis/">What's Going Wrong with My JVM?! A Guide to First-Time Failure Diagnosis</a> &mdash; a practical triage checklist from the OpenJDK team.</li>
+</ul>
+
+<h2>Microsoft (Azure DevOps, Teams, WSL)</h2>
+<ul>
+<li><a href="https://devblogs.microsoft.com/microsoft365dev/develop-enterprise-grade-apps-with-sharepoint-embedded/">Develop enterprise-grade apps with SharePoint Embedded</a> &mdash; building storage-backed apps on Microsoft 365.</li>
+</ul>
+
+<h2>Source control and GitHub</h2>
+<ul>
+<li><a href="https://github.blog/security/how-bug-bounty-sharpens-one-researchers-security-skills/">How bug bounty sharpens one researcher's security skills</a> &mdash; a GitHub security researcher's path into bounty hunting.</li>
+</ul>
+
+<h2>AWS</h2>
+<ul>
+<li><a href="https://aws.amazon.com/about-aws/whats-new/2026/10/aws-cloudformation-cdk/">AWS CloudFormation simplifies stack update rollback operations</a>.</li>
+<li><a href="https://aws.amazon.com/blogs/mt/controlled-self-healing-amazon-eks-clusters-with-aws-devops-agent-and-a2a-remote-agents/">Controlled self-healing Amazon EKS clusters</a> using AWS DevOps Agent and A2A remote agents.</li>
+<li><a href="https://aws.amazon.com/about-aws/whats-new/2026/10/aws-announces-AWS-interconnect-last-mile-megaport-preview/">AWS Interconnect</a> &mdash; a last-mile connectivity preview with Megaport.</li>
+<li><a href="https://aws.amazon.com/about-aws/whats-new/2026/10/aws-transform-new-networks/">AWS Transform now builds new networks and modernizes security groups</a> automatically.</li>
+<li><a href="https://aws.amazon.com/blogs/compute/os-patching-and-upgrades-with-amazon-ec2-root-volume-replacement/">OS patching and upgrades with Amazon EC2 root volume replacement</a>.</li>
+<li><a href="https://aws.amazon.com/blogs/database/troubleshooting-data-mismatches-with-tablediff-on-amazon-rds-for-sql-server/">Troubleshooting data mismatches with tablediff on Amazon RDS for SQL Server</a>.</li>
+</ul>
+
+<h2>AI and agents</h2>
+<ul>
+<li><a href="https://www.latent.space/p/modal-d">Why AI Compute Comes in Rectangles</a> &mdash; Modal CEO Erik Bernhardsson on GPU scheduling shapes.</li>
+<li><a href="https://www.latent.space/p/moshi">You are the Team</a> &mdash; Anekha Sokhal of Moshi on building a small, fast-moving AI team.</li>
+</ul>
+
+<h2>Security</h2>
+<ul>
+<li><a href="https://thehackernews.com/2026/10/two-cvss-90-linux-ksmbd-rce-flaws.html">Two CVSS 9.0 Linux KSMBD RCE flaws</a> were disclosed on public mailing lists before kernel fixes landed.</li>
+<li><a href="https://thehackernews.com/2026/10/someone-tried-to-exploit-php2shell-4.html">Someone tried to exploit PHP2Shell 4 days before public disclosure</a>.</li>
+<li><a href="https://thehackernews.com/2026/10/litellm-suspects-github-token-leak-in.html">LiteLLM suspects a GitHub token leak in AI gateway logs</a> behind a malicious package release.</li>
+<li><a href="https://thehackernews.com/2026/10/nodejs-brotli-decoder-bug-could-allow.html">A Node.js Brotli decoder bug could allow remote code execution</a> in all supported versions.</li>
+<li><a href="https://thehackernews.com/2026/10/emudhra-to-exit-global-ssltls-business.html">eMudhra is exiting the SSL/TLS business</a> after 8 intermediate CA keys turned out to be easily guessable.</li>
+<li><a href="https://www.wiz.io/blog/aspm-ai-era-pt-2-prioritize-appsec-risk">ASPM in the AI era, part 2</a> &mdash; prioritizing exploitable risk with code-to-cloud context.</li>
+</ul>
+
+<h2>Engineering practice</h2>
+<ul>
+<li><a href="https://stripe.com/blog/trends-from-money20-20-2026-the-rise-of-hidden-financial-services">Trends from Money20/20 2026: the rise of "hidden" financial services</a>.</li>
+</ul>
+
+<h2>Feeds that failed</h2>
+<ul>
+<li>CISA advisories (<code>https://www.cisa.gov/cybersecurity-advisories/all.xml</code>) &mdash; HTTP 403 Forbidden.</li>
+</ul>

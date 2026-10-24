@@ -1,0 +1,31 @@
+name: Task
+description: A piece of work with one goal and a way to know it's done.
+labels: ["task", "status: todo", "priority: medium"]
+body:
+  - type: textarea
+    id: goal
+    attributes:
+      label: Goal
+      description: One line. What changes, and why.
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+      description: How we know it's done. One checkbox each.
+      value: |
+        - [ ] 
+    validations:
+      required: true
+  - type: input
+    id: estimate
+    attributes:
+      label: Estimate (hours)
+      description: At most 8. Split anything bigger.
+      placeholder: "3"
+  - type: input
+    id: links
+    attributes:
+      label: Plan or parent
+      description: A link to the plan, the epic or the parent ticket.

@@ -1,0 +1,28 @@
+name: Spike
+description: A time-boxed question to answer before building.
+labels: ["spike", "status: todo", "priority: medium"]
+body:
+  - type: textarea
+    id: question
+    attributes:
+      label: Question
+      description: What we need to know, in one or two sentences.
+    validations:
+      required: true
+  - type: input
+    id: timebox
+    attributes:
+      label: Time box (hours)
+      placeholder: "2"
+    validations:
+      required: true
+  - type: textarea
+    id: options
+    attributes:
+      label: Options to compare
+  - type: textarea
+    id: output
+    attributes:
+      label: Output
+      description: Where the findings go and what decision they feed.
+      value: "A write-up in jameslevine/notes under research/, linked from this issue."

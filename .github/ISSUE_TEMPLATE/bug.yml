@@ -1,0 +1,30 @@
+name: Bug
+description: Something that worked, or should work, and doesn't.
+labels: ["bug", "status: todo", "priority: medium"]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+      description: Include the error or output, as text.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      value: |
+        1. 
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Version or commit
+      placeholder: v1.2.3 or a commit SHA

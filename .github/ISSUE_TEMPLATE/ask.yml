@@ -1,0 +1,27 @@
+name: Ask
+description: Something only James can decide, approve, sign in to or run.
+labels: ["ask", "status: todo"]
+assignees: ["jameslevine"]
+body:
+  - type: textarea
+    id: ask
+    attributes:
+      label: What's needed
+      description: The decision or action, with the exact command where there is one.
+    validations:
+      required: true
+  - type: textarea
+    id: answers
+    attributes:
+      label: Answers
+      description: One checkbox per answer or step. Tick the one you choose.
+      value: |
+        - [ ] 
+    validations:
+      required: true
+  - type: input
+    id: waiting
+    attributes:
+      label: Waiting ticket
+      description: The ticket that is blocked on this ask.
+      placeholder: "#12"

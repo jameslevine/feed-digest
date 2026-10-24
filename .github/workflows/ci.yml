@@ -1,0 +1,81 @@
+# CI for feed-digest: secret scan, lint and a smoke check of the script and data files.
+#
+# The daily routine pushes digests straight to main, so this also runs once a day on that push.
+# Actions are pinned to full commit SHAs (tag in the trailing comment), as in claude-setup.
+# To bump one: gh api repos/<owner>/<repo>/commits/<tag> --jq .sha
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  secrets:
+    name: Secret scan (gitleaks)
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      GITLEAKS_VERSION: 8.30.1
+      # sha256 of gitleaks_${GITLEAKS_VERSION}_linux_x64.tar.gz, from the release's checksums.txt.
+      GITLEAKS_SHA256: 551f6fc83ea457d62a0d98237cbad105af8d557003051f41f3e7ca7b3f2470eb
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - name: Install gitleaks
+        run: |
+          set -euo pipefail
+          tarball="gitleaks_${GITLEAKS_VERSION}_linux_x64.tar.gz"
+          curl -sSfL -o "$RUNNER_TEMP/$tarball" \
+            "https://github.com/gitleaks/gitleaks/releases/download/v${GITLEAKS_VERSION}/$tarball"
+          echo "${GITLEAKS_SHA256}  $RUNNER_TEMP/$tarball" | sha256sum -c -
+          mkdir -p "$RUNNER_TEMP/bin"
+          tar -xzf "$RUNNER_TEMP/$tarball" -C "$RUNNER_TEMP/bin" gitleaks
+          echo "$RUNNER_TEMP/bin" >> "$GITHUB_PATH"
+      - name: Scan git history
+        run: gitleaks git --no-banner --redact --verbose --exit-code 1 .
+
+  lint:
+    name: Lint (ruff)
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      RUFF_VERSION: 0.17.1
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      # Syntax errors and undefined names only (E9, F63, F7, F82). The script's compact
+      # one-line style fails ruff's defaults, and this check doesn't restyle it.
+      - name: ruff check
+        run: pipx run --spec "ruff==${RUFF_VERSION}" ruff check --no-cache --select E9,F63,F7,F82 .
+
+  smoke:
+    name: Smoke check (script and data files)
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      # gen_feeds.py isn't run here: it writes into ~/.config/netnewswire. Compile it instead.
+      - name: Compile gen_feeds.py
+        run: python3 -c 'import sys; compile(open("gen_feeds.py").read(), "gen_feeds.py", "exec"); print(sys.version)'
+      # The routine reads stack.yaml and feeds.opml, and writes digest.xml and state.json.
+      - name: Parse the data files
+        run: |
+          set -euo pipefail
+          python3 -c 'import json, xml.dom.minidom as m; [m.parse(p) for p in ("feeds.opml", "digest.xml")]; json.load(open("state.json")); print("feeds.opml, digest.xml, state.json: OK")'
+          yq --version
+          yq -e '.stack | length > 0' stack.yaml > /dev/null
+          echo "stack.yaml: OK"

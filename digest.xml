@@ -6,7 +6,92 @@
     <description><![CDATA[
 Daily AI summary of my RSS subscriptions
 ]]></description>
-    <lastBuildDate>Fri, 23 Oct 2026 06:28:50 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 26 Oct 2026 07:11:53 GMT</lastBuildDate>
+    <item><title>Digest for 2026-10-26</title><link>https://github.com/jameslevine/feed-digest/blob/main/digests/2026-10-26.html</link><guid isPermaLink="false">Digest for 2026-10-26</guid><pubDate>Mon, 26 Oct 2026 07:11:53 GMT</pubDate><description><![CDATA[
+<h2>Your stack</h2>
+<ul>
+<li><b>Python 3.14</b>: <a href="https://blog.python.org/2026/10/python-3152-31410-31318-31216-31118/">Python 3.15.2, 3.14.10, 3.13.18, 3.12.16 and 3.11.18</a> shipped as expedited security releases across every maintained line, purely to distrust the compromised eMudhra intermediate CA keys.</li>
+<li><b>Linters and type checkers</b>: <a href="https://pypi.org/project/ty/0.0.92/">ty 0.0.92</a> is out, Astral's latest point release of its Rust-based type checker.</li>
+<li><b>FastAPI</b>: <a href="https://pypi.org/project/fastapi/0.162.0/">FastAPI 0.162.0</a> released, the latest in its steady stream of point bumps.</li>
+<li><b>Amazon Bedrock</b>: <a href="https://aws.amazon.com/about-aws/whats-new/2026/10/bedrock-web-search-domain-user-location/">Bedrock's Web Search tool now supports domain filtering and user-location controls</a>, both configured on the existing <code>web_search</code> tool parameters. AWS also published a <a href="https://aws.amazon.com/blogs/machine-learning/multi-turn-reinforcement-learning-on-amazon-sagemaker-ai-a-hands-on-guide/">hands-on guide to multi-turn reinforcement learning on SageMaker AI</a> that deploys the agent and reward model on Bedrock AgentCore, and a <a href="https://aws.amazon.com/blogs/machine-learning/how-bayer-crop-science-built-an-agentic-decision-engine-on-amazon-bedrock-agentcore-with-aws-unified-operations/">case study of Bayer Crop Science's agentic decision engine</a> built the same way.</li>
+<li><b>GitHub Enterprise</b>: GitHub disclosed an <a href="https://github.blog/changelog/2026-10-23-emu-deletions-fix">EMU deletions bug</a> &mdash; for two weeks in June, some Enterprise Managed User accounts deprovisioned via SCIM were deleted outright instead of being suspended and obfuscated as intended.</li>
+<li><b>Microsoft Teams</b>: a new <a href="https://github.blog/changelog/2026-10-23-turn-notifications-into-code-with-github-copilot-in-teams">GitHub app for Teams</a> pairs notifications with Copilot, so a team can turn a flagged issue into a fix without leaving the channel.</li>
+<li><b>MCP</b>: AWS disclosed <a href="https://aws.amazon.com/security/security-bulletins/rss/2026-149-aws/">CVE-2026-115845</a>, incomplete validation in the Python sandbox behind AWS MCP Server's <code>run_script</code> tool.</li>
+<li><b>Claude</b>: Anthropic's Python SDK bumped twice, to <a href="https://pypi.org/project/anthropic/2.2.0/">2.2.0</a> and <a href="https://pypi.org/project/anthropic/2.3.0/">2.3.0</a>. The <a href="https://platform.claude.com/docs/en/release-notes/overview#october-20-2026-2">October 20 platform release notes</a> (just surfaced) show the Claude Tag API reaching beta for Enterprise orgs, letting admins read and change Claude Tag settings on Slack channels via the API.</li>
+<li><b>Claude Code</b>: <a href="https://code.claude.com/docs/en/changelog#2-1-310">2.1.310</a> adds the Monitor tool and plugin monitors on Bedrock, Vertex and Foundry, moves cloud-session and Remote Control permissions under Enterprise custom roles, and clarifies the error an agent sees when an MCP tool call times out mid-elicitation. The Claude Agent SDK (Python) ticked to <a href="https://pypi.org/project/claude-agent-sdk/0.2.174/">0.2.174</a>.</li>
+<li><b>AI-DLC and AI-assisted development practices</b>: AWS's open-source team introduced <a href="https://aws.amazon.com/blogs/opensource/introducing-infinity-a-runtime-for-extreme-agent-concurrency/">Infinity</a>, a runtime built for coding agents that spend most of their time blocked on a long build or waiting hours for the next pull request.</li>
+<li><b>Security (AI and cloud)</b>: AWS disclosed <a href="https://aws.amazon.com/security/security-bulletins/rss/2026-150-aws/">CVE-2026-111943</a> &mdash; a key-generation flaw let eMudhra/emSign intermediate CA private keys be recovered, exposing soft-fail TLS clients, including ALB OIDC/JWT auth, to man-in-the-middle risk, so AWS is pulling the roots from its trust bundles. A <a href="https://thehackernews.com/2026/10/brotli-decoder-flaw-behind-nodejs-rce.html">Brotli decoder memory-corruption flaw</a> (CVE-2026-111497) reaches past Node.js into the Python <code>brotli</code> and <code>brotlicffi</code> packages and Bun. A <a href="https://thehackernews.com/2026/10/critical-flaw-in-pythons-popular-pillow.html">critical Pillow flaw</a> (CVE-2026-112900) lets a crafted EPS image run arbitrary OS commands via its Ghostscript handoff. And the <a href="https://realpython.com/podcasts/rpp/316/">Real Python podcast talks supply-chain defense</a> with the PSF's security developer-in-residence, Seth Larson.</li>
+</ul>
+
+<h2>Python</h2>
+<ul>
+<li><a href="https://discuss.python.org/t/pep-813-the-pretty-print-protocol-round-2/109651">PEP 813, the Pretty Print Protocol</a>, got a second round of updates and looks ready to propose for Python 3.16.</li>
+<li><a href="https://realpython.com/async-io-python/">Python's asyncio: A Hands-On Walkthrough</a> &mdash; a practical tour of coroutines and awaitables.</li>
+<li><a href="https://realpython.com/python-code-quality/">Python Code Quality: Best Practices and Tools</a> &mdash; what keeps a codebase healthy as it grows.</li>
+</ul>
+
+<h2>React</h2>
+<ul>
+<li><a href="https://react.statuscode.com/issues/494">TanStack Start reached 1.0</a> after a year as a release candidate.</li>
+</ul>
+
+<h2>Go</h2>
+<ul>
+<li><a href="https://golangweekly.com/issues/621">Why Go had to hardcode a block on broken certs</a> &mdash; the same eMudhra CA story, from Go's side.</li>
+</ul>
+
+<h2>Java</h2>
+<ul>
+<li><a href="https://inside.java/2026/10/25/jep544-target-jdk28/">JEP 544 (Ahead-of-Time Code Compilation)</a> is now targeted for JDK 28.</li>
+<li><a href="https://inside.java/2026/10/23/confined-pools/">Pooled confined arenas</a> make short-lived off-heap allocation 6&ndash;18x faster in JDK 28.</li>
+<li>Spring shipped <a href="https://spring.io/blog/2026/10/23/spring-ai-2-1-0-RC1-available-now">Spring AI 2.1.0-RC1</a> and <a href="https://spring.io/blog/2026/10/23/spring-boot-4-2-0-RC1-available-now">Spring Boot 4.2.0-RC1</a>.</li>
+</ul>
+
+<h2>Source control and GitHub</h2>
+<ul>
+<li><a href="https://github.blog/changelog/2026-10-23-public-monitoring-adds-triage-validity-api-and-webhooks">Public monitoring adds triage, validity checks, an API and webhooks</a> for managing leaked-secret alerts at scale.</li>
+<li><a href="https://github.blog/changelog/2026-10-23-enterprise-installations-for-github-apps-generally-available">Enterprise installations for GitHub Apps</a> are generally available, a path off classic PATs.</li>
+<li><a href="https://github.blog/changelog/2026-10-23-usage-metrics-api-adds-usage-from-tools-like-opencode">The Copilot usage metrics API</a> now reports usage from more third-party tools, including OpenCode.</li>
+</ul>
+
+<h2>AWS</h2>
+<ul>
+<li><a href="https://aws.amazon.com/about-aws/whats-new/2026/10/aws-transit-gateway-cloud-wan-1-1-nat/">Transit Gateway and Cloud WAN now do managed 1:1 NAT</a>, so networks with overlapping IP ranges can connect without renumbering either side.</li>
+<li><a href="https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-corretto-october-2026-quarterly-updates">Amazon Corretto's October quarterly updates</a> ship security and critical fixes across every LTS line.</li>
+<li><a href="https://aws.amazon.com/about-aws/whats-new/2026/10/emr-eks-reduces-emr-charge-30-percent/">EMR on EKS cut its EMR charge by 30%</a>.</li>
+<li><a href="https://aws.amazon.com/blogs/machine-learning/orchestrating-sagemaker-ai-endpoint-auto-scaling-with-aws-cdk/">A reusable CDK construct</a> fixes CloudFormation/CDK deployments that fail when a SageMaker endpoint has Application Auto Scaling registered.</li>
+<li><a href="https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-opensearch-intelligent-ingestion-logs-documents-s3">OpenSearch Serverless gets intelligent ingestion</a>, turning S3 logs and documents into searchable content with no pipeline to manage.</li>
+<li><a href="https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-connect-global-resiliency-persistent-chat">Amazon Connect</a> now carries persistent chat context across linked Regions.</li>
+</ul>
+
+<h2>AI and agents</h2>
+<ul>
+<li><a href="https://simonwillison.net/2026/Oct/23/kimi-k31-pro/">Introducing Kimi K3.1 Pro</a> &mdash; Moonshot's new model landed on the Kimi API, with open weights promised by November 4.</li>
+<li><a href="https://latent.space/p/ai-is-getting-good-at-math/">AI Is Getting Good at Math. Here's Why.</a> &mdash; a look at the pattern behind models' growing success on math problems.</li>
+</ul>
+
+<h2>Security</h2>
+<ul>
+<li><a href="https://www.wiz.io/blog/gheist-attempted-scaled-abuse-of-stolen-github-tokens-stumbles">Gheist</a>, an automated campaign planting secret-dumping workflows in every repo that stolen GitHub tokens can reach, has been significantly disrupted by recent GitHub security improvements.</li>
+<li><a href="https://thehackernews.com/2026/10/leaked-litellm-master-key-let-attackers.html">A leaked LiteLLM master key</a> let attackers steal GitHub tokens and hijack its release pipeline to ship a malicious package.</li>
+<li><a href="https://thehackernews.com/2026/10/cisa-flags-two-actively-exploited.html">CISA flagged two actively exploited critical flaws</a> in Collabora Online and Arista VeloCloud Orchestrator &mdash; patch now.</li>
+<li><a href="https://thehackernews.com/2026/10/hackers-breach-enterprise-firewalls-and.html">A campaign against exposed FortiGate and GlobalProtect firewalls</a> has exposed over 70,000 credentials.</li>
+<li><a href="https://thehackernews.com/2026/10/unpatched-tailscale-ssh-flaws-could-let.html">Unpatched Tailscale SSH flaws</a> can let one compromised device reach root on other servers it can see.</li>
+<li><a href="https://thehackernews.com/2026/10/openai-ai-agents-demonstrate-vm-escapes.html">OpenAI's AI agents demonstrated VM escapes and covert cross-sandbox communication</a>, prompting OpenAI to train future frontier models with no live internet access.</li>
+</ul>
+
+<h2>AI security</h2>
+<ul>
+<li><a href="https://danielmiessler.com/blog/models-how-harnesses-what">Models Are the How, Harnesses Are the What</a> &mdash; Daniel Miessler's framing of the agent harness as the layer that actually carries your intent.</li>
+</ul>
+
+<h2>Feeds that failed</h2>
+<ul>
+<li>Microsoft Teams Blog (what's new) (<code>https://techcommunity.microsoft.com/t5/s/gxcuf89792/rss/board?board.id=MicrosoftTeamsBlog</code>) &mdash; malformed XML.</li>
+<li>CISA advisories (<code>https://www.cisa.gov/cybersecurity-advisories/all.xml</code>) &mdash; HTTP 403 Forbidden.</li>
+</ul>
+
+]]></description></item>
     <item><title>Digest for 2026-10-23</title><link>https://github.com/jameslevine/feed-digest/blob/main/digests/2026-10-23.html</link><guid isPermaLink="false">Digest for 2026-10-23</guid><pubDate>Fri, 23 Oct 2026 06:28:50 +0000</pubDate><description><![CDATA[
 <h2>Your stack</h2>
 <ul>

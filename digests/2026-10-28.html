@@ -1,0 +1,73 @@
+<h2>Your stack</h2>
+<ul>
+<li><b>uv</b>: <a href="https://astral.sh/blog/tar-codec">tar-codec</a>, Astral's new Rust tar encoder/decoder, is now uv's default and more than doubles its tar-handling speed while hardening against archive differentials.</li>
+<li><b>Linters and type checkers</b>: Real Python published a <a href="https://realpython.com/pyrefly-python/">walkthrough of Pyrefly</a>, Meta's fast Rust-based type checker, covering catching type errors, generating annotations and measuring coverage; separately, <a href="https://pypi.org/project/ty/0.0.93/">ty 0.0.93</a> is a routine patch release of Astral's type checker.</li>
+<li><b>pytest</b>: <a href="https://pypi.org/project/pytest/9.2.0/">pytest 9.2.0</a> is out.</li>
+<li><b>boto3</b>: <a href="https://pypi.org/project/boto3/1.43.120/">boto3 1.43.120</a> ships the usual batch of updated AWS service models.</li>
+<li><b>Amazon Bedrock</b>: AWS shows how to <a href="https://aws.amazon.com/blogs/compute/building-document-investigation-agents-with-amazon-bedrock-agentcore-and-amazon-s3-files/">build document-investigation agents</a> where an AWS Lambda function and a Bedrock AgentCore agent share an Amazon S3 Files file system using ordinary file operations instead of upload/download code; separately, a Bedrock customer writeup on <a href="https://aws.amazon.com/blogs/machine-learning/fix-evaluation-bias-to-unlock-better-models-on-amazon-bedrock/">fixing evaluation bias</a> found 96.8% of their vision-AI eval labels were inherited from the incumbent model, masking its true accuracy &mdash; worth a look if you lean on model evals.</li>
+<li><b>Azure DevOps</b>: the <a href="https://devblogs.microsoft.com/devops/azure-devops-server-rc-26h2-is-now-available/">Azure DevOps Server RC (26H2)</a> is available, bringing previously hosted-only features plus security and quality fixes on-prem.</li>
+<li><b>MCP</b>: Real Python's <a href="https://realpython.com/mcp-vs-api/">MCP vs. API calls</a> piece builds one Python tool both ways and compares what each approach costs and when an MCP server actually pays for itself.</li>
+<li><b>Claude Code</b>: <a href="https://code.claude.com/docs/en/changelog#2-1-312">2.1.312</a> adds an effort-level picker for cloud routines, an <code>oidc.user_id_claim</code> option so the apps gateway can identify people by a claim other than <code>sub</code> (handy for Microsoft Entra ID's <code>oid</code>), and fixes subagent/prompt hooks running more than their intended 24-at-a-time limit.</li>
+<li><b>AI-DLC and AI-assisted development practices</b>: Real Python's <a href="https://realpython.com/courses/exploring-ai-coding-agent-workflows/">overview of AI coding agent workflows</a> breaks them into IDE, terminal, PR and cloud types and how each fits modern Python development; <a href="https://github.blog/changelog/2026-10-27-github-copilot-supports-server-to-server-authentication/">GitHub Copilot now supports server-to-server authentication</a> for GitHub Apps on organizations (public preview), letting Copilot SDK-built services and agents make requests without a human in the loop; and AWS walks through <a href="https://aws.amazon.com/blogs/architecture/publishing-lms-courses-with-a-kiro-scorm-pipeline/">using Kiro to build a SCORM pipeline</a> that converts raw training material into LMS-ready packages.</li>
+<li><b>Security (AI and cloud)</b>: Apple backported a fix for <a href="https://thehackernews.com/2026/10/apple-backports-fix-for-exploited.html">CVE-2026-86950</a>, an actively-exploited CoreGraphics out-of-bounds write (CVSS 8.8), to older iPhones and iPads; Microsoft fixed <a href="https://thehackernews.com/2026/10/microsoft-authenticator-flaw-let.html">CVE-2026-80097</a> in Authenticator for Android, where a permissionless malicious app could impersonate a trusted app like Teams and steal work-account sign-in tokens; and Node.js <a href="https://javascriptweekly.com/issues/808">v24.22.1 and v22.23.4</a> are security releases fixing ten CVEs, including a Brotli-decoder flaw ("node2shell") that can lead to remote code execution.</li>
+</ul>
+
+<h3>Python</h3>
+<ul>
+<li><a href="https://peps.python.org/pep-0851/">PEP 851</a> proposes <code>list.discard(x)</code>, a non-raising counterpart to <code>list.remove()</code>, analogous to <code>set.discard()</code>.</li>
+<li>Real Python on <a href="https://realpython.com/python-circular-imports/">Python circular imports</a>: why they happen and how to fix them.</li>
+</ul>
+
+<h3>JavaScript and TypeScript</h3>
+<ul>
+<li>Buried in this week's <a href="https://javascriptweekly.com/issues/808">JavaScript Weekly</a>: TanStack AI reaches 1.0, a vendor-neutral AI toolkit with 23 provider adapters and a new long-running agent harness.</li>
+</ul>
+
+<h3>React</h3>
+<ul>
+<li>Next.js is preparing a <a href="https://nextjs.org/blog/upcoming-nextjs-security-release-november-2026">scheduled security release for November 3</a>.</li>
+</ul>
+
+<h3>Rust</h3>
+<ul>
+<li>Inside Rust shared <a href="https://blog.rust-lang.org/inside-rust/2026/10/27/variadic-generics-micro-survey-results/">results from its variadic generics survey</a>, drawn from over 3,300 responses on a hypothetical language feature.</li>
+<li>A Rust forum post on <a href="https://users.rust-lang.org/t/proptest-residual-risk-what-a-passing-proptest-run-tells-you/143307">proptest's "residual risk"</a> explains what a passing property-test run does, and doesn't, tell you.</li>
+</ul>
+
+<h3>Java</h3>
+<ul>
+<li>Inside Java flagged <a href="https://inside.java/2026/10/27/quality-heads-up/">JDK 28's Value Classes</a> for community quality testing ahead of release.</li>
+</ul>
+
+<h3>AWS</h3>
+<ul>
+<li><a href="https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-ecs-gpu-sharing-nvidia-mps/">Amazon ECS now supports GPU sharing</a> via NVIDIA MPS, letting multiple tasks share one GPU for small-model inference and similar partial-capacity workloads.</li>
+<li><a href="https://aws.amazon.com/about-aws/whats-new/2026/10/mflow-version-3-16/">SageMaker MLflow Apps now support MLflow 3.16</a>, with a redesigned trace explorer for debugging GenAI and ML workflows.</li>
+<li><a href="https://aws.amazon.com/blogs/machine-learning/announcing-soci-indexed-images-for-faster-sagemaker-ai-jobs/">SOCI-indexed images</a> take full container-image download off the critical path for SageMaker AI jobs, starting containers in seconds instead of minutes.</li>
+<li><a href="https://aws.amazon.com/about-aws/whats-new/2026/10/elasticache-changing-durability/">ElastiCache for Valkey</a> now lets you change durability on existing node-based clusters in place, without a new cluster.</li>
+<li><a href="https://aws.amazon.com/blogs/architecture/how-anchorage-digital-and-turnkey-verify-code-with-aws-nitro-enclaves/">Anchorage Digital and Turnkey</a> built verifiable infrastructure on AWS Nitro Enclaves so crypto wallets can cryptographically attest which code parsed a transaction.</li>
+<li><a href="https://aws.amazon.com/about-aws/whats-new/2026/10/replication-backfill-amazon-ecr/">Amazon ECR now supports replication backfill</a>, so existing images can be replicated to new destinations without manual retagging.</li>
+</ul>
+
+<h3>AI and agents</h3>
+<ul>
+<li>Simon Willison on <a href="https://simonwillison.net/2026/Oct/27/game-boy-color-on-my-conference-badge/">running a Game Boy/NES emulator on a conference badge</a>, built with Gemini's help &mdash; a fun demo of AI-assisted hardware hacking at GitHub Universe.</li>
+</ul>
+
+<h3>Security</h3>
+<ul>
+<li><a href="https://aws.amazon.com/blogs/security/introducing-route-53-resolved-ip-validation-for-aws-network-firewall/">Route 53 Resolved IP Validation</a> for AWS Network Firewall closes a gap where non-HTTP(S) protocols could bypass domain-based firewall rules via DNS tricks.</li>
+<li>Google Project Zero <a href="https://projectzero.google/2026/10/fuzzing-v-AI.html">compares Fuzzilli and BigSleep</a> on V8: over six months, the LLM-based bug finder found more vulnerabilities than the generative fuzzer, with roughly 60% overlap.</li>
+<li><a href="https://thehackernews.com/2026/10/openai-compaction-flaw-let-researchers.html">OpenAI's conversation-compaction feature</a> could be abused to leak a reasoning model's hidden chain-of-thought in plain text.</li>
+<li><a href="https://thehackernews.com/2026/10/cyberstrikeai-uses-44-ai-agents-to.html">CyberStrikeAI used 44 AI agents</a> to help automate three cyberattacks against organizations in Japan.</li>
+<li><a href="https://thehackernews.com/2026/10/goahead-tls-flaws-allow-revoked-client.html">GoAhead's embedded web server</a> loaded a certificate revocation list but never enabled revocation checking, letting revoked client certs still pass mutual-TLS logins.</li>
+<li><a href="https://aws.amazon.com/blogs/security/aws-becomes-first-csp-to-complete-the-cloud-high-profile-assessment-with-172-services-and-features-in-scope/">AWS became the first CSP</a> to complete the Cloud High (PBHH) security assessment, covering 172 services and features.</li>
+</ul>
+
+<h3>Engineering practice</h3>
+<ul>
+<li>The Pragmatic Engineer asks <a href="https://newsletter.pragmaticengineer.com/p/ai-sre">whether "AI SRE" actually works</a> for on-call, beyond the vendor demos.</li>
+</ul>
+
+<h3>Feeds that failed</h3>
+<p>CISA advisories, Latent Space, Microsoft Teams Blog (what's new), OWASP GenAI Security Project, Schneier on Security, Simon Willison: prompt injection tag, fasterthanlime.</p>

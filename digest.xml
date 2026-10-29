@@ -6,7 +6,107 @@
     <description><![CDATA[
 Daily AI summary of my RSS subscriptions
 ]]></description>
-    <lastBuildDate>Wed, 28 Oct 2026 07:18:37 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 29 Oct 2026 07:20:58 +0000</lastBuildDate>
+    <item><title>Digest for 2026-10-29</title><link>https://github.com/jameslevine/feed-digest/blob/main/digests/2026-10-29.html</link><guid isPermaLink="false">Digest for 2026-10-29</guid><pubDate>Thu, 29 Oct 2026 07:20:58 +0000</pubDate><description><![CDATA[
+<h2>Your stack</h2>
+
+<h3>Linters and type checkers</h3>
+<p><a href="https://pypi.org/project/checkov/3.4.0/">checkov 3.4.0</a>, <a href="https://pypi.org/project/mypy/2.4.1/">mypy 2.4.1</a>, and <a href="https://pypi.org/project/ty/0.0.94/">ty 0.0.94</a> all shipped; no changelog notes in any feed.</p>
+
+<h3>Powertools for AWS Lambda</h3>
+<p><a href="https://pypi.org/project/aws-lambda-powertools/3.38.0/">Powertools for AWS Lambda (Python) 3.38.0</a> is out, again with no changelog detail.</p>
+
+<h3>AWS Lambda</h3>
+<p><a href="https://aws.amazon.com/about-aws/whats-new/2026/10/aws-lambda-seekable-oci-soci/">Lambda Managed Instances now support Seekable OCI (SOCI)</a> for lazy-loading container images, cutting container startup by up to 70%. <a href="https://aws.amazon.com/blogs/compute/observing-aws-lambda-durable-functions-with-the-durable-execution-telemetry-exporter/">Durable functions gained a telemetry exporter</a> emitting one record per execution to 13 destinations, with a companion MCP server for querying that history.</p>
+
+<h3>API Gateway</h3>
+<p><a href="https://aws.amazon.com/blogs/architecture/how-revinate-accelerated-api-adoption-with-amazon-api-gateway/">A case study on how Revinate built its guest-engagement APIs on API Gateway</a>, a useful reference architecture for API-first products.</p>
+
+<h3>Amazon Bedrock</h3>
+<p><a href="https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-bedrock-agentcore-cli-version-1-0-available/">AgentCore CLI hit GA at version 1.0</a>, with faster startup and a more consistent command structure. A companion post covers a <a href="https://aws.amazon.com/blogs/machine-learning/building-an-agentic-ai-platform-on-amazon-bedrock-agentcore/">reference architecture for a governed, multi-account AgentCore platform</a> with CI/CD gating per agent.</p>
+
+<h3>GitHub Actions</h3>
+<p><a href="https://github.blog/changelog/2026-10-28-github-agentic-workflows-generally-available/">GitHub Agentic Workflows is now GA</a> for automating issue triage and CI-failure analysis as workflow files. Actions also got <a href="https://github.blog/changelog/2026-10-28-github-actions-adds-multi-cloud-compute-to-improve-reliability/">multi-cloud compute for hosted runners</a> and <a href="https://github.blog/changelog/2026-10-28-github-actions-workflow-lockfiles-are-generally-available/">GA dependency lockfiles</a>. Wiz, meanwhile, audited <a href="https://www.wiz.io/blog/github-actions-security-pwn-request-reckoning">what pwn-request attacks still work</a> post-pull_request_target changes, and found <a href="https://www.wiz.io/blog/gheist-attempted-scaled-abuse-of-stolen-github-tokens-stumbles">a campaign planting secret-dumping workflows via stolen tokens</a>.</p>
+
+<h3>GitHub Enterprise</h3>
+<p><a href="https://github.blog/changelog/2026-10-28-github-enterprise-now-includes-access-to-github-copilot/">GitHub Enterprise now bundles Copilot access</a> for every licensed user under a GitHub/Microsoft account team.</p>
+
+<h3>MCP</h3>
+<p><a href="https://realpython.com/python-mcp-client/">Real Python has a tutorial on building a minimal MCP client in Python</a> over stdio, for testing your own MCP servers from the terminal.</p>
+
+<h3>Claude</h3>
+<p>Latent Space has a <a href="https://latent.space/p/how_anthropic_ships_the_1_llm_in_the_world_safely_separating_the_brain_from_the_hands/">long interview on how Anthropic ships the Claude Platform</a>, covering Opus 5.5 and keeping the "brain" separate from the agent's "hands". Elsewhere: Anthropic is <a href="https://latent.space/p/ainews-anthropic-ends-coding-interviews-hunger-beats-tenure/">reportedly dropping coding interviews</a> and <a href="https://latent.space/p/ainews-anthropic-s1/">filed an S-1 for a $2T IPO</a>; and an unreleased Anthropic model <a href="https://thehackernews.com/2026/10/anthropics-unreleased-ai-model-chains.html">chained flaws into working browser/OS exploits</a> (Chrome, Safari, Windows, Linux), all patched pre-disclosure.</p>
+
+<h3>AI-DLC and AI-assisted development practices</h3>
+<p>GitHub Universe brought a wave of Copilot changes: <a href="https://github.blog/changelog/2026-10-28-route-and-orchestrate-models-with-github-copilot-fusion/">Copilot Fusion (model routing) went GA</a> and <a href="https://github.blog/changelog/2026-10-28-github-copilot-fusion-now-supports-selection-of-local-models/">now routes to local, on-device models</a>; a new <a href="https://github.blog/changelog/2026-10-28-security-extension-for-the-github-copilot-app/">security extension surfaces code-scanning alerts inside the Copilot app</a>; and teams can <a href="https://github.blog/changelog/2026-10-28-build-shared-workflows-for-your-team-with-copilot-automations/">share Copilot Automations</a>. Also: Simon Willison argues <a href="https://simonwillison.net/2026/Oct/28/vibe-game-development/">October 2026 is an inflection point for vibe-coded games</a>, and Latent Space covers <a href="https://latent.space/p/offline-coding/">running a fully offline coding agent with OpenCode, Ollama and Qwen</a>.</p>
+
+<h3>Entra ID</h3>
+<p>Wiz is tracking <a href="https://www.wiz.io/blog/artex-in-the-wild-storm-0940-expands-targeting-of-it-and-software-vendors">an AI agent-driven actor (Storm-0940) attacking Okta, Entra ID and Cognito</a> across software vendors.</p>
+
+<h3>Security (AI and cloud)</h3>
+<p>Three new AWS Security Bulletins: <a href="https://aws.amazon.com/security/security-bulletins/rss/2026-153-aws/">unverified Athena query-result ownership in AWS SDK for pandas</a> (CVE-2026-118029), <a href="https://aws.amazon.com/security/security-bulletins/rss/2026-154-aws/">a secret-masking bypass in Strands Agents Tools</a> via a crafted prompt (CVE-2026-115415), and <a href="https://aws.amazon.com/security/security-bulletins/rss/2026-155-aws/">RCE and memory disclosure in the native Brotli decoder</a>, affecting Lambda, Amplify, App Runner and others (CVE-2026-111497).</p>
+
+<h2>React</h2>
+<ul>
+<li><a href="https://nextjs.org/blog/ship-less-javascript-with-ai">Next.js now ships a bundle-optimizer agent skill</a> plus new Bundle Analyzer tooling to shrink your shipped JavaScript.</li>
+</ul>
+
+<h2>Java</h2>
+<ul>
+<li><a href="https://inside.java/2026/10/28/java-secure-coding-guidelines/">OpenJDK published an overview of its Secure Coding Guidelines</a>, with examples of insecure patterns and updates covering input validation and serialization.</li>
+<li><a href="https://spring.io/blog/2026/10/28/spring-ai-message-parts-reasoning-replay">Spring AI 2.1 adds "message parts"</a> so reasoning-model thinking blocks survive a round trip intact.</li>
+<li><a href="https://spring.io/blog/2026/10/28/spring-ai-upsert-own-embeddings">Spring AI 2.1 also adds upsert for pre-computed embeddings</a>, for apps that generate their own vectors.</li>
+</ul>
+
+<h2>Source control and GitHub</h2>
+<ul>
+<li><a href="https://github.blog/news-insights/company-news/github-universe-2026-evolving-every-layer-of-the-stack/">GitHub Universe 2026 laid out GitHub's vision as an end-to-end software delivery system</a>.</li>
+<li><a href="https://github.blog/news-insights/octoverse/octoverse-commits-pushes-reach-new-highs-in-2026-as-developers-build-with-agents/">This year's Octoverse report shows commits and pushes at record highs</a> as more development work runs through agents.</li>
+<li><a href="https://github.blog/changelog/2026-10-28-github-intelligence-puts-your-code-context-and-history-to-work/">A new "GitHub intelligence" feature feeds team conventions and history into Copilot</a> so agents follow your team's own practices, not just the code.</li>
+</ul>
+
+<h2>Microsoft (Azure DevOps, Teams, WSL)</h2>
+<ul>
+<li><a href="https://devblogs.microsoft.com/microsoft365dev/streamline-creation-and-management-of-ai-ready-custom-apps-with-sharepoint-embedded/">SharePoint Embedded gets a streamlined path for AI-ready custom apps</a> that pull in Microsoft 365 content without a full site.</li>
+<li><a href="https://devblogs.microsoft.com/microsoft365dev/copilot-ux-components-are-generally-available-bring-interactive-experiences-into-copilot/">Copilot UX components are GA with SPFx 1.24</a>, for embedding interactive dashboards and forms directly in Microsoft Copilot.</li>
+</ul>
+
+<h2>AWS</h2>
+<ul>
+<li><a href="https://aws.amazon.com/about-aws/whats-new/2026/10/aws-identity-store-change-notifications/">IAM Identity Center's Identity Store now streams change events to EventBridge</a> when users, groups or memberships change.</li>
+<li><a href="https://aws.amazon.com/blogs/mt/how-nubank-automated-disaster-recovery-with-the-aws-devops-agent/">Nubank's case study on automating disaster recovery with the AWS DevOps Agent</a> across thousands of EKS microservices.</li>
+<li><a href="https://aws.amazon.com/blogs/architecture/automating-agentic-ai-well-architected-reviews-with-the-aws-agentic-ai-lens/">Smarsh encoded the AWS Agentic AI Well-Architected Lens as a Claude skill</a> to review an agentic workload against all 150 best practices in hours.</li>
+<li><a href="https://aws.amazon.com/blogs/machine-learning/accelerating-software-delivery-with-agentic-qa-automation-using-amazon-nova-act-part-3/">Part 3 of AWS's agentic QA automation series with Nova Act</a> adds test organization and team-based ownership controls.</li>
+<li><a href="https://aws.amazon.com/about-aws/whats-new/2026/10/quick-smart-approvals-agentic-actions/">Amazon Quick added "smart approvals"</a> to cut approval-prompt fatigue on agentic actions.</li>
+</ul>
+
+<h2>AI and agents</h2>
+<ul>
+<li><a href="https://latent.space/p/ainews-gemini-4-carbon/">Google's Gemini 4 Carbon tops independent evals</a>, launching first for cyber-defense teams.</li>
+<li><a href="https://latent.space/p/supabase/">A Latent Space interview on why agent builders are reaching for Supabase</a> as backend infrastructure.</li>
+</ul>
+
+<h2>Security</h2>
+<ul>
+<li><a href="https://www.schneier.com/blog/archives/2026/10/hiding-capabilities-in-ai-models.html">New research shows AI models can provably hide arbitrary capabilities</a> from evaluators under adversarial conditions.</li>
+<li><a href="https://thehackernews.com/2026/10/tailscale-patches-ssh-flaws-that-could.html">Tailscale patched SSH forwarding flaws</a> (fixed in 1.104.4) that could let a compromised device reach root-only services on other nodes.</li>
+<li><a href="https://thehackernews.com/2026/10/critical-16-year-old-uefi-flaw-can-run.html">A 16-year-old flaw in the EDK II UEFI firmware code</a> used by most hardware makers can run code before Secure Boot on network-booting servers.</li>
+<li><a href="https://thehackernews.com/2026/10/china-linked-hackers-exploited-vmware.html">A China-nexus actor exploited a VMware ESX zero-day</a> to scrub audit trails; CISA has added it to its Known Exploited Vulnerabilities catalog.</li>
+<li><a href="https://snyk.io/blog/php-patches-critical-unauthenticated-rces/">PHP patched two critical unauthenticated RCEs</a> in its request lifecycle; upgrade or apply the vendor backport if you're on an older release.</li>
+<li><a href="https://thehackernews.com/2026/10/volt-typhoon-used-covert-silent-train.html">Volt Typhoon's covert "Silent Train" access network</a> has been used in four separate zero-day campaigns via compromised SOHO and IoT devices.</li>
+</ul>
+
+<h2>Engineering practice</h2>
+<ul>
+<li><a href="https://martinfowler.com/fragments/2026-10-28.html">Martin Fowler's latest Fragments</a> covers Andrej Karpathy's view of a widening gap between how the public and AI-forward professionals perceive LLM capability.</li>
+</ul>
+
+<h2>Feeds that failed</h2>
+<ul>
+<li>CISA advisories (https://www.cisa.gov/cybersecurity-advisories/all.xml): HTTP 403 Forbidden</li>
+</ul>
+
+]]></description></item>
     <item><title>Digest for 2026-10-28</title><link>https://github.com/jameslevine/feed-digest/blob/main/digests/2026-10-28.html</link><guid isPermaLink="false">Digest for 2026-10-28</guid><pubDate>Wed, 28 Oct 2026 07:18:37 +0000</pubDate><description><![CDATA[
 <h2>Your stack</h2>
 <ul>

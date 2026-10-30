@@ -1,0 +1,114 @@
+<h2>Your stack</h2>
+
+<h3>Linters and type checkers</h3>
+<p><a href="https://pypi.org/project/ty/0.0.95/">ty 0.0.95</a> and <a href="https://pypi.org/project/semgrep/1.183.0/">semgrep 1.183.0</a> shipped; no changelog notes.</p>
+
+<h3>pydantic</h3>
+<p><a href="https://pypi.org/project/pydantic/2.14.2/">pydantic 2.14.2</a> and a matching <a href="https://pypi.org/project/pydantic/1.10.27/">1.10.27</a> backport landed; no changelog detail.</p>
+
+<h3>boto3</h3>
+<p><a href="https://pypi.org/project/boto3/1.43.122/">boto3 1.43.122</a> is out, again with no changelog.</p>
+
+<h3>AWS Lambda</h3>
+<p><a href="https://aws.amazon.com/blogs/architecture/how-bmw-group-accelerated-connected-vehicle-workloads-on-aws-graviton/">BMW Group moved its connected-vehicle platform to AWS Graviton</a>, cutting ingress CPU ~57% and improving price-performance ~40% with Karpenter and multi-arch builds.</p>
+
+<h3>Step Functions</h3>
+<p><a href="https://aws.amazon.com/about-aws/whats-new/2026/10/step-functions-workflows-ai-agent-tools/">Step Functions workflows can now be exposed as AI agent tools</a> through Bedrock AgentCore Gateway, letting an agent decide when to invoke a workflow.</p>
+
+<h3>DynamoDB</h3>
+<p><a href="https://aws.amazon.com/about-aws/whats-new/2026/10/dax-additional-regions/">DynamoDB Accelerator (DAX) expanded to Canada (Central) and Africa (Cape Town)</a>.</p>
+
+<h3>EventBridge</h3>
+<p>A <a href="https://aws.amazon.com/blogs/compute/unlocking-full-stack-observability-for-aws-outposts/">guide to full-stack Outposts observability</a> leans on EventBridge with Systems Manager and CloudWatch for unified visibility.</p>
+
+<h3>Amazon Bedrock</h3>
+<p><a href="https://aws.amazon.com/blogs/machine-learning/how-boat-delivers-personalized-fitness-coaching-with-amazon-bedrock/">boAt built its AI Coach feature</a> on Bedrock and Lambda for real-time fitness coaching at scale. <a href="https://aws.amazon.com/blogs/machine-learning/building-intent-driven-ui-testing-with-amazon-nova-act/">Epsilon built a managed UI-testing service</a> on Nova Act and the AgentCore Browser Tool, with tests written in plain English. <a href="https://aws.amazon.com/blogs/machine-learning/how-moengage-turned-over-400-apis-into-agent-tools-with-agentcore-gateway/">MoEngage turned ~400 private REST APIs into agent tools</a> via AgentCore Gateway, replacing per-service MCP servers. <a href="https://aws.amazon.com/about-aws/whats-new/2026/10/aws-agent-registry-four-regions/">AWS Agent Registry (AgentCore) expanded to four more regions</a>.</p>
+
+<h3>Dependabot and supply chain</h3>
+<p><a href="https://thehackernews.com/2026/10/github-launches-npm-firewall-to-block.html">GitHub previewed an npm firewall</a> that inspects package metadata and downloads for malicious activity before install.</p>
+
+<h3>Checkmarx</h3>
+<p>Checkmarx's <a href="https://checkmarx.com/blog/what-the-php-patch-scramble-reveals-about-remediation/">write-up on the chaotic PHP patch response</a> argues most orgs lack a real remediation plan for critical vulnerabilities, via one CTO's 48-hour scramble.</p>
+
+<h3>MCP</h3>
+<p><a href="https://simonwillison.net/2026/Oct/29/ben-hylak/">Ben Hylak, quoted by Simon Willison</a>, needles the "every product should just be a headless MCP" agent-everything pitch.</p>
+
+<h3>Claude</h3>
+<p>Claude Platform shipped a beta <a href="https://platform.claude.com/docs/en/release-notes/overview#october-29-2026">Usage and Cost Analytics API</a> and <a href="https://platform.claude.com/docs/en/release-notes/overview#october-28-2026">raised the Messages/Token-Counting request-size cap to 128MB</a>. The <a href="https://pypi.org/project/claude-agent-sdk/0.2.175/">Claude Agent SDK hit 0.2.175</a>. <a href="https://aws.amazon.com/about-aws/whats-new/2026/10/claude-haiku-5-5-canada-cris/">Claude Haiku 5.5 is now on Bedrock via Canada cross-Region inference</a> for data-residency needs. OpenAI matched Anthropic's <a href="https://simonwillison.net/2026/Oct/29/api-credits/">API-credits benefit</a> with an equivalent ChatGPT offer. Simon Willison also flags <a href="https://simonwillison.net/2026/Oct/29/how-i-built-the-most-ai-pilled-company-in-the-world/">a writeup on a multiplayer game world run by autonomous Fable-class agents</a>.</p>
+
+<h3>Claude Code</h3>
+<p><a href="https://code.claude.com/docs/en/changelog#2-1-314">Claude Code 2.1.314</a> adds a permission that blocks writes outside the working directory in every permission mode, plus IdP-group routing for Claude apps gateway upstreams.</p>
+
+<h3>AI-DLC and AI-assisted development practices</h3>
+<p>AWS shows <a href="https://aws.amazon.com/blogs/machine-learning/build-a-repeatable-php-to-java-migration-engine-with-kiro/">how to turn a PHP-to-Java migration into a repeatable Kiro-driven engine</a> with a parity harness. GitHub made <a href="https://github.blog/changelog/2026-10-28-repository-plugin-defaults-and-enterprise-plugin-controls-generally-available">plugin defaults and enterprise plugin controls for Copilot CLI, VS Code and the Copilot app</a> GA. Martin Fowler's team <a href="https://martinfowler.com/rachels-ramblings/good-devs-wary.html">explores why experienced developers stay wary of agentic development</a>: built isn't the same as working in production.</p>
+
+<h3>Security (AI and cloud)</h3>
+<p>Google's <a href="https://thehackernews.com/2026/10/googles-gemini-4-carbon-leads.html">Gemini 4 Carbon tops vulnerability-finding benchmarks</a>, leading SEC-bench Pro at 88.2%. <a href="https://thehackernews.com/2026/10/linux-kernel-tcp-flaw-with-98-cvss.html">Anthropic disclosed that its own model wrote a working exploit</a> for a 9.8-CVSS Linux kernel TCP flaw hitting Ubuntu and RHEL. Attackers are <a href="https://thehackernews.com/2026/10/fake-chatgpt-and-claude-apps-abuse.html">impersonating ChatGPT and Claude desktop apps to plant crypto miners</a> via fake GitHub projects (campaign "Yoba"). A researcher found <a href="https://thehackernews.com/2026/10/26400-valid-cloud-and-ai-credentials.html">26,400 working cloud and AI credentials exposed across public Gitee repos</a>. Hacker News also covers <a href="https://thehackernews.com/2026/10/the-rise-of-threat-operator-how-ai-will.html">how AI is reshaping SOC roles</a>, and Wiz catalogs <a href="https://www.wiz.io/blog/the-rise-of-agentic-attacks">what agentic attacks look like in the wild</a>. AWS disclosed <a href="https://aws.amazon.com/security/security-bulletins/rss/2026-156-aws/">CVE-2026-119115</a>, an authorization flaw letting a namespace-scoped approver in AWS Private CA Connector for Kubernetes obtain certificates beyond scope.</p>
+
+<h2>Python</h2>
+<ul>
+<li>Real Python launched <a href="https://realpython.com/learn-with-mentor-ai-async-python/">"Mentor AI,"</a> a conversational way to work through async Python topics.</li>
+<li>The PSF <a href="https://pyfound.blogspot.com/2026/10/announcing-psf-community-service-award.html">announced its 2026 Community Service Award recipients</a>.</li>
+</ul>
+
+<h2>JavaScript and TypeScript</h2>
+<ul>
+<li><a href="https://nodeweekly.com/issues/645">Node shipped security releases fixing a Brotli decoder flaw</a> (see Datadog below); Node 26 "Lithium" is now the active LTS line through April 2029.</li>
+</ul>
+
+<h2>Rust</h2>
+<ul>
+<li>A community member shared <a href="https://users.rust-lang.org/t/crossfyre-toolchain-five-security-scanning-engines-in-one-rust-workspace/143350">Crossfyre, five security-scanning engines in one open-source Rust workspace</a> (Apache-2.0).</li>
+<li>Another shared <a href="https://users.rust-lang.org/t/automock-crate-for-mocking-anything/143343">Automock, a new crate for mocking functions, traits and structs</a>.</li>
+
+</ul>
+
+<h2>Java</h2>
+<ul>
+<li>JDK 27 has shipped; Inside Java <a href="https://inside.java/2026/10/30/jdk27-gc-changes/">runs through what changed in the G1, Parallel and Serial collectors</a>.</li>
+<li><a href="https://inside.java/2026/10/24/openjdk-emudhra/">Eight compromised eMudhra CA certificates affect some OpenJDK runtimes</a>; Inside Java has mitigation steps.</li>
+</ul>
+
+<h2>Source control and GitHub</h2>
+<ul>
+<li>GitHub <a href="https://github.blog/changelog/2026-10-29-webhook-ip-ranges-added-to-the-meta-api">added new webhook IP ranges to the Meta API</a> — worth a check if you maintain a static network allowlist.</li>
+</ul>
+
+<h2>AWS</h2>
+<ul>
+<li><a href="https://aws.amazon.com/about-aws/whats-new/2026/10/aurora-postgresql-post-quantum-tls-key-exchange/">Aurora PostgreSQL now supports post-quantum TLS key exchange</a> for data in transit.</li>
+<li><a href="https://aws.amazon.com/about-aws/whats-new/2026/10/sagemaker-ai-soci-images-training/">SageMaker AI training jobs now start in seconds with SOCI-indexed images</a>, cutting GPU idle time up to 90%.</li>
+<li><a href="https://aws.amazon.com/blogs/machine-learning/accelerate-agentic-ai-with-nvidia-nemotron-models-on-amazon-eks-and-sagemaker-hyperpod-eks/">NVIDIA's 120B-parameter Nemotron 3.5 Super VL model</a> gets a deployment guide for EKS and SageMaker HyperPod.</li>
+</ul>
+
+<h2>AI and agents</h2>
+<ul>
+<li>Latent Space's <a href="https://latent.space/p/elorian/">Elorian benchmark probes whether frontier models reason past visual decoys</a>, not just see them.</li>
+</ul>
+
+<h2>Security</h2>
+<ul>
+<li>Cisco <a href="https://thehackernews.com/2026/10/cisco-patches-actively-exploited-asa.html">patched an actively-exploited ASA/FTD VPN flaw</a> (CVSS 8.6) that can crash firewalls.</li>
+<li>Cisco Talos found <a href="https://thehackernews.com/2026/10/hackers-exploited-cisco-sd-wan-flaw-to.html">"KeyDrift" malware planted via a patched Catalyst SD-WAN flaw</a>, built to steal site-to-site encryption keys.</li>
+<li>Binance <a href="https://thehackernews.com/2026/10/binance-suffers-security-breach.html">disclosed a breach affecting $6.3 billion in assets</a>, nearly $3 billion frozen on-chain so far.</li>
+<li>Datadog <a href="https://securitylabs.datadoghq.com/articles/node2shell-cve-2026-111497-nodejs-brotli-decoder/">reproduced CVE-2026-111497</a>, the out-of-bounds write in Node's bundled Brotli decoder, with remediation steps.</li>
+<li>Wiz's <a href="https://www.wiz.io/blog/php2shell-exploitation-so-far">follow-up on PHP2Shell exploitation</a> says attempts continue but none have succeeded yet.</li>
+<li>An attacker <a href="https://thehackernews.com/2026/10/attacker-tried-to-exploit-alpine-linuxs.html">tried exploiting a CVSS-10.0 GitLab flaw on Alpine Linux's own server</a> a week after the fix shipped; no compromise found.</li>
+</ul>
+
+<h2>AI security</h2>
+<ul>
+<li>Daniel Miessler sketches <a href="https://danielmiessler.com/blog/general-hill-climbing?utm_source=rss&amp;utm_medium=feed&amp;utm_campaign=website">"General Hill-Climbing,"</a> a five-stage loop from defining an ideal state through evals to iterating.</li>
+</ul>
+
+<h2>Engineering practice</h2>
+<ul>
+<li>The Pragmatic Engineer talks with <a href="https://newsletter.pragmaticengineer.com/p/software-engineering-at-google-and">Titus Winters about engineering at Google's scale and AI's effect on CS education</a>.</li>
+<li>Martin Fowler's bliki <a href="https://martinfowler.com/bliki/LLM-Voice.html">names the "LLM voice"</a> that makes writing feel machine-generated.</li>
+</ul>
+
+<h2>Feeds that failed</h2>
+<ul>
+<li>Microsoft Teams Blog (what's new) (https://techcommunity.microsoft.com/t5/s/gxcuf89792/rss/board?board.id=MicrosoftTeamsBlog): malformed response (not well-formed XML)</li>
+<li>CISA advisories (https://www.cisa.gov/cybersecurity-advisories/all.xml): HTTP 403 Forbidden</li>
+</ul>

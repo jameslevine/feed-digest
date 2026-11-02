@@ -18,7 +18,7 @@ what's specific to this repo, and it wins where the two conflict.
 | Task | Command |
 |---|---|
 | Regenerate `feeds.opml` | `python3 gen_feeds.py` (also overwrites `~/.config/netnewswire/feeds.opml`; not run during onboarding) |
-| Lint | `uvx ruff@0.17.1 check --no-cache --select E9,F63,F7,F82 .` |
+| Lint | `uvx ruff@0.17.1 check --no-cache .` |
 | Smoke check | the `run:` steps of the `smoke` job in `.github/workflows/ci.yml` |
 | Secret scan | `gitleaks git --no-banner --redact .` |
 

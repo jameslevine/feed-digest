@@ -1,0 +1,65 @@
+<h2>Your stack</h2>
+<ul>
+<li><b>Python 3.14:</b> Real Python's <a href="https://realpython.com/python-news-november-2026/">November roundup</a> notes that Python 3.15 has shipped, 3.16 is eyeing None-aware operators, and eight broken CA keys triggered emergency security releases.</li>
+<li><b>uv:</b> <a href="https://pypi.org/project/uv/0.13.7/">uv 0.13.7</a> is out (no changelog beyond the version bump on PyPI).</li>
+<li><b>Linters and type checkers:</b> <a href="https://pypi.org/project/ty/0.0.96/">ty 0.0.96</a> shipped, Astral's Rust-based Python type checker.</li>
+<li><b>GitHub Actions:</b> GitHub will <a href="https://github.blog/changelog/2026-11-02-pull_request_target-blocked-by-default-december-2">block <code>pull_request_target</code> by default</a> in all public repos from December 2, unless an Actions event policy explicitly allows it — worth auditing any public-repo workflows that rely on it.</li>
+<li><b>AWS Lambda:</b> Lambda event source mappings now support <a href="https://aws.amazon.com/blogs/compute/introducing-queue-consumption-mode-for-apache-kafka-in-aws-lambda/">queue consumption mode for self-managed Apache Kafka</a> (including Confluent Cloud), scaling consumer parallelism past partition count with per-record acks and automatic retries.</li>
+<li><b>EventBridge:</b> A new AWS Architecture Blog post shows a <a href="https://aws.amazon.com/blogs/architecture/automating-the-full-aws-drs-agent-lifecycle-install-heal-and-offboard/">Lambda-free pattern</a> for automating the full AWS DRS agent lifecycle (install/heal/offboard) with EventBridge-triggered Systems Manager Automation.</li>
+<li><b>MCP:</b> Amazon Connect flows can now call <a href="https://aws.amazon.com/about-aws/whats-new/2026/10/connect-flows-mcp-tools/">MCP tools directly via Bedrock AgentCore Gateway</a>, and AWS's own <a href="https://aws.amazon.com/blogs/mt/extending-aws-devops-agent-with-skills-model-context-protocol-mcp-servers-custom-agents-and-connectors/">internal DevOps Agent gained MCP server support</a>, Skills, and custom connectors — more signs MCP is becoming AWS's default tool-calling layer.</li>
+<li><b>Amazon Bedrock:</b> Three separate posts on Bedrock AgentCore patterns this week: <a href="https://aws.amazon.com/blogs/machine-learning/prepare-web-content-for-amazon-bedrock-knowledge-bases-with-crawl4ai/">Crawl4AI for Knowledge Bases content prep</a>, an <a href="https://aws.amazon.com/blogs/machine-learning/agentic-engineering-intelligence-with-amazon-nova-multimodal-embeddings-and-amazon-bedrock-agentcore/">AgentCore + Nova-embeddings pattern</a> built on the Strands Agents SDK, and a <a href="https://aws.amazon.com/blogs/machine-learning/how-circle-k-accelerated-devops-incident-triage-to-under-15-minutes-with-amazon-bedrock/">Circle K case study</a> cutting DevOps incident triage to under 15 minutes.</li>
+<li><b>Step Functions:</b> This week's <a href="https://aws.amazon.com/blogs/aws/aws-weekly-roundup-gpt-6-1-terra-on-bedrock-step-functions-as-agent-tools-and-more-november-2-2026/">AWS Weekly Roundup</a> highlights Step Functions now being callable as an agent tool, so existing orchestrations (it already coordinates 220+ AWS services) become agent-usable without a rewrite.</li>
+<li><b>Claude:</b> Claude Haiku 5.5 is <a href="https://aws.amazon.com/about-aws/whats-new/2026/11/kiro-haiku-5-5-aws-govcloud-us/">now available in Kiro for AWS GovCloud (US)</a>, completing the Claude 5.5 family there; the <a href="https://platform.claude.com/docs/en/release-notes/overview#november-2-2026">Claude Platform API</a> picked up beta "message threads" for cheaper, lower-latency long agent conversations; and the Anthropic Python SDK bumped to <a href="https://pypi.org/project/anthropic/2.4.0/">2.4.0</a>.</li>
+<li><b>Claude Code:</b> <a href="https://code.claude.com/docs/en/changelog#2-1-317">2.1.317</a> adds a warning when a new cloud scheduled task gets connectors you didn't ask for, a confirmation before a web/shell tool call sends your account email over the network, and <code>onFailure: "block"</code> for Agent SDK hook callbacks; the <a href="https://pypi.org/project/claude-agent-sdk/0.2.177/">Claude Agent SDK</a> also bumped to 0.2.177.</li>
+<li><b>AI-DLC and AI-assisted development practices:</b> <a href="https://aws.amazon.com/security/security-bulletins/rss/2026-163-aws/">CVE-2026-120497</a> — a stored XSS in aidlc-traceability, the tool that builds traceability-matrix reports from AI-DLC artifact files; patch if you use it.</li>
+<li><b>Microsoft Teams:</b> Attackers are <a href="https://thehackernews.com/2026/11/attackers-pose-as-it-support-on.html">impersonating IT support on Microsoft Teams</a> to get remote control of PCs, then abusing weak AD CS settings to mint certificates for privileged accounts, including a domain controller — worth reminding staff that Teams-based IT requests need verification.</li>
+<li><b>Security (AI and cloud):</b> <a href="https://aws.amazon.com/security/security-bulletins/rss/2026-164-aws/">CVE-2026-116635</a> is a path-traversal bug in the AWS Serverless MCP Server's deployment-status component. Separately, critical unauthenticated-RCE flaws hit <a href="https://thehackernews.com/2026/11/critical-langflow-flaws-could-let.html">Langflow</a>, the open-source AI agent/workflow builder. On defense, <a href="https://blog.trailofbits.com/2026/11/02/backporting-security-fixes-at-scale-with-codex/">Trail of Bits is using Codex to backport security fixes at scale</a>, and Schneier flagged <a href="https://www.schneier.com/blog/archives/2026/11/ai-vulnerability-finding-2.html">AI-assisted vulnerability discovery</a> as a trend to watch. On the attacker side, Hacker News reports <a href="https://thehackernews.com/2026/11/government-linux-servers-targeted-with.html">AI-generated scripts turning up in government Linux intrusions</a>, Wiz describes <a href="https://www.wiz.io/blog/soc-alerts-red-and-blue-agents">AI "Red and Blue" agents for SOC teams</a>, Hacker News asks "<a href="https://thehackernews.com/2026/11/is-your-soc-ready-for-ai-agents.html">Is Your SOC Ready for AI Agents?</a>", and NCSC UK's chief <a href="https://www.ncsc.gov.uk/news/cyber-chief-uk-facing-ai-powered-attacks-on-critical-infrastructure-in-two-years">warns of AI-powered attacks on UK critical infrastructure within two years</a>.</li>
+</ul>
+
+<h2>Rust</h2>
+<ul>
+<li><a href="https://users.rust-lang.org/t/drifti-v0-1-capability-drift-detection-for-ai-agents-built-in-rust/143441">Drifti v0.1</a> — capability drift detection for AI agents, built in Rust.</li>
+</ul>
+
+<h2>Java</h2>
+<ul>
+<li>InfoQ's <a href="https://www.infoq.com/news/2026/11/java-news-roundup-oct26-2026/">Java News Roundup</a> highlights TornadoVM 8.0 and LangChain4j among the week's smaller releases.</li>
+</ul>
+
+<h2>Source control and GitHub</h2>
+<ul>
+<li>GitHub Changelog: <a href="https://github.blog/changelog/2026-11-02-security-risk-assessments-include-repository-protection-status">security risk assessments now include repository protection status</a>.</li>
+</ul>
+
+<h2>AWS</h2>
+<ul>
+<li><a href="https://aws.amazon.com/about-aws/whats-new/2026/11/ec2-amis-scanned-through-inspector/">EC2 AMIs can now be scanned for vulnerabilities</a> through Amazon Inspector without launching an instance.</li>
+<li><a href="https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-rds-per-snapshot-billing/">Amazon RDS now supports per-snapshot billing</a>, a pricing model change worth checking if you keep many manual snapshots.</li>
+<li><a href="https://aws.amazon.com/about-aws/whats-new/2025/10/aws-fluent-bit-3-0-0-based-4-1-1">AWS for Fluent Bit 3.0.0</a> ships on Fluent Bit 4.1.1.</li>
+<li><a href="https://aws.amazon.com/blogs/machine-learning/build-efficient-agents-with-knowledge-distillation-on-amazon-sagemaker-ai/">Knowledge distillation on Amazon SageMaker AI</a> for building smaller, cheaper agents.</li>
+<li>AWS <a href="https://aws.amazon.com/blogs/database/aws-contributes-a-large-transaction-binary-log-optimization-to-mysql/">contributed a large-transaction binary log optimization to MySQL upstream</a>.</li>
+<li><a href="https://aws.amazon.com/blogs/architecture/how-to-run-a-dr-readiness-engagement/">How to run a DR readiness engagement</a>, part of a new disaster-recovery series on the Architecture Blog.</li>
+</ul>
+
+<h2>AI and agents</h2>
+<ul>
+<li>Simon Willison shipped <a href="https://simonwillison.net/2026/Nov/2/llm/">llm 0.37</a>, adding GPT-6.1 model support and switching the CLI's default model.</li>
+<li>Latent Space's AINews digest covers <a href="https://latent.space/p/ainews-llms-can-read-write-neural-network-weights-weight-space-programming-cuts-autoresearch-out-of/">"Weight Space Programming"</a> — early work on LLMs reading and writing neural network weights directly.</li>
+<li>Latent Space interviewed Legora's CTO on <a href="https://latent.space/p/building_legal_agents_when_you_can_t_see_the_data_-_jacob_lauritzen_cto_of_legora/">building legal AI agents</a> when you can't see the underlying case data.</li>
+</ul>
+
+<h2>Security</h2>
+<ul>
+<li>AWS Security Blog: <a href="https://aws.amazon.com/blogs/security/beyond-dkim-key-rotation-understanding-email-replay-attacks/">beyond DKIM key rotation — understanding email replay attacks</a>.</li>
+<li><a href="https://aws.amazon.com/security/security-bulletins/rss/2026-162-aws/">CVE-2026-119085</a>: template injection in the publishing component of Virtual Engineering Workbench.</li>
+<li><a href="https://aws.amazon.com/security/security-bulletins/rss/2026-161-aws/">CVE-2026-119301</a>: improper quoting in Apache Iceberg SQL identifier generation in the AWS SDK for pandas.</li>
+<li>Krebs on Security: <a href="https://krebsonsecurity.com/2026/11/tech-firms-dismantle-botnet-that-turned-1-3m-tv-boxes-into-proxies/">tech firms dismantled a botnet that turned 1.3M TV boxes into proxies</a>.</li>
+<li>Hacker News: a <a href="https://thehackernews.com/2026/11/attackers-exploit-critical-siemens.html">maximum-severity Siemens SIMATIC IoT2050 flaw</a> is under active exploitation.</li>
+<li>Hacker News: attackers are <a href="https://thehackernews.com/2026/11/attackers-target-unpatched.html">targeting an unpatched CryptoPayment Gateway WordPress plugin flaw</a> to expose wallet credentials.</li>
+</ul>
+
+<h2>Feeds that failed</h2>
+<ul>
+<li>Microsoft Teams Blog (what's new) — response was not well-formed XML (parse error).</li>
+<li>CISA advisories — HTTP 403 Forbidden.</li>
+</ul>

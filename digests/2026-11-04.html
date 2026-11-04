@@ -1,0 +1,72 @@
+<h2>Your stack</h2>
+<ul>
+<li><b>Python 3.14:</b> <a href="https://pycoders.com/issues/759">PyCoder's Weekly</a> covers PEP 836's withdrawal, removing the experimental JIT from CPython's main branch; separately, <a href="https://github.blog/changelog/2026-11-03-codeql-2-27-3-adds-python-3-15-features-and-json-data-extensions">CodeQL 2.27.3 adds Python 3.15 language support</a> and <a href="https://github.blog/changelog/2026-11-03-dependabot-now-supports-python-3-15">Dependabot now supports upgrading to Python 3.15</a>.</li>
+<li><b>Powertools for AWS Lambda:</b> <a href="https://pypi.org/project/aws-lambda-powertools/3.39.0/">3.39.0</a> shipped (no changelog beyond the version bump).</li>
+<li><b>AWS Lambda:</b> Lambda now supports <a href="https://aws.amazon.com/about-aws/whats-new/2026/10/aws-lambda-seekable-oci-soci/">Seekable OCI (SOCI) lazy loading for Managed Instances</a>, cutting container startup time up to 70% by fetching only the files each stage needs.</li>
+<li><b>Step Functions:</b> <a href="https://aws.amazon.com/about-aws/whats-new/2026/10/step-functions-workflows-ai-agent-tools/">Step Functions workflows are now usable as AI agent tools</a> through Bedrock AgentCore Gateway — your agent decides when to invoke an existing Standard/Express workflow.</li>
+<li><b>DynamoDB:</b> <a href="https://aws.amazon.com/about-aws/whats-new/2026/10/dax-additional-regions/">DynamoDB Accelerator (DAX)</a> is now available in Canada (Central) and Africa (Cape Town).</li>
+<li><b>Amazon Bedrock:</b> <a href="https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-bedrock-agentcore-cli-version-1-0-available/">AgentCore CLI 1.0</a> is GA with faster startup and a consistent command structure; a new post shows <a href="https://aws.amazon.com/blogs/machine-learning/servicenow-on-behalf-of-token-exchange-with-bedrock-agentcore-gateway/">AgentCore Gateway doing on-behalf-of token exchange with Entra ID</a> for ServiceNow calls with no interceptor Lambda; and Bedrock added <a href="https://aws.amazon.com/blogs/machine-learning/introducing-india-based-inference-for-kimi-k3-on-amazon-bedrock/">India in-country inference for Kimi K3</a>.</li>
+<li><b>Claude Code:</b> a <a href="https://thehackernews.com/2026/10/official-claude-code-vs-code-extension.html">trojanized Claude Code extension (v2.1.313) was distributed via the Cursor Marketplace under the real publisher identity</a>, installing a persistent SSH backdoor — check what version you're running; separately, <a href="https://code.claude.com/docs/en/changelog#2-1-318">2.1.318</a> added an `assume_role` option for per-developer AWS cost attribution and an effort override for forked subagents.</li>
+<li><b>Claude:</b> the <a href="https://platform.claude.com/docs/en/release-notes/overview#november-3-2026">Nov 3 platform release notes</a> detail which models carry the text watermark (and when a non-default temperature/top_p/top_k suppresses it on Sonnet 4.6); <a href="https://pypi.org/project/claude-agent-sdk/0.2.178/">claude-agent-sdk 0.2.178</a> also shipped.</li>
+<li><b>Dependabot and supply chain:</b> <a href="https://github.blog/changelog/2026-11-03-dependabot-version-updates-support-agent-package-manager">Dependabot version updates now cover Agent Package Manager (APM)</a>, so it can open PRs to keep your AI agent skills, prompts and instructions current too.</li>
+<li><b>MCP:</b> <a href="https://aws.amazon.com/security/security-bulletins/rss/2026-152-aws/">CVE-2026-115413</a> is an OAuth token audience-validation bypass in the AWS API MCP Server — worth checking if you're running it.</li>
+<li><b>AI-DLC and AI-assisted development practices:</b> GitHub Copilot usage API now <a href="https://github.blog/changelog/2026-11-03-byok-and-enterprise-custom-models-in-the-copilot-usage-api">reports BYOK vs. Copilot-hosted model usage separately</a>, Copilot is now <a href="https://github.blog/changelog/2026-11-03-github-copilot-is-now-available-in-jetbrains-air">available in JetBrains Air via the Agent Client Protocol</a>, and an AWS post walks through <a href="https://aws.amazon.com/blogs/database/build-an-organization-wide-amazon-rds-posture-dashboard-with-kiro/">building an org-wide RDS deletion-protection posture dashboard with Kiro</a>.</li>
+<li><b>Security (AI and cloud):</b> HashiCorp/IBM launched a <a href="https://www.hashicorp.com/blog/introducing-ibm-cloud-secrets-manager-vault-dedicated">managed Vault Enterprise on dedicated IBM Cloud infrastructure</a>; Google warned that <a href="https://thehackernews.com/2026/11/google-warns-llmjacking-attacks-are.html">LLMjacking (hijacked LLM API access) is costing some enterprises up to $1M in cloud charges</a>; Binance traced its record <a href="https://thehackernews.com/2026/11/binance-reveals-how-fake-job-interviews.html">$6.43B theft to a tampered Homebrew install and AI-tool-abetted social engineering</a> against two engineers; and Wiz surveys <a href="https://www.wiz.io/blog/the-rise-of-agentic-attacks">the rise of agentic attacks and their fingerprints</a>.</li>
+</ul>
+
+<h2>Python</h2>
+<ul>
+<li>The PSF is <a href="https://pyfound.blogspot.com/2026/10/announcing-new-security-developer-2026.html">adding a dedicated Security Developer role</a>, funded by Anthropic, as CVE/malware volume for Python and PyPI keeps climbing.</li>
+<li><a href="https://realpython.com/simpy-simulating-with-python/">Real Python on SimPy</a>: modeling real-world processes and simulating where a system gets congested.</li>
+</ul>
+
+<h2>JavaScript and TypeScript</h2>
+<ul>
+<li><a href="https://nodejs.org/en/blog/release/v26.13.0">Node 26.13.0 (now the "Lithium" LTS)</a> and a <a href="https://nodejs.org/en/blog/release/v27.0.0-alpha.0.0.0">Node 27 alpha</a> landed, the first release under Node's new six-months-in-alpha process.</li>
+<li><a href="https://javascriptweekly.com/issues/809">JavaScript Weekly</a>: Claude built the same app 5 times across 12 JS stacks — cost ranges mostly overlapped, but shipped JS varied from 0KB (Astro) to 115–142K (Next.js/React Router/TanStack Start).</li>
+</ul>
+
+<h2>Rust</h2>
+<ul>
+<li><a href="https://blog.rust-lang.org/2026/11/03/Rustup-1.29.3/">rustup 1.29.3</a> fixes an "illegal instruction" crash on x86_64 CPUs without SSE4.1.</li>
+<li><a href="https://users.rust-lang.org/t/netip-0-4-fast-ip-network-operations-with-arbitrary-masks/143444">netip 0.4</a> adds fast IPv4/IPv6 network-difference operations with arbitrary masks.</li>
+</ul>
+
+<h2>Java</h2>
+<ul>
+<li>JetBrains on <a href="https://blog.jetbrains.com/idea/2026/11/where-did-the-saved-bytes-go-compact-object-headers-in-intellij-idea/">compact object headers in IntelliJ IDEA</a>: AI agents make code cheaper to produce, not cheaper to run, so GC and memory work still matters.</li>
+</ul>
+
+<h2>Source control and GitHub</h2>
+<ul>
+<li>The GitHub REST API can now <a href="https://github.blog/changelog/2026-11-03-look-up-a-resources-cost-center-with-the-github-rest-api">look up a resource's cost center directly</a>, and <a href="https://github.blog/changelog/2026-11-02-github-desktop-adds-short-lived-authentication-tokens">GitHub Desktop 3.6.10+ supports short-lived, auto-refreshing auth tokens</a>.</li>
+</ul>
+
+<h2>AWS</h2>
+<ul>
+<li><a href="https://aws.amazon.com/blogs/machine-learning/building-ultra-low-latency-voice-ai-applications-on-aws/">Cartesia's sub-100ms voice AI</a> on SageMaker AI/EC2 GPUs, using purpose-built State Space Models.</li>
+<li><a href="https://aws.amazon.com/about-aws/whats-new/2026/10/sagemaker-ai-soci-images-training/">SageMaker AI training jobs now start in seconds</a> with SOCI-indexed container images, cutting GPU idle time up to 90%.</li>
+<li><a href="https://aws.amazon.com/about-aws/whats-new/2026/10/acm-acme-support-govcloud-us/">ACM now supports ACME</a> for public certs in GovCloud (US), ahead of the CA/Browser Forum's 47-day cert-lifetime mandate.</li>
+<li><a href="https://aws.amazon.com/blogs/mt/tag-editor-moves-to-aws-resource-explorer-bulk-tag-resources-across-regions/">Tag Editor is moving into AWS Resource Explorer</a> for bulk-tagging resources across regions.</li>
+<li><a href="https://aws.amazon.com/about-aws/whats-new/2026/10/datasync-enhanced-fsx-openshift/">DataSync Enhanced mode</a> now supports FSx for Windows/NetApp ONTAP and Red Hat OpenShift Virtualization as source or destination.</li>
+</ul>
+
+<h2>Security</h2>
+<ul>
+<li>CISA added two actively-exploited flaws to its KEV list: a <a href="https://thehackernews.com/2026/10/cisa-adds-actively-exploited-gitlab-rce.html">critical GitLab RCE (CVSS 10.0) and a Cisco firewall DoS</a>.</li>
+<li>Red Hat patched a <a href="https://thehackernews.com/2026/11/red-hat-patches-98-rated-linux-tcp-rce.html">9.8-rated Linux kernel TCP use-after-free RCE</a>; Ubuntu's fix is still opt-in testing only.</li>
+<li>An attacker <a href="https://thehackernews.com/2026/11/cpguard-update-channel-hijacked-to.html">hijacked the cPGuard security tool's update channel</a> to backdoor Linux servers and steal password hashes.</li>
+<li><a href="https://thehackernews.com/2026/11/synology-nas-devices-targeted-in.html">Synology NAS devices are being hit with ransomware</a> via a DSM flaw patched back in December 2024.</li>
+<li><a href="https://aws.amazon.com/security/security-bulletins/rss/2026-168-aws/">CVE-2026-119084</a>: unsafe class loading in the Amazon Redshift JDBC Driver (&lt;2.3.0) allows RCE via connection parameters.</li>
+<li><a href="https://aws.amazon.com/security/security-bulletins/rss/2026-165-aws/">CVE-2026-119922</a>: a Babelfish for PostgreSQL privilege-escalation flaw.</li>
+</ul>
+
+<h2>Engineering practice</h2>
+<ul>
+<li>The Pragmatic Engineer's reader essay contest winner on <a href="https://newsletter.pragmaticengineer.com/p/how-software-engineering-is-changing">how software engineering is changing</a>, "a tale of two eras."</li>
+</ul>
+
+<h2>Feeds that failed</h2>
+<ul>
+<li>CISA advisories — HTTP 403 Forbidden.</li>
+</ul>

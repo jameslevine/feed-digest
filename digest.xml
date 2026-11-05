@@ -1,11 +1,93 @@
-<?xml version="1.0" ?><rss version="2.0">
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
   <channel>
     <title>James's feed digest</title>
     <link>https://github.com/jameslevine/feed-digest</link>
     <description><![CDATA[
 Daily AI summary of my RSS subscriptions
 ]]></description>
-    <lastBuildDate>Wed, 04 Nov 2026 07:17:18 +0000</lastBuildDate><item><title>Digest for 2026-11-04</title><guid isPermaLink="false">Digest for 2026-11-04</guid><pubDate>Wed, 04 Nov 2026 07:17:18 +0000</pubDate><link>https://github.com/jameslevine/feed-digest/blob/main/digests/2026-11-04.html</link><description><![CDATA[<h2>Your stack</h2>
+    <lastBuildDate>Thu, 05 Nov 2026 07:17:34 +0000</lastBuildDate><item><title>Digest for 2026-11-05</title><guid isPermaLink="false">Digest for 2026-11-05</guid><pubDate>Thu, 05 Nov 2026 07:17:34 +0000</pubDate><link>https://github.com/jameslevine/feed-digest/blob/main/digests/2026-11-05.html</link><description><![CDATA[<h2>Your stack</h2>
+<ul>
+<li><b>Linters and type checkers:</b> Astral's <a href="https://pypi.org/project/ty/0.0.97/">ty 0.0.97</a> shipped (no changelog beyond the version bump).</li>
+<li><b>boto3:</b> <a href="https://pypi.org/project/boto3/1.43.124/">boto3 1.43.124</a> shipped (no changelog beyond the version bump).</li>
+<li><b>Amazon Bedrock:</b> Bedrock added <a href="https://aws.amazon.com/about-aws/whats-new/2026/10/bedrock-openai-runtime-govcloud/">OpenAI GPT-5.6 (Terra/Luna) on bedrock-runtime plus Cross-Region Inference in AWS GovCloud (US)</a>; one post shows how to <a href="https://aws.amazon.com/blogs/machine-learning/use-decision-models-with-amazon-bedrock-agentcore-evaluations/">wire decision models (Jev, Strands Decider) into AgentCore Evaluations</a> to validate a check before gating a release on it; another lays out a <a href="https://aws.amazon.com/blogs/machine-learning/four-layers-of-context-engineering-for-production-ai-agents-how-deep-insight-applies-them-in-working-code/">four-layer context-engineering framework for production agents</a>, implemented in the open-source Deep Insight on Strands/AgentCore; and <a href="https://aws.amazon.com/blogs/machine-learning/how-u-mobile-built-agentic-telco-operations-with-amazon-bedrock-agentcore/">U Mobile's AgentCore-based telco ops platform</a> now handles 150+ scenarios and has cut trouble tickets up to 84.5%.</li>
+<li><b>Microsoft Teams:</b> <a href="https://techcommunity.microsoft.com/t5/microsoft-teams-blog/the-github-app-in-microsoft-teams-is-now-generally-available/ba-p/4569136">The GitHub app in Microsoft Teams is now GA</a>, with a GitHub Canvas for reviewing and filing work without leaving Teams.</li>
+<li><b>Claude:</b> <a href="https://pypi.org/project/anthropic/2.5.0/">anthropic 2.5.0</a> (the Python SDK) shipped; separately, the two Bedrock AgentCore posts above build on Strands, the model-driven agent framework commonly paired with Claude on Bedrock.</li>
+<li><b>AI-DLC and AI-assisted development practices:</b> <a href="https://github.blog/changelog/2026-11-04-github-copilot-is-now-available-in-xcodes-coding-assistant">GitHub Copilot is now available in Xcode's built-in coding assistant</a> (public preview); separately, <a href="https://aws.amazon.com/about-aws/whats-new/2026/10/kiro-web-search-aws-govcloud-us/">Kiro's web search landed in AWS GovCloud (US)</a>, with admin controls to turn it off org-wide or per custom agent.</li>
+<li><b>Entra ID:</b> <a href="https://aws.amazon.com/about-aws/whats-new/2026/11/datasync-enhanced-oidc-google-azure/">AWS DataSync Enhanced mode now authenticates to Google Cloud Storage and Azure Blob Storage via OIDC</a>, pulling short-lived credentials from Microsoft Entra ID instead of long-term HMAC/SAS keys.</li>
+<li><b>Security (AI and cloud):</b> two new AWS bulletins: <a href="https://aws.amazon.com/security/security-bulletins/rss/2026-170-aws/">CVE-2026-122266</a>, an eBPF connection-tracking isolation bug in the EKS Network Policy Agent that could let an adjacent pod bypass NetworkPolicy enforcement, and <a href="https://aws.amazon.com/security/security-bulletins/rss/2026-169-aws/">CVE-2026-122192</a>, letting a guest root user read/modify the Firecracker host process's memory after a failed memory discard on snapshot-restored VMs. Separately, Check Point found <a href="https://thehackernews.com/2026/11/researchers-uncover-prompt-adware.html">"prompt adware" (Haiou) hidden in an OpenAI Codex jailbreak toolkit</a> that rewrites the agent's trusted config to inject ads, and Sekoia traced an <a href="https://thehackernews.com/2026/11/apt29-linked-hackers-hijack-web.html">APT29 watering-hole campaign to a compromised web-analytics supply chain (Plerdy SEO Tracker)</a> targeting iOS/Android. CISA and vendors also logged several more exploited or unpatched flaws this week: a patched <a href="https://thehackernews.com/2026/11/hackers-exploit-patched-apple-flaw-to.html">Apple info-stealer flaw</a>, a <a href="https://thehackernews.com/2026/11/google-patches-critical-android-flaw.html">critical Android zero-click RCE</a>, a <a href="https://thehackernews.com/2026/11/cisa-confirms-hackers-exploiting.html">WordPress Core TOCTOU bug</a>, <a href="https://thehackernews.com/2026/11/sonicwall-wont-patch-eol-gms-flaws-that.html">unpatched EoL SonicWall GMS flaws</a>, and <a href="https://thehackernews.com/2026/11/barracuda-flaws-could-be-chained-to.html">chainable Barracuda auth-bypass-plus-root-access flaws</a>.</li>
+</ul>
+
+<h2>Python</h2>
+<ul>
+<li><a href="https://realpython.com/positron-ide/">Real Python on Positron IDE</a>: a hands-on tutorial for cleaning, visualizing and exploring data manually or with AI assistance.</li>
+<li>The PSF <a href="https://pyfound.blogspot.com/2026/11/joshua-mcshannon-joins-psf-as.html">welcomed Joshua Mcshannon as its new Infrastructure Engineer</a>, focused on cutting operational toil on PSF infrastructure.</li>
+</ul>
+
+<h2>JavaScript and TypeScript</h2>
+<ul>
+<li>Node.js has <a href="https://nodejs.org/en/blog/vulnerability/november-2026-security-releases">scheduled security releases for November 11</a>.</li>
+<li>A <a href="https://nodejs.org/en/blog/release/v27.0.0-alpha.0.0.0">Node 27 alpha</a> landed, the first release under Node's new six-months-in-alpha process.</li>
+</ul>
+
+<h2>Rust</h2>
+<ul>
+<li><a href="https://users.rust-lang.org/t/xsd-parser-v1-6-0-release-rust-code-generator-for-xml-schemas/143487">xsd-parser v1.6.0</a> adds proper dynamic/abstract XSD type support and opt-in skipping of unknown elements.</li>
+<li><a href="https://users.rust-lang.org/t/planetx-lite-0-22-0-a-3d-globe-in-rust-and-wgpu-for-desktop-and-webassembly-now-with-gis-file-layers/143483">PlanetX Lite 0.22.0</a>, a Rust/wgpu 3D globe viewer, adds GIS vector layers (GeoPackage, Shapefile, GeoJSON and more).</li>
+</ul>
+
+<h2>Go</h2>
+<ul>
+<li>Go 1.27 introduces a <a href="https://go.dev/blog/jsonv2">new encoding/json/v2 and encoding/json/jsontext API</a>.</li>
+</ul>
+
+<h2>Java</h2>
+<ul>
+<li><a href="https://inside.java/2026/11/04/devoxxbelgium-project-detroit/">Project Detroit</a> uses Java's Foreign Function &amp; Memory API to embed whole foreign-language runtimes, like V8 and CPython, directly in Java apps instead of reimplementing them.</li>
+</ul>
+
+<h2>Source control and GitHub</h2>
+<ul>
+<li><a href="https://github.blog/changelog/2026-11-04-codeql-2-27-4-improves-accuracy-and-query-metadata">CodeQL 2.27.4</a> improves query accuracy and metadata for GitHub code scanning.</li>
+</ul>
+
+<h2>Microsoft (Azure DevOps, Teams, WSL)</h2>
+<ul>
+<li><a href="https://devblogs.microsoft.com/commandline/intelligent-terminal-v0-3-a-new-way-to-see-and-manage-your-tabs-and-agents/">Intelligent Terminal 0.3</a> adds a sidebar for managing tabs and agent sessions, plus global search.</li>
+<li>Microsoft is <a href="https://devblogs.microsoft.com/microsoft365dev/deprecation-notice-low-trust-sharepoint-add-ins-in-sharepoint-server-subscription-edition/">deprecating low-trust SharePoint add-ins</a> in SharePoint Server Subscription Edition from January 12, 2027 — migrate to SPFx.</li>
+</ul>
+
+<h2>AWS</h2>
+<ul>
+<li><a href="https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-s3-tables-managed-migration-hive-to-iceberg/">S3 Tables now manages migrating Apache Hive tables to Iceberg</a> — no pipeline to build, production workloads keep running.</li>
+<li><a href="https://aws.amazon.com/about-aws/whats-new/2026/11/ec2-capacity-manager-supportability-and-fulfillment/">EC2 Capacity Manager</a> adds real-time supportability checks and capacity-fulfillment metrics across instance types and AZs.</li>
+<li><a href="https://aws.amazon.com/about-aws/whats-new/2026/11/interconnect-last-mile-preview-equinix/">AWS Interconnect – last mile (preview)</a> gives managed private connections to AWS via Equinix's 282 data centers, no cross-connect ordering needed.</li>
+<li><a href="https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-cloudwatch-api-keys-opentelemetry/">CloudWatch now accepts bearer-token auth for OTLP traces</a>, useful for workloads that can't use SigV4 or the AWS SDK.</li>
+<li><a href="https://aws.amazon.com/about-aws/whats-new/2026/10/cloudfront-viewer-isp-post-quantum-visbility/">CloudFront can now report viewer ISP and post-quantum TLS details</a> per request, ahead of the CA/Browser Forum's 47-day cert-lifetime mandate.</li>
+<li><a href="https://aws.amazon.com/blogs/machine-learning/smart-approvals-in-amazon-quick-human-oversight-where-it-matters/">Smart Approvals in Amazon Quick</a> auto-clears low-risk agent actions within policy while keeping consequential decisions with a person.</li>
+</ul>
+
+<h2>AI and agents</h2>
+<ul>
+<li><a href="https://latent.space/p/ainews-it-s-swapping-season/">Latent Space's AINews roundup</a>: OpenAI's Linux kernel security work, Kimi K3.1 Pro's open weights, and Ricursive's Ripple-65B.</li>
+<li><a href="https://simonwillison.net/2026/Nov/4/datasette-apps/">Datasette Apps 0.3a0</a> adds taggable apps in Datasette Agent chat and tools to manage which stored queries an app can call.</li>
+<li><a href="https://simonwillison.net/2026/Nov/3/datasette-agent/">Datasette Agent 0.5a0</a> adds a chat panel that sits alongside a table or query page, so you can prompt a database-backed app into existence and then edit it from the chat beside it.</li>
+</ul>
+
+<h2>Security</h2>
+<ul>
+<li>A <a href="https://thehackernews.com/2026/11/debian-and-ubuntu-apt-flaw-lets-mitm.html">MitM flaw in APT</a> lets an attacker swap a verified Debian/Ubuntu package for their own and run code as root, by abusing APT's default retry-on-failure behavior.</li>
+<li>A <a href="https://thehackernews.com/2026/11/critical-rails-flaw-lets-attackers.html">critical Rails/Active Storage flaw</a> lets an unauthenticated attacker write arbitrary server files via a crafted ImageMagick upload; fixed in 8.1.4.1/8.0.5.2.</li>
+<li><a href="https://thehackernews.com/2026/11/xen-hypervisor-flaws-let-one-malicious.html">Two Xen hypervisor flaws</a> let a malicious guest VM read and write other VMs' memory, including dom0; no mitigation beyond patching.</li>
+<li>OpenAI's <a href="https://thehackernews.com/2026/11/openai-ai-pipeline-generates-948-linux.html">cyber-focused AI pipeline found and patched 948 Linux local-privilege-escalation bugs</a> for $1.2M in API costs.</li>
+<li>Google <a href="https://thehackernews.com/2026/11/google-warns-llmjacking-attacks-are.html">warns LLMjacking (hijacked LLM API access) is costing some enterprises up to $1M</a> in cloud charges.</li>
+<li><a href="https://thehackernews.com/2026/11/radio-with-no-radar-why-agent-runtime.html">Most AI agents never pass through a gateway the enterprise controls</a>, so runtime-security promises that assume one don't hold — illustrated by a real mass-email automation incident.</li>
+</ul>
+
+<h2>Feeds that failed</h2>
+<ul>
+<li>CISA advisories — malformed XML (mismatched tag).</li>
+</ul>]]></description></item><item><title>Digest for 2026-11-04</title><guid isPermaLink="false">Digest for 2026-11-04</guid><pubDate>Wed, 04 Nov 2026 07:17:18 +0000</pubDate><link>https://github.com/jameslevine/feed-digest/blob/main/digests/2026-11-04.html</link><description><![CDATA[<h2>Your stack</h2>
 <ul>
 <li><b>Python 3.14:</b> <a href="https://pycoders.com/issues/759">PyCoder's Weekly</a> covers PEP 836's withdrawal, removing the experimental JIT from CPython's main branch; separately, <a href="https://github.blog/changelog/2026-11-03-codeql-2-27-3-adds-python-3-15-features-and-json-data-extensions">CodeQL 2.27.3 adds Python 3.15 language support</a> and <a href="https://github.blog/changelog/2026-11-03-dependabot-now-supports-python-3-15">Dependabot now supports upgrading to Python 3.15</a>.</li>
 <li><b>Powertools for AWS Lambda:</b> <a href="https://pypi.org/project/aws-lambda-powertools/3.39.0/">3.39.0</a> shipped (no changelog beyond the version bump).</li>

@@ -1,0 +1,89 @@
+<h2>Your stack</h2>
+<ul>
+<li><b>pydantic:</b> <a href="https://pypi.org/project/pydantic/2.14.3/">pydantic 2.14.3</a> shipped (point release, no changelog beyond the version bump).</li>
+<li><b>ruff:</b> <a href="https://pypi.org/project/ruff/0.17.4/">ruff 0.17.4</a> shipped.</li>
+<li><b>Linters and type checkers:</b> Astral's <a href="https://pypi.org/project/ty/0.0.98/">ty 0.0.98</a> and <a href="https://pypi.org/project/semgrep/1.184.0/">semgrep 1.184.0</a> both shipped point releases.</li>
+<li><b>uv:</b> Real Python published <a href="https://realpython.com/effective-python-environment/">a guide to building an effective Python dev environment</a> built around uv, editors, and virtual environments.</li>
+<li><b>boto3:</b> <a href="https://pypi.org/project/boto3/1.43.125/">boto3 1.43.125</a> shipped.</li>
+<li><b>Claude:</b> the <a href="https://pypi.org/project/anthropic/2.6.0/">Anthropic Python SDK hit 2.6.0</a>; separately, the Claude Platform added <a href="https://platform.claude.com/docs/en/release-notes/overview#ip-allowlisting">beta IP allowlisting for API keys</a> and <a href="https://platform.claude.com/docs/en/release-notes/overview#admin-api-sign-out">Admin API sign-out across an org</a>.</li>
+<li><b>Amazon Bedrock:</b> AgentCore gained a new <a href="https://aws.amazon.com/about-aws/whats-new/2026/11/web-answer-amazon-bedrock/">"Web Answer" capability</a>, and <a href="https://aws.amazon.com/blogs/architecture/how-tui-scales-threat-modeling-for-100-teams-with-amazon-bedrock/">TUI used Bedrock to scale threat modeling</a> across 100+ teams.</li>
+<li><b>DynamoDB:</b> DynamoDB now <a href="https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-dynamodb-now-supports-bulk-put-items/">supports bulk put items</a>, including loading straight from S3 into existing tables.</li>
+<li><b>AWS Lambda:</b> Lambda's <a href="https://aws.amazon.com/about-aws/whats-new/2026/11/lambda-durable-functions-default-quotas/">durable functions got higher default execution and API quotas</a>.</li>
+<li><b>Dependabot and supply chain:</b> AWS Security Hub now ships an <a href="https://aws.amazon.com/about-aws/whats-new/2026/11/security-hub-sbom-inventory/">SBOM inventory</a> across EC2, ECR, and Lambda, built from Inspector-generated SBOMs.</li>
+<li><b>AI-DLC and AI-assisted development practices:</b> <a href="https://aws.amazon.com/about-aws/whats-new/2026/11/q-developer-renamed-aws-assistant/">Amazon Q Developer in the console is now just "the AWS assistant"</a>.</li>
+<li><b>Source control practices:</b> GitHub's <a href="https://github.blog/changelog/2026-11-05-new-pull-request-overview-page-in-public-preview">new pull request overview page</a> is in public preview, and the <a href="https://github.blog/changelog/2026-11-05-usage-metrics-api-flags-telemetry-and-version-gaps">Copilot usage metrics API</a> now also surfaces code-review detail and client telemetry gaps.</li>
+<li><b>Azure DevOps:</b> Azure DevOps published <a href="https://devblogs.microsoft.com/devops/october-2026-node-js-vulnerabilities-azure-devops-security-guidance/">guidance on October's Node.js vulnerabilities</a>.</li>
+<li><b>Security (AI and cloud):</b> <a href="https://aws.amazon.com/about-aws/whats-new/2026/11/iam-roles-anywhere-cdp/">IAM Roles Anywhere</a> now checks certificate revocation automatically; AWS flagged new CVEs in <a href="https://aws.amazon.com/security/security-bulletins/rss/2026-171-aws/">GluonTS</a> and <a href="https://aws.amazon.com/security/security-bulletins/rss/2026-172-aws/">APT</a>; and researchers disclosed a <a href="https://thehackernews.com/2026/11/researchers-bypass-chatgpt-lockdown.html">ChatGPT Lockdown Mode bypass</a> enabling silent chat exfiltration via prompt injection.</li>
+<li><b>AWS Organizations and Control Tower:</b> SageMaker AI Studio now supports <a href="https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-sagemaker-ai-studio-iam/">IAM Identity Center multi-region replication</a>, and a new <a href="https://aws.amazon.com/blogs/security/introducing-aws-account-access-manager-iam-role-flexibility-with-centralized-workforce-access/">AWS account access manager</a> adds IAM role flexibility for centralized workforce access.</li>
+</ul>
+
+<h2>Python</h2>
+<ul>
+<li>The PSF wrote up <a href="https://pyfound.blogspot.com/2026/11/how-python-ecosystem-responded-to.html">how the Python ecosystem responded to the eMudhra intermediate CA compromise</a> &mdash; a useful look at ecosystem-scale incident response.</li>
+</ul>
+
+<h2>JavaScript and TypeScript</h2>
+<ul>
+<li>Node.js 27's first alpha is out, bringing <a href="https://nodejs.org/en/blog/announcements/notable-v8-changes-from-node-js-26-to-27-alpha">notable V8 changes</a> under Node's new six-month alpha schedule.</li>
+<li>Node.js scheduled its <a href="https://nodejs.org/en/blog/vulnerability/november-2026-security-releases">next security release for November 11</a>.</li>
+</ul>
+
+<h2>Rust</h2>
+<ul>
+<li><a href="https://users.rust-lang.org/t/lazydeed-a-tiny-crate-that-turns-functions-into-lazy-tasks/143501">Lazydeed</a> is a tiny new crate that turns any sync or async function call into a deferred, lazy task behind one attribute.</li>
+</ul>
+
+<h2>Java</h2>
+<ul>
+<li><a href="https://spring.io/blog/2026/11/05/spring-cloud-2026-0-0-RC2-has-been-released">Spring Cloud 2026.0.0-RC2 ("Paddington")</a> is out.</li>
+<li><a href="https://blog.jetbrains.com/idea/2026/11/whats-new-in-intellij-idea-2026-3/">IntelliJ IDEA 2026.3</a> ships an AI assistant called Air, a Cursor/VS Code extension, and debugging improvements.</li>
+<li>Inside Java's <a href="https://inside.java/2026/11/05/podcast-074/">"Ask the Architects"</a> covers upcoming Java features like value classes, withers, and lazy constants.</li>
+<li>A Bootiful Podcast talked to Temporal.io's Cornelia Davis about <a href="https://spring.io/blog/2026/11/05/a-bootiful-podcast-cornelia-davis">durable workflow execution</a>.</li>
+</ul>
+
+<h2>IaC and DevOps</h2>
+<ul>
+<li>Platform Engineering looks at <a href="https://platformengineering.org/blog/how-platform-engineering-2-0-governs-the-new-digital-workforce-the-ai-agents">governing AI agents as a "digital workforce"</a> via bounded autonomy and zero-trust control surfaces.</li>
+</ul>
+
+<h2>Source control and GitHub</h2>
+<ul>
+<li>GitHub's <a href="https://github.blog/changelog/2026-11-05-secret-scanning-upgrades-detectors-adds-spacex-as-partner">secret scanning added SpaceX as a partner</a> and upgraded several detectors.</li>
+<li>GitHub wrote up <a href="https://github.blog/engineering/architecture-optimization/inside-githubs-new-git-storage-architecture/">its new Git storage architecture</a>, built so thousands of agents can push to one repo at once.</li>
+<li><a href="https://github.blog/open-source/maintainers/accessibility-statements-now-have-a-home-on-github/">Accessibility statements</a> now have a dedicated home via ACCESSIBILITY.md files.</li>
+</ul>
+
+<h2>AWS</h2>
+<ul>
+<li><a href="https://aws.amazon.com/blogs/architecture/how-orderserv-achieved-up-to-64-cost-savings-with-multi-tenant-ecs/">OrderServ cut compute costs up to 64%</a> moving to multi-tenant ECS with AWS Professional Services.</li>
+<li>Systems Manager <a href="https://aws.amazon.com/about-aws/whats-new/2026/11/aws-ssm-parameter-store-allows-organization-validation-with-new-data-types/">Parameter Store now validates 13 new built-in data types</a> on create/update.</li>
+<li>OpenSearch's optimized engine <a href="https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-opensearch-service-support-traces">now supports OpenTelemetry agent traces</a> alongside logs.</li>
+<li><a href="https://aws.amazon.com/blogs/machine-learning/how-amazon-marketplace-evaluates-content-quality-with-amazon-sagemaker-ai/">Amazon Marketplace scores A+ Content quality</a> on SageMaker AI using a vision-language model fused with OCR.</li>
+<li>Security Hub's <a href="https://aws.amazon.com/about-aws/whats-new/2026/11/security-hub-network-scanning-govcloud/">network scanning is now available in GovCloud (US)</a>.</li>
+<li>AWS WAF's <a href="https://aws.amazon.com/about-aws/whats-new/2026/11/aws-waf-stripe-fiat-payouts/">AI traffic monetization now pays out in fiat via Stripe</a>.</li>
+</ul>
+
+<h2>AI and agents</h2>
+<ul>
+<li>Simon Willison quoted Paul Ford: <a href="https://simonwillison.net/2026/Nov/5/paul-ford/">"the web browser is very, very, very powerful software"</a> and getting more accessible by the day.</li>
+</ul>
+
+<h2>Security</h2>
+<ul>
+<li>OpenSSH issued an <a href="https://thehackernews.com/2026/11/openssh-issues-emergency-fix-for-flaw.html">emergency fix</a> for a flaw letting long passwords bypass SSH auth on some Alpine Linux servers.</li>
+<li>Researchers detailed a <a href="https://thehackernews.com/2026/11/experts-demonstrate-barracuda-email.html">chained root-access exploit in Barracuda's Email Security Gateway</a> requiring no login.</li>
+<li>Zyxel's <a href="https://thehackernews.com/2026/11/zyxel-gs1900-patch-fails-to-block-zero.html">GS1900 switch patch fails to block a root-RCE zero-day</a> it was meant to fix.</li>
+<li>A <a href="https://thehackernews.com/2026/11/hackers-hide-linux-backdoor-in-control.html">Linux backdoor was found hidden in Control Web Panel</a>, a popular Linux hosting control panel.</li>
+<li><a href="https://thehackernews.com/2026/11/darkblinders-compromises-israeli-target.html">DarkBlinders, an Iran-aligned actor, compromised Israeli and Iraqi Kurdish government cloud targets</a> between August and October.</li>
+<li>CERT-In flagged <a href="https://thehackernews.com/2026/11/backdoored-docker-image-for-artex-ai.html">AI-driven attacks</a> after a backdoored tool exposed 62 management consoles to root access.</li>
+</ul>
+
+<h2>Engineering practice</h2>
+<ul>
+<li>Stripe's engineering blog shows how to <a href="https://stripe.com/blog/analyze-your-stripe-data-directly-with-your-agent">analyze Stripe data directly with an agent</a>, from slide decks to custom dashboards.</li>
+<li>The Pragmatic Engineer talks with Maude Lemaire about <a href="https://newsletter.pragmaticengineer.com/p/scaling-slack-and-github-with-maude">scaling Slack and GitHub</a> and keeping engineering judgment in the loop with AI.</li>
+<li>Martin Fowler's site posted <a href="https://martinfowler.com/articles/data-product-platform-nav.html">"The Data Product Platform Navigator"</a>, on structuring data platforms around products.</li>
+</ul>
+
+<h2>Feeds that failed</h2>
+<p>CISA advisories.</p>

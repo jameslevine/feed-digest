@@ -1,8 +1,10 @@
 """Generate feeds.opml (this repo) and the NetNewsWire copy from one list.
 Run: python3 gen_feeds.py   then commit. GitHub release feeds are swapped for PyPI in the repo copy
 (the routine's environment can only reach GitHub for this repo) or dropped if no PyPI package exists."""
+import xml.dom.minidom
 from pathlib import Path
 from xml.sax.saxutils import escape as e
+
 
 def gh(name, repo, pkg=None): return (f"{name} releases", f"https://github.com/{repo}/releases.atom", f"https://github.com/{repo}/releases", pkg)
 def f(name, xml, html): return (name, xml, html, None)
@@ -167,11 +169,11 @@ def opml(title, for_digest):
     out = ['<?xml version="1.0" encoding="UTF-8"?>', '<opml version="2.0">', f'  <head><title>{e(title)}</title></head>', '  <body>']
     for folder, feeds in F.items():
         rows = []
-        for name, xml, html, pkg in feeds:
-            if for_digest and "github.com" in xml:
+        for name, xml_url, html, pkg in feeds:
+            if for_digest and "github.com" in xml_url:
                 if not pkg: continue
-                name, xml, html = f"{name.replace(' releases', '')} (PyPI)", f"https://pypi.org/rss/project/{pkg}/releases.xml", f"https://pypi.org/project/{pkg}/"
-            rows.append(f'      <outline text="{e(name)}" type="rss" xmlUrl="{e(xml)}" htmlUrl="{e(html)}"/>')
+                name, xml_url, html = f"{name.replace(' releases', '')} (PyPI)", f"https://pypi.org/rss/project/{pkg}/releases.xml", f"https://pypi.org/project/{pkg}/"
+            rows.append(f'      <outline text="{e(name)}" type="rss" xmlUrl="{e(xml_url)}" htmlUrl="{e(html)}"/>')
         if rows: out += [f'    <outline text="{e(folder)}">', *rows, '    </outline>']
     out += ['  </body>', '</opml>', '']
     return "\n".join(out)
@@ -179,6 +181,5 @@ def opml(title, for_digest):
 Path("feeds.opml").write_text(opml("feed-digest sources", True))
 nnw = Path.home() / ".config/netnewswire/feeds.opml"
 nnw.write_text(opml("James's feeds", False))
-import xml.dom.minidom
 for p in (Path("feeds.opml"), nnw): xml.dom.minidom.parse(str(p))
 print("digest feeds:", Path("feeds.opml").read_text().count("xmlUrl="), "| reader feeds:", nnw.read_text().count("xmlUrl="), "| folders:", ", ".join(F))

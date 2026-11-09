@@ -1,0 +1,88 @@
+<h2>Your stack</h2>
+<ul>
+<li><b>Python 3.14:</b> Real Python dug into <a href="https://realpython.com/python-memory-management/">how CPython manages memory</a> (arenas, pools, blocks) and its <a href="https://realpython.com/podcasts/rpp/318/">podcast covered free-threaded Python and the CPython ABI</a> &mdash; useful background while free-threading keeps rolling out.</li>
+<li><b>Linters and type checkers:</b> Astral shipped <a href="https://pypi.org/project/ty/0.0.99/">ty 0.0.99</a>, another point release of the Rust-based type checker.</li>
+<li><b>FastAPI:</b> <a href="https://pypi.org/project/fastapi/0.162.2/">FastAPI 0.162.2</a> shipped (and 0.162.1 just before it).</li>
+<li><b>boto3:</b> <a href="https://pypi.org/project/boto3/1.43.126/">boto3 1.43.126</a> shipped.</li>
+<li><b>Amazon Bedrock:</b> <a href="https://aws.amazon.com/about-aws/whats-new/2026/11/moonshot-ai-kimi-k3-1-pro-on-amazon-bedrock">Kimi K3.1 Pro (Highspeed)</a> landed on Bedrock as a new open-weight model option. AWS also posted a two-part guide to <a href="https://aws.amazon.com/blogs/machine-learning/govern-ai-agent-access-with-okta-cross-app-access-and-amazon-bedrock-agentcore-part-1/">governing AI agent access with Okta Cross App Access and AgentCore</a> (<a href="https://aws.amazon.com/blogs/machine-learning/govern-ai-agent-access-with-okta-cross-app-access-and-amazon-bedrock-agentcore-part-2/">part 2</a>), binding agent identity to end users via Cedar policies &mdash; relevant if you're building agent authn/authz. Case studies from <a href="https://aws.amazon.com/blogs/machine-learning/how-greenlight-financial-built-an-autonomous-soc-solution-on-amazon-bedrock-agentcore/">Greenlight Financial's autonomous SOC</a> and <a href="https://aws.amazon.com/blogs/machine-learning/taxbit-assist-a-grounded-role-aware-ai-agent-on-amazon-bedrock-agentcore/">Taxbit Assist</a> show AgentCore in production, and AWS Agent Registry went GA in GovCloud (US-West).</li>
+<li><b>GitHub Actions:</b> Platform Engineering's <a href="https://platformengineering.org/blog/beyond-sha-pinning-why-immutability-isnt-provenance-in-github-actions">"Beyond SHA pinning"</a> argues pinned SHAs don't guarantee provenance and walks through how imposter commits exploit CI/CD workflows &mdash; worth a read for your supply-chain posture.</li>
+<li><b>Checkmarx:</b> <a href="https://checkmarx.com/partnerships/checkmarx-joins-claude-marketplace-to-advance-ai-powered-application-security/">Checkmarx joined the Claude Marketplace</a>, letting Anthropic customers put spend toward Checkmarx Fusion SAST, Triage and Remediation Assist.</li>
+<li><b>MCP:</b> <a href="https://spring.io/blog/2026/11/09/spring-ai-2-1-0-RC2-available-now">Spring AI 2.1.0-RC2</a> adds server support for the new MCP protocol revision. Microsoft's Work IQ API is getting <a href="https://devblogs.microsoft.com/microsoft365dev/work-iq-sharepoint-mcp-tools/">SharePoint MCP tools</a> for custom apps and agents, and AWS posted a walkthrough of a <a href="https://aws.amazon.com/blogs/machine-learning/serverless-mcp-server-for-ai-agent-data-lake-access-on-amazon-ecs-fargate/">serverless MCP server on ECS Fargate</a> for data-lake access.</li>
+<li><b>Claude:</b> researchers showed <a href="https://thehackernews.com/2026/11/malicious-browser-extensions-could-use.html">malicious browser extensions could abuse Claude Dispatch</a> to run code on a user's computer via claude.ai &mdash; worth knowing if you run Claude Desktop with browser extensions installed.</li>
+<li><b>Claude Code:</b> two security stories worth your attention: <a href="https://thehackernews.com/2026/11/claude-codes-dont-ask-again-file.html">Claude Code's "Don't Ask Again" file is exposing passwords and keys in 1,122 public GitHub repos</a> (check your own repos for a committed settings file), and <a href="https://realpython.com/ai-news-weekly-2026-11-06/">a fake Claude Code extension that tried to open a backdoor</a>. On the feature side, <a href="https://code.claude.com/docs/en/changelog#2-1-319">2.1.319</a> adds background MCP task support in the terminal, <a href="https://pypi.org/project/claude-agent-sdk/0.2.179/">claude-agent-sdk 0.2.179</a> shipped, and AWS published a guide to <a href="https://aws.amazon.com/blogs/machine-learning/extend-claude-code-to-remote-sessions-on-amazon-bedrock-agentcore-with-security-controls/">running Claude Code as a remote AgentCore session</a> with per-task isolation.</li>
+<li><b>AI-DLC and AI-assisted development practices:</b> GitHub Copilot got a flurry of updates &mdash; <a href="https://github.blog/changelog/2026-11-06-copilot-code-review-api-management-and-review-overview-updates">code review settings via API</a>, and <a href="https://github.blog/changelog/2026-11-06-github-copilot-weekly-releases-november-2">JetBrains Air/Xcode support plus an Agent Merge mode</a> &mdash; alongside a GitHub blog post on <a href="https://github.blog/ai-and-ml/github-copilot/beyond-code-generation-a-developers-guide-to-agentic-engineering/">what agentic engineering still needs human judgment for</a>. Simon Willison suggests <a href="https://simonwillison.net/2026/Nov/9/details-summary/">hiding noisy agent-generated PR descriptions behind &lt;details&gt;&lt;summary&gt;</a> if you're shipping a lot of Claude Code or Codex PRs. Elsewhere, Stanford's <a href="https://latent.space/p/one_million_ai_engineer_special_how_stanford_teaches_ai-native_engineering_mihail_eric_monaco/">AI-native engineering course</a> brought open-source maintainers in to grade student work, and Daniel Miessler argues <a href="https://danielmiessler.com/blog/vibe-coding-isnt-using-ai">real vibe coding isn't just "using AI to make things."</a></li>
+<li><b>Security (AI and cloud):</b> InfoQ on <a href="https://www.infoq.com/articles/identity-as-architecture/">identity as an architectural concern</a> argues IAM design choices drive your data models and service boundaries, not just authentication.</li>
+</ul>
+
+<h3>Python</h3>
+<ul>
+<li>Real Python on <a href="https://realpython.com/intro-to-pyenv/">managing multiple Python versions with pyenv</a>.</li>
+<li>Real Python's <a href="https://realpython.com/python-sql-libraries/">introduction to Python SQL libraries</a>.</li>
+<li>Real Python on <a href="https://realpython.com/absolute-vs-relative-python-imports/">absolute vs. relative imports</a>.</li>
+</ul>
+
+<h3>React</h3>
+<ul>
+<li>This week's React Status roundup highlights <a href="https://react.statuscode.com/issues/496">Redux Toolkit's road to 3.0</a>.</li>
+</ul>
+
+<h3>Rust</h3>
+<ul>
+<li><a href="https://users.rust-lang.org/t/tokio-tun-goes-multi-platform-freebsd-macos-ios-android-linux-gso-gro-offload-support-on-the-road-to-v1-0/143553">Tokio-tun goes multi-platform</a> (FreeBSD, macOS, iOS, Android) with Linux GSO/GRO offload, heading toward 1.0.</li>
+<li><a href="https://users.rust-lang.org/t/neuro-a-compiled-language-for-ai-with-a-compiler-written-in-rust/143526">Neuro</a>, a new compiled language for AI with a compiler written in Rust.</li>
+<li><a href="https://users.rust-lang.org/t/logjar-0-1-searchable-compressed-log-archives-grep-without-decompressing/143567">Logjar 0.1</a> lets you grep compressed log archives without decompressing them.</li>
+</ul>
+
+<h3>Go</h3>
+<ul>
+<li><a href="https://golangweekly.com/issues/623">The Go team explains Go's new JSON API</a>.</li>
+</ul>
+
+<h3>Java</h3>
+<ul>
+<li>Inside Java on <a href="https://inside.java/2026/11/08/devoxxbelgium-java-next-programming-models/">Java and the next generation of programming models</a>, from Devoxx Belgium.</li>
+<li><a href="https://spring.io/blog/2026/11/06/spring-boot-4-2-0-RC2-available-now">Spring Boot 4.2.0-RC2</a> is available from Maven Central.</li>
+</ul>
+
+<h3>IaC and DevOps</h3>
+<ul>
+<li>AWS Device Farm now lets you <a href="https://aws.amazon.com/blogs/devops/run-maestro-tests-on-real-android-devices-using-aws-device-farm/">run Maestro tests on real Android devices</a>.</li>
+</ul>
+
+<h3>Source control and GitHub</h3>
+<ul>
+<li>GitHub's <a href="https://github.blog/changelog/2026-11-06-copilot-impact-dashboard-adds-chat-and-vs-code-agent-usage">Copilot impact dashboard now tracks chat and VS Code agent usage</a>.</li>
+<li><a href="https://github.blog/changelog/2026-11-06-github-copilot-in-slack-and-teams-is-generally-available">@GitHub in Slack and Teams is now generally available</a>, letting you investigate bugs and open PRs without leaving the conversation.</li>
+</ul>
+
+<h3>AWS</h3>
+<ul>
+<li>SageMaker Inference now <a href="https://aws.amazon.com/blogs/machine-learning/sagemaker-inference-now-supports-multi-instance-gpu-to-maximize-gpu-utilization-for-model-endpoints/">supports Multi-Instance GPU</a> to improve GPU utilization on model endpoints.</li>
+<li>AWS on a <a href="https://aws.amazon.com/blogs/machine-learning/taxonomy-of-agentic-primitives-in-amazon-quick/">taxonomy of agentic primitives in Amazon Quick</a>.</li>
+<li>AWS Elemental MediaConvert adds <a href="https://aws.amazon.com/about-aws/whats-new/2026/11/mediaconvert-elemental-smart-subtitles/">AI-powered Smart Subtitles</a>.</li>
+<li>AWS Glue Data Catalog now supports <a href="https://aws.amazon.com/about-aws/whats-new/2026/11/glue-catalog-vended-credentials-iceberg/">catalog-vended credentials for Apache Iceberg REST federation</a>.</li>
+<li>Amazon Redshift's SUPER type now <a href="https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-redshift-expands-super-to-16-million-bytes/">stores strings up to 16MB</a>.</li>
+<li>EC2 Capacity Blocks for ML now <a href="https://aws.amazon.com/about-aws/whats-new/2026/10/aws-ec2-capacity-blocks-ml/">support amortization</a>.</li>
+</ul>
+
+<h3>AI and agents</h3>
+<ul>
+<li>Simon Willison's <a href="https://simonwillison.net/2026/Nov/8/sqlite-parse-number-c-vs-rust/">parse_number() as a SQLite extension: C vs Rust</a>, built with help from Claude.</li>
+<li>Via Hacker News: <a href="https://simonwillison.net/2026/Nov/3/hn-50354278/">AI is destroying my CS degree</a>.</li>
+<li>Latent Space talks biology with <a href="https://latent.space/p/controlling-biology-fabian-theis-helmholtz-munich/">Fabian Theis of Helmholtz Munich</a>.</li>
+</ul>
+
+<h3>Security</h3>
+<ul>
+<li>AWS on <a href="https://aws.amazon.com/blogs/security/addressing-protocol-security-gaps-in-multi-tenant-kubernetes/">addressing protocol security gaps in multi-tenant Kubernetes</a> (ADB, WebRTC and other unencrypted-by-default protocols).</li>
+<li><a href="https://aws.amazon.com/security/security-bulletins/rss/2026-173-aws/">CVE-2026-122193</a>: OS command injection in example SSM documents in AWS's Trusted Remote Execution setup guide.</li>
+<li>Trail of Bits: <a href="https://blog.trailofbits.com/2026/11/06/after-binance-check-what-your-signing-systems-can-approve/">after Binance, check what your signing systems can approve</a>.</li>
+<li>CISA flagged a <a href="https://thehackernews.com/2026/11/cisa-flags-sonicwall-sonicos-mfa-bypass.html">SonicWall SonicOS MFA bypass flaw</a> under possible active exploitation.</li>
+<li>Attackers are <a href="https://thehackernews.com/2026/11/hackers-exploited-openssh-sshole-flaw.html">targeting the OpenSSH "SSHole" flaw within hours of disclosure</a>, gaining root on a honeypot.</li>
+<li>A <a href="https://thehackernews.com/2026/11/chainalysis-breach-exposes-all-users.html">Chainalysis breach exposed all users' credentials</a>, forcing a shutdown of key services.</li>
+</ul>
+
+<h3>AI security</h3>
+<ul>
+<li>Daniel Miessler on <a href="https://danielmiessler.com/blog/bitter-lesson-generalized">the Bitter Lesson, generalized</a>.</li>
+</ul>

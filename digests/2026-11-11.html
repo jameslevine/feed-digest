@@ -1,0 +1,139 @@
+<h2>Your stack</h2>
+
+<h3>Amazon Bedrock</h3>
+<ul>
+<li>OpenAI's cybersecurity models <a href="https://aws.amazon.com/about-aws/whats-new/2026/11/openai-gpt-daybreak-on-amazon-bedrock-runtime/">Daybreak Red and Daybreak Blue are now on the bedrock-runtime endpoint</a>, for vulnerability research and detection engineering.</li>
+<li><a href="https://aws.amazon.com/blogs/machine-learning/introducing-kimi-k3-1-pro-on-amazon-bedrock/">Kimi K3.1 Pro (Moonshot AI) is now on Bedrock</a> via the OpenAI-compatible Chat Completions, Responses and Converse APIs.</li>
+<li>A worked example shows <a href="https://aws.amazon.com/blogs/machine-learning/build-a-daily-dependency-watcher-with-langgraph-and-amazon-bedrock-agentcore-web-search/">building a daily dependency watcher with LangGraph and Bedrock AgentCore's Web Search API</a>, signed with your own AWS creds.</li>
+<li>A new playbook covers <a href="https://aws.amazon.com/blogs/machine-learning/the-agent-evaluation-playbook-built-in-deepeval-and-autoeval-on-agentcore/">evaluating agents on Bedrock AgentCore</a> with built-in, DeepEval and AutoEval checks for task completion and data leaks.</li>
+<li>Trovata's case study covers <a href="https://aws.amazon.com/blogs/machine-learning/autonomous-treasury-agents-how-trovata-built-an-ai-native-solution-on-amazon-bedrock-and-agentcore/">autonomous treasury agents on Bedrock and AgentCore</a>, RBAC-secured for bank-branded deployment.</li>
+<li>TCS describes <a href="https://aws.amazon.com/blogs/machine-learning/how-tcs-built-an-agentic-test-orchestrator-with-amazon-bedrock-agentcore/">an agentic test orchestrator on AgentCore</a> that turns requirements into governed tests for regulated clients.</li>
+<li>A reference architecture for a <a href="https://aws.amazon.com/blogs/machine-learning/amazon-bedrock-tokenomics-data-lake/">Bedrock "tokenomics" data lake</a> centralizes invocation logs and cost observability across accounts.</li>
+</ul>
+
+<h3>Claude</h3>
+<ul>
+<li>Anthropic's <a href="https://platform.claude.com/docs/en/release-notes/overview#security-posture">Compliance API now exposes Security posture data in beta for Claude Enterprise orgs</a>.</li>
+<li><a href="https://pypi.org/project/anthropic/2.8.0/">The Anthropic Python SDK shipped 2.8.0</a>; the feed has no changelog detail.</li>
+<li><a href="https://thehackernews.com/2026/11/anthropics-claude-fable-52-beats-gpt-6.html">Claude Fable 5.2 and Mythos 5.2 launched</a>, with Fable 5.2 reportedly beating GPT-6 Cyber on a cyberattack benchmark.</li>
+</ul>
+
+<h3>Claude Code</h3>
+<ul>
+<li>Resend's "<a href="https://latent.space/p/resend/">Designing for Agents</a>" walks through shaping docs so Claude Code picks the right email API and tools on its own.</li>
+</ul>
+
+<h3>MCP</h3>
+<ul>
+<li><a href="https://users.rust-lang.org/t/zg-0-3-0-moving-our-local-search-tool-from-node-js-to-rust/143510">zg 0.3.0 moved its local code/doc search pipeline from Node.js to Rust</a>; it's usable from the terminal or through MCP.</li>
+<li><a href="https://aws.amazon.com/security/security-bulletins/rss/2026-176-aws/">CVE-2026-125271: the AWS API MCP Server normalized operation names incorrectly</a>, letting requests bypass its security policy checks.</li>
+</ul>
+
+<h3>AI-DLC and AI-assisted development practices</h3>
+<ul>
+<li><a href="https://github.blog/changelog/2026-11-10-gemini-4-carbon-in-github-copilot">Gemini 4 Carbon is now GA in GitHub Copilot</a>, for complex coding and agentic tasks.</li>
+<li>Copilot CLI's <a href="https://github.blog/changelog/2026-11-10-c-language-server-now-auto-configures-msbuild-builds">C++ language server now auto-configures MSBuild builds</a>, skipping manual compile-command discovery.</li>
+<li><a href="https://aws.amazon.com/security/security-bulletins/rss/2026-178-aws/">CVE-2026-124848: Kiro CLI defaulted to overly permissive file permissions</a> on session transcripts/prompt history before 2.27.0 (macOS/Linux).</li>
+</ul>
+
+<h3>Source control practices</h3>
+<ul>
+<li><a href="https://github.blog/open-source/git/git-security-vulnerabilities-announced-7/">Git 2.56.1 patches six vulnerabilities</a>, including one letting a malicious repo run attacker code via recursive clone.</li>
+</ul>
+
+<h3>Dependabot and supply chain</h3>
+<ul>
+<li>From December 8, <a href="https://github.blog/changelog/2026-11-10-dependabot-alerts-will-pause-on-inactive-repositories">GitHub will pause Dependabot alerts on repos with no activity in the past year</a>; existing alerts are archived, not deleted.</li>
+</ul>
+
+<h3>Security (AI and cloud)</h3>
+<ul>
+<li><a href="https://aws.amazon.com/security/security-bulletins/rss/2026-177-aws/">CVE-2026-126087: an untrusted search path in OpenJD Sessions for Python</a> hits the launcher behind the AWS Deadline Cloud worker agent.</li>
+<li>Amazon GuardDuty added <a href="https://aws.amazon.com/blogs/security/reduce-alert-fatigue-by-customizing-threat-detection-features-in-amazon-guardduty/">options to customize threat-detection features to cut alert fatigue</a>.</li>
+<li>Wiz reports <a href="https://www.wiz.io/blog/qubole-cross-account-access-abused-in-the-wild">leaked IAM creds from Qubole's AWS account were used to assume integration roles in customer accounts</a> — worth a cross-account trust check.</li>
+<li>Fireworks AI's breach investigation <a href="https://thehackernews.com/2026/11/fireworks-ai-breach-widens-to-expose.html">widened to include customer datasets, model weights and Notion AI chat data</a>.</li>
+<li>An RCE flaw in the SGLang inference engine <a href="https://thehackernews.com/2026/11/sglang-rce-exploit-breaches-near-ai.html">let an attacker run code on a NEAR AI server, exposing data from 18 agents and ~100 users</a>.</li>
+<li>The Pragmatic Engineer talks with Sean Allen about <a href="https://newsletter.pragmaticengineer.com/p/software-correctness">software correctness and supply-chain security in AI-assisted development</a>.</li>
+</ul>
+<p>(Plus today's MCP server, Kiro CLI and Git CVEs above.)</p>
+
+<h3>boto3</h3>
+<ul>
+<li><a href="https://pypi.org/project/boto3/1.44.0/">boto3 1.44.0 is out</a>; no changelog detail in the feed.</li>
+</ul>
+
+<h3>Powertools for AWS Lambda</h3>
+<ul>
+<li><a href="https://pypi.org/project/aws-lambda-powertools/3.40.0/">Powertools for AWS Lambda (Python) shipped 3.40.0</a>; no changelog detail in the feed.</li>
+</ul>
+
+<h3>DynamoDB</h3>
+<ul>
+<li><a href="https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-dynamodb-now-supports-bulk-put-items/">DynamoDB now supports bulk put items</a>, writing data straight from S3 into existing tables.</li>
+</ul>
+
+<h3>FastAPI</h3>
+<ul>
+<li><a href="https://pypi.org/project/fastapi/0.162.4/">FastAPI shipped two patch releases today, 0.162.3 and 0.162.4</a>; no changelog detail in the feed.</li>
+</ul>
+
+<h2>Python</h2>
+<ul>
+<li><a href="https://blog.python.org/">Python 3.16.0 alpha 2 is now available</a> for testing.</li>
+<li><a href="https://discuss.python.org/c/peps/19">PEP 852 proposes asynchronous functions in the C API</a>.</li>
+</ul>
+
+<h2>JavaScript and TypeScript</h2>
+<ul>
+<li><a href="https://nodejs.org/en/blog">Node.js covers notable V8 changes landing between Node 26 and the Node 27 alpha</a>.</li>
+<li><a href="https://javascriptweekly.com/issues/810">JavaScript Weekly's top story: how X (Twitter) rebuilt its web app</a>, replacing three servers with one React/Vite/Fastify app.</li>
+</ul>
+
+<h2>Java</h2>
+<ul>
+<li><a href="https://spring.io/blog">Spring for Apache Pulsar has a new project home</a>.</li>
+</ul>
+
+<h2>IaC and DevOps</h2>
+<ul>
+<li><a href="https://platformengineering.org/blog/platform-engineering-kaigi-2026-recap-from-concept-to-practice-finding-ai-native-answers-together">Platform Engineering Kaigi 2026's recap covers AI-native platform engineering adoption in Japan</a>.</li>
+<li>Platform Engineering argues <a href="https://platformengineering.org/blog">agentic development is fragmented while platform engineering as a discipline isn't</a>.</li>
+</ul>
+
+<h2>Source control and GitHub</h2>
+<ul>
+<li><a href="https://github.blog/changelog/">GitHub Enterprise Copilot seat management now has GitHub App support</a>.</li>
+<li><a href="https://github.blog/changelog/">A more informative GitHub dashboard</a> has shipped.</li>
+</ul>
+
+<h2>AWS</h2>
+<ul>
+<li>AWS Compute Blog introduces <a href="https://aws.amazon.com/blogs/compute/">Nitro Sandboxes, hardware isolation for every EKS pod, ECS task and EC2 workload</a>.</li>
+<li><a href="https://aws.amazon.com/about-aws/whats-new/2026/11/network-firewall-launches-ngfw-policy/">AWS Network Firewall launches a next-generation firewall policy model</a> with a simpler structure and more rule capacity.</li>
+<li><a href="https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-opensearch-service-managed-cross-region-disaster-recovery/">Amazon OpenSearch Service now offers managed cross-Region disaster recovery</a>.</li>
+<li>AWS Architecture Blog shows <a href="https://aws.amazon.com/blogs/architecture/self-service-regional-failover-with-amazon-application-recovery-controller-region-switch-and-centralized-ingress-controls/">self-service regional failover with Application Recovery Controller Region Switch and centralized ingress controls</a>.</li>
+<li><a href="https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-documentdb-8-0-3/">Amazon DocumentDB 8.0.3 adds post-quantum TLS, wildcard indexes and $unionWith</a>.</li>
+<li><a href="https://aws.amazon.com/about-aws/whats-new/">Amazon ElastiCache Serverless now supports vector, full-text and hybrid search with aggregations</a>.</li>
+</ul>
+
+<h2>AI and agents</h2>
+<ul>
+<li>Latent Space covers <a href="https://latent.space/">OpenAI discussing new ways of working with Codex at the AI Engineer Code Summit</a>.</li>
+<li><a href="https://latent.space/p/naiveai/">NaiveAI claims 2,100 tokens/second</a>; Latent Space's hands-on test says its coding quality holds up against DeepSeek.</li>
+</ul>
+
+<h2>Security</h2>
+<ul>
+<li><a href="https://krebsonsecurity.com/2026/11/microsoft-fixes-nearly-1100-security-vulnerabilities/">Microsoft's Patch Tuesday fixes nearly 1,100 vulnerabilities</a> across Windows and supported software.</li>
+<li><a href="https://thehackernews.com/2026/11/sap-patches-four-cvss-100-flaws.html">SAP patches four CVSS 10.0 flaws</a>, two of them pre-auth remote code execution.</li>
+<li><a href="https://thehackernews.com/2026/11/n-able-takes-hosted-n-central-offline.html">N-able took N-central Hosted offline after a researcher disclosed over 30 zero-days with PoC exploits</a>.</li>
+<li><a href="https://thehackernews.com/2026/11/google-issues-chrome-security-update.html">Chrome patches its eighth actively-exploited zero-day of 2026</a>.</li>
+<li><a href="https://thehackernews.com/2026/11/hackers-exploit-critical-xen-orchestra.html">Attackers are actively exploiting a critical auth-bypass flaw in Xen Orchestra</a> to gain admin access.</li>
+<li>Wiz explains <a href="https://www.wiz.io/blog/cyber-model-arena-ai-benchmark">how it built a benchmark to evaluate AI agents' offensive cybersecurity capabilities</a>.</li>
+</ul>
+
+<h2>Feeds that failed</h2>
+<ul>
+<li>Microsoft Teams Blog (what's new) — malformed XML from techcommunity.microsoft.com.</li>
+<li>CISA advisories — HTTP 403 Forbidden.</li>
+</ul>

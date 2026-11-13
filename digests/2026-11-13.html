@@ -1,0 +1,76 @@
+<h2>Your stack</h2>
+
+<h3>uv</h3>
+<p><a href="https://pypi.org/project/uv/0.13.8/">uv 0.13.8</a> is out this week with the usual batch of resolver and installer fixes.</p>
+
+<h3>ruff</h3>
+<p><a href="https://pypi.org/project/ruff/0.17.5/">ruff 0.17.5</a> shipped, the fourth release this month.</p>
+
+<h3>Linters and type checkers</h3>
+<p><a href="https://pypi.org/project/ty/0.0.102/">ty 0.0.102</a> landed from Astral, and <a href="https://pypi.org/project/checkov/3.4.5/">checkov 3.4.5</a> added new IaC checks.</p>
+
+<h3>boto3</h3>
+<p><a href="https://pypi.org/project/boto3/1.44.2/">boto3 1.44.2</a> is out.</p>
+
+<h3>AWS Lambda</h3>
+<p>AWS published a <a href="https://aws.amazon.com/blogs/database/build-a-serverless-recipe-sharing-api-with-go-and-amazon-aurora-dsql/">walkthrough</a> building a serverless API in Go on Lambda, API Gateway and the new Aurora DSQL — worth a look if you're weighing DSQL for a Python service too.</p>
+
+<h3>EventBridge</h3>
+<p>A new <a href="https://aws.amazon.com/blogs/compute/per-customer-invoice-management-with-amazon-eventbridge-scheduler/">pattern post</a> shows per-customer billing cycles handled with millions of individually-scheduled EventBridge Scheduler jobs instead of one giant batch run.</p>
+
+<h3>Amazon Bedrock</h3>
+<p>Natera wrote up <a href="https://aws.amazon.com/blogs/machine-learning/how-natera-designed-an-agentic-ai-system-for-lab-ops-with-amazon-bedrock-agentcore/">SWARM</a>, a lab-ops agent system built on AgentCore. AWS also put out three cost-focused posts worth reading together: <a href="https://aws.amazon.com/blogs/machine-learning/four-amazon-bedrock-inference-choices-that-affect-cost/">inference-choice tradeoffs</a>, <a href="https://aws.amazon.com/blogs/machine-learning/optimizing-cost-per-task-and-proving-agent-roi-on-amazon-bedrock/">proving agent ROI</a>, and <a href="https://aws.amazon.com/blogs/machine-learning/tokenomics-at-scale-track-and-cap-amazon-bedrock-spend-per-iam-principal-with-cur-2-0-and-aws-budgets/">capping spend per IAM principal</a> with CUR 2.0 and Budgets. The <a href="https://aws.amazon.com/blogs/machine-learning/run-agents-securely-and-efficiently-with-the-next-generation-agentcore-runtime/">next-gen AgentCore runtime is now GA by default</a>. Managed Knowledge Base got a <a href="https://aws.amazon.com/blogs/machine-learning/migrate-to-amazon-bedrock-managed-knowledge-base-with-your-coding-agent/">migration guide for coding agents</a> and <a href="https://aws.amazon.com/blogs/machine-learning/fine-grained-access-control-for-amazon-bedrock-managed-knowledge-base-tools/">fine-grained access control</a> when exposed as MCP tools. There's also a new reference for <a href="https://aws.amazon.com/blogs/machine-learning/build-composable-interoperable-multi-agent-systems-with-a2a-on-aws/">composable multi-agent systems using A2A</a>.</p>
+
+<h3>GitHub Actions</h3>
+<p>GitHub is <a href="https://github.blog/changelog/2026-11-12-actions-for-arm32-linux-windows-retirement/">retiring ARM32 Actions runners</a> on Windows and Linux by 8 December.</p>
+
+<h3>Dependabot and supply chain</h3>
+<p>A Cargo PR adding <a href="https://github.com/rust-lang/cargo/pull/17683">SBOM schema types</a> is in review — not Python, but the same shape of work as pip's own SBOM efforts.</p>
+
+<h3>Checkmarx</h3>
+<p>GitHub secret scanning <a href="https://github.blog/changelog/2026-11-12-secret-scanning-adds-a-detector-for-cloudflare/">added a detector for Cloudflare service tokens</a>.</p>
+
+<h3>MCP</h3>
+<p>AWS showed <a href="https://aws.amazon.com/blogs/database/integrate-mcp-tools-agent-skills-and-aws-devops-agent-for-ai-driven-database-investigation/">MCP tools running behind a governed AgentCore Gateway</a> for autonomous RDS investigations, and Cognito now <a href="https://aws.amazon.com/about-aws/whats-new/2026/11/cognito-token-exchange/">supports OAuth 2.0 token exchange</a> so an MCP server can swap a user's token for a narrowly-scoped one.</p>
+
+<h3>Claude</h3>
+<p><a href="https://pypi.org/project/claude-agent-sdk/0.2.181/">Claude Agent SDK 0.2.181</a> is out, and the <a href="https://platform.claude.com/docs/en/release-notes/overview#self-hosted-managed-agents">Nov 12 platform release notes</a> announced self-hosted Claude Managed Agents.</p>
+
+<h3>Claude Code</h3>
+<p>The CLI ticked up to <a href="https://code.claude.com/docs/en/changelog#2-1-323">2.1.323</a> this week over several small point releases. GitHub published a <a href="https://github.blog/ai-and-ml/github-copilot/build-once-run-on-any-agent-a-practical-guide-to-agent-skills/">practical guide to agent skills</a> that's directly relevant to how you use Claude Code's `skill.md` files. And AWS's new <a href="https://aws.amazon.com/blogs/devops/a-coordination-framework-for-formal-proof-development-with-kiro/">MAESTRO prover harness for Kiro</a> claims to out-solve Codex and Claude Code on hard theorems, including all six 2026 IMO problems in under two hours.</p>
+
+<h3>AI-DLC and AI-assisted development practices</h3>
+<p>AWS wrote up <a href="https://aws.amazon.com/blogs/machine-learning/from-prototype-to-production-engineering-agents-with-agent-dlc/">"Agent DLC"</a>, moving coding-agent output from prototype to production — close enough to AI-DLC to be worth a skim.</p>
+
+<h3>Security (AI and cloud)</h3>
+<p>Two AWS security bulletins to check: <a href="https://aws.amazon.com/security/security-bulletins/rss/2026-181-aws/">CVE-2026-127119</a>, unverified ownership of the default EMR cluster log location in the AWS SDK for pandas, and <a href="https://aws.amazon.com/security/security-bulletins/rss/2026-182-aws/">CVE-2026-126793</a>, a privilege-escalation bug in the AWS Advanced Go Wrapper's Aurora PostgreSQL dialect detection. Separately, an attacker used <a href="https://thehackernews.com/2026/11/4837-hijacked-github-accounts-ran-ci.html">4,837 hijacked GitHub accounts</a> to plant a CI secret-stealer across 1,800+ repos, grabbing whatever cloud credentials those workflows could reach.</p>
+
+<h2>Python</h2>
+<p>Real Python has a new <a href="https://realpython.com/mentor-ai-coding-exercise/">"Learn With Mentor AI"</a> series walking through a coding exercise with an AI mentor, plus a companion quiz.</p>
+
+<h2>JavaScript and TypeScript</h2>
+<p>Node.js cut the first <a href="https://nodejs.org/en/blog/release/v27.0.0-alpha.0.1.0">27.0.0 alpha</a>.</p>
+
+<h2>Rust</h2>
+<p><a href="https://blog.rust-lang.org/2026/11/12/Rust-1.100.0/">Rust 1.100.0</a> is out, and the community noted <a href="https://users.rust-lang.org/t/rust-just-exited-the-tiobe-top-10-edged-out-by-go-by-0-06-percentage-points-first-time-since-this-july-can-we-bounce-back/143647">Rust dropped out of TIOBE's top 10</a>, edged out by Go. Smaller releases: a <a href="https://users.rust-lang.org/t/ann-fe11-0-1-0-an-opinionated-rust-pkcs-11-library-2-40-3-2/143648">PKCS#11 library</a> and a <a href="https://users.rust-lang.org/t/streaming-json-library-struson-version-0-8-0-released/143640">streaming JSON library</a>.</p>
+
+<h2>Java</h2>
+<p>Spring's <a href="https://spring.io/blog/2026/11/12/a-bootiful-podcast-guy-pardon">Bootiful Podcast</a> talked distributed transactions and data integrity with Atomikos founder Guy Pardon.</p>
+
+<h2>Source control and GitHub</h2>
+<p>GitHub published its <a href="https://github.blog/news-insights/company-news/github-availability-report-october-2026/">October availability report</a>.</p>
+
+<h2>AWS</h2>
+<p>New posts worth a look: deploying <a href="https://aws.amazon.com/blogs/machine-learning/deploy-frontier-ai-models-on-aws-trainium-with-sglang-neuron/">frontier models on Trainium with SGLang-Neuron</a>; <a href="https://aws.amazon.com/blogs/architecture/scale-distributed-ai-workloads-with-ray-and-anyscale-on-amazon-ec2/">scaling distributed AI workloads with Ray and Anyscale on EC2</a>; a <a href="https://aws.amazon.com/blogs/architecture/modular-regression-testing-framework-built-on-aws-for-large-scale-systems/">modular regression-testing framework</a> for large systems; new <a href="https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-aurora-rds-postgresql-mysql-mariadb-r9g-instances/">Graviton5 R9g instances</a> for Aurora/RDS with early <a href="https://aws.amazon.com/blogs/database/boosting-amazon-rds-with-aws-graviton5-benchmarks/">benchmarks</a>; and a DevOps Agent skill to <a href="https://aws.amazon.com/blogs/mt/profile-your-amazon-cloudwatch-logs-estate-with-an-aws-devops-agent-skill-in-sandbox-no-infrastructure-to-deploy/">profile your CloudWatch Logs estate with no infra to deploy</a>. Ran the Builder also shared <a href="https://ranthebuilder.cloud/blog/aws-emulator-first-impressions-from-a-real-serverless-app/">first impressions of AWS's local emulator</a> on a real serverless app.</p>
+
+<h2>AI and agents</h2>
+<p>Latent Space profiled <a href="https://latent.space/p/artcraft/">ArtCraft</a>, which cloned Photoshop and now wants to "rebuild everything" with AI-native tooling.</p>
+
+<h2>Security</h2>
+<p>Patch list: a <a href="https://thehackernews.com/2026/11/critical-red-hat-quay-flaw-lets.html">critical Red Hat Quay flaw</a> lets attackers read and overwrite private images in a registry; a <a href="https://thehackernews.com/2026/11/new-signdrop-zero-day-exploit-turns.html">Windows CLFS zero-day ("SignDrop")</a> grants SYSTEM access; <a href="https://thehackernews.com/2026/11/google-cloud-warns-three-amd-turin-cpu.html">three AMD Turin CPU flaws</a> could leak data across processes in VMs; Node.js <a href="https://thehackernews.com/2026/11/nodejs-fixes-16-flaws-including-http2.html">fixed 16 flaws</a> including HTTP/2 bugs that crash servers and leak other connections' data; Citrix <a href="https://thehackernews.com/2026/11/citrix-patches-12-netscaler-and-secure.html">patched 12 NetScaler/Secure Access flaws</a> including an auth bypass; and attackers are <a href="https://thehackernews.com/2026/11/new-n-central-exploits-work-against.html">exploiting N-central flaws</a> even on patched servers for root RCE.</p>
+
+<h2>AI security</h2>
+<p><a href="https://pypi.org/project/pyrit/1.2.0/">PyRIT 1.2.0</a>, Microsoft's LLM red-teaming tool, is out.</p>
+
+<h2>Engineering practice</h2>
+<p>The Pragmatic Engineer asks <a href="https://newsletter.pragmaticengineer.com/p/the-pulse-what-can-we-learn-from-114">what we can learn from the Railway hack</a>.</p>

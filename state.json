@@ -300,7 +300,8 @@
   "cbe15ece3906624c625eaa03c8397538ddd51d2a",
   "5cff745f1ebd06700755b840670b97f00bff9d5b",
   "e381b31bf47d3e5f3b0713ff33d8fc92224c2605",
-  "b39eaaf3888a3d0bda8d6b3ca86f328b3e6e56af"
+  "b39eaaf3888a3d0bda8d6b3ca86f328b3e6e56af",
+  "5e029ed77164f9513582842352dda8bb456d5710"
  ],
  "https://aws.amazon.com/blogs/aws/feed/": [
   "c0bd049236369d601a6a4b54035a912339948df0",
@@ -446,7 +447,10 @@
   "9e83df1518242585f2d662428fb7714ea89f3840",
   "70e5e515023bcc413c4ab653f8beae3c9fa463e7",
   "efc61cb8ec23a638ccd39d074b0ecd235f782830",
-  "4697294fe605377c26f72f028c2cc8cd10acc19e"
+  "4697294fe605377c26f72f028c2cc8cd10acc19e",
+  "ff4ece1b2f9fa0664a6f75182835943d7d5f8700",
+  "c3fb150508d2c501cb4e3cf8a4e60c28bb5d1155",
+  "122f77b80708ccf3495b8de1c1f3df5330d1f4fa"
  ],
  "https://aws.amazon.com/blogs/devops/feed/": [
   "85c8baf14eea1ccc2662779143ec864434b29803",
@@ -693,7 +697,14 @@
   "7b42b92d3553785669b6b7f2bc67061098c8e566",
   "de80c503415138bb46de169401d016e12857bb15",
   "356978dbc1d5c1b11d1e19e188aec10e4dad4778",
-  "bc1e8aba2e409ec4403d397afa02816caf7e4b6e"
+  "bc1e8aba2e409ec4403d397afa02816caf7e4b6e",
+  "760cbc8b70c56b832a6d83eb6dfab47ce2fe8a3b",
+  "f4831ed5c33ec5088dfe090f067c6a3a1c207b47",
+  "31a4c32eac66b0c9392f69ee418d5e09aecaf4e5",
+  "4dea8ce77a40d45986adf65199b169c60e84bcc1",
+  "62c3e92270a83395aaeaae770a977c92ced34043",
+  "94b792ec6f46dfd34db3ccc1fda8cfa7fee6df93",
+  "a1587ec860fedf29e005f9336e493877ba832183"
  ],
  "https://aws.amazon.com/blogs/mt/feed/": [
   "95e96f8c69b576ab8de5fec69d435ff851420e53",
@@ -727,7 +738,10 @@
   "da27ceb5ac3f10ff0f88ae6bf93aae03de984dd4",
   "dbf89cef682fb558da6b0636151450a467596fd7",
   "61150aaebd9a2682b454b7806db7c762e433770c",
-  "86a1535d0bfd07180e8debb6231fb5269b05924d"
+  "86a1535d0bfd07180e8debb6231fb5269b05924d",
+  "b9f3f0ea3727350d9152c4375d8b2887cc7de29d",
+  "91349ae6dfc2906284cd1335e73bd29eb68182a3",
+  "dc63b3a658c2851f415fb190b1b235aa372a59bb"
  ],
  "https://aws.amazon.com/blogs/opensource/feed/": [
   "540f3e31dc212bab6e9508a21c7e54e3c93be7a2",
@@ -803,7 +817,8 @@
   "107d0032ac2bde94e2f091aa4e0b471baa7147b4",
   "e71cf7fa88bd60b1138e5181c489f58b91d7fded",
   "510e06db3117364f35b271b43cc2a90afde0934b",
-  "17c25f24cedc85acbadd6a58de0104766a639c09"
+  "17c25f24cedc85acbadd6a58de0104766a639c09",
+  "40c4ae48048a701678bf6d70ba3b13c949edbe08"
  ],
  "https://aws.amazon.com/security/security-bulletins/rss/feed/": [
   "9485271775e2e715c1aac015cf7c1c2a1f859448",
@@ -1558,7 +1573,8 @@
   "https://staging.checkmarx.com/?p=114901",
   "https://staging.checkmarx.com/?p=114808",
   "https://staging.checkmarx.com/?p=114817",
-  "https://checkmarx.com/?p=120261"
+  "https://checkmarx.com/?p=120261",
+  "https://staging.checkmarx.com/?p=121033"
  ],
  "https://code.claude.com/docs/en/changelog/rss.xml": [
   "cba210cd30198f8f",
@@ -1592,7 +1608,8 @@
   "f17524957c9cb36b",
   "a91c13ed641d9c5a",
   "827ba595352a5d6a",
-  "5abcd2ce8a8561e5"
+  "5abcd2ce8a8561e5",
+  "0b83108e524d82ee"
  ],
  "https://danielmiessler.com/feed": [
   "https://danielmiessler.com/blog/bitter-wall",
@@ -2073,7 +2090,8 @@
   "discuss.hashicorp.com-topic-77617",
   "discuss.hashicorp.com-topic-77658",
   "discuss.hashicorp.com-topic-77597",
-  "discuss.hashicorp.com-topic-77626"
+  "discuss.hashicorp.com-topic-77626",
+  "discuss.hashicorp.com-topic-78243"
  ],
  "https://discuss.python.org/c/peps/19.rss": [
   "discuss.python.org-topic-110003",
@@ -2382,7 +2400,10 @@
   "https://www.baeldung.com/?p=205052",
   "https://www.baeldung.com/?p=204954",
   "https://www.baeldung.com/java-27-new-features",
-  "https://www.baeldung.com/?p=205082"
+  "https://www.baeldung.com/?p=205082",
+  "https://www.baeldung.com/?p=205398",
+  "https://www.baeldung.com/?p=205394",
+  "https://www.baeldung.com/?p=205440"
  ],
  "https://feeds.feedburner.com/TheHackersNews": [
   "https://thehackernews.com/2026/11/hackers-exploit-n-central-flaws-to.html",
@@ -2875,7 +2896,11 @@
   "https://github.blog/changelog/2026-09-30-github-advanced-security-trials-for-github-team",
   "https://github.blog/changelog/2026-10-23-public-monitoring-adds-triage-validity-api-and-webhooks",
   "https://github.blog/changelog/2026-11-26-github-enterprise-now-includes-access-to-github-copilot",
-  "https://github.blog/changelog/2026-10-26-github-copilot-assisted-permissions-generally-available"
+  "https://github.blog/changelog/2026-10-26-github-copilot-assisted-permissions-generally-available",
+  "https://github.blog/changelog/2026-11-12-upcoming-deprecation-of-selected-github-copilot-models-in-december",
+  "https://github.blog/changelog/2026-11-13-github-enterprise-server-support-in-the-github-copilot-app",
+  "https://github.blog/changelog/2026-11-13-gemini-4-hydrogen-in-github-copilot",
+  "https://github.blog/changelog/2026-11-13-manage-ai-scan-for-repositories-using-the-rest-api"
  ],
  "https://github.blog/changelog/label/actions/feed/": [
   "https://github.blog/changelog/2026-11-12-actions-for-arm32-linux-windows-retirement",
@@ -2986,7 +3011,8 @@
   "https://golangweekly.com/issues/616",
   "https://golangweekly.com/issues/619",
   "https://golangweekly.com/issues/617",
-  "https://golangweekly.com/issues/618"
+  "https://golangweekly.com/issues/618",
+  "https://golangweekly.com/issues/624"
  ],
  "https://googleprojectzero.blogspot.com/feeds/posts/default": [
   "https://projectzero.google/2026/10/fuzzing-v-AI",
@@ -3000,7 +3026,8 @@
   "https://projectzero.google/2026/01/sound-barrier-2",
   "https://projectzero.google/2026/26/windows-administrator-protection",
   "https://projectzero.google/2026/01/0-click-android-part2",
-  "https://projectzero.google/2026/01/0-click-android-part3"
+  "https://projectzero.google/2026/01/0-click-android-part3",
+  "https://projectzero.google/2026/11/disclosure-policy"
  ],
  "https://hamel.dev/index.xml": [
   "https://hamel.dev/blog/posts/decision-model-evals/",
@@ -3063,7 +3090,8 @@
   "https://inside.java/2026/10/17/podcast-072/",
   "https://inside.java/2026/10/15/java-fit-ai-world/",
   "https://inside.java/2026/09/28/performance-update-jdk27/",
-  "https://inside.java/2026/10/06/jep542-target-jdk28/"
+  "https://inside.java/2026/10/06/jep542-target-jdk28/",
+  "https://inside.java/newscast/117/"
  ],
  "https://javascriptweekly.com/rss/": [
   "https://javascriptweekly.com/issues/810",
@@ -3813,7 +3841,8 @@
   "https://peps.python.org/pep-0847/",
   "https://peps.python.org/pep-0842/",
   "https://peps.python.org/pep-0843/",
-  "https://peps.python.org/pep-0844/"
+  "https://peps.python.org/pep-0844/",
+  "https://peps.python.org/pep-8108/"
  ],
  "https://platform.claude.com/docs/en/release-notes/feed.xml": [
   "https://platform.claude.com/docs/en/release-notes/overview#self-hosted-managed-agents",
@@ -4094,7 +4123,8 @@
   "https://platformengineering.org/blog/from-devops-to-platform-engineering",
   "https://platformengineering.org/blog/the-missing-link-in-developer-velocity-virtual-registries-and-the-rise-of-the-artifact-platform",
   "https://platformengineering.org/blog/why-platform-engineers-observe-infra-and-help-devs-monitor-apps",
-  "https://platformengineering.org/blog/ai-powered-platforms-vs-platforms-for-ai-a-platform-engineers-guide"
+  "https://platformengineering.org/blog/ai-powered-platforms-vs-platforms-for-ai-a-platform-engineers-guide",
+  "https://platformengineering.org/blog/platform-engineering-events-2027"
  ],
  "https://pycoders.com/feed": [
   "https://pycoders.com/issues/760",
@@ -4137,7 +4167,8 @@
   "tag:blogger.com,1999:blog-8520.post-2074791423610442906",
   "tag:blogger.com,1999:blog-8520.post-5663370285181069806",
   "tag:blogger.com,1999:blog-8520.post-6269270845344168303",
-  "tag:blogger.com,1999:blog-8520.post-6043325788282697635"
+  "tag:blogger.com,1999:blog-8520.post-6043325788282697635",
+  "tag:blogger.com,1999:blog-8520.post-4555227175724144174"
  ],
  "https://pypi.org/rss/project/anthropic/releases.xml": [
   "https://pypi.org/project/anthropic/2.8.0/",
@@ -4350,7 +4381,8 @@
   "https://pypi.org/project/boto3/1.43.75/",
   "https://pypi.org/project/boto3/1.43.79/",
   "https://pypi.org/project/boto3/1.43.74/",
-  "https://pypi.org/project/boto3/1.43.77/"
+  "https://pypi.org/project/boto3/1.43.77/",
+  "https://pypi.org/project/boto3/1.44.3/"
  ],
  "https://pypi.org/rss/project/checkov/releases.xml": [
   "https://pypi.org/project/checkov/3.4.5/",
@@ -4459,7 +4491,8 @@
   "https://pypi.org/project/claude-agent-sdk/0.2.135/",
   "https://pypi.org/project/claude-agent-sdk/0.2.139/",
   "https://pypi.org/project/claude-agent-sdk/0.2.130/",
-  "https://pypi.org/project/claude-agent-sdk/0.2.132/"
+  "https://pypi.org/project/claude-agent-sdk/0.2.132/",
+  "https://pypi.org/project/claude-agent-sdk/0.2.182/"
  ],
  "https://pypi.org/rss/project/fastapi/releases.xml": [
   "https://pypi.org/project/fastapi/0.162.5/",
@@ -4545,7 +4578,11 @@
   "https://pypi.org/project/fastapi/0.142.4/",
   "https://pypi.org/project/fastapi/0.136.1/",
   "https://pypi.org/project/fastapi/0.136.3/",
-  "https://pypi.org/project/fastapi/0.137.0/"
+  "https://pypi.org/project/fastapi/0.137.0/",
+  "https://pypi.org/project/fastapi/0.163.1/",
+  "https://pypi.org/project/fastapi/0.163.0/",
+  "https://pypi.org/project/fastapi/0.162.7/",
+  "https://pypi.org/project/fastapi/0.162.6/"
  ],
  "https://pypi.org/rss/project/garak/releases.xml": [
   "https://pypi.org/project/garak/0.17.1/",
@@ -5196,7 +5233,8 @@
   "https://pypi.org/project/strands-agents/1.27.0/",
   "https://pypi.org/project/strands-agents/1.28.0/",
   "https://pypi.org/project/strands-agents/1.31.0/",
-  "https://pypi.org/project/strands-agents/1.30.0/"
+  "https://pypi.org/project/strands-agents/1.30.0/",
+  "https://pypi.org/project/strands-agents/1.65.0/"
  ],
  "https://pypi.org/rss/project/ty/releases.xml": [
   "https://pypi.org/project/ty/0.0.102/",
@@ -5251,7 +5289,9 @@
   "https://pypi.org/project/ty/0.0.59/",
   "https://pypi.org/project/ty/0.0.51/",
   "https://pypi.org/project/ty/0.0.60/",
-  "https://pypi.org/project/ty/0.0.56/"
+  "https://pypi.org/project/ty/0.0.56/",
+  "https://pypi.org/project/ty/0.0.104/",
+  "https://pypi.org/project/ty/0.0.103/"
  ],
  "https://pypi.org/rss/project/uv/releases.xml": [
   "https://pypi.org/project/uv/0.13.8/",
@@ -5341,7 +5381,8 @@
   "https://react.statuscode.com/issues/489",
   "https://react.statuscode.com/issues/492",
   "https://react.statuscode.com/issues/490",
-  "https://react.statuscode.com/issues/491"
+  "https://react.statuscode.com/issues/491",
+  "https://react.statuscode.com/issues/497"
  ],
  "https://realpython.com/atom.xml": [
   "https://realpython.com/mentor-ai-coding-exercise/",
@@ -5586,7 +5627,37 @@
   "https://securitylabs.datadoghq.com/articles/agent-id-blueprint-blast-radius/",
   "https://securitylabs.datadoghq.com/articles/backdoored-cemu-release-teampcp-supply-chain-campaign/",
   "https://securitylabs.datadoghq.com/articles/kubernetes-security-fundamentals-part-8/",
-  "https://securitylabs.datadoghq.com/articles/unpatchable-kubernetes-vulnerabilities-cve-2021-25740/"
+  "https://securitylabs.datadoghq.com/articles/unpatchable-kubernetes-vulnerabilities-cve-2021-25740/",
+  "\n    https://securitylabs.datadoghq.com/articles/cve-2026-118383-mongodb-server-use-after-free/",
+  "\n    https://securitylabs.datadoghq.com/articles/artex-agentic-attacks-aws-environments/",
+  "\n    https://securitylabs.datadoghq.com/articles/node2shell-cve-2026-111497-nodejs-brotli-decoder/",
+  "\n    https://securitylabs.datadoghq.com/articles/code-security-for-new-coders/",
+  "\n    https://securitylabs.datadoghq.com/articles/php2shell-critical-vulnerabilities-in-php/",
+  "\n    https://securitylabs.datadoghq.com/articles/litellm-compromised-pypi-docker/",
+  "\n    https://securitylabs.datadoghq.com/articles/introducing-pathrunner-aws-privilege-escalation-framework/",
+  "\n    https://securitylabs.datadoghq.com/articles/putting-models-to-the-secure-coding-test-security-rules/",
+  "\n    https://securitylabs.datadoghq.com/articles/jev-as-a-judge-how-counterfeit-policy-steers-jev/",
+  "\n    https://securitylabs.datadoghq.com/articles/beyond-valid-credentials-how-exposed-aws-keys-are-tested-for-amazon-bedrock-access/",
+  "\n    https://securitylabs.datadoghq.com/articles/kubernetes-rbac-built-in-principals-dangerous-permissions/",
+  "\n    https://securitylabs.datadoghq.com/articles/opencode-upgrade-remote-code-execution/",
+  "\n    https://securitylabs.datadoghq.com/articles/attacker-infrastructure-but-vibe-coded/",
+  "\n    https://securitylabs.datadoghq.com/articles/mapping-out-your-unknown-threat-hunters-guide-to-github/",
+  "\n    https://securitylabs.datadoghq.com/articles/aws-root-user-bruteforce-campaign/",
+  "\n    https://securitylabs.datadoghq.com/articles/n4d-mesh-controller-go-titan-new-infrastructure-hunting/",
+  "\n    https://securitylabs.datadoghq.com/articles/putting-models-to-the-secure-coding-test-plan-vs-default-mode/",
+  "\n    https://securitylabs.datadoghq.com/articles/npm-worm-compromises-popular-npm-packages/",
+  "\n    https://securitylabs.datadoghq.com/articles/coding-agent-project-trust-code-execution-before-first-prompt/",
+  "\n    https://securitylabs.datadoghq.com/articles/detection-primitives-for-ebpf-rootkits/",
+  "\n    https://securitylabs.datadoghq.com/articles/compromised-asyncapi-npm-packages/",
+  "\n    https://securitylabs.datadoghq.com/articles/not-so-anonymous-telemetry-injectivelabs-sdk-ts-backdoor/",
+  "\n    https://securitylabs.datadoghq.com/articles/coordinated-github-api-enumeration/",
+  "\n    https://securitylabs.datadoghq.com/articles/agent-id-protect-detect-respond/",
+  "\n    https://securitylabs.datadoghq.com/articles/backdoors-and-breaches-new-scenarios/",
+  "\n    https://securitylabs.datadoghq.com/articles/guarddog-3-0-release/",
+  "\n    https://securitylabs.datadoghq.com/articles/behind-the-console-aws-aitm-phishing-kit-and-beyond/",
+  "\n    https://securitylabs.datadoghq.com/articles/detecting-the-klue-supply-chain-attack-in-salesforce/",
+  "\n    https://securitylabs.datadoghq.com/articles/agent-id-inside-agent-compromise/",
+  "\n    https://securitylabs.datadoghq.com/articles/mapping-out-your-unknown-threat-hunters-guide-to-salesforce/"
  ],
  "https://simonwillison.net/atom/everything/": [
   "https://simonwillison.net/2026/Nov/12/llm-gemini/",
@@ -5725,7 +5796,16 @@
   "https://simonwillison.net/2026/Oct/13/geoffrey-huntley/",
   "https://simonwillison.net/2026/Oct/30/nesformer/",
   "https://simonwillison.net/2026/Oct/12/web-edit/",
-  "https://simonwillison.net/2026/Oct/15/chirp-pong/"
+  "https://simonwillison.net/2026/Oct/15/chirp-pong/",
+  "https://simonwillison.net/2026/Nov/15/datasette-maplibre/",
+  "https://simonwillison.net/2026/Nov/15/datasette/",
+  "https://simonwillison.net/2026/Nov/15/datasette-2/",
+  "https://simonwillison.net/2026/Nov/15/datasette-apps/",
+  "https://simonwillison.net/2026/Nov/15/datasette-agent/",
+  "https://simonwillison.net/2026/Nov/14/datasette-llm/",
+  "https://simonwillison.net/2026/Nov/14/datasette-vega/",
+  "https://simonwillison.net/2026/Nov/13/datasette-cluster-map/",
+  "https://simonwillison.net/2026/Nov/13/datasette-leaflet/"
  ],
  "https://simonwillison.net/tags/prompt-injection.atom": [
   "https://simonwillison.net/2026/Sep/17/compaction-summaries/",
@@ -6396,7 +6476,10 @@
   "users.rust-lang.org-topic-142338",
   "users.rust-lang.org-topic-142797",
   "users.rust-lang.org-topic-142399",
-  "users.rust-lang.org-topic-143307"
+  "users.rust-lang.org-topic-143307",
+  "users.rust-lang.org-topic-143678",
+  "users.rust-lang.org-topic-143662",
+  "users.rust-lang.org-topic-143661"
  ],
  "https://web.dev/feed.xml": [
   "https://web.dev/blog/web-platform-09-2026?hl=en",
@@ -6727,7 +6810,9 @@
   "urn:latent-space:post:pod_ep_01a17e24-16fc-71e3-bdc8-f0c1aeee546c",
   "https://www.latent.space/p/ainews-claude-haiku-55-better-than",
   "https://www.latent.space/p/airbnb",
-  "https://www.latent.space/p/ainews-typesafejev-at-100m-arr-75b"
+  "https://www.latent.space/p/ainews-typesafejev-at-100m-arr-75b",
+  "urn:latent-space:post:post_5ecf266a-aa1c-4b9a-bcec-3c52bcc9ca63",
+  "urn:latent-space:post:post_f2e2c3b7-0166-4359-97b6-d24d8f24c73b"
  ],
  "https://www.ncsc.gov.uk/api/1/services/v1/all-rss-feed.xml": [
   "https://www.ncsc.gov.uk/news/ncsc-scheme-help-critical-organisations-test-their-cyber-defences",
@@ -6861,7 +6946,10 @@
   "https://www.schneier.com/?p=72718",
   "https://www.schneier.com/?p=72744",
   "https://www.schneier.com/?p=72840",
-  "https://www.schneier.com/?p=72715"
+  "https://www.schneier.com/?p=72715",
+  "https://www.schneier.com/?p=72935",
+  "https://www.schneier.com/?p=72930",
+  "https://www.schneier.com/?p=72922"
  ],
  "https://www.wiz.io/feed/rss.xml": [
   "https://www.wiz.io/blog/aspm-ai-era-pt-3-fixing-risk-code-speed",

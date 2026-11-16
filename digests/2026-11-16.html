@@ -1,0 +1,61 @@
+<h2>Your stack</h2>
+
+<h3>Linters and type checkers</h3>
+<p><a href="https://pypi.org/project/ty/0.0.104/">ty 0.0.104</a> landed from Astral, following 0.0.103 a day earlier.</p>
+
+<h3>FastAPI</h3>
+<p><a href="https://pypi.org/project/fastapi/0.163.1/">FastAPI 0.163.1</a> is out, the fourth release this week after 0.163.0, 0.162.7 and 0.162.6.</p>
+
+<h3>boto3</h3>
+<p><a href="https://pypi.org/project/boto3/1.44.3/">boto3 1.44.3</a> shipped.</p>
+
+<h3>Amazon Bedrock</h3>
+<p>AgentCore Identity now <a href="https://aws.amazon.com/about-aws/whats-new/2026/11/bedrock-agentcore-oauth2-discovery/">supports OAuth 2.0 discovery URLs</a> for servers that skip OIDC, and AgentCore runtime V2 gets a <a href="https://aws.amazon.com/blogs/machine-learning/architecture-patterns-for-fast-session-startup-on-amazon-bedrock-agentcore-runtime/">write-up on fast session startup</a> patterns. There's also a guide to <a href="https://aws.amazon.com/blogs/machine-learning/cost-attribution-and-controls-for-ai-developer-and-productivity-tools-on-amazon-bedrock/">per-user cost attribution</a> via IAM Identity Center and CUR 2.0. On the security side, Datadog detailed <a href="https://securitylabs.datadoghq.com/articles/beyond-valid-credentials-how-exposed-aws-keys-are-tested-for-amazon-bedrock-access/">how attackers test exposed AWS keys for Bedrock access</a>, and separately profiled <a href="https://securitylabs.datadoghq.com/articles/attacker-infrastructure-but-vibe-coded/">two vibe-coded credential-harvesting platforms</a> that validate stolen secrets against Bedrock.</p>
+
+<h3>GitHub Enterprise</h3>
+<p>The GitHub Copilot app now <a href="https://github.blog/changelog/2026-11-13-github-enterprise-server-support-in-the-github-copilot-app">supports GitHub Enterprise Server accounts</a>.</p>
+
+<h3>Checkmarx</h3>
+<p>GitHub's code scanning AI Scan can now be <a href="https://github.blog/changelog/2026-11-13-manage-ai-scan-for-repositories-using-the-rest-api">managed via REST API</a>, and Checkmarx is <a href="https://checkmarx.com/blog/the-security-backlog-cant-keep-up-with-ai-speed-development/">partnering with OpenAI's Daybreak Defense Factory</a> to connect vulnerability detection with AI-driven remediation.</p>
+
+<h3>AWS Organizations and Control Tower</h3>
+<p>Security Hub CSPM now <a href="https://aws.amazon.com/about-aws/whats-new/2026/11/security-hub-cspm-org-policies/">supports centralized configuration via AWS Organizations declarative policies</a>.</p>
+
+<h3>MCP</h3>
+<p>Datadog's writeup on the <a href="https://securitylabs.datadoghq.com/articles/n4d-mesh-controller-go-titan-new-infrastructure-hunting/">N4D Mesh Controller</a> shows MCP tool abuse in action alongside a UPX-packed "go-titan" agent.</p>
+
+<h3>Claude</h3>
+<p>Anthropic and Google both <a href="https://realpython.com/ai-news-weekly-2026-11-13/">cut prices on their best models</a> this week. <a href="https://pypi.org/project/claude-agent-sdk/0.2.182/">Claude Agent SDK 0.2.182</a> and <a href="https://pypi.org/project/strands-agents/1.65.0/">Strands Agents 1.65.0</a> both shipped, and Baeldung published a <a href="https://feeds.feedblitz.com/~/972994280/0/baeldung">Spring AI tutorial for reading Anthropic's rate-limit headers</a>. Datadog ran Sonnet 5 through secure-coding tests: it holds up reasonably <a href="https://securitylabs.datadoghq.com/articles/putting-models-to-the-secure-coding-test-security-rules/">against explicit security rules</a>, and separately compared <a href="https://securitylabs.datadoghq.com/articles/putting-models-to-the-secure-coding-test-plan-vs-default-mode/">plan mode against default mode</a> for code security.</p>
+
+<h3>Claude Code</h3>
+<p>The CLI ticked up to <a href="https://code.claude.com/docs/en/changelog#2-1-325">2.1.325</a>. Cursor confirmed its <a href="https://thehackernews.com/2026/11/stolen-fireworks-ai-key-led-to-cursor.html">Trojanized Claude Code extension incident</a> traced back to a stolen Fireworks AI access key, and Datadog showed how <a href="https://securitylabs.datadoghq.com/articles/coding-agent-project-trust-code-execution-before-first-prompt/">repository-controlled Claude Code environment settings</a> can run code before the first prompt.</p>
+
+<h3>AI-DLC and AI-assisted development practices</h3>
+<p>GitHub Copilot picked up <a href="https://github.blog/changelog/2026-11-13-gemini-4-hydrogen-in-github-copilot">Gemini 4 Hydrogen</a> but will <a href="https://github.blog/changelog/2026-11-13-upcoming-deprecation-of-selected-github-copilot-models-in-december">deprecate several older models on Dec 14</a>. Kiro in AWS GovCloud added <a href="https://aws.amazon.com/about-aws/whats-new/2026/11/kiro-grok-4-7-aws-govcloud-us/">Grok 4.7</a>, and AWS wrote up <a href="https://aws.amazon.com/blogs/machine-learning/route-coding-agent-requests-to-the-right-model-on-amazon-bedrock-with-nvidia-nemo-switchyard/">routing coding-agent requests to the cheapest capable model</a> with NVIDIA's NeMo Switchyard on Bedrock.</p>
+
+<h3>Entra ID</h3>
+<p>Datadog's Entra Agent ID series wrapped up: how <a href="https://securitylabs.datadoghq.com/articles/agent-id-inside-agent-compromise/">a compromised agent blueprint can lead to a cross-tenant incident</a> resembling Midnight Blizzard, and <a href="https://securitylabs.datadoghq.com/articles/agent-id-protect-detect-respond/">how to protect, detect and respond</a> to it.</p>
+
+<h3>Security (AI and cloud)</h3>
+<p>Patch roundup: PostgreSQL fixed <a href="https://thehackernews.com/2026/11/postgresql-patches-52-flaws-including.html">52 flaws including a 22-year-old authenticated-RCE bug</a>; Datadog reproduced a <a href="https://securitylabs.datadoghq.com/articles/cve-2026-118383-mongodb-server-use-after-free/">MongoDB use-after-free</a> and a <a href="https://securitylabs.datadoghq.com/articles/node2shell-cve-2026-111497-nodejs-brotli-decoder/">Node.js Brotli-decoder flaw</a>; two <a href="https://securitylabs.datadoghq.com/articles/php2shell-critical-vulnerabilities-in-php/">critical PHP vulnerabilities</a> are dubbed PHP2Shell; a <a href="https://www.wiz.io/blog/cve-2026-119618-rce-apache-http-server-vulnerability">critical Apache HTTP Server RCE</a> affects 64% of cloud environments by Wiz's count; CISA added an actively-exploited <a href="https://thehackernews.com/2026/11/attackers-exploit-unrealircd-flaw-that.html">UnrealIRCd flaw</a> to its KEV catalog; and new <a href="https://thehackernews.com/2026/11/new-mior-and-skyfall-attacks-let-rogue.html">Mior and Skyfall attacks</a> let a malicious host read AMD SEV-SNP VM memory. On the AI/supply-chain side: <a href="https://securitylabs.datadoghq.com/articles/litellm-compromised-pypi-docker/">LiteLLM's PyPI and Docker artifacts were compromised</a> after maintainer accounts were breached; a <a href="https://securitylabs.datadoghq.com/articles/opencode-upgrade-remote-code-execution/">flaw in OpenCode's upgrade endpoint</a> let malicious webpages run code on developer machines; Datadog showed <a href="https://securitylabs.datadoghq.com/articles/jev-as-a-judge-how-counterfeit-policy-steers-jev/">counterfeit policies steering Jev's prompt-injection classifier</a> and bypassing LangChain's tool-risk gating; and separate posts cover a new <a href="https://securitylabs.datadoghq.com/articles/introducing-pathrunner-aws-privilege-escalation-framework/">AWS IAM privilege-escalation framework</a>, the <a href="https://securitylabs.datadoghq.com/articles/detecting-the-klue-supply-chain-attack-in-salesforce/">Klue supply-chain attack on Salesforce</a>, and <a href="https://www.wiz.io/blog/qubole-cross-account-access-abused-in-the-wild">Qubole's leaked IAM credentials being abused</a> to pivot into customer AWS accounts. Separately, Google Project Zero <a href="https://projectzero.google/2026/11/disclosure-policy.html">updated its "90+30" disclosure policy</a> for the AI era.</p>
+
+<h2>Python</h2>
+<p>Real Python posted on <a href="https://realpython.com/python-scipy-cluster-optimize/">SciPy's clustering and optimization modules</a>, <a href="https://realpython.com/binary-search-python/">implementing binary search with bisect</a>, and <a href="https://realpython.com/meta-muse-python/">getting started with Meta's Muse SDK</a> (Spark calls, streaming, and the open-weights Glimmer model). Their podcast also talked <a href="https://realpython.com/podcasts/rpp/319/">mentoring developers</a> with Django's Tim Schilling.</p>
+
+<h2>JavaScript and TypeScript</h2>
+<p>Node.js shipped <a href="https://nodejs.org/en/blog/vulnerability/november-2026-security-releases">security fixes across its LTS lines</a> on Nov 11.</p>
+
+<h2>Rust</h2>
+<p>A new <a href="https://users.rust-lang.org/t/ann-pgloom-deterministic-race-condition-model-checker-on-the-postgresql-wire-protocol/143678">deterministic race-condition checker for the PostgreSQL wire protocol</a>, PgLoom, is out.</p>
+
+<h2>Java</h2>
+<p>Inside Java's newscast covered <a href="https://inside.java/newscast/117/">ZGC's adaptive heap sizing and JDK 28's primitive-pattern withdrawal</a>, and Baeldung showed <a href="https://feeds.feedblitz.com/~/972994283/0/baeldung">using the official OpenAI Java SDK with Spring AI</a>.</p>
+
+<h2>AWS</h2>
+<p>AWS Batch on EKS gained <a href="https://aws.amazon.com/about-aws/whats-new/2026/11/aws-batch-eks-security-context/">Linux capabilities, seccomp and pod-level security settings</a>; Systems Manager can now <a href="https://aws.amazon.com/about-aws/whats-new/2026/11/systems-manager-google-cloud-support/">onboard Google Cloud VMs</a> alongside AWS and on-prem; CloudWatch added <a href="https://aws.amazon.com/about-aws/whats-new/2026/11/accelerated-compute-insights-cloudwatch/">fleet-level insights for self-hosted AI inference on EKS</a>; a two-part series covers <a href="https://aws.amazon.com/blogs/database/improve-rds-proxy-multiplexing-for-postgresql-part-1-common-causes/">diagnosing</a> and <a href="https://aws.amazon.com/blogs/database/improve-rds-proxy-multiplexing-for-postgresql-part-2-diagnose-and-monitor/">fixing</a> poor RDS Proxy multiplexing for PostgreSQL; a post walks through <a href="https://aws.amazon.com/blogs/database/fix-amazon-aurora-mysql-error-63955-virtual-index-id-overflow/">recovering from Aurora MySQL's virtual index ID overflow error</a>; and Thermo Fisher wrote up <a href="https://aws.amazon.com/blogs/architecture/how-thermo-fisher-scientific-built-ai-powered-patient-matching-on-aws/">building AI-powered patient matching</a> for clinical trial recruitment.</p>
+
+<h2>AI and agents</h2>
+<p>Nvidia's Jensen Huang <a href="https://latent.space/p/ainews-jensen-huang-resigns-after-33-years-leading-nvidia/">resigned after 33 years leading the company</a>, with Colette Kress stepping in as interim CEO. Separately, Simon Willison's <a href="https://simonwillison.net/2026/Nov/15/datasette-2/">Datasette 0.65.6</a> backports a security fix for a database-download path issue.</p>
+
+<h2>Security</h2>
+<p>An international operation <a href="https://thehackernews.com/2026/11/operation-endgame-takes-down-gootloader.html">took down Gootloader, CastleRAT and StealC infrastructure</a>, seizing 6.4 million stolen logins. Datadog tracked a <a href="https://securitylabs.datadoghq.com/articles/npm-worm-compromises-popular-npm-packages/">"ChainDrop" worm compromising hundreds of popular npm packages</a> and, separately, a <a href="https://securitylabs.datadoghq.com/articles/compromised-asyncapi-npm-packages/">CI supply-chain attack on four @asyncapi packages</a> with 3M+ weekly downloads. The FBI says <a href="https://thehackernews.com/2026/11/fbi-says-north-korean-hackers-stole.html">North Korean hackers stole over $400M in crypto</a> via deepfake video calls. Closer to home: a <a href="https://securitylabs.datadoghq.com/articles/aws-root-user-bruteforce-campaign/">password-spraying campaign hit AWS root accounts across 150+ organizations</a>, and attackers are <a href="https://thehackernews.com/2026/11/hackers-exploit-php2shell-flaws-in.html">exploiting unpatched Check Point gateways</a> via the PHP2Shell flaws to deploy a backdoor and wipe ESXi hosts.</p>

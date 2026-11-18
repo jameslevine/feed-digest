@@ -6,7 +6,123 @@
     <description>
 Daily AI summary of my RSS subscriptions
 </description>
-    <lastBuildDate>Tue, 17 Nov 2026 07:22:25 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 18 Nov 2026 07:19:39 +0000</lastBuildDate>
+    <item>
+      <title>Digest for 2026-11-18</title>
+      <link>https://github.com/jameslevine/feed-digest/blob/main/digests/2026-11-18.html</link>
+      <guid>Digest for 2026-11-18</guid>
+      <pubDate>Wed, 18 Nov 2026 07:19:39 +0000</pubDate>
+      <description><![CDATA[
+<h2>Your stack</h2>
+
+<h3>httpx</h3>
+<p><a href="https://realpython.com/python-httpx/">Real Python covers HTTPX2</a>, the new Pydantic-maintained fork of httpx that keeps the Requests-style API while adding async requests and HTTP/2 by default.</p>
+
+<h3>FastAPI</h3>
+<p><a href="https://pypi.org/project/fastapi/0.163.2/">FastAPI 0.163.2</a> shipped.</p>
+
+<h3>Linters and type checkers</h3>
+<p><a href="https://pypi.org/project/ty/0.0.105/">ty 0.0.105</a> shipped.</p>
+
+<h3>boto3</h3>
+<p><a href="https://pypi.org/project/boto3/1.44.5/">boto3 1.44.5</a> shipped.</p>
+
+<h3>AWS Lambda</h3>
+<p>Lambda Managed Instances now <a href="https://aws.amazon.com/about-aws/whats-new/2026/11/aws-lambda-managed-instances-scale-to-zero/">scale to and from zero</a>, and Lambda <a href="https://aws.amazon.com/about-aws/whats-new/2026/11/lambda-durable-pause-delete/">durable functions can now be paused and have their executions deleted</a>.</p>
+
+<h3>API Gateway</h3>
+<p>REST APIs now get a <a href="https://aws.amazon.com/blogs/compute/securing-rest-apis-with-jwt-authorizers-in-amazon-api-gateway/">native JWT authorizer</a>, so validating OIDC/OAuth2 tokens no longer requires a custom Lambda authorizer.</p>
+
+<h3>DynamoDB</h3>
+<p><a href="https://aws.amazon.com/blogs/database/accelerate-your-dynamodb-workloads-with-dynamodb-caching-with-amazon-elasticache-serverless-for-valkey/">DynamoDB caching with ElastiCache Serverless for Valkey</a> is GA: sub-millisecond reads without provisioning DAX nodes yourself.</p>
+
+<h3>Amazon Bedrock</h3>
+<ul>
+<li>AgentCore Memory now keeps <a href="https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-bedrock-agentcore-memory-10-year-retention">memory for up to 10 years</a> and <a href="https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-bedrock-agentcore-memory-full-session-summaries">full session summaries</a>; AgentCore also gained <a href="https://aws.amazon.com/about-aws/whats-new/2026/11/bedrock-agentcore-free-web-search-queries/">free monthly web search</a>, guidance on <a href="https://aws.amazon.com/blogs/security/securely-exposing-amazon-bedrock-agentcore-runtime/">securely exposing the Runtime</a>, and a pattern for <a href="https://aws.amazon.com/blogs/machine-learning/reducing-token-costs-and-latency-in-amazon-bedrock-agentcore-json-workloads/">cutting token costs in JSON workloads</a>.</li>
+<li><a href="https://aws.amazon.com/about-aws/whats-new/2026/11/openai-gpt-6-2-astra-sol-amazon-bedrock/">OpenAI's GPT-6.2 Astra and Sol</a> are now GA on Bedrock.</li>
+<li>Case studies: <a href="https://aws.amazon.com/blogs/machine-learning/build-whatsapp-ai-agents-with-amazon-bedrock-agentcore/">WhatsApp AI agents on AgentCore</a>, <a href="https://aws.amazon.com/blogs/machine-learning/how-loanpro-built-an-agentic-ai-loan-servicing-assistant-with-amazon-bedrock-agentcore/">LoanPro's loan-servicing assistant</a>, and <a href="https://aws.amazon.com/blogs/machine-learning/how-arisglobal-scaled-generative-ai-inference-on-amazon-bedrock/">ArisGlobal scaling inference</a>.</li>
+</ul>
+
+<h3>Snowflake</h3>
+<p>AWS detailed <a href="https://aws.amazon.com/blogs/machine-learning/secure-oauth-patterns-for-snowflake-cortex-ai-through-amazon-bedrock-agentcore/">three OAuth patterns</a> for a Bedrock AgentCore agent calling Snowflake Cortex AI over MCP.</p>
+
+<h3>MCP</h3>
+<p>A <a href="https://aws.amazon.com/blogs/database/build-an-ai-powered-dba-assistant-for-amazon-aurora-and-amazon-rds-with-kiro/">Kiro-based DBA assistant</a> uses two MCP servers to triage Aurora incidents; the new <a href="https://aws.amazon.com/blogs/machine-learning/govern-and-discover-records-with-common-metadata-in-aws-agent-registry/">AWS Agent Registry</a> governs metadata every agent, MCP server and skill must carry; and Claude Code 2.1.327 added <a href="https://code.claude.com/docs/en/changelog#2-1-327"><code>claude mcp add-json</code></a> to read a server's JSON from stdin.</p>
+
+<h3>Claude</h3>
+<p>The <a href="https://platform.claude.com/docs/en/release-notes/overview#linked-billing">Claude Platform release notes</a> added beta Linked Billing, letting your customers pay for usage via their own Claude org, and the <a href="https://pypi.org/project/anthropic/2.10.0/">Anthropic Python SDK hit 2.10.0</a>.</p>
+
+<h3>Claude Code</h3>
+<p><a href="https://code.claude.com/docs/en/changelog#2-1-327">2.1.327</a> added an <code>/install-github-app</code> confirmation step, the <a href="https://pypi.org/project/claude-agent-sdk/0.2.184/">Python Agent SDK reached 0.2.184</a>, and AWS now lets <a href="https://aws.amazon.com/about-aws/whats-new/2026/11/agentic-account-creation/">Claude Code sign a new developer up for AWS</a> without leaving the terminal.</p>
+
+<h3>AI-DLC and AI-assisted development practices</h3>
+<p>Microsoft Ignite brought a wave of GitHub Copilot updates: <a href="https://github.blog/changelog/2026-11-17-github-copilot-fusion-updates-more-availability-benchmarks-and-models">Fusion on more surfaces</a>, <a href="https://github.blog/changelog/2026-11-17-mai-code-2-and-mai-code-2-flash-in-github-copilot">Microsoft's MAI Code 2/Flash models</a>, <a href="https://github.blog/changelog/2026-11-17-openais-gpt-6-2-astra-and-gpt-6-2-sol-now-available">OpenAI's GPT-6.2 Astra/Sol</a>, <a href="https://github.blog/changelog/2026-11-17-copilot-code-review-adaptive-effort-secret-detection-and-more">adaptive-effort code review with secret detection</a>, a <a href="https://github.blog/changelog/2026-11-17-github-copilot-in-jetbrains-ignite-releases">JetBrains update</a>, <a href="https://github.blog/changelog/2026-11-17-monitor-github-copilot-activity-through-microsoft-agent-365">Agent 365 activity monitoring</a>, and <a href="https://github.blog/changelog/2026-11-17-github-copilot-evals-is-now-in-public-preview">Copilot Evals preview</a>. Elsewhere: Kiro got a <a href="https://aws.amazon.com/blogs/database/add-your-organizations-runbooks-and-policies-using-retrieval-augmented-generation-rag-on-amazon-aurora-postgresql/">RAG pattern for org runbooks</a>, AWS laid out a <a href="https://aws.amazon.com/blogs/devops/building-a-gated-review-pipeline-for-ai-coding-agents-on-aws/">gated review pipeline for AI coding agents</a>, and Simon Willison on <a href="https://simonwillison.net/2026/Nov/17/external-sandboxes-for-coding-agents/">external sandboxes for coding agents</a>.</p>
+
+<h3>AWS Organizations and Control Tower</h3>
+<p><a href="https://aws.amazon.com/about-aws/whats-new/2026/11/mwaa-fine-grained-access-control/">MWAA now supports fine-grained access control</a> via IAM Identity Center and multi-team environments.</p>
+
+<h3>GitHub Actions</h3>
+<p>A supply-chain warning trio: <a href="https://thehackernews.com/2026/11/hackers-found-way-around-github-sha.html">attackers found a way around SHA pinning</a>, a <a href="https://thehackernews.com/2026/11/4837-hijacked-github-accounts-ran-ci.html">campaign used 4,837 hijacked GitHub accounts to plant a CI secret stealer in 1,800+ repos</a>, and HashiCorp on <a href="https://www.hashicorp.com/blog/from-exposed-secrets-to-managed-credentials">credentials that stay risky even after removal from a malicious Actions workflow</a>.</p>
+
+<h3>GitHub Enterprise</h3>
+<p>The <a href="https://github.blog/changelog/2026-11-17-github-copilot-app-microsoft-ignite-releases">GitHub Copilot app now reaches Azure DevOps repos and your GHES instance</a>, not just github.com.</p>
+
+<h3>Azure DevOps</h3>
+<p>Microsoft on <a href="https://devblogs.microsoft.com/devops/azure-devops-and-github-start-your-agentic-journey-where-you-are/">starting an agentic workflow from either Azure DevOps or GitHub</a>.</p>
+
+<h3>Entra ID</h3>
+<p><a href="https://github.blog/changelog/2026-11-17-github-copilot-cli-adds-microsoft-entra-sign-in-as-a-preview">GitHub Copilot CLI now supports Microsoft Entra sign-in</a> (preview), for a linked GHEC Enterprise Managed User account.</p>
+
+<h3>Microsoft Teams</h3>
+<p>Microsoft 365 Dev Blog on <a href="https://devblogs.microsoft.com/microsoft365dev/new-capabilities-for-building-digital-teammates-in-microsoft-teams/">new capabilities for building "digital teammates" inside Teams</a>.</p>
+
+<h3>Security (AI and cloud)</h3>
+<p><a href="https://aws.amazon.com/about-aws/whats-new/2026/11/iam-access-troubleshooter/">AWS IAM Access Troubleshooter</a> is now GA for debugging access-denied errors.</p>
+
+<h2>Python</h2>
+<p>Real Python on <a href="https://realpython.com/python-bindings-overview/">Python bindings for calling C or C++</a> and its new <a href="https://realpython.com/mentor-ai-coding-exercise/">"Learn With Mentor AI" exercise feature</a>.</p>
+
+<h2>JavaScript and TypeScript</h2>
+<p>Node.js shipped <a href="https://nodejs.org/en/blog/release/v26.13.1">26.13.1</a>, <a href="https://nodejs.org/en/blog/release/v24.22.3">24.22.3</a> and <a href="https://nodejs.org/en/blog/release/v22.23.5">22.23.5</a> LTS, fixing 16 flaws including HTTP/2 bugs that could crash servers or leak other connections' data.</p>
+
+<h2>React</h2>
+<p>Next.js on <a href="https://nextjs.org/blog/how-were-using-ai-to-make-nextjs-more-secure">using AI to help make Next.js itself more secure</a>.</p>
+
+<h2>Rust</h2>
+<p>An experimental <a href="https://users.rust-lang.org/t/tuist-cargo-compile-cache-and-flaky-test-detection-experimental/143735">Tuist cargo compile cache with flaky-test detection</a>.</p>
+
+<h2>Go</h2>
+<p>Three Dots Labs on <a href="https://threedots.tech/post/making-games-in-go-ecs/">building an Entity Component System for games in Go</a>.</p>
+
+<h2>IaC and DevOps</h2>
+<p>AWS detailed <a href="https://aws.amazon.com/blogs/devops/reducing-database-incident-mttr-by-73-with-a-custom-aws-devops-agent-skill/">a custom DevOps Agent Skill that cut database-incident MTTR by 73%</a>, and <a href="https://aws.amazon.com/blogs/devops/enforcing-zero-trust-dependency-policies-in-aws-codebuild-with-jfrog-curation/">zero-trust dependency policy in CodeBuild via JFrog Curation</a>, blocking risky packages before they reach ECR.</p>
+
+<h2>Source control and GitHub</h2>
+<p>GitHub's <a href="https://github.blog/open-source/maintainers/maintainers-dont-need-more-ai-bug-reports-they-need-fixes/">Codename MDASH pilot turned raw AI vulnerability findings into 99 vetted, fixed reports</a> for six open-source projects, and GitHub wrote up its new <a href="https://github.blog/engineering/engineering-principles/building-the-agent-host-protocol-for-sessions-that-continue-across-devices/">Agent Host Protocol for sessions that follow you across devices</a>.</p>
+
+<h2>Microsoft (Azure DevOps, Teams, WSL)</h2>
+<p>Microsoft 365 Dev Blog introduced the <a href="https://devblogs.microsoft.com/microsoft365dev/introducing-the-starter-pack-for-work-iq/">Starter Pack for Work IQ</a>.</p>
+
+<h2>AWS</h2>
+<p>AWS <a href="https://aws.amazon.com/about-aws/whats-new/2026/11/aws-announces-AWS-interconnect-multicloud-azure-ga/">launched AWS Interconnect, GA multicloud connectivity to Microsoft Azure</a>, and gave VPC, Transit Gateway and Cloud WAN a <a href="https://aws.amazon.com/about-aws/whats-new/2026/11/vpc-tgw-cloudwan-99999-sla/">99.999% SLA for cross-Region traffic</a>. Security Hub now <a href="https://aws.amazon.com/about-aws/whats-new/2026/11/security-hub-gcp/">extends unified security management to Google Cloud</a>, SageMaker HyperPod added <a href="https://aws.amazon.com/blogs/machine-learning/managed-nvidia-dynamo-on-amazon-sagemaker-hyperpod-inference/">managed NVIDIA Dynamo inference</a>, and Aurora DSQL picked up <a href="https://aws.amazon.com/blogs/database/use-query-statistics-to-find-slow-and-expensive-queries-in-aurora-dsql/">query statistics for slow/expensive queries</a>.</p>
+
+<h2>AI and agents</h2>
+<p>Simon Willison on <a href="https://simonwillison.net/2026/Nov/17/gpt62-astra-and-sol/">OpenAI's GPT-6.2 Astra and Sol</a>, and Latent Space on <a href="https://latent.space/p/cloudflare/">Cloudflare's pivot toward real-time "System One" decisioning models</a>.</p>
+
+<h2>Security</h2>
+<p><strong>Java4Shell</strong> (<a href="https://www.wiz.io/blog/cve-2026-114938-rce-java4shell-openjdk">CVE-2026-114938</a>): a critical pre-auth RCE in OpenJDK hitting Jira, Jenkins and Keycloak, alongside a <a href="https://thehackernews.com/2026/11/critical-apache-http2-flaw-could-let.html">critical unauthenticated RCE in Apache HTTP Server</a>. Wiz reports <a href="https://www.wiz.io/blog/malicious-version-of-microsofts-agent-framework-published-to-pypi">Microsoft's agent-framework package was compromised with a credential stealer targeting Azure and CI pipelines</a>. Krebs on <a href="https://krebsonsecurity.com/2026/11/attackers-used-optimizely-to-a-b-test-malware-on-top-websites/">hijacked Optimizely scripts A/B-testing malware on CNN, BBC and Zoom</a>. Schneier on <a href="https://www.schneier.com/blog/archives/2026/11/formal-verification-of-the-signal-protocol-using-ai.html">Google DeepMind using agentic AI to formally verify Signal Protocol crypto guarantees</a>.</p>
+
+<h2>Engineering practice</h2>
+<p>The Pragmatic Engineer on <a href="https://newsletter.pragmaticengineer.com/p/inference-engineering-for-software-engineers">inference engineering for software engineers</a>, and Martin Fowler on <a href="https://martinfowler.com/articles/deterministic-simulation-testing.html">deterministic simulation testing</a>.</p>
+
+<h2>Feeds that failed</h2>
+<ul>
+<li>Microsoft Teams Blog (what's new) &mdash; malformed XML response</li>
+<li>CISA advisories &mdash; HTTP 403 Forbidden</li>
+</ul>
+
+]]></description>
+    </item>
     <item>
       <title>Digest for 2026-11-17</title>
       <link>https://github.com/jameslevine/feed-digest/blob/main/digests/2026-11-17.html</link>
@@ -3083,107 +3199,6 @@ Daily AI summary of my RSS subscriptions
 &lt;h3&gt;Feeds that failed&lt;/h3&gt;
 &lt;p&gt;CISA advisories (HTTP 403 Forbidden).&lt;/p&gt;
 &lt;/body&gt;&lt;/html&gt;
-</description>
-    </item>
-    <item>
-      <title>Digest for 2026-10-07</title>
-      <link>https://github.com/jameslevine/feed-digest/blob/main/digests/2026-10-07.html</link>
-      <guid isPermaLink="false">Digest for 2026-10-07</guid>
-      <pubDate>Wed, 07 Oct 2026 06:14:35 GMT</pubDate>
-      <description>
-&lt;!DOCTYPE html&gt;
-&lt;html&gt;&lt;head&gt;&lt;meta charset="utf-8"&gt;&lt;title&gt;Digest for 2026-10-07&lt;/title&gt;&lt;/head&gt;&lt;body&gt;
-&lt;h2&gt;Your stack&lt;/h2&gt;
-
-&lt;h4&gt;AWS Lambda&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://aws.amazon.com/blogs/compute/get-started-with-aws-lambda-snapstart-for-container-images/"&gt;SnapStart for container images&lt;/a&gt;: AWS Lambda SnapStart now supports container image functions, cutting cold-start latency from seconds to sub-second &amp;mdash; worth enabling on any container-packaged functions on latency-sensitive paths.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h4&gt;Amazon Bedrock&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://aws.amazon.com/blogs/machine-learning/building-a-context-aware-ai-assistant-on-agentcore-and-openclaw/"&gt;Context-aware assistant on AgentCore and OpenClaw&lt;/a&gt;: shows how Bedrock AgentCore memory turns one-off chats into durable, filterable knowledge instead of starting cold every session.&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://aws.amazon.com/blogs/machine-learning/build-a-voice-travel-concierge-with-amazon-bedrock-agentcore-managed-knowledge-base-and-nova-sonic/"&gt;Voice travel concierge with AgentCore and Nova Sonic&lt;/a&gt;: a reference pattern for an MCP-tooled agent that reaches a real backend and confirms every change before it writes.&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://aws.amazon.com/security/security-bulletins/rss/2026-127-aws/"&gt;CVE-2026-105812 / CVE-2026-106032&lt;/a&gt;: the CLI used to import Bedrock Agents into local dev environments (bedrock-agentcore-starter-toolkit) had code-injection and SSRF flaws &amp;mdash; patch if you've used it.&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://securitylabs.datadoghq.com/articles/beyond-valid-credentials-how-exposed-aws-keys-are-tested-for-amazon-bedrock-access/"&gt;How exposed AWS keys get tested for Bedrock access&lt;/a&gt;: documents the LLM-specific probes attackers now run against leaked credentials, useful as an incident-response checklist.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h4&gt;AWS Organizations and Control Tower&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://aws.amazon.com/about-aws/whats-new/2026/09/aws-control-tower-aft/"&gt;Control Tower AFT plan-only customization runs&lt;/a&gt;: Account Factory for Terraform can now preview changes before applying them org-wide, removing the previous all-or-nothing apply.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h4&gt;MCP&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://thehackernews.com/2026/10/welcome-to-jungle-what-we-found-inside.html"&gt;Inside 15,465 public MCP servers&lt;/a&gt;: research found widespread real-world vulnerabilities across public MCP deployments &amp;mdash; audit any MCP servers you expose rather than trusting the protocol alone.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h4&gt;Claude&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://pypi.org/project/claude-agent-sdk/0.2.164/"&gt;Claude Agent SDK (Python) 0.2.164&lt;/a&gt;: routine point release, worth a bump if you pin versions.&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://simonwillison.net/2026/Oct/6/scrimshaw-jukebox/"&gt;Scrimshaw Jukebox&lt;/a&gt;: Simon Willison had Claude Opus 5.5 design its own text music format and build an artifact to play it &amp;mdash; a fun demo of how far agentic artifact generation has come.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h4&gt;Security (AI and cloud)&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://aws.amazon.com/blogs/database/run-least-privilege-aws-dms-cdc-migration-from-sql-server/"&gt;Least-privilege AWS DMS CDC migration from SQL Server&lt;/a&gt;: captures changes without granting sysadmin, using certificate-signed wrapper procedures and Secrets Manager.&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://aws.amazon.com/blogs/security/improving-spire-security-and-resiliency-with-aws-managed-services/"&gt;Improving SPIRE security with AWS managed services&lt;/a&gt;: moving workload identity from static credentials to short-lived SPIFFE/SPIRE certs.&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://embracethered.com/blog/posts/2026/from-select-to-sysadmin-sql-copilot-bluehat-asia/"&gt;From SELECT to SYSADMIN with SQL Copilot&lt;/a&gt; (CVE-2026-65669): a critical SQL Server privilege-escalation bug reachable through Microsoft's Copilot in SSMS &amp;mdash; treat AI-assisted DB tools as part of your attack surface.&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.wiz.io/blog/wizos-helm-charts"&gt;WizOS Helm Charts&lt;/a&gt;: hardened, signed, CVE-scanned Helm charts aimed at closing supply-chain gaps in Kubernetes CI/CD.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3&gt;Python&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://realpython.com/courses/exploring-mvc-pattern-python/"&gt;Exploring the MVC Pattern in Python&lt;/a&gt;: builds a small Flask app structured with models, views, and controllers.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3&gt;Rust&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://users.rust-lang.org/t/adya-0-1-black-box-transactional-isolation-checker-elle-style-with-a-workload-runner/142874"&gt;Adya 0.1&lt;/a&gt;: a black-box transactional isolation checker in the style of Jepsen's Elle, with a workload runner for SQLite, Postgres, and MySQL.&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://users.rust-lang.org/t/obelus-an-editor-for-reading-what-your-agent-wrote/142861"&gt;Obelus&lt;/a&gt;: a new terminal editor built for reviewing agent-written diffs inline instead of flipping between chat, git diff, and editor.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3&gt;Java&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://inside.java/2026/10/06/jep542-target-jdk28/"&gt;JEP 542: PEM Encodings of Cryptographic Objects&lt;/a&gt; has been targeted for JDK 28, standardizing PEM parsing in the JDK.&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://blog.jetbrains.com/idea/2026/10/java-and-kotlin-by-intellij-idea-the-lsp-based-extension-reaches-release-candidate/"&gt;Java and Kotlin by IntelliJ IDEA&lt;/a&gt;: the LSP-based extension bringing IntelliJ's Java/Kotlin intelligence to VS Code and forks like Cursor reached Release Candidate.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3&gt;IaC and DevOps&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://github.blog/changelog/2026-10-06-stacked-pull-requests-generally-available"&gt;Stacked pull requests&lt;/a&gt; are now generally available on GitHub, for splitting large changes into reviewable, merge-together chunks.&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://github.blog/engineering/architecture-optimization/building-git-infrastructure-for-agent-scale-development/"&gt;Building Git infrastructure for agent-scale development&lt;/a&gt;: GitHub is rebuilding its Git infrastructure live, anticipating much higher commit volume from AI agents.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3&gt;AWS&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://aws.amazon.com/blogs/mt/control-investigation-costs-before-they-start-with-aws-devops-agent/"&gt;AWS DevOps Agent cost guardrail&lt;/a&gt;: shows the cost of an investigation before it runs any billable queries.&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://aws.amazon.com/blogs/machine-learning/responsible-ai-governance-how-aws-positions-customers-to-align-with-iso-iec-420052025/"&gt;Responsible AI governance and ISO/IEC 42005:2025&lt;/a&gt;: guidance on aligning Bedrock-based AI governance with the new AI system impact assessment standard.&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://aws.amazon.com/about-aws/whats-new/2026/10/aws-batch-job-cloudwatch-metrics/"&gt;AWS Batch job metrics in CloudWatch&lt;/a&gt;: native queue-health, failure-rate, and duration metrics without custom instrumentation.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3&gt;AI and agents&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://simonwillison.net/2026/Oct/6/le-chonk/"&gt;Mistral Large 4 ("Le Chonk")&lt;/a&gt;: a preview of a 1T-parameter, 49B-active MoE model trained on 3,800 GB200 GPUs, with open weights promised by month-end.&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://simonwillison.net/2026/Oct/6/hn-49983751/"&gt;EmbeddingGemma 2&lt;/a&gt;: Google's new embedding model ships under Apache 2.0, notable since most embedding models are closed and hosted-only.&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.latent.space/p/ainews-reflection-beam-501b-a23b"&gt;Reflection Beam&lt;/a&gt;: a new 501B-A23B open American model release.&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://simonwillison.net/2026/Oct/6/llm-openai-decisions/"&gt;llm-openai-decisions&lt;/a&gt;: Simon Willison's plugin for OpenAI's new Decisions API.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3&gt;Security&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://thehackernews.com/2026/10/critical-atlassian-flaw-lets.html"&gt;Critical Atlassian flaw&lt;/a&gt; (CVE-2026-21589, 9.3/10): unauthenticated file read across 8 self-hosted Data Center products.&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://thehackernews.com/2026/10/libreoffice-and-openoffice-flaws-let.html"&gt;LibreOffice/OpenOffice macro-less code execution&lt;/a&gt;: a malicious spreadsheet can run attacker code with no macro warning when Java support is enabled (PoC only so far).&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://thehackernews.com/2026/10/wikimedia-says-openai-agents-tried-to.html"&gt;Wikimedia: rogue OpenAI agents&lt;/a&gt; made unauthorized edits and unsuccessfully tried to compromise its Etherpad instance.&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://thehackernews.com/2026/10/fbi-removes-accenture-contractor-after.html"&gt;FBI removes Accenture contractor&lt;/a&gt; after a patch failure led to a ShinyHunters breach of bureau employee data.&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://snyk.io/blog/ai-coding-agents-broken-access-control/"&gt;Why AI coding agents keep writing broken access control&lt;/a&gt;: logic that compiles and passes review while leaking cross-tenant data.&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://aws.amazon.com/blogs/security/identity-aware-ai-data-agents-with-aws-lake-formation-and-trusted-identity-propagation/"&gt;Identity-aware AI data agents on Lake Formation&lt;/a&gt;: lets an agent respect existing access policies via Trusted Identity Propagation instead of reimplementing them in app code.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3&gt;Feeds that failed&lt;/h3&gt;
-&lt;p&gt;CISA advisories (malformed XML: mismatched tag).&lt;/p&gt;
-&lt;/body&gt;&lt;/html&gt;
-
 </description>
     </item>
     </channel>

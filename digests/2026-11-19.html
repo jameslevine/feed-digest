@@ -1,0 +1,119 @@
+<div class="digest">
+<h2>Your stack</h2>
+<h3>Claude Code</h3>
+<ul>
+<li><a href="https://code.claude.com/docs/en/changelog#2-1-328">Claude Code 2.1.328</a> shipped.</li>
+</ul>
+<h3>Claude</h3>
+<ul>
+<li><a href="https://pypi.org/project/claude-agent-sdk/0.2.185/">Claude Agent SDK (Python) 0.2.185</a> is out on PyPI.</li>
+</ul>
+<h3>MCP</h3>
+<ul>
+<li>GitHub now offers <a href="https://github.blog/changelog/2026-11-18-connect-supabase-box-calendly-and-more-to-copilot">eight more GitHub-verified MCP connectors</a> for Copilot (Supabase, Box, Calendly, and more), in public preview.</li>
+</ul>
+<h3>AI-DLC and AI-assisted development practices</h3>
+<ul>
+<li><a href="https://aws.amazon.com/blogs/devops/get-more-from-your-kiro-investment-with-credit-pooling-a-guide-for-admins/">Kiro credit pooling</a> lets admins size a shared credit pool and set per-user limits instead of fixed seats.</li>
+<li><a href="https://github.blog/changelog/2026-11-18-gemini-4-neon-in-github-copilot">Gemini 4 Neon is now GA in GitHub Copilot</a>, aimed at agentic coding and multistep tool use.</li>
+<li><a href="https://github.blog/changelog/2026-11-18-customize-github-copilot-for-your-team">Team customizations for GitHub Copilot</a> are GA, so shared plugin setups no longer need repeating per member.</li>
+<li>Curl maintainer Daniel Stenberg notes <a href="https://simonwillison.net/2026/Nov/18/daniel-stenberg/">coding agents converted 185k lines of curl’s C into 340k lines of Rust</a> while 300+ human commits still landed in parallel.</li>
+</ul>
+<h3>Source control practices</h3>
+<ul>
+<li><a href="https://github.blog/changelog/2026-11-18-wait-for-pull-request-events-with-github-cli">GitHub CLI can now wait for pull request events</a> via GitHub Event Streams (gh v2.105.0), replacing manual polling.</li>
+</ul>
+<h3>GitHub Actions</h3>
+<ul>
+<li>GitHub will <a href="https://pyfound.blogspot.com/2026/11/de-fanging-dangerous-triggers-in-github.html">block the pull_request_target trigger by default</a> in public repos from December 2 &mdash; the PSF explains why that trigger is dangerous and what changes.</li>
+</ul>
+<h3>FastAPI</h3>
+<ul>
+<li><a href="https://pypi.org/project/fastapi/0.165.0/">FastAPI 0.165.0</a> released on PyPI.</li>
+</ul>
+<h3>Linters and type checkers</h3>
+<ul>
+<li><a href="https://pypi.org/project/ty/0.0.107/">ty 0.0.107</a>, Astral's Rust-based Python type checker, released.</li>
+</ul>
+<h3>AWS Lambda</h3>
+<ul>
+<li>Lambda <a href="https://aws.amazon.com/about-aws/whats-new/2026/11/aws-lambda-gpu-managed-instances/">adds GPU-accelerated Event Functions</a> on Managed Instances (EC2 G-series), for inference and media workloads.</li>
+<li><a href="https://aws.amazon.com/blogs/compute/control-your-aws-lambda-runtimes-with-customer-managed-runtimes/">Customer-managed runtimes</a> give platform teams central control over a Lambda runtime's contents and update lifecycle.</li>
+<li><a href="https://aws.amazon.com/blogs/architecture/aderant-modernizes-analytics-data-pipeline-with-apache-iceberg-and-aws-lambda/">Aderant rebuilt its analytics pipeline</a> on Apache Iceberg and Lambda, moving from 15-minute batches to event-driven processing.</li>
+</ul>
+<h3>DynamoDB</h3>
+<ul>
+<li>AWS announced <a href="https://aws.amazon.com/about-aws/whats-new/2026/11/aws-extenddb-1-0/">ExtendDB 1.0</a>, the first production-ready release of its open-source DynamoDB-compatible adapter.</li>
+</ul>
+<h3>Amazon Bedrock</h3>
+<ul>
+<li><a href="https://aws.amazon.com/blogs/machine-learning/how-airbnb-uses-cost-per-task-to-operate-coding-agents-on-amazon-bedrock/">Airbnb shares how it uses cost-per-task</a> on Bedrock to pick models and control spend for its coding agents.</li>
+<li>A pattern for <a href="https://aws.amazon.com/blogs/machine-learning/design-responsible-ai-controls-for-amazon-aurora-postgresql/">responsible AI controls on Aurora PostgreSQL</a> makes RAG answers traceable using pgvector and Bedrock Guardrails.</li>
+<li><a href="https://aws.amazon.com/blogs/machine-learning/private-certificate-authority-support-in-amazon-bedrock-agentcore-identity/">Bedrock AgentCore Identity now supports private CAs</a>, so agents can talk to self-hosted identity providers.</li>
+<li>A new post covers <a href="https://aws.amazon.com/blogs/architecture/resilience-testing-your-agents-on-amazon-bedrock-agentcore/">resilience-testing agents on Bedrock AgentCore</a> by injecting tool failures and corrupted responses.</li>
+<li><a href="https://aws.amazon.com/blogs/machine-learning/connect-amazon-bedrock-agentcore-gateway-to-private-apis-in-a-hub-and-spoke-network-with-centralized-inspection/">Bedrock AgentCore Gateway can now reach private APIs</a> in a hub-and-spoke network with centralized traffic inspection.</li>
+</ul>
+<h3>AWS Organizations and Control Tower</h3>
+<ul>
+<li><a href="https://aws.amazon.com/about-aws/whats-new/2026/11/control-tower-existing-s3-log-bucket/">Control Tower now supports using an existing S3 bucket</a> for Config and CloudTrail log delivery.</li>
+</ul>
+<h3>Powertools for AWS Lambda</h3>
+<ul>
+<li><a href="https://pypi.org/project/aws-lambda-powertools/3.41.0/">Powertools for AWS Lambda (Python) 3.41.0</a> released.</li>
+</ul>
+<h3>boto3</h3>
+<ul>
+<li><a href="https://pypi.org/project/boto3/1.44.6/">boto3 1.44.6</a> released.</li>
+</ul>
+<h3>Security (AI and cloud)</h3>
+<ul>
+<li>Attackers <a href="https://www.wiz.io/blog/malicious-version-of-microsofts-agent-framework-published-to-pypi">compromised Microsoft’s agent-framework PyPI package</a> (v1.26.1/1.26.2, ~200k downloads/month) to plant a credential stealer targeting Azure and CI pipelines.</li>
+<li><a href="https://www.wiz.io/blog/cve-2026-114938-rce-java4shell-openjdk">CVE-2026-114938 (“Java4Shell”)</a> is a critical, actively-discussed RCE in OpenJDK’s Base64 decoder on x86-64; CISA is urging immediate patching.</li>
+<li>Two critical NGINX HTTP/2 flaws, including a <a href="https://www.wiz.io/blog/nginx-http2-rce-vulnerabilities">decade-old unauthenticated RCE dubbed “nginx2root”</a>, let attackers run code on servers with HTTP/2 enabled.</li>
+</ul>
+<h2>Python</h2>
+<ul>
+<li><a href="https://realpython.com/nuitka/">Nuitka can compile Python into a standalone executable</a>; Real Python compares standalone vs. onefile builds and when PyInstaller still fits better.</li>
+</ul>
+<h2>Rust</h2>
+<ul>
+<li><a href="https://users.rust-lang.org/t/tessera-ui-v3-0-0-rebuilt-from-the-tile-up/143747">Tessera UI 3.0.0</a> is a from-the-ground-up rebuild of the Rust UI framework, a year in the making.</li>
+<li><a href="https://users.rust-lang.org/t/announcing-quokkadb-an-embedded-application-database-for-rust/143746">QuokkaDB</a>, a new embedded application database for Rust, was announced by a longtime Cassandra contributor.</li>
+</ul>
+<h2>Source control and GitHub</h2>
+<ul>
+<li><a href="https://github.blog/changelog/2026-11-18-security-risk-assessments-run-automatically-on-github-team">GitHub security risk assessments now run automatically</a> for organizations on GitHub Team, surfacing exposed credentials and other findings for free.</li>
+</ul>
+<h2>AWS</h2>
+<ul>
+<li><a href="https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-opensearch-memory-generally-available/">Amazon OpenSearch Memory</a> is GA &mdash; a serverless persistent-memory store for AI agents.</li>
+<li><a href="https://aws.amazon.com/about-aws/whats-new/2026/11/apache-spark-aws-glue-etl/">AWS Glue ETL gets an Apache Spark Optimization Agent</a> that analyzes completed jobs and recommends cost/performance fixes.</li>
+<li><a href="https://aws.amazon.com/blogs/mt/governing-your-ai-workloads-on-aws-at-scale-visibility-controls-and-monitoring/">Governing AI workloads on AWS at scale</a> walks through visibility, controls, and monitoring using Security Hub's AI inventory and AWS Config.</li>
+<li>The new <a href="https://aws.amazon.com/blogs/machine-learning/introducing-the-amazon-sagemaker-jumpstart-model-leaderboard/">SageMaker JumpStart Model Leaderboard</a> compares 70+ foundation models on quality, speed, and cost directly in Studio.</li>
+<li>SageMaker AI Serverless Model Customization now supports <a href="https://aws.amazon.com/blogs/machine-learning/full-fine-tuning-fft-on-sagemaker-ai-serverless-model-customization/">Full Fine-Tuning</a>, explored here against LoRA on key benchmarks.</li>
+<li><a href="https://aws.amazon.com/blogs/database/which-aws-database-should-you-use/">“Which AWS database should you use?”</a> is a practical selection guide across AWS’s database portfolio.</li>
+</ul>
+<h2>AI and agents</h2>
+<ul>
+<li>Simon Willison on <a href="https://simonwillison.net/2026/Nov/18/llm-gemini/">llm-gemini 0.38</a>: Google's new Gemini 4 Neon pricing is confusing enough to make the already-confusing Gemini 4 lineup worse.</li>
+<li><a href="https://latent.space/p/ainews-gpt-6-2-astra-the-2-frontier-model-is-better-and-20-600-cheaper-but-has-mixed-reviews-6-2-sol/">GPT-6.2 Astra and Sol</a> land as OpenAI's #2 frontier model, 20&ndash;600% cheaper but with mixed early reviews.</li>
+</ul>
+<h2>Security</h2>
+<ul>
+<li><a href="https://thehackernews.com/2026/11/f5-warns-6-critical-big-ip-flaws-can.html">Six critical F5 BIG-IP flaws</a> can crash the Traffic Management Microkernel unauthenticated, with RCE possible in some setups.</li>
+<li>A <a href="https://thehackernews.com/2026/11/critical-apache-roller-rce-flaw-under.html">critical Apache Roller RCE</a> is under active, unauthenticated exploitation.</li>
+<li>CISA flagged <a href="https://thehackernews.com/2026/11/hackers-exploiting-critical-puppet-rce.html">active exploitation of a critical Puppet RCE</a> affecting enterprise configuration-management servers.</li>
+<li>AWS Security Hub now helps with <a href="https://aws.amazon.com/blogs/security/detecting-cross-cloud-lateral-movement-with-aws-security-hub/">detecting cross-cloud lateral movement</a> when an identity compromised in one provider is reused in another.</li>
+<li>Wiz launched an <a href="https://www.wiz.io/blog/introducing-wiz-ai-security-agent">AI Security Agent</a> to discover AI agents in an environment and surface their hidden risks.</li>
+</ul>
+<h2>Engineering practice</h2>
+<ul>
+<li><a href="https://newsletter.pragmaticengineer.com/p/software-factories-and-code-reviews">CodeRabbit’s CEO argues human code review is dead</a>, describing shipping 5,000+ PRs in a month and spending $250k/month on AI review.</li>
+<li>Martin Fowler publishes a detailed piece on <a href="https://martinfowler.com/articles/data-contracts.html">data contracts</a>, applying API-design practices to describe dataset guarantees.</li>
+</ul>
+<h2>Feeds that failed</h2>
+<ul>
+<li>Microsoft Teams Blog (what&#x27;s new): ParseError: not well-formed (invalid token): line 1, column 0</li>
+<li>CISA advisories: HTTPError: HTTP Error 403: Forbidden</li>
+</ul>
+</div>

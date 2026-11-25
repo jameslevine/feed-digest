@@ -1,0 +1,156 @@
+<div class="digest">
+<h2>Your stack</h2>
+
+<h3>API Gateway</h3>
+<ul>
+<li><a href="https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-api-gateway-announces-api-portal/">Amazon API Gateway launches API Portal</a>, a feature that discovers, governs and documents the APIs and AI endpoints running behind API Gateway, ALB and CloudFront across an AWS organization.</li>
+</ul>
+
+<h3>Amazon Bedrock</h3>
+<ul>
+<li><a href="https://aws.amazon.com/about-aws/whats-new/2026/11/gpt-daybreak-red-runtime-govcloud/">Bedrock's bedrock-runtime endpoint now serves OpenAI's Daybreak Red cybersecurity models in AWS GovCloud (US)</a>, aimed at authorized vulnerability research and exploit reproduction with a lower refusal threshold.</li>
+<li>AWS's <a href="https://aws.amazon.com/blogs/security/aws-completed-its-second-iso-iec-420012023-surveillance-audit/">second ISO/IEC 42001 AI-management surveillance audit passed with no findings</a>, covering Bedrock among other AI services.</li>
+</ul>
+
+<h3>AWS Lambda</h3>
+<ul>
+<li>Lambda now <a href="https://aws.amazon.com/about-aws/whats-new/2026/11/aws-lambda-function-state-events/">publishes Event Function state-change events to EventBridge</a>, adds <a href="https://aws.amazon.com/about-aws/whats-new/2026/11/aws-lambda-cost-optimization-recommendations/">cost optimization recommendations for Event Functions</a>, and <a href="https://aws.amazon.com/about-aws/whats-new/2026/11/aws-lambda-10K-batch-size-SQSFIFO/">raises the SQS FIFO batch size to 10,000 messages</a>. Jeff Barr's weekly roundup also flags a <a href="https://aws.amazon.com/blogs/aws/aws-weekly-roundup-local-zone-in-bogota-30-minute-lambda-timeout-and-more-november-24-2026/">30-minute Lambda timeout</a>.</li>
+</ul>
+
+<h3>DynamoDB</h3>
+<ul>
+<li><a href="https://aws.amazon.com/about-aws/whats-new/2026/11/dynamodb-vector-filters/">DynamoDB vector search adds new inline filter operators</a>.</li>
+</ul>
+
+<h3>AWS Organizations and Control Tower</h3>
+<ul>
+<li><a href="https://aws.amazon.com/about-aws/whats-new/2026/11/devops-agent-access-profiles-orgs/">AWS DevOps Agent adds Access Profiles and AWS Organizations support</a>, scoping what the agent can touch per org unit.</li>
+</ul>
+
+<h3>Terraform</h3>
+<ul>
+<li>HashiCorp's <a href="https://www.hashicorp.com/blog/terraform-introduces-tfpolicy-support-for-stacks-scim-support-and-more">Terraform introduces tfpolicy support for Stacks plus SCIM support</a> and other admin additions.</li>
+</ul>
+
+<h3>Claude</h3>
+<ul>
+<li>Claude Platform shipped <a href="https://platform.claude.com/docs/en/release-notes/overview#analytics-api-web-search-counts">three Enterprise Analytics API undercount fixes</a> (<a href="https://platform.claude.com/docs/en/release-notes/overview#analytics-api-connector-sign-in-counts">connector usage</a>, <a href="https://platform.claude.com/docs/en/release-notes/overview#analytics-api-project-message-counts">project messages</a>) and a <a href="https://platform.claude.com/docs/en/release-notes/overview#analytics-api-chat-session-counting">new rule for when a Chat/Cowork session counts</a>.</li>
+<li>SDKs ticked forward: <a href="https://pypi.org/project/anthropic/2.14.0/">the core Anthropic SDK to 2.14.0</a> and <a href="https://pypi.org/project/claude-agent-sdk/0.2.189/">the Claude Agent SDK to 0.2.189</a>.</li>
+<li>Simon Willison's <a href="https://simonwillison.net/2026/Nov/24/llm-inflection-points/">keynote on three LLM inflection points in the past twelve months</a> traces how Claude and its peers' coding-agent abilities jumped.</li>
+</ul>
+
+<h3>Claude Code</h3>
+<ul>
+<li><a href="https://code.claude.com/docs/en/changelog#2-1-332">Claude Code 2.1.332 adds skills from MCP servers (beta)</a>, shown as <code>server:skill</code> in the <code>/</code> menu.</li>
+<li>Snyk's writeup on <a href="https://snyk.io/blog/secure-ai-coding-agents-nvidia-openshell/">securing Claude Code inside NVIDIA OpenShell</a> covers screening agent skills and code and controlling package installs.</li>
+</ul>
+
+<h3>MCP</h3>
+<ul>
+<li>The protocol's blog marks <a href="https://blog.modelcontextprotocol.io/posts/mcp-turns-two/">MCP's second birthday</a> with a look back at its builder community.</li>
+<li>AWS disclosed <a href="https://aws.amazon.com/security/security-bulletins/rss/2026-200-aws/">CVE-2026-135614, a sensitive-data redaction bypass in the Amazon ECS MCP Server's troubleshooting tool</a>, which lets AI agents manage ECS workloads with the operator's own credentials.</li>
+</ul>
+
+<h3>AI-DLC and AI-assisted development practices</h3>
+<ul>
+<li>Real Python's <a href="https://realpython.com/courses/build-ai-agent-scratch-python/">walkthrough of building an AI agent from scratch</a>: the agentic loop, context and tool calling in ~90 lines.</li>
+</ul>
+
+<h3>Security (AI and cloud)</h3>
+<ul>
+<li>Four new AWS bulletins: <a href="https://aws.amazon.com/security/security-bulletins/rss/2026-198-aws/">CVE-2026-134068</a>, a buffer overflow in AWS pgactive's replication origin parsing; <a href="https://aws.amazon.com/security/security-bulletins/rss/2026-199-aws/">CVE-2026-134066</a>, query injection in Graph Explorer; and <a href="https://aws.amazon.com/security/security-bulletins/rss/2026-201-aws/">CVE-2026-135414</a>, SSRF in OpenSearch snapshot-repository registration.</li>
+<li><a href="https://thehackernews.com/2026/11/attackers-ai-agents-found-zero-day-in.html">Suspected China-linked hackers used autonomous AI agents to find a zero-day in MONAI Label</a> and gain root on a university server.</li>
+<li><a href="https://thehackernews.com/2026/11/vmware-vcenter-hit-by-another-critical.html">VMware vCenter took another critical 9.8-rated auth-bypass flaw after zero-day exploitation</a>, and <a href="https://thehackernews.com/2026/11/researchers-demonstrate-ghostscript.html">a Ghostscript sandbox-escape RCE</a> was demonstrated via crafted file uploads.</li>
+<li>Wiz's <a href="https://www.wiz.io/blog/phpaftershell-critical-php-rce-vulnerabilities-cve-2026-126714">phpAfterShell writeup covers critical PHP RCE vulnerabilities from November's release</a>.</li>
+</ul>
+
+<h3>Checkmarx</h3>
+<ul>
+<li>Forrester's Wave <a href="https://checkmarx.com/blog/checkmarx-forrester-wave-agentic-development-security-tools-q4-2026/">gave Checkmarx the top score for Agentic Development Security Tools</a>.</li>
+</ul>
+
+<h3>Linters and type checkers</h3>
+<ul>
+<li>Routine releases: <a href="https://pypi.org/project/ty/0.0.110/">ty hit 0.0.110</a> and <a href="https://pypi.org/project/semgrep/1.187.0/">semgrep reached 1.187.0</a>.</li>
+</ul>
+
+<h3>uv</h3>
+<ul>
+<li><a href="https://pypi.org/project/uv/0.13.10/">uv shipped 0.13.10</a>.</li>
+</ul>
+
+<h3>boto3</h3>
+<ul>
+<li><a href="https://pypi.org/project/boto3/1.44.11/">boto3 shipped 1.44.11</a>.</li>
+</ul>
+
+<h3>Snowflake</h3>
+<ul>
+<li><a href="https://aws.amazon.com/about-aws/whats-new/2026/11/aws-quick-snowflake-databricks-3lo-end-user-permissions/">AWS Quick adds identity-aware access via 3LO for Snowflake and Databricks</a> structured data sources.</li>
+</ul>
+
+<h2>Python</h2>
+<ul>
+<li>The PSF is <a href="https://www.blogger.com/feeds/8520/posts/default/1137751370117933227">reopening its Grants Program with twice-yearly funding rounds</a>, after pausing in 2025.</li>
+<li>Real Python's <a href="https://realpython.com/k-means-clustering-python/">guide to k-means clustering</a> walks through choosing cluster counts and building an end-to-end pipeline with scikit-learn.</li>
+</ul>
+
+<h2>JavaScript and TypeScript</h2>
+<ul>
+<li>JavaScript Weekly spotlights <a href="https://javascriptweekly.com/issues/812">Nudeps, bundler-like npm imports in the browser with none of the bundler baggage</a>.</li>
+</ul>
+
+<h2>Java</h2>
+<ul>
+<li>Spring AI 2.1 adds <a href="https://spring.io/blog/2026/11/24/spring-ai-tool-call-confirmation-park-resume">tool call confirmation that survives a restart</a>, for human-in-the-loop approval of agent actions.</li>
+</ul>
+
+<h2>IaC and DevOps</h2>
+<ul>
+<li>HashiCorp on <a href="https://www.hashicorp.com/blog/building-a-secure-foundation-for-ai-on-kubernetes-with-hashicorp-vault">building a secure foundation for AI on Kubernetes with Vault</a>: workload trust, certificates and credentials for cloud-native AI.</li>
+</ul>
+
+<h2>Source control and GitHub</h2>
+<ul>
+<li>GitHub is <a href="https://github.blog/changelog/2026-11-24-more-predictable-notifications-on-github-com">migrating notifications starting December 1</a> to make subscriptions more predictable and fix long-standing quirks.</li>
+</ul>
+
+<h2>Microsoft (Azure DevOps, Teams, WSL)</h2>
+<ul>
+<li>Microsoft 365 dev blog on <a href="https://devblogs.microsoft.com/microsoft365dev/choose-the-right-document-platform-for-your-app-sharepoint-embedded/">choosing SharePoint Embedded over plain storage</a> for apps that need Microsoft 365-grade file handling.</li>
+</ul>
+
+<h2>AWS</h2>
+<ul>
+<li>SageMaker HyperPod picked up a run of resiliency features: <a href="https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-sagemaker-hyperpod-slurm-hung-jobs/">hung-job detection on Slurm</a>, <a href="https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-sagemaker-hyperpod-k8s-monitoring-agent/">Kubernetes issue detection on EKS</a>, and a <a href="https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-sagemaker-hyperpod-training-validation/">deep health check that validates training correctness</a>.</li>
+<li>AWS Quick kept expanding fast: <a href="https://aws.amazon.com/about-aws/whats-new/2026/11/aws-quick-plugins-bundle-agents-skills-connectors-flows/">plugins that bundle agents, skills, connectors and flows</a>, a <a href="https://aws.amazon.com/about-aws/whats-new/2026/11/aws-quick-flows-automations-chat/">chat-built Flows automation builder</a>, and <a href="https://aws.amazon.com/about-aws/whats-new/2026/11/aws-quick-japanese-german-chinese-vietnamese/">four new languages</a>.</li>
+<li><a href="https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-s3-vectors-raises-filterable-metadata-40kb-per-vector/">Amazon S3 Vectors raises its filterable metadata limit to 40 KB per vector</a>, up 20x.</li>
+<li>CloudWatch's EKS Observability add-on now covers <a href="https://aws.amazon.com/about-aws/whats-new/2026/11/cloudwatch-eks-kubernetes-tools/">built-in monitoring for Karpenter, KEDA, vLLM and other OSS tools</a>, plus <a href="https://aws.amazon.com/about-aws/whats-new/2026/11/cloudwatch-eks-otel-addon-filtering/">telemetry filtering to stop paying for data you don't use</a>.</li>
+<li>Glue Data Catalog adds <a href="https://aws.amazon.com/about-aws/whats-new/2026/11/glue-catalog-data-quality-monitoring/">data quality monitoring for catalogs and databases</a> at catalog scale.</li>
+</ul>
+
+<h2>AI and agents</h2>
+<ul>
+<li><a href="https://simonwillison.net/2026/Nov/24/astra-historical-mystery/">GPT-6.2 Astra helped a history professor crack a historical mystery</a> with minimal prompting.</li>
+<li>Latent Space's AI News: <a href="https://latent.space/p/ainews-gemini-4-neon-marks-gdm-s-full-return-as-a-frontier-lab/">Gemini 4 Neon beats Astra and Fable on LiveBench</a> and cuts a TS/Rust benchmark's runtime by nearly half.</li>
+</ul>
+
+<h2>Security</h2>
+<ul>
+<li>AWS Security Blog on <a href="https://aws.amazon.com/blogs/security/delegate-user-access-to-ai-agents-with-amazon-cognito-token-exchange/">delegating user access to AI agents via Cognito token exchange</a>.</li>
+<li><a href="https://thehackernews.com/2026/11/com-affiliated-hackers-hijack-cloud.html">Com-affiliated hackers are hijacking cloud accounts via vishing</a> for data theft and extortion.</li>
+<li>NCSC UK on <a href="https://www.ncsc.gov.uk/blogs/familiar-weaknesses-exploited-faster-defending-against-agentic-cyber-attacks">defending against agentic cyber attacks</a>: familiar weaknesses, now exploited faster.</li>
+<li>Signal will <a href="https://thehackernews.com/2026/11/signal-blocks-ai-agents-from-reading.html">restrict screenshots by default to stop AI agents reading private chats</a> on Android and iOS, though it admits the protection is partial.</li>
+</ul>
+
+<h2>Engineering practice</h2>
+<ul>
+<li>The Pragmatic Engineer's <a href="https://newsletter.pragmaticengineer.com/p/the-pragmatic-engineer-essay-challenge">essay challenge winners on how AI is changing how we build software</a>, with links to 40 more entries.</li>
+</ul>
+
+<h2>Feeds that failed</h2>
+<ul>
+<li>Microsoft Teams Blog (what's new): feed returned invalid XML</li>
+<li>CISA advisories: HTTP 403 Forbidden</li>
+</ul>
+</div>

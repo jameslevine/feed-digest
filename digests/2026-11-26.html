@@ -1,0 +1,109 @@
+<div class="digest">
+<h2>Your stack</h2>
+
+<h3>AWS Lambda</h3>
+<ul>
+<li><a href="https://aws.amazon.com/about-aws/whats-new/2026/11/lambda-durable-microvm/">Lambda now has a developer preview for orchestrating MicroVMs with durable functions</a>, adding durable operations and EventBridge-based state events for long-running, stateful work.</li>
+</ul>
+
+<h3>EventBridge</h3>
+<ul>
+<li><a href="https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-eventbridge-webhook-events">EventBridge custom event buses now accept Webhook Events</a>, so SaaS tools and AI agents can push events straight over HTTPS without you building a receiver.</li>
+</ul>
+
+<h3>Entra ID</h3>
+<ul>
+<li><a href="https://aws.amazon.com/about-aws/whats-new/2026/11/aws-iam/">AWS IAM extends Trusted Identity Propagation to IAM federation and IAM Roles Anywhere</a>, and can now mint an AWS-signed JWT from a SAML/OIDC federation session so external services see the real originating identity.</li>
+</ul>
+
+<h3>MCP</h3>
+<ul>
+<li><a href="https://aws.amazon.com/blogs/security/secure-agentic-access-to-aws-with-enterprise-managed-authorization/">AWS Sign-In's new Enterprise-Managed Authorization lets enterprise IdPs like Okta issue JWTs that authorize AI agents to call an AWS MCP Server</a>, giving admins central control over agent access.</li>
+<li><a href="https://aws.amazon.com/about-aws/whats-new/2026/01/amazon-cloudfront-http2-origins/">CloudFront now speaks HTTP/2 to custom and VPC origins</a>, cutting the connection overhead when an AI agent fires off many MCP tool calls at once.</li>
+</ul>
+
+<h3>AI-DLC and AI-assisted development practices</h3>
+<ul>
+<li><a href="https://github.blog/ai-and-ml/github-copilot/how-to-choose-the-next-safe-step-in-application-modernization/">GitHub's guide to safe, bounded modernization steps with a Copilot agent skill</a> is a useful template for scoping legacy work into AI-sized chunks.</li>
+<li><a href="https://aws.amazon.com/security/security-bulletins/rss/2026-202-aws/">CVE-2026-136267: Kiro Web, AWS's AI-powered IDE, had an OS command injection flaw</a> from improperly neutralized special elements, now patched.</li>
+</ul>
+
+<h3>Source control practices</h3>
+<ul>
+<li><a href="https://github.blog/changelog/2026-11-25-copilot-code-review-billing-will-default-to-the-organization">Copilot code review billing will default to the organization from December 30</a> for anyone who hasn't chosen a billing owner yet.</li>
+</ul>
+
+<h3>Security (AI and cloud)</h3>
+<ul>
+<li><a href="https://aws.amazon.com/security/security-bulletins/rss/2026-203-aws/">CVE-2026-134070: an AWS Config remediation runbook had improper input sanitization</a> allowing injection via the Session Manager audit-log-enabling automation.</li>
+<li><a href="https://thehackernews.com/2026/11/1password-hacked-customer-data-and.html">1Password disclosed a breach of its backend systems via a compromised GitHub account</a>, exposing some customer data and source code.</li>
+<li><a href="https://thehackernews.com/2026/11/hackers-exploit-two-geoserver-flaws-as.html">Two actively-exploited GeoServer flaws (CVE-2026-120705, CVE-2026-129243) are chaining into unauthenticated RCE</a>, per watchTowr.</li>
+<li><a href="https://thehackernews.com/2026/11/credential-remediation-is-slow-when-you.html">GitGuardian's 2026 report found over 64% of secrets leaked in 2022 were still valid four years later</a>, because teams can't tell what still matters.</li>
+<li><a href="https://thehackernews.com/2026/11/drupal-fail2install-exploit-details.html">A critical Drupal "Fail2Install" RCE is now in CISA's Known Exploited Vulnerabilities catalog</a> with public exploit details circulating.</li>
+<li><a href="https://thehackernews.com/2026/11/n-able-discloses-critical-mail-assure.html">N-able disclosed a critical Mail Assure flaw found while investigating its own breach</a>, affecting its hosted email-filtering service.</li>
+<li><a href="https://securitylabs.datadoghq.com/articles/introducing-mitigeddon/">Datadog launched Mitigeddon</a>, a public site tracking real-world exploitation and prevalence data for impactful CVEs.</li>
+</ul>
+
+<h3>AWS Organizations and Control Tower</h3>
+<ul>
+<li><a href="https://aws.amazon.com/about-aws/whats-new/2026/11/aws-compute-optimizer/">Compute Optimizer automation rules can now target whole Organizational Units</a> instead of the previous 50-account-per-rule limit.</li>
+</ul>
+
+<h3>Claude</h3>
+<ul>
+<li><a href="https://newsletter.pragmaticengineer.com/p/how-anthropic-builds-software-in">The Pragmatic Engineer talks to Anthropic's Katelyn Lesse about rewriting Claude's API in Rust</a> and how agents are reshaping engineering workflows internally.</li>
+</ul>
+
+<h2>Python</h2>
+<ul>
+<li><a href="https://realpython.com/pandas-project-gradebook/">Real Python walks through building a gradebook that merges and summarizes grades with pandas</a>.</li>
+<li><a href="https://realpython.com/no-ai-slop-manifesto/">Real Python lays out a "No AI Slop Manifesto"</a> arguing developers should own and review everything an agent ships.</li>
+<li><a href="https://realpython.com/llm-evaluation/">Real Python shows how to build an LLM evaluation harness from scratch</a>, combining code checks with a calibrated LLM judge.</li>
+</ul>
+
+<h2>Rust</h2>
+<ul>
+<li><a href="https://users.rust-lang.org/t/rolling-upgrades-in-tellus-old-code-cannot-learn-a-new-shape/143946">A Rust forum writeup on rolling upgrades in a cluster project ("tellus")</a> covers how old nodes bridge to new wire-format shapes mid-rollout.</li>
+<li><a href="https://users.rust-lang.org/t/general-purpose-llm-harness-browser-ui-ollama-rs/143940">A new Rust-based local LLM R&amp;D harness with a browser UI wraps ollama_rs</a> for single-user, detail-oriented model work.</li>
+</ul>
+
+<h2>Java</h2>
+<ul>
+<li><a href="https://inside.java/2026/11/25/quality-heads-up/">JDK 28 is adding a jlink plugin to set security properties in custom runtime images</a>, per the OpenJDK quality team.</li>
+</ul>
+
+<h2>IaC and DevOps</h2>
+<ul>
+<li><a href="https://platformengineering.org/blog/why-companies-fail-at-internal-developer-platforms">Platform Engineering argues most failed Internal Developer Platforms fail from an education gap, not a technical one</a>.</li>
+</ul>
+
+<h2>AWS</h2>
+<ul>
+<li><a href="https://aws.amazon.com/about-aws/whats-new/2026/11/transcribe-turbo-preview/">Amazon Transcribe Turbo, a next-gen speech-to-text model tuned for natural turn-taking in voice agents, is now in public preview</a>.</li>
+<li>SageMaker HyperPod gained two Slurm-cluster upgrades: <a href="https://aws.amazon.com/about-aws/whats-new/2026/11/sagemaker-hyperpod-extensions/">managed observability and user-management extensions</a> and <a href="https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-sagemaker-hyperpod-nccl-profiler/">NCCL profiling for training jobs</a>.</li>
+<li><a href="https://aws.amazon.com/about-aws/whats-new/2026/11/aws-iot-core-quota-usage-monitoring/">AWS IoT Core quotas and current usage are now visible directly in the Service Quotas console</a>.</li>
+</ul>
+
+<h2>AI and agents</h2>
+<ul>
+<li><a href="https://simonwillison.net/2026/Nov/25/datasette-charts/">Simon Willison's datasette-charts 0.3a0 adds chart annotations</a> — lines, shaded areas and labels drawn over a rendered chart.</li>
+<li><a href="https://latent.space/p/the_revolution_vs_the_renaissance_thariq_shihipar_openai/">An AI Engineer CODE talk from OpenAI's Thariq Shihipar on cheap mass-produced software versus crafted software</a>, and why both can coexist.</li>
+<li><a href="https://latent.space/p/ainews-math-proofs-are-landing-faster-than-we-can-read-them/">Latent Space rounds up a wave of AI-assisted math results</a>, from Erdős problems to new matrix-multiplication bounds.</li>
+<li><a href="https://latent.space/p/why_linear_says_issue_tracking_is_dead_cristina_cordova_coo/">Linear's COO Cristina Cordova discusses why Linear's CEO declared "issue tracking is dead"</a>.</li>
+</ul>
+
+<h2>Security</h2>
+<ul>
+<li><a href="https://thehackernews.com/2026/11/hackers-exploited-cvss-100-hexpm-rce.html">Attackers used a CVSS 10.0 RCE flaw to compromise six Hex.pm servers</a>, the package registry Elixir and Erlang depend on.</li>
+<li><a href="https://thehackernews.com/2026/11/13-malicious-nuget-packages-turn-fake.html">13 malicious NuGet packages posed as take-home job assessments to deliver malware to .NET developers</a>.</li>
+<li><a href="https://thehackernews.com/2026/11/us-treasurys-fincen-takes-some-systems.html">The US Treasury's FinCEN took some systems offline after unauthorized access to a subset of them</a>.</li>
+<li><a href="https://www.wiz.io/blog/phpaftershell-critical-php-rce-vulnerabilities-cve-2026-126714">Wiz breaks down phpAfterShell and other critical RCE flaws from PHP's November release</a>.</li>
+<li>Wiz Research traces how <a href="https://www.wiz.io/blog/agentic-offensive-frameworks-intent-ids-artex-cairn">agentic offensive frameworks like ARTEX and Cairn leave traceable "Intent ID" markers in victim logs</a>, and shares <a href="https://www.wiz.io/blog/agentic-attacks-artex-offensive-ai-frameworks">real intrusion cases driven by these frameworks</a>.</li>
+<li><a href="https://www.schneier.com/blog/archives/2026/11/tracking-incidents-of-hacking-using-ai-tools.html">Daniel Miessler is now tracking incidents of AI-enhanced hacking and the offensive harnesses behind them</a>, flagged by Bruce Schneier.</li>
+</ul>
+
+<h2>Feeds that failed</h2>
+<ul>
+<li>CISA advisories (https://www.cisa.gov/cybersecurity-advisories/all.xml) &mdash; HTTP 403 Forbidden.</li>
+</ul>
+</div>
